@@ -23,3 +23,12 @@ Une question sur une infraction du **3e ou 4e degré**, ou sur la vitesse, est u
 | 9 fautes simples | 9 | 41/50, réussi |
 | 1 faute grave + 4 simples | 9 | 41/50, réussi |
 | 2 fautes graves | 10 | 40/50, **raté** |
+
+## Bon à savoir
+
+- **Payer** la perception immédiate clôture l'affaire. Pour contester, on ne paie pas : le dossier va au parquet.
+- Sans paiement : ordre de paiement plus élevé ou citation au tribunal.
+- La **déchéance** du droit de conduire est prononcée par le juge.
+- **Radar** : le courrier va au titulaire de la plaque, qui doit désigner le conducteur.
+- Les **excès de vitesse** ont leur propre barème, selon les km/h en trop.
+- Rouler **sans assurance** ou **sans permis valable** : sanctions lourdes au tribunal.

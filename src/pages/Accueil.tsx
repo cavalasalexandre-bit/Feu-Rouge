@@ -18,7 +18,7 @@ export function Accueil() {
     <div className="stack-lg">
       <section className="hero">
         <div>
-          <p className="eyebrow" style={{ color: 'var(--accent)' }}>
+          <p className="eyebrow" style={{ color: 'var(--accent-text)' }}>
             Permis B · Belgique · Examen théorique
           </p>
           <h1 style={{ marginTop: 14 }}>Règle tes compteurs avant le jour J.</h1>
@@ -124,10 +124,6 @@ export function Accueil() {
         </div>
       </section>
 
-      <footer className="row muted" style={{ justifyContent: 'space-between', fontSize: '0.85rem', borderTop: '1px solid var(--line)', paddingTop: 20 }}>
-        <span>Feu Rouge · ta progression reste sur ton appareil.</span>
-        <span>Questions originales, pas les questions officielles de l'examen.</span>
-      </footer>
     </div>
   )
 }

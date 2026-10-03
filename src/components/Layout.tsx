@@ -29,6 +29,10 @@ export function Layout() {
       <main>
         <Outlet />
       </main>
+      <footer className="site-footer">
+        <span>Feu Rouge · questions originales, pas les questions officielles de l'examen.</span>
+        <Link to="/credits">Sources et crédits photos</Link>
+      </footer>
       <nav className="bottomnav" aria-label="Navigation">
         {LIENS.map((l) => (
           <NavLink key={l.to} to={l.to}>

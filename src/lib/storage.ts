@@ -9,6 +9,9 @@ export const REGLAGES_PAR_DEFAUT: Settings = {
   themesPrioritaires: [],
   chronoMinutes: 30,
   objectifJour: 30,
+  apparence: 'sombre',
+  formatExamen: 'officiel',
+  lectureAudio: true,
 }
 
 export function etatInitial(): AppState {
@@ -19,6 +22,7 @@ export function etatInitial(): AppState {
     examens: [],
     positionnementFait: false,
     activite: {},
+    badgesVus: [],
   }
 }
 
@@ -41,6 +45,7 @@ export function valider(brut: unknown): AppState {
     examens: Array.isArray(o.examens) ? o.examens : [],
     positionnementFait: Boolean(o.positionnementFait),
     activite: o.activite && typeof o.activite === 'object' ? o.activite : {},
+    badgesVus: Array.isArray(o.badgesVus) ? o.badgesVus : [],
   }
 }
 

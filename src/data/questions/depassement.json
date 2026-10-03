@@ -306,5 +306,290 @@
       "Klaxonner pour qu'il se mette sur le côté": "Le cycliste a le droit de rouler sur la chaussée.",
       "Le dépasser par la droite": "Dépasser par la droite est interdit et dangereux."
     }
+  },
+  {
+    "id": "dep-017",
+    "theme": "depassement",
+    "question": "Tu dépasses un piéton ou un cavalier sur une route de campagne. Que fais-tu ?",
+    "choix": [
+      "Je ralentis et je laisse une distance latérale suffisante",
+      "Je klaxonne et je passe vite",
+      "Je passe au plus près pour ne pas déborder",
+      "Je fais des appels de phares"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Piétons et cavaliers sont vulnérables : on les dépasse lentement, en laissant de la place.",
+    "pourquoiFaux": {
+      "Je klaxonne et je passe vite": "Un cheval peut s'effrayer du bruit et de la vitesse.",
+      "Je passe au plus près pour ne pas déborder": "Il faut laisser de l'espace pour ne pas le mettre en danger.",
+      "Je fais des appels de phares": "Les appels de phares peuvent effrayer un cheval."
+    }
+  },
+  {
+    "id": "dep-018",
+    "theme": "depassement",
+    "question": "Sur une route étroite, tu croises un véhicule qui arrive en face. Que fais-tu ?",
+    "choix": [
+      "Je reste au milieu, il se poussera",
+      "J'accélère pour passer avant lui",
+      "Je serre à droite et je ralentis, en m'arrêtant si nécessaire",
+      "Je fais un appel de phares pour qu'il s'arrête"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Pour croiser, on laisse un espace latéral suffisant en se serrant à droite, et on s'arrête si la place manque.",
+    "pourquoiFaux": {
+      "Je reste au milieu, il se poussera": "Chacun doit serrer à droite pour croiser.",
+      "J'accélère pour passer avant lui": "Accélérer rend le croisement plus dangereux.",
+      "Je fais un appel de phares pour qu'il s'arrête": "L'appel de phares ne donne aucune priorité."
+    }
+  },
+  {
+    "id": "dep-019",
+    "theme": "depassement",
+    "question": "Quels clignotants utilises-tu pour un dépassement ?",
+    "choix": [
+      "Le clignotant gauche pour déboîter, puis le droit pour me rabattre",
+      "Aucun, si personne n'arrive",
+      "Seulement le gauche",
+      "Les feux de détresse"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Déboîter et se rabattre sont deux changements de bande : chacun s'annonce avec le clignotant.",
+    "pourquoiFaux": {
+      "Seulement le gauche": "Il faut aussi annoncer le retour à droite.",
+      "Aucun, si personne n'arrive": "Le dépassement s'annonce toujours.",
+      "Les feux de détresse": "Les feux de détresse ne servent pas à dépasser."
+    }
+  },
+  {
+    "id": "dep-020",
+    "theme": "depassement",
+    "question": "Sur l'autoroute, la circulation est dense et forme des files. Ta file de droite avance plus vite que celle de gauche. Est-ce un dépassement par la droite interdit ?",
+    "choix": [
+      "Non, car le dépassement par la droite est toujours permis sur autoroute",
+      "Oui, c'est toujours interdit",
+      "Non : quand on roule en files, aller plus vite dans une file n'est pas un dépassement",
+      "Oui, tu dois freiner pour rester derrière"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Quand la densité oblige à rouler en files, le fait qu'une file aille plus vite qu'une autre n'est pas un dépassement.",
+    "pourquoiFaux": {
+      "Oui, c'est toujours interdit": "En circulation dense en files, ce n'est pas considéré comme un dépassement.",
+      "Oui, tu dois freiner pour rester derrière": "Freiner sans raison en circulation dense crée un danger.",
+      "Non, car le dépassement par la droite est toujours permis sur autoroute": "Le dépassement par la droite reste interdit hors de cette situation."
+    }
+  },
+  {
+    "id": "dep-021",
+    "theme": "depassement",
+    "question": "Le véhicule devant toi commence à dépasser une voiture. Peux-tu dépasser les deux en même temps ?",
+    "choix": [
+      "Oui, en klaxonnant",
+      "Oui, par la droite",
+      "Oui, si la route est droite",
+      "Non, j'attends qu'il ait fini son dépassement"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Avant de dépasser, on vérifie que la voie est libre sur une distance suffisante et qu'on pourra se rabattre.",
+    "pourquoiFaux": {
+      "Oui, si la route est droite": "Deux véhicules qui dépassent en même temps manquent de place pour se rabattre.",
+      "Oui, en klaxonnant": "Le klaxon ne rend pas la manœuvre sûre.",
+      "Oui, par la droite": "Dépasser par la droite est interdit ici."
+    }
+  },
+  {
+    "id": "dep-022",
+    "theme": "depassement",
+    "question": "Tu veux dépasser, mais la voiture derrière toi a déjà mis son clignotant et commence à te dépasser. Que fais-tu ?",
+    "choix": [
+      "Je klaxonne pour qu'elle reste derrière",
+      "Je déboîte quand même, j'étais devant",
+      "J'accélère pour qu'elle renonce",
+      "J'attends qu'elle m'ait dépassé"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "On ne dépasse pas si un conducteur qui suit a déjà commencé à dépasser.",
+    "pourquoiFaux": {
+      "Je déboîte quand même, j'étais devant": "Tu lui couperais la route.",
+      "J'accélère pour qu'elle renonce": "Accélérer pour empêcher un dépassement est interdit.",
+      "Je klaxonne pour qu'elle reste derrière": "C'est à toi d'attendre."
+    }
+  },
+  {
+    "id": "dep-023",
+    "theme": "depassement",
+    "question": "Un bus est arrêté à un arrêt en agglomération. Tu le dépasses. À quoi fais-tu particulièrement attention ?",
+    "choix": [
+      "À klaxonner pour prévenir",
+      "À rien de particulier",
+      "Aux piétons qui peuvent surgir devant le bus",
+      "Aux feux de détresse du bus seulement"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un bus arrêté cache les piétons. On passe lentement, prêt à s'arrêter, et on laisse partir le bus en agglomération.",
+    "pourquoiFaux": {
+      "À rien de particulier": "Des passagers peuvent traverser juste devant le bus.",
+      "Aux feux de détresse du bus seulement": "Le danger vient surtout des piétons cachés par le bus.",
+      "À klaxonner pour prévenir": "Le klaxon ne remplace pas la prudence."
+    }
+  },
+  {
+    "id": "dep-024",
+    "theme": "depassement",
+    "question": "Une voiture tourne à gauche devant toi. Peux-tu la dépasser par la droite en roulant sur la piste cyclable ?",
+    "choix": [
+      "Oui, en roulant lentement",
+      "Oui, avec le clignotant droit",
+      "Oui, si la piste est vide",
+      "Non"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "On peut dépasser par la droite un véhicule qui tourne à gauche, mais en restant sur la chaussée, jamais sur la piste cyclable.",
+    "pourquoiFaux": {
+      "Oui, si la piste est vide": "Rouler sur la piste cyclable est interdit aux voitures.",
+      "Oui, en roulant lentement": "La piste cyclable reste interdite.",
+      "Oui, avec le clignotant droit": "Le clignotant ne rend pas la manœuvre permise."
+    }
+  },
+  {
+    "id": "dep-025",
+    "theme": "depassement",
+    "question": "Tu dépasses un groupe de cyclistes. Que dois-tu prévoir ?",
+    "choix": [
+      "De les dépasser un par un en te rabattant entre eux",
+      "Une distance plus petite, car ils sont nombreux",
+      "La même distance latérale qu'avec un cycliste seul, et assez de place pour te rabattre après tout le groupe",
+      "De klaxonner pour qu'ils roulent en file"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "On ne commence le dépassement que si l'on peut dépasser tout le groupe d'un coup.",
+    "pourquoiFaux": {
+      "Une distance plus petite, car ils sont nombreux": "La distance minimale reste la même.",
+      "De les dépasser un par un en te rabattant entre eux": "Te rabattre au milieu du groupe est dangereux.",
+      "De klaxonner pour qu'ils roulent en file": "Le klaxon n'est pas fait pour ça."
+    }
+  },
+  {
+    "id": "dep-026",
+    "theme": "depassement",
+    "question": "La voiture devant toi roule exactement à la vitesse maximale autorisée. Peux-tu la dépasser ?",
+    "choix": [
+      "Non : il faudrait dépasser la limite de vitesse",
+      "Oui, hors agglomération",
+      "Oui, si elle te le permet",
+      "Oui, si c'est rapide"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Un dépassement doit se faire sans dépasser la vitesse maximale.",
+    "pourquoiFaux": {
+      "Oui, si c'est rapide": "Même pour quelques secondes, l'excès de vitesse est interdit.",
+      "Oui, hors agglomération": "La limite vaut partout.",
+      "Oui, si elle te le permet": "Personne ne peut t'autoriser à dépasser la limite."
+    }
+  },
+  {
+    "id": "dep-027",
+    "theme": "depassement",
+    "question": "Un camion te dépasse lentement et peine à se rabattre devant toi. Que fais-tu ?",
+    "choix": [
+      "Je lève légèrement le pied pour lui laisser la place",
+      "Je fais des appels de phares",
+      "J'accélère pour qu'il abandonne",
+      "Je me déporte à gauche"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le conducteur dépassé facilite la manœuvre : il n'accélère pas et peut ralentir un peu.",
+    "pourquoiFaux": {
+      "J'accélère pour qu'il abandonne": "Accélérer quand on est dépassé est interdit.",
+      "Je fais des appels de phares": "Les appels de phares ne l'aident pas.",
+      "Je me déporte à gauche": "Tu le mettrais en danger."
+    }
+  },
+  {
+    "id": "dep-028",
+    "theme": "depassement",
+    "question": "La ligne est discontinue, mais tu approches du sommet d'une côte et tu ne vois pas ce qui arrive en face. Peux-tu dépasser ?",
+    "choix": [
+      "Oui, la ligne est discontinue",
+      "Oui, si tu dépasses très vite",
+      "Oui, en klaxonnant",
+      "Non, la visibilité est insuffisante"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Même sans ligne continue, on ne dépasse pas sans voir la route libre sur une distance suffisante.",
+    "pourquoiFaux": {
+      "Oui, la ligne est discontinue": "La ligne discontinue n'enlève pas l'obligation d'avoir assez de visibilité.",
+      "Oui, en klaxonnant": "Le klaxon ne remplace pas la visibilité.",
+      "Oui, si tu dépasses très vite": "La vitesse aggrave le danger."
+    }
+  },
+  {
+    "id": "dep-029",
+    "theme": "depassement",
+    "question": "Après avoir dépassé un cycliste, quand peux-tu te rabattre ?",
+    "choix": [
+      "Quand je l'ai dépassé avec assez de marge pour ne pas lui couper la route",
+      "Après 1 kilomètre",
+      "Immédiatement, il roule lentement",
+      "Dès que ma voiture est à sa hauteur"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "On se rabat quand le cycliste est bien visible dans le rétroviseur intérieur.",
+    "pourquoiFaux": {
+      "Dès que ma voiture est à sa hauteur": "Tu lui couperais la route.",
+      "Immédiatement, il roule lentement": "Un vélo peut rouler plus vite qu'on ne le pense.",
+      "Après 1 kilomètre": "Il n'y a pas de distance fixe."
+    }
+  },
+  {
+    "id": "dep-030",
+    "theme": "depassement",
+    "question": "Un tracteur roule lentement devant toi, la ligne est discontinue et la route est dégagée loin devant. Peux-tu le dépasser ?",
+    "choix": [
+      "Oui, en vérifiant derrière moi et en dépassant franchement",
+      "Oui, par la droite",
+      "Oui, sans clignotant pour aller plus vite",
+      "Non, on ne dépasse jamais un véhicule agricole"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Visibilité suffisante, ligne discontinue, personne qui te dépasse : le dépassement est possible.",
+    "pourquoiFaux": {
+      "Non, on ne dépasse jamais un véhicule agricole": "C'est permis quand les conditions sont réunies.",
+      "Oui, par la droite": "On dépasse par la gauche.",
+      "Oui, sans clignotant pour aller plus vite": "Le clignotant reste obligatoire."
+    }
+  },
+  {
+    "id": "dep-031",
+    "theme": "depassement",
+    "question": "Peux-tu dépasser une voiture juste avant un passage pour piétons si aucun piéton n'est en vue ?",
+    "choix": [
+      "Non, jamais à moins de 100 mètres",
+      "Oui, toujours",
+      "Il faut rester très prudent : il est interdit de dépasser un véhicule qui ralentit ou s'arrête devant le passage",
+      "Oui, en klaxonnant"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Si le véhicule devant ralentit ou s'arrête près d'un passage pour piétons, c'est peut-être pour laisser passer un piéton que tu ne vois pas.",
+    "pourquoiFaux": {
+      "Oui, toujours": "Un piéton peut être caché par le véhicule devant.",
+      "Non, jamais à moins de 100 mètres": "Il n'y a pas de distance fixe : c'est le véhicule qui ralentit qui compte.",
+      "Oui, en klaxonnant": "Le klaxon ne rend pas la manœuvre sûre."
+    }
   }
 ]

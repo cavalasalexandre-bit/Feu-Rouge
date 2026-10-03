@@ -416,5 +416,309 @@
       "L'état de la route": "Une route mouillée ou glissante allonge le freinage.",
       "La vitesse": "La vitesse est le facteur principal du freinage."
     }
+  },
+  {
+    "id": "dis-023",
+    "theme": "distances",
+    "question": "Quelle est la distance de réaction à 30 km/h ?",
+    "choix": [
+      "6 mètres",
+      "13,5 mètres",
+      "9 mètres",
+      "4,5 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Distance de réaction = dizaines × 3. À 30 km/h : 3 × 3 = 9 m.",
+    "pourquoiFaux": {
+      "4,5 mètres": "4,5 m, c'est la distance de freinage sur sol sec à 30 km/h.",
+      "13,5 mètres": "13,5 m, c'est la distance d'arrêt à 30 km/h.",
+      "6 mètres": "6 m : tu as multiplié par 2 au lieu de 3."
+    }
+  },
+  {
+    "id": "dis-024",
+    "theme": "distances",
+    "question": "Quelle est la distance de réaction à 70 km/h ?",
+    "choix": [
+      "35 mètres",
+      "14 mètres",
+      "24,5 mètres",
+      "21 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "7 × 3 = 21 m.",
+    "pourquoiFaux": {
+      "24,5 mètres": "24,5 m, c'est la distance de freinage sur sol sec à 70 km/h.",
+      "35 mètres": "35 m, c'est la distance de sécurité à 70 km/h (vitesse ÷ 2).",
+      "14 mètres": "14 m : tu as multiplié par 2 au lieu de 3."
+    }
+  },
+  {
+    "id": "dis-025",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 30 km/h ?",
+    "choix": [
+      "13,5 mètres",
+      "3 mètres",
+      "4,5 mètres",
+      "9 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "(3 × 3) ÷ 2 = 4,5 m.",
+    "pourquoiFaux": {
+      "9 mètres": "9 m, c'est la distance de réaction à 30 km/h, ou 3 × 3 sans diviser par 2.",
+      "13,5 mètres": "13,5 m, c'est la distance d'arrêt (9 + 4,5).",
+      "3 mètres": "3 m ne correspond à aucune formule."
+    }
+  },
+  {
+    "id": "dis-026",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 70 km/h ?",
+    "choix": [
+      "49 mètres",
+      "45,5 mètres",
+      "24,5 mètres",
+      "21 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "(7 × 7) ÷ 2 = 24,5 m.",
+    "pourquoiFaux": {
+      "21 mètres": "21 m, c'est la distance de réaction à 70 km/h.",
+      "49 mètres": "49 m : tu as oublié de diviser 7 × 7 par 2.",
+      "45,5 mètres": "45,5 m, c'est la distance d'arrêt (21 + 24,5)."
+    }
+  },
+  {
+    "id": "dis-027",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 100 km/h ?",
+    "choix": [
+      "30 mètres",
+      "50 mètres",
+      "100 mètres",
+      "80 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "(10 × 10) ÷ 2 = 50 m.",
+    "pourquoiFaux": {
+      "30 mètres": "30 m, c'est la distance de réaction à 100 km/h.",
+      "100 mètres": "100 m : tu as oublié de diviser 10 × 10 par 2.",
+      "80 mètres": "80 m, c'est la distance d'arrêt (30 + 50)."
+    }
+  },
+  {
+    "id": "dis-028",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol sec à 70 km/h ?",
+    "choix": [
+      "45,5 mètres",
+      "70 mètres",
+      "24,5 mètres",
+      "21 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Réaction : 21 m. Freinage : 24,5 m. Arrêt : 45,5 m.",
+    "pourquoiFaux": {
+      "24,5 mètres": "24,5 m, c'est le freinage seul : il manque la réaction.",
+      "21 mètres": "21 m, c'est la réaction seule : il manque le freinage.",
+      "70 mètres": "70 m est beaucoup trop : 21 + 24,5 = 45,5 m."
+    }
+  },
+  {
+    "id": "dis-029",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol sec à 30 km/h ?",
+    "choix": [
+      "4,5 mètres",
+      "30 mètres",
+      "9 mètres",
+      "13,5 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Réaction : 9 m. Freinage : 4,5 m. Arrêt : 13,5 m.",
+    "pourquoiFaux": {
+      "9 mètres": "9 m, c'est la réaction seule.",
+      "4,5 mètres": "4,5 m, c'est le freinage seul.",
+      "30 mètres": "30 m est beaucoup trop : 9 + 4,5 = 13,5 m."
+    }
+  },
+  {
+    "id": "dis-030",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol mouillé à 90 km/h ?",
+    "choix": [
+      "67,5 mètres",
+      "87,75 mètres",
+      "101,25 mètres",
+      "60,75 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Réaction : 27 m. Freinage mouillé : 40,5 × 1,5 = 60,75 m. Arrêt : 27 + 60,75 = 87,75 m.",
+    "pourquoiFaux": {
+      "67,5 mètres": "67,5 m, c'est l'arrêt sur sol sec.",
+      "60,75 mètres": "60,75 m, c'est le freinage mouillé seul : il manque la réaction.",
+      "101,25 mètres": "101,25 m : tu as multiplié toute la distance d'arrêt par 1,5. Seul le freinage est multiplié."
+    }
+  },
+  {
+    "id": "dis-031",
+    "theme": "distances",
+    "question": "Avec la formule simplifiée (dizaines × dizaines), quelle est la distance d'arrêt sur sol sec à 70 km/h ?",
+    "choix": [
+      "Environ 24,5 mètres",
+      "Environ 70 mètres",
+      "Environ 21 mètres",
+      "Environ 49 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Formule simplifiée : 7 × 7 = 49 m, une approximation de la distance d'arrêt (le calcul détaillé donne 45,5 m).",
+    "pourquoiFaux": {
+      "Environ 24,5 mètres": "24,5 m, c'est le freinage seul avec la formule détaillée.",
+      "Environ 70 mètres": "70 m : tu as pris la vitesse au lieu de 7 × 7.",
+      "Environ 21 mètres": "21 m, c'est la distance de réaction."
+    }
+  },
+  {
+    "id": "dis-032",
+    "theme": "distances",
+    "question": "À 50 km/h, quelle distance de sécurité minimale dois-tu garder environ ?",
+    "choix": [
+      "25 mètres",
+      "5 mètres",
+      "50 mètres",
+      "15 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Vitesse ÷ 2 : 50 ÷ 2 = 25 m, soit environ 2 secondes.",
+    "pourquoiFaux": {
+      "15 mètres": "15 m, c'est la distance de réaction à 50 km/h, trop courte pour suivre.",
+      "50 mètres": "50 m : tu as pris la vitesse sans la diviser par 2.",
+      "5 mètres": "5 m est beaucoup trop court."
+    }
+  },
+  {
+    "id": "dis-033",
+    "theme": "distances",
+    "question": "Sur route mouillée, ta distance de sécurité avec le véhicule devant doit être :",
+    "choix": [
+      "Plus petite, car tout le monde roule moins vite",
+      "Sans importance si ta voiture a l'ABS",
+      "La même que sur route sèche",
+      "Plus grande que sur route sèche"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le freinage s'allonge sur sol mouillé : on augmente la distance de sécurité, par exemple en comptant 3 secondes au lieu de 2.",
+    "pourquoiFaux": {
+      "La même que sur route sèche": "Sur route mouillée, tu freines sur une plus longue distance : il faut plus de marge.",
+      "Plus petite, car tout le monde roule moins vite": "Rien ne garantit que tout le monde ralentit : garde plus de marge.",
+      "Sans importance si ta voiture a l'ABS": "L'ABS aide à garder la direction, il ne supprime pas l'allongement du freinage."
+    }
+  },
+  {
+    "id": "dis-034",
+    "theme": "distances",
+    "question": "Tu passes de 50 à 70 km/h. Ta distance de freinage sur sol sec passe de 12,5 m à :",
+    "choix": [
+      "14 mètres",
+      "17,5 mètres",
+      "49 mètres",
+      "24,5 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "(7 × 7) ÷ 2 = 24,5 m : 20 km/h de plus, et la distance de freinage double presque.",
+    "pourquoiFaux": {
+      "17,5 mètres": "17,5 m : la distance de freinage n'augmente pas comme la vitesse, mais comme son carré.",
+      "14 mètres": "14 m sous-estime fortement l'effet de la vitesse.",
+      "49 mètres": "49 m : tu as oublié de diviser 7 × 7 par 2."
+    }
+  },
+  {
+    "id": "dis-035",
+    "theme": "distances",
+    "question": "Tu quittes la route des yeux 2 secondes pour regarder ton GSM à 90 km/h. Quelle distance parcours-tu sans regarder ?",
+    "choix": [
+      "Environ 27 mètres",
+      "Environ 90 mètres",
+      "Environ 18 mètres",
+      "Environ 54 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "À 90 km/h, on parcourt environ 27 m par seconde (9 × 3). En 2 secondes : environ 54 m sans regarder la route.",
+    "pourquoiFaux": {
+      "Environ 27 mètres": "27 m, c'est la distance parcourue en 1 seconde à 90 km/h.",
+      "Environ 18 mètres": "18 m sous-estime fortement la distance.",
+      "Environ 90 mètres": "90 m correspondrait à plus de 3 secondes."
+    }
+  },
+  {
+    "id": "dis-036",
+    "theme": "distances",
+    "question": "Un camion chargé freine-t-il sur une distance plus courte qu'une voiture ?",
+    "choix": [
+      "C'est exactement la même distance",
+      "Non, il lui faut en général une distance plus longue",
+      "Oui, grâce à ses nombreuses roues",
+      "Oui, il est plus lourd donc plus stable"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Un poids lourd a besoin de plus de distance pour s'arrêter : ne te rabats jamais juste devant lui.",
+    "pourquoiFaux": {
+      "Oui, il est plus lourd donc plus stable": "Plus le véhicule est lourd, plus il lui faut de distance pour s'arrêter.",
+      "C'est exactement la même distance": "Le poids et les freins d'un camion allongent le freinage.",
+      "Oui, grâce à ses nombreuses roues": "Le nombre de roues ne compense pas le poids."
+    }
+  },
+  {
+    "id": "dis-037",
+    "theme": "distances",
+    "question": "En descente, la distance de freinage :",
+    "choix": [
+      "Ne change pas",
+      "Augmente",
+      "Diminue",
+      "Dépend seulement des pneus"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En descente, le poids du véhicule l'entraîne vers l'avant : le freinage s'allonge. Ralentis avant la descente.",
+    "pourquoiFaux": {
+      "Diminue": "La pente pousse le véhicule vers l'avant : il faut plus de distance pour s'arrêter.",
+      "Ne change pas": "La pente influence bien le freinage.",
+      "Dépend seulement des pneus": "Les pneus comptent, mais la pente aussi."
+    }
+  },
+  {
+    "id": "dis-038",
+    "theme": "distances",
+    "question": "Comment vérifier que tu respectes la règle des 2 secondes ?",
+    "choix": [
+      "Quand le véhicule devant passe un repère fixe, tu comptes ; tu ne dois pas atteindre le repère avant 2 secondes",
+      "Je regarde mon compteur",
+      "Je compte deux longueurs de voiture",
+      "Je me fie à mes feux"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Choisis un repère (panneau, poteau). Quand l'arrière du véhicule devant le passe, compte « un-et-deux ». Si tu l'atteins avant, tu es trop près.",
+    "pourquoiFaux": {
+      "Je compte deux longueurs de voiture": "En longueurs de voiture, la distance ne s'adapte pas à la vitesse.",
+      "Je regarde mon compteur": "Le compteur indique ta vitesse, pas ton écart avec le véhicule devant.",
+      "Je me fie à mes feux": "Les feux n'indiquent pas la distance avec le véhicule devant."
+    }
   }
 ]

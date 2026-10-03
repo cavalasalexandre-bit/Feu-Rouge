@@ -28,3 +28,13 @@ Premier contrôle **4 ans** après la première immatriculation.
 
 - Voyant **rouge** (huile, freins, température) : s'arrêter dès que possible en sécurité.
 - **ABS** : empêche le blocage des roues pour garder la direction pendant un freinage d'urgence.
+
+## Encore
+
+- **Pneus d'hiver** : conseillés, pas obligatoires en Belgique. Chaînes seulement sur neige ou verglas.
+- Même type de pneus sur un même essieu.
+- Enfant de **moins de 3 ans** : toujours dans un siège adapté. Dans un **taxi**, un enfant sans siège voyage à l'arrière.
+- Au-dessus de **1,35 m** : ceinture normale.
+- Voyant **ABS orange** : les freins fonctionnent, mais sans ABS. Faire réparer.
+- Moteur chaud : ne pas ouvrir le bouchon du liquide de refroidissement.
+- Vue arrière bouchée par le chargement : deux rétroviseurs extérieurs.

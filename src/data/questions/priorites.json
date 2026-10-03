@@ -452,5 +452,336 @@
       "type": "panneau",
       "code": "B11"
     }
+  },
+  {
+    "id": "pri-023",
+    "theme": "priorites",
+    "question": "En zone résidentielle, des enfants jouent sur la chaussée. Que fais-tu ?",
+    "choix": [
+      "Je passe à 30 km/h",
+      "Je roule très lentement et je m'arrête si nécessaire : ils ont le droit d'y jouer",
+      "Je les contourne sans ralentir",
+      "Je klaxonne pour qu'ils dégagent"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En zone résidentielle ou de rencontre, les piétons peuvent utiliser toute la largeur de la voie et les jeux y sont permis.",
+    "pourquoiFaux": {
+      "Je klaxonne pour qu'ils dégagent": "En zone résidentielle, les jeux sont permis sur toute la voie publique.",
+      "Je passe à 30 km/h": "La limite y est de 20 km/h et tu ne dois mettre personne en danger.",
+      "Je les contourne sans ralentir": "Tu dois ralentir et t'arrêter au besoin."
+    }
+  },
+  {
+    "id": "pri-024",
+    "theme": "priorites",
+    "question": "À un carrefour sans signalisation, un cycliste arrive par ta droite. Qui passe en premier ?",
+    "choix": [
+      "Le cycliste",
+      "Moi, s'il roule sur la chaussée",
+      "Moi, une voiture est prioritaire sur un vélo",
+      "Celui qui roule le plus vite"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "La priorité de droite vaut aussi pour les cyclistes.",
+    "pourquoiFaux": {
+      "Moi, une voiture est prioritaire sur un vélo": "La priorité de droite s'applique à tous les véhicules, vélos compris.",
+      "Celui qui roule le plus vite": "La vitesse ne donne jamais la priorité.",
+      "Moi, s'il roule sur la chaussée": "Il est sur la chaussée, il a donc la priorité de droite."
+    }
+  },
+  {
+    "id": "pri-025",
+    "theme": "priorites",
+    "question": "Ton feu est vert, mais le carrefour est encombré et tu risques d'y rester bloqué. Que fais-tu ?",
+    "choix": [
+      "J'attends avant le carrefour",
+      "Je m'engage et j'allume mes feux de détresse",
+      "Je klaxonne pour faire avancer la file",
+      "Je m'engage, j'ai le vert"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "On ne s'engage pas dans un carrefour si l'on risque d'y être immobilisé et de gêner la circulation transversale.",
+    "pourquoiFaux": {
+      "Je m'engage, j'ai le vert": "Le vert ne permet pas de bloquer le carrefour.",
+      "Je m'engage et j'allume mes feux de détresse": "Les feux de détresse ne rendent pas la manœuvre permise.",
+      "Je klaxonne pour faire avancer la file": "Klaxonner ne libère pas le carrefour."
+    }
+  },
+  {
+    "id": "pri-026",
+    "theme": "priorites",
+    "question": "Un piéton avec une canne blanche traverse la chaussée devant toi, hors passage pour piétons. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête et je le laisse traverser",
+      "Je passe, il n'est pas sur un passage",
+      "Je le contourne prudemment",
+      "Je klaxonne pour le prévenir"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le conducteur doit prendre toutes les précautions pour laisser passer un piéton aveugle ou malvoyant.",
+    "pourquoiFaux": {
+      "Je klaxonne pour le prévenir": "Le klaxon risque de l'effrayer et de le désorienter.",
+      "Je le contourne prudemment": "Contourner un piéton aveugle est dangereux : arrête-toi.",
+      "Je passe, il n'est pas sur un passage": "La sécurité des piétons aveugles ou malvoyants passe avant tout."
+    }
+  },
+  {
+    "id": "pri-027",
+    "theme": "priorites",
+    "question": "Tu sors d'un parking et tu dois traverser une piste cyclable pour rejoindre la route. Un cycliste arrive. Que fais-tu ?",
+    "choix": [
+      "Je klaxonne et je passe",
+      "Je passe : je suis une voiture",
+      "Je passe s'il vient de gauche",
+      "Je lui cède le passage"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Celui qui sort d'un lieu non ouvert à la circulation cède le passage à tous, y compris aux cyclistes sur la piste.",
+    "pourquoiFaux": {
+      "Je passe : je suis une voiture": "En sortant d'un parking, tu cèdes à tous les usagers, cyclistes compris.",
+      "Je passe s'il vient de gauche": "Le côté d'où il vient ne change rien.",
+      "Je klaxonne et je passe": "Klaxonner ne donne aucune priorité."
+    }
+  },
+  {
+    "id": "pri-028",
+    "theme": "priorites",
+    "question": "Un véhicule en stationnement bloque ta moitié de chaussée et une voiture arrive en face. Que fais-tu ?",
+    "choix": [
+      "Je klaxonne pour qu'elle s'arrête",
+      "Je la laisse passer avant de contourner l'obstacle",
+      "Je passe, je viens de sa droite",
+      "Je passe, j'étais là le premier"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le conducteur qui a un obstacle sur sa partie de chaussée laisse passer ceux qui arrivent en sens inverse.",
+    "pourquoiFaux": {
+      "Je passe, j'étais là le premier": "La règle du premier arrivé n'existe pas.",
+      "Je passe, je viens de sa droite": "La priorité de droite ne concerne pas ce cas.",
+      "Je klaxonne pour qu'elle s'arrête": "C'est à toi de céder, l'obstacle est de ton côté."
+    }
+  },
+  {
+    "id": "pri-029",
+    "theme": "priorites",
+    "question": "Un agent tend les bras horizontalement. Pour qui ce geste signifie-t-il l'arrêt ?",
+    "choix": [
+      "Pour personne : il invite à passer",
+      "Pour les usagers qui arrivent de face ou de dos",
+      "Pour tous les usagers",
+      "Pour ceux qui arrivent sur ses côtés"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Bras tendus horizontalement : arrêt pour ceux qui arrivent face à l'agent ou dans son dos.",
+    "pourquoiFaux": {
+      "Pour tous les usagers": "C'est le bras levé verticalement qui arrête tout le monde.",
+      "Pour ceux qui arrivent sur ses côtés": "Ceux qui arrivent sur ses côtés, dans l'axe de ses bras, peuvent passer.",
+      "Pour personne : il invite à passer": "Le geste arrête bien certains usagers."
+    }
+  },
+  {
+    "id": "pri-030",
+    "theme": "priorites",
+    "question": "Un feu orange clignote et tu circules sur une route signalée par un losange jaune. Qui est prioritaire ?",
+    "choix": [
+      "Ceux qui viennent de droite",
+      "Personne, tout le monde s'arrête",
+      "Le premier arrivé",
+      "Moi, la route à priorité s'applique"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Avec un feu orange clignotant, on applique les panneaux de priorité. Le losange jaune te donne la priorité.",
+    "pourquoiFaux": {
+      "Ceux qui viennent de droite": "Avec l'orange clignotant, ce sont les panneaux qui comptent : ici, tu es sur la route prioritaire.",
+      "Personne, tout le monde s'arrête": "L'orange clignotant n'impose pas l'arrêt.",
+      "Le premier arrivé": "La règle du premier arrivé n'existe pas."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "B9"
+    }
+  },
+  {
+    "id": "pri-031",
+    "theme": "priorites",
+    "question": "Un feu vert et un panneau « cédez le passage » sont placés au même endroit. Lequel suis-tu ?",
+    "choix": [
+      "Le feu",
+      "Aucun, j'applique la priorité de droite",
+      "Le panneau",
+      "Celui qui est le plus haut"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Ordre : agent, puis feux, puis panneaux, puis règles générales. Le panneau sert quand les feux sont éteints ou clignotent.",
+    "pourquoiFaux": {
+      "Le panneau": "Les feux priment sur les panneaux de priorité.",
+      "Celui qui est le plus haut": "La position ne compte pas : les feux priment.",
+      "Aucun, j'applique la priorité de droite": "La priorité de droite ne s'applique qu'en dernier recours."
+    }
+  },
+  {
+    "id": "pri-032",
+    "theme": "priorites",
+    "question": "Une voiture de police roule avec ses feux bleus clignotants, mais sans sirène. Est-elle prioritaire ?",
+    "choix": [
+      "Non, et je peux l'ignorer",
+      "Oui, comme avec la sirène",
+      "Non, mais elle signale un danger : je redouble de prudence",
+      "Oui, seulement la nuit"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "La priorité des véhicules d'urgence vaut quand ils utilisent à la fois les feux bleus clignotants et la sirène.",
+    "pourquoiFaux": {
+      "Oui, comme avec la sirène": "Pour être prioritaire, un véhicule utilise ses feux bleus et son avertisseur spécial.",
+      "Oui, seulement la nuit": "La règle est la même de jour comme de nuit.",
+      "Non, et je peux l'ignorer": "Les feux bleus signalent un danger ou une intervention : sois prudent."
+    }
+  },
+  {
+    "id": "pri-033",
+    "theme": "priorites",
+    "question": "Feu vert, tu tournes à droite. Des piétons traversent au vert la rue dans laquelle tu t'engages. Que fais-tu ?",
+    "choix": [
+      "Je klaxonne pour qu'ils se pressent",
+      "Je passe, j'ai aussi le vert",
+      "Je passe juste derrière le premier piéton",
+      "Je les laisse traverser"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Le conducteur qui change de direction cède le passage aux piétons et aux cyclistes qui traversent la voie qu'il va emprunter.",
+    "pourquoiFaux": {
+      "Je passe, j'ai aussi le vert": "En tournant, tu cèdes le passage aux piétons qui traversent.",
+      "Je klaxonne pour qu'ils se pressent": "Klaxonner pour faire presser des piétons est interdit.",
+      "Je passe juste derrière le premier piéton": "Tu attends qu'ils aient traversé en sécurité."
+    }
+  },
+  {
+    "id": "pri-034",
+    "theme": "priorites",
+    "question": "Tu roules sur une route asphaltée. Un tracteur sort d'un chemin de terre à ta droite. Qui doit céder le passage ?",
+    "choix": [
+      "Moi, il vient de ma droite",
+      "Le plus lent",
+      "Le plus grand véhicule",
+      "Le tracteur, même s'il vient de droite"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Sortir d'un chemin de terre ou d'un sentier oblige à céder le passage. Reste prudent : il peut ne pas t'avoir vu.",
+    "pourquoiFaux": {
+      "Moi, il vient de ma droite": "Celui qui sort d'un chemin de terre doit céder à tous.",
+      "Le plus lent": "La vitesse ne décide pas de la priorité.",
+      "Le plus grand véhicule": "La taille ne donne aucune priorité."
+    }
+  },
+  {
+    "id": "pri-035",
+    "theme": "priorites",
+    "question": "Un tram s'arrête à un arrêt sans refuge pour piétons : les voyageurs descendent sur la chaussée. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête pour laisser monter et descendre les voyageurs",
+      "Je le dépasse par la droite prudemment",
+      "Je passe lentement entre les voyageurs",
+      "Je klaxonne pour prévenir les voyageurs"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Quand un tram est arrêté sans refuge, les conducteurs s'arrêtent pour laisser les voyageurs monter et descendre.",
+    "pourquoiFaux": {
+      "Je le dépasse par la droite prudemment": "Les voyageurs traversent ta voie : tu dois t'arrêter.",
+      "Je klaxonne pour prévenir les voyageurs": "Tu dois les laisser passer, pas les presser.",
+      "Je passe lentement entre les voyageurs": "C'est dangereux : arrête-toi."
+    }
+  },
+  {
+    "id": "pri-036",
+    "theme": "priorites",
+    "question": "Ton feu est rouge, mais un agent te fait signe de passer. Que fais-tu ?",
+    "choix": [
+      "J'attends le vert",
+      "Je passe en suivant l'indication de l'agent",
+      "Je passe seulement si personne n'arrive",
+      "Je klaxonne pour confirmer"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Les injonctions d'un agent qualifié priment sur les feux et les panneaux.",
+    "pourquoiFaux": {
+      "J'attends le vert": "Les signes de l'agent priment sur les feux.",
+      "Je passe seulement si personne n'arrive": "C'est l'agent qui règle la circulation à ce moment-là.",
+      "Je klaxonne pour confirmer": "Klaxonner n'est pas nécessaire."
+    }
+  },
+  {
+    "id": "pri-037",
+    "theme": "priorites",
+    "question": "À un carrefour sans signalisation, une voiture arrive par ta gauche. Que fais-tu ?",
+    "choix": [
+      "Je passe, je suis prioritaire, mais je reste prudent",
+      "Je m'arrête et j'attends qu'elle me fasse signe",
+      "Je klaxonne avant de passer",
+      "Je lui cède le passage"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Avec la priorité de droite, c'est celui qui vient de gauche qui cède. Mais vérifie qu'il s'arrête bien.",
+    "pourquoiFaux": {
+      "Je lui cède le passage": "Elle vient de ta gauche : c'est elle qui doit te céder.",
+      "Je m'arrête et j'attends qu'elle me fasse signe": "Tu es prioritaire, mais garde un œil sur elle.",
+      "Je klaxonne avant de passer": "Le klaxon n'est pas nécessaire."
+    }
+  },
+  {
+    "id": "pri-038",
+    "theme": "priorites",
+    "question": "Que signifie un panneau rond avec une flèche rouge vers le haut et une flèche noire vers le bas, devant un rétrécissement ?",
+    "choix": [
+      "Circulation dans les deux sens sans règle",
+      "Sens interdit",
+      "Je dois céder le passage aux véhicules qui arrivent en face",
+      "Je suis prioritaire sur ceux qui arrivent en face"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Au passage étroit, le panneau rond à bord rouge t'oblige à céder ; le panneau rectangulaire bleu te donne la priorité.",
+    "pourquoiFaux": {
+      "Je suis prioritaire sur ceux qui arrivent en face": "C'est le panneau rectangulaire bleu qui donne cette priorité.",
+      "Sens interdit": "Le sens interdit est un rond rouge avec une barre blanche.",
+      "Circulation dans les deux sens sans règle": "Le panneau fixe justement qui doit céder."
+    }
+  },
+  {
+    "id": "pri-039",
+    "theme": "priorites",
+    "question": "Tu veux entrer dans un rond-point signalé. Un cycliste y circule déjà et arrive vers toi. Que fais-tu ?",
+    "choix": [
+      "J'entre s'il roule lentement",
+      "Je le laisse passer avant d'entrer",
+      "J'entre, une voiture passe avant un vélo",
+      "Je klaxonne pour qu'il s'arrête"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "À l'entrée d'un rond-point signalé, on cède le passage à tous les usagers qui y circulent.",
+    "pourquoiFaux": {
+      "J'entre, une voiture passe avant un vélo": "Dans un rond-point signalé, tu cèdes à tous ceux qui y circulent, cyclistes compris.",
+      "J'entre s'il roule lentement": "Sa vitesse ne change rien : il est prioritaire.",
+      "Je klaxonne pour qu'il s'arrête": "Klaxonner ne donne aucun droit."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "D5"
+    }
   }
 ]

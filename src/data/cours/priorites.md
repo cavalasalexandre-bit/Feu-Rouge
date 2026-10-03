@@ -48,3 +48,14 @@ Sans aucune signalisation, tu cèdes le passage à celui qui vient de **ta droit
 Agent bras levé verticalement : **arrêt pour tous**, sauf ceux déjà engagés dans le carrefour.
 
 > Presque toutes les questions de priorité sont des **fautes graves**.
+
+## Encore quelques cas
+
+- **Zone résidentielle** : les jeux sont permis sur la chaussée, on roule au pas si nécessaire.
+- **Feu vert mais carrefour encombré** : on ne s'engage pas si l'on risque de rester bloqué.
+- **Obstacle de ton côté** : tu laisses passer ceux qui arrivent en face.
+- **Passage étroit** : panneau rond à bord rouge (flèche rouge vers le haut) = tu cèdes ; panneau carré bleu = tu es prioritaire.
+- **Agent bras tendus horizontalement** : arrêt pour ceux qui arrivent de face ou de dos.
+- **Feux bleus sans sirène** : pas de priorité, mais prudence.
+- **Tram arrêté sans refuge** : on s'arrête pour laisser monter et descendre les voyageurs.
+- **Piéton avec une canne blanche** : on s'arrête et on le laisse traverser.

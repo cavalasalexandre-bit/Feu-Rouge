@@ -36,3 +36,16 @@ Seulement si la visibilité tombe sous **100 m** à cause du brouillard, de la n
 ## Témoins au tableau de bord
 
 Vert = feux de croisement · **Bleu = feux de route** · Orange = brouillard arrière.
+
+## Autres feux
+
+| Feu | Rôle |
+|---|---|
+| Feux stop (rouges, plus forts) | Signalent le freinage |
+| Feu de recul (blanc) | Signale la marche arrière |
+| Feux de détresse | Véhicule immobilisé dangereux, fin de bouchon soudaine |
+| Feux de brouillard avant | Brouillard, neige, forte pluie |
+
+- **Vélo la nuit** : feu blanc ou jaune à l'avant, rouge à l'arrière.
+- Voiture très chargée : régler la **hauteur des phares** pour ne pas éblouir.
+- Ébloui par un conducteur en face : bref appel de phares permis, puis ralentir et regarder le bord droit.

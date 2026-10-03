@@ -1,4 +1,5 @@
-import type { Question, ThemeId } from '../types'
+import type { CreditPhoto, Question, ThemeId } from '../types'
+import photos from './photos.json'
 import { THEMES } from './themes'
 
 // Chaque thème a son fichier JSON dans ./questions. Ajouter une question = ajouter une entrée au fichier.
@@ -19,3 +20,6 @@ export function coursDuTheme(theme: ThemeId): string | undefined {
 }
 
 export const ORDRE_THEMES: ThemeId[] = THEMES.map((t) => t.id)
+
+/** Photos réelles (Wikimedia Commons, Mapillary) avec leurs crédits, par identifiant de question. */
+export const PHOTOS: Record<string, CreditPhoto> = photos

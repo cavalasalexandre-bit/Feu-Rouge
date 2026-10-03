@@ -4,6 +4,7 @@ import { THEME_PAR_ID } from '../data/themes'
 import { BOITE_MAITRISE, questionsAReviser } from '../lib/adaptive'
 import { useStore } from '../lib/store'
 import { Icone } from '../components/Icone'
+import { Signaler } from '../components/Signaler'
 
 export function Erreurs() {
   const { state } = useStore()
@@ -65,6 +66,7 @@ export function Erreurs() {
                     <Icone nom="livre" taille={18} />
                     Revoir la fiche « {THEME_PAR_ID[q.theme].court} »
                   </Link>
+                  <Signaler question={q} />
                 </article>
               )
             })}

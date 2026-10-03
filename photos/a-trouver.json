@@ -1,0 +1,71 @@
+{
+  "_aide": "Questions pour lesquelles on cherche une vraie photo. 'besoin' décrit ce que la photo doit montrer. Les sources Wikimedia (catégories, recherches) et Mapillary (panneaux détectés dans des zones) servent à trouver des candidates. Ajoute des questions ici pour étendre les photos.",
+  "zonesMapillary": {
+    "mons": [3.93, 50.44, 3.97, 50.47],
+    "namur": [4.84, 50.45, 4.88, 50.48],
+    "bruxelles": [4.33, 50.83, 4.38, 50.86],
+    "liege": [5.55, 50.62, 5.59, 50.65]
+  },
+  "questions": [
+    {
+      "question": "pri-002",
+      "besoin": "Panneau « cédez le passage » (triangle pointe en bas) à l'approche d'un carrefour, vu depuis la route",
+      "wikimedia": { "categories": ["Category:B1 (road sign, Belgium)"], "recherches": ["Belgium yield sign road", "cédez le passage Belgique carrefour"] },
+      "mapillary": { "panneaux": ["regulatory--yield--g1"] }
+    },
+    {
+      "question": "pri-003",
+      "besoin": "Panneau STOP au bord d'une route, avec la ligne d'arrêt si possible",
+      "wikimedia": { "categories": ["Category:B5 (road sign, Belgium)"], "recherches": ["Belgium stop sign road"] },
+      "mapillary": { "panneaux": ["regulatory--stop--g1"] }
+    },
+    {
+      "question": "pri-004",
+      "besoin": "Panneau de route à priorité (losange jaune bordé de blanc) le long d'une route",
+      "wikimedia": { "categories": ["Category:B9 (road sign, Belgium)"], "recherches": ["Belgium priority road sign"] },
+      "mapillary": { "panneaux": ["regulatory--priority-road--g4", "information--priority-road--g1"] }
+    },
+    {
+      "question": "pri-011",
+      "besoin": "Entrée d'un rond-point vue du siège conducteur, avec le panneau rond bleu à flèches et le triangle cédez le passage",
+      "wikimedia": { "categories": ["Category:Roundabouts in Belgium", "Category:D5 (road sign, Belgium)"], "recherches": ["Belgium roundabout entrance sign"] },
+      "mapillary": { "panneaux": ["regulatory--roundabout--g1"] }
+    },
+    {
+      "question": "sig-007",
+      "besoin": "Route à deux sens séparés par une ligne blanche continue, vue du siège conducteur",
+      "wikimedia": { "categories": [], "recherches": ["Belgium road continuous white line", "route ligne blanche continue Belgique"] },
+      "mapillary": { "panneaux": [] }
+    },
+    {
+      "question": "sig-012",
+      "besoin": "Passage à niveau belge avec feux rouges et barrières, vu depuis la route",
+      "wikimedia": { "categories": ["Category:Level crossings in Belgium"], "recherches": ["Belgische overweg", "passage à niveau Belgique"] },
+      "mapillary": { "panneaux": ["warning--railroad-crossing-with-barriers--g1", "warning--railroad-crossing--g1"] }
+    },
+    {
+      "question": "sig-030",
+      "besoin": "Panneau rond bleu avec un vélo blanc (piste cyclable obligatoire) au début d'une piste",
+      "wikimedia": { "categories": ["Category:D7 (road sign, Belgium)"], "recherches": ["Belgium cycle path sign D7"] },
+      "mapillary": { "panneaux": ["regulatory--bicycles-only--g1"] }
+    },
+    {
+      "question": "vit-008",
+      "besoin": "Panneau d'entrée de « zone 30 » dans une rue belge",
+      "wikimedia": { "categories": ["Category:F4a (road sign, Belgium)"], "recherches": ["zone 30 Belgique panneau rue"] },
+      "mapillary": { "panneaux": ["regulatory--maximum-speed-limit-zone-30--g1", "regulatory--maximum-speed-limit-30--g1"] }
+    },
+    {
+      "question": "vit-009",
+      "besoin": "Panneau de zone résidentielle ou de rencontre (rectangle bleu avec maison, personnes et voiture) à l'entrée d'une rue",
+      "wikimedia": { "categories": ["Category:F12a (road sign, Belgium)"], "recherches": ["woonerf België bord", "zone résidentielle Belgique panneau"] },
+      "mapillary": { "panneaux": ["information--living-street--g1"] }
+    },
+    {
+      "question": "aut-002",
+      "besoin": "Bande d'accélération d'une autoroute belge vue du siège conducteur, avec des véhicules sur l'autoroute",
+      "wikimedia": { "categories": [], "recherches": ["Belgium motorway on-ramp acceleration lane", "autoroute Belgique bretelle d'accès"] },
+      "mapillary": { "panneaux": [] }
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import { Entrainement } from './pages/Entrainement'
 import { Examen } from './pages/Examen'
 import { Erreurs } from './pages/Erreurs'
 import { Reglages } from './pages/Reglages'
+import { Credits } from './pages/Credits'
 
 /** Recrée la page à chaque navigation, même vers la même adresse (ex. menu « Examen blanc » depuis un résultat). */
 function Neuf({ children }: { children: ReactNode }) {
@@ -35,6 +36,7 @@ export function App() {
             <Route path="examen" element={<Neuf><Examen /></Neuf>} />
             <Route path="erreurs" element={<Erreurs />} />
             <Route path="reglages" element={<Reglages />} />
+            <Route path="credits" element={<Credits />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

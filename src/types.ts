@@ -37,11 +37,20 @@ export interface Question {
   region?: Region
 }
 
+export interface Source {
+  titre: string
+  url: string
+}
+
 export interface ThemeInfo {
   id: ThemeId
   titre: string
   court: string
   description: string
+  /** Textes officiels ou fiables qui ont servi à rédiger le thème. */
+  sources: Source[]
+  /** Date de dernière vérification du contenu (AAAA-MM-JJ). */
+  verifieLe: string
 }
 
 /** Suivi d'une question pour la répétition espacée (système de Leitner). */
@@ -66,6 +75,11 @@ export interface ExamResult {
   parTheme: Partial<Record<ThemeId, { justes: number; total: number }>>
 }
 
+export type Apparence = 'sombre' | 'clair' | 'auto'
+
+/** officiel = lecture puis 15 s par question ; libre = chrono global (ou aucun). */
+export type FormatExamen = 'officiel' | 'libre'
+
 export interface Settings {
   region: Region
   /** Date d'examen au format AAAA-MM-JJ, ou null. */
@@ -76,6 +90,10 @@ export interface Settings {
   chronoMinutes: number
   /** Nombre de questions visé par jour dans le plan de révision. */
   objectifJour: number
+  apparence: Apparence
+  formatExamen: FormatExamen
+  /** Lecture des questions à voix haute (synthèse vocale du navigateur). */
+  lectureAudio: boolean
 }
 
 export interface AppState {
@@ -86,4 +104,16 @@ export interface AppState {
   positionnementFait: boolean
   /** Jours (AAAA-MM-JJ) → nombre de questions répondues. */
   activite: Record<string, number>
+  /** Badges déjà annoncés à l'utilisateur. */
+  badgesVus: string[]
+}
+
+/** Crédits d'une photo installée par « npm run photos:installer ». */
+export interface CreditPhoto {
+  fichier: string
+  auteur: string
+  licence: string
+  lienLicence: string
+  lienSource: string
+  source: string
 }

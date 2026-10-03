@@ -36,3 +36,16 @@ Sortie ratée : continue jusqu'à la suivante.
 2. Gilet fluo **avant** de sortir.
 3. Triangle à **100 m** au moins (30 m ailleurs, visible à 50 m).
 4. Tout le monde sort côté droit et attend **derrière la glissière**.
+
+## Panneaux lumineux et cas particuliers
+
+| Signal au-dessus de la bande | Signification |
+|---|---|
+| Croix rouge | Bande fermée : la quitter |
+| Flèche verte | Bande ouverte |
+| Limite de vitesse | Obligatoire |
+
+- La bande d'arrêt d'urgence peut être ouverte au trafic **seulement si c'est signalé**.
+- Remorquage d'un véhicule en panne : quitter l'autoroute à la **première sortie**.
+- Sortie : se placer tôt à droite et ralentir sur la **bande de décélération**.
+- Malaise grave d'un passager : arrêt permis sur la bande d'arrêt d'urgence.

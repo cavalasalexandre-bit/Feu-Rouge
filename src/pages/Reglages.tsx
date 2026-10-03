@@ -2,13 +2,23 @@ import { useRef, useState } from 'react'
 import { THEMES, NOMS_REGIONS } from '../data/themes'
 import { etatInitial, exporter, importer, majReglages } from '../lib/storage'
 import { useStore } from '../lib/store'
-import type { Region, ThemeId } from '../types'
+import type { Apparence, FormatExamen, Region, ThemeId } from '../types'
 
 const REGIONS = Object.keys(NOMS_REGIONS) as Region[]
 const CHRONOS = [
   { v: 0, l: 'Sans chrono' },
   { v: 30, l: '30 min' },
   { v: 40, l: '40 min' },
+]
+
+const FORMATS: { v: FormatExamen; l: string }[] = [
+  { v: 'officiel', l: 'Officiel · 15 s par question' },
+  { v: 'libre', l: 'Libre' },
+]
+const APPARENCES: { v: Apparence; l: string }[] = [
+  { v: 'sombre', l: 'Sombre' },
+  { v: 'clair', l: 'Clair' },
+  { v: 'auto', l: 'Comme mon appareil' },
 ]
 
 export function Reglages() {
@@ -93,16 +103,60 @@ export function Reglages() {
           />
         </div>
 
+      </section>
+
+      <section className="panel stack">
+        <h2>Examen blanc</h2>
         <fieldset className="field">
-          <legend>Chrono de l'examen blanc</legend>
+          <legend>Format</legend>
           <div className="seg">
-            {CHRONOS.map((c) => (
-              <label key={c.v}>
-                <input type="radio" name="chrono" id={`chrono-${c.v}`} checked={s.chronoMinutes === c.v} onChange={() => update((st) => majReglages(st, { chronoMinutes: c.v }))} />
-                <span>{c.l}</span>
+            {FORMATS.map((f) => (
+              <label key={f.v}>
+                <input type="radio" name="format" id={`format-${f.v}`} checked={s.formatExamen === f.v} onChange={() => update((st) => majReglages(st, { formatExamen: f.v }))} />
+                <span>{f.l}</span>
               </label>
             ))}
           </div>
+          <p className="muted" style={{ fontSize: '0.9rem' }}>
+            {s.formatExamen === 'officiel'
+              ? 'Comme au centre d’examen : la question est lue, puis tu as 15 secondes pour répondre. Sans réponse, c’est une faute.'
+              : 'Format libre : un chrono global pour les 50 questions, ou pas de chrono du tout.'}
+          </p>
+        </fieldset>
+
+        {s.formatExamen === 'libre' && (
+          <fieldset className="field">
+            <legend>Chrono global</legend>
+            <div className="seg">
+              {CHRONOS.map((c) => (
+                <label key={c.v}>
+                  <input type="radio" name="chrono" id={`chrono-${c.v}`} checked={s.chronoMinutes === c.v} onChange={() => update((st) => majReglages(st, { chronoMinutes: c.v }))} />
+                  <span>{c.l}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        )}
+
+        <label className="check" style={{ alignSelf: 'flex-start' }}>
+          <input type="checkbox" id="lecture-audio" checked={s.lectureAudio} onChange={(e) => update((st) => majReglages(st, { lectureAudio: e.target.checked }))} />
+          Lire les questions à voix haute
+          <span className="muted" style={{ fontSize: '0.85rem' }}>(voix de ton appareil)</span>
+        </label>
+      </section>
+
+      <section className="panel stack">
+        <fieldset className="field">
+          <legend>Apparence</legend>
+          <div className="seg">
+            {APPARENCES.map((a) => (
+              <label key={a.v}>
+                <input type="radio" name="apparence" id={`apparence-${a.v}`} checked={s.apparence === a.v} onChange={() => update((st) => majReglages(st, { apparence: a.v }))} />
+                <span>{a.l}</span>
+              </label>
+            ))}
+          </div>
+          <p className="muted" style={{ fontSize: '0.9rem' }}>Le mode clair se lit mieux en plein soleil sur un téléphone.</p>
         </fieldset>
       </section>
 

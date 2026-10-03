@@ -17,6 +17,7 @@ export function Examen() {
   const [fin, setFin] = useState<FinSession | null>(null)
   const [essai, setEssai] = useState(0)
   const chrono = state.settings.chronoMinutes
+  const officiel = state.settings.formatExamen === 'officiel'
 
   function demarrer() {
     setQuestions(tirageExamen(QUESTIONS, state, mode))
@@ -44,7 +45,9 @@ export function Examen() {
         key={essai}
         questions={questions}
         mode="examen"
-        chronoMinutes={chrono}
+        chronoMinutes={officiel ? 0 : chrono}
+        secondesParQuestion={officiel ? 15 : 0}
+        lectureAuto={officiel && state.settings.lectureAudio}
         onTermine={(f) => {
           update((s) => enregistrerExamen(s, resultatExamen(f.reponses, f.dureeSec)))
           setFin(f)
@@ -91,14 +94,22 @@ export function Examen() {
                 </td>
               </tr>
               <tr>
-                <th>Chrono</th>
-                <td>{chrono > 0 ? `${chrono} minutes` : 'Désactivé'} (modifiable dans les réglages)</td>
+                <th>Temps</th>
+                <td>
+                  {officiel
+                    ? `Question lue${state.settings.lectureAudio ? ' à voix haute' : ''}, puis 15 secondes pour répondre (sans réponse = faute)`
+                    : chrono > 0
+                      ? `${chrono} minutes au total`
+                      : 'Sans chrono'}{' '}
+                  · modifiable dans les réglages
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="muted">
           Pas de retour en arrière, gravité des questions cachée, et l'épreuve s'arrête dès que 41/50 n'est plus atteignable.
+          {officiel && state.settings.lectureAudio && ' Monte le son ou mets des écouteurs.'}
         </p>
       </section>
 

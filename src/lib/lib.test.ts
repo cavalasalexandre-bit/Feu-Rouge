@@ -170,3 +170,26 @@ describe('sauvegarde', () => {
     expect(() => importer('{"version":9}')).toThrow(/version/)
   })
 })
+
+describe('motivation', async () => {
+  const { serieEnCours, meilleureSerie, badges, nouveauxBadges, marquerBadgesVus } = await import('./motivation')
+
+  it('série en cours, y compris si rien encore aujourd’hui', () => {
+    const act = { '2026-10-01': 5, '2026-10-02': 3, '2026-10-03': 1 }
+    expect(serieEnCours(act, new Date(2026, 9, 3, 12))).toBe(3)
+    expect(serieEnCours(act, new Date(2026, 9, 4, 12))).toBe(3)
+    expect(serieEnCours(act, new Date(2026, 9, 5, 12))).toBe(0)
+  })
+
+  it('meilleure série', () => {
+    expect(meilleureSerie({ '2026-09-01': 1, '2026-09-02': 1, '2026-09-10': 1, '2026-09-11': 1, '2026-09-12': 1 })).toBe(3)
+  })
+
+  it('badges obtenus et annoncés une seule fois', () => {
+    let st = { ...etatInitial(), positionnementFait: true }
+    expect(badges(banque(), st).find((b) => b.id === 'diagnostic')!.obtenu).toBe(true)
+    expect(nouveauxBadges(banque(), st).map((b) => b.id)).toContain('diagnostic')
+    st = marquerBadgesVus(st, ['diagnostic'])
+    expect(nouveauxBadges(banque(), st).map((b) => b.id)).not.toContain('diagnostic')
+  })
+})

@@ -7,6 +7,8 @@ import { Feu, niveauTheme, couleurNiveau } from '../components/Feu'
 import { Markdown } from '../components/Markdown'
 import type { ThemeId } from '../types'
 
+const DATE_LONGUE = new Intl.DateTimeFormat('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' })
+
 export function Cours() {
   const { state } = useStore()
   const maitrise = maitriseParTheme(QUESTIONS, state.stats)
@@ -74,6 +76,21 @@ export function CoursTheme() {
           {niv === null ? 'Pas encore évalué' : `Voyant ${['rouge', 'ambre', 'vert'][niv]} · ${Math.round((m?.precision ?? 0) * 100)} % de réussite`}
         </p>
         <Markdown source={source} />
+        <section className="sources" aria-label="Sources">
+          <p className="eyebrow">Sources · contenu vérifié le {DATE_LONGUE.format(new Date(info.verifieLe))}</p>
+          <ul>
+            {info.sources.map((src) => (
+              <li key={src.url}>
+                <a href={src.url} target="_blank" rel="noreferrer">
+                  {src.titre}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="muted" style={{ fontSize: '0.85rem' }}>
+            Une règle a changé ou une erreur s'est glissée ? Utilise « Signaler une erreur » sous les questions.
+          </p>
+        </section>
         <section className="row">
           <Link className="btn btn-primary" to={`/entrainement?themes=${info.id}&n=10`}>
             S'entraîner · {nb} questions

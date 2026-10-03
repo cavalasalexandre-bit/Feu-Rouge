@@ -310,5 +310,290 @@
       "Klaxonner": "Klaxonner n'est pas la règle : il faut regarder.",
       "Rien de particulier": "Il faut vérifier, sinon tu risques de renverser un cycliste."
     }
+  },
+  {
+    "id": "sta-017",
+    "theme": "stationnement",
+    "question": "Peux-tu stationner en double file, à côté de voitures déjà garées ?",
+    "choix": [
+      "Oui, si la rue est large",
+      "Oui, pour moins de 5 minutes",
+      "Non",
+      "Oui, avec les feux de détresse"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le stationnement en double file gêne la circulation et est interdit.",
+    "pourquoiFaux": {
+      "Oui, pour moins de 5 minutes": "Ce serait du stationnement, interdit en double file.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas le stationnement permis.",
+      "Oui, si la rue est large": "La largeur ne change rien."
+    }
+  },
+  {
+    "id": "sta-018",
+    "theme": "stationnement",
+    "question": "Peux-tu t'arrêter sur un passage pour cyclistes ?",
+    "choix": [
+      "Oui, la nuit",
+      "Oui, s'il n'y a pas de cycliste",
+      "Non",
+      "Oui, quelques secondes"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "L'arrêt et le stationnement sont interdits sur les passages pour piétons et pour cyclistes.",
+    "pourquoiFaux": {
+      "Oui, quelques secondes": "L'arrêt y est interdit.",
+      "Oui, la nuit": "C'est interdit à toute heure.",
+      "Oui, s'il n'y a pas de cycliste": "Un cycliste peut arriver à tout moment."
+    }
+  },
+  {
+    "id": "sta-019",
+    "theme": "stationnement",
+    "question": "Peux-tu t'arrêter dans un tunnel ?",
+    "choix": [
+      "Oui, s'il est éclairé",
+      "Non, sauf aux endroits aménagés ou en cas de nécessité",
+      "Oui, avec les feux de détresse",
+      "Oui, sur le côté droit"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Dans un tunnel, l'arrêt et le stationnement sont interdits, sauf panne ou endroit prévu.",
+    "pourquoiFaux": {
+      "Oui, sur le côté droit": "Un véhicule arrêté dans un tunnel crée un grand danger.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne suffisent pas à rendre l'arrêt sûr.",
+      "Oui, s'il est éclairé": "L'éclairage ne change rien."
+    }
+  },
+  {
+    "id": "sta-020",
+    "theme": "stationnement",
+    "question": "Peux-tu stationner dans un virage quand la visibilité est insuffisante ?",
+    "choix": [
+      "Oui, hors agglomération",
+      "Oui, avec les feux de position",
+      "Non",
+      "Oui, s'il y a de la place"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "L'arrêt et le stationnement sont interdits près du sommet d'une côte et dans un virage sans visibilité suffisante.",
+    "pourquoiFaux": {
+      "Oui, s'il y a de la place": "Les autres ne te verraient qu'au dernier moment.",
+      "Oui, avec les feux de position": "Les feux ne suffisent pas à compenser le manque de visibilité.",
+      "Oui, hors agglomération": "C'est interdit partout."
+    }
+  },
+  {
+    "id": "sta-021",
+    "theme": "stationnement",
+    "question": "Peux-tu t'arrêter sur des rails de tram ?",
+    "choix": [
+      "Oui, pour déposer un passager",
+      "Non",
+      "Oui, la nuit",
+      "Oui, si aucun tram n'est en vue"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "L'arrêt et le stationnement sont interdits sur les voies ferrées et à un endroit où l'on gêne les trams.",
+    "pourquoiFaux": {
+      "Oui, si aucun tram n'est en vue": "Un tram ne peut pas t'éviter : il roule sur ses rails.",
+      "Oui, pour déposer un passager": "C'est interdit, même brièvement.",
+      "Oui, la nuit": "C'est interdit à toute heure."
+    }
+  },
+  {
+    "id": "sta-022",
+    "theme": "stationnement",
+    "question": "Où places-tu le disque de stationnement en zone bleue ?",
+    "choix": [
+      "Derrière le pare-brise, bien visible de l'extérieur",
+      "Dans la boîte à gants",
+      "Sur la plage arrière",
+      "Sur le siège passager"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le disque doit être visible et lisible derrière le pare-brise.",
+    "pourquoiFaux": {
+      "Dans la boîte à gants": "Il doit être visible pour être contrôlé.",
+      "Sur le siège passager": "Il doit être lisible depuis l'extérieur, contre le pare-brise.",
+      "Sur la plage arrière": "Il se place à l'avant, contre le pare-brise."
+    }
+  },
+  {
+    "id": "sta-023",
+    "theme": "stationnement",
+    "question": "Sauf indication contraire, quand la zone bleue s'applique-t-elle ?",
+    "choix": [
+      "Les jours ouvrables de 9 h à 18 h",
+      "Seulement le matin",
+      "Seulement le week-end",
+      "Tous les jours, 24 h sur 24"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "En dehors de ces heures, sauf panneau contraire, le disque n'est pas exigé.",
+    "pourquoiFaux": {
+      "Tous les jours, 24 h sur 24": "Sans panneau qui le précise, la zone bleue ne vaut pas la nuit.",
+      "Seulement le week-end": "C'est l'inverse : les jours ouvrables.",
+      "Seulement le matin": "La règle vaut toute la journée de travail."
+    }
+  },
+  {
+    "id": "sta-024",
+    "theme": "stationnement",
+    "question": "Une place porte un panneau « livraisons » avec des heures. Peux-tu y stationner ta voiture personnelle pendant ces heures ?",
+    "choix": [
+      "Oui, pour moins d'une heure",
+      "Oui, avec le disque",
+      "Oui, si tu restes dans la voiture",
+      "Non"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "En dehors des heures indiquées, la place redevient en général un emplacement ordinaire.",
+    "pourquoiFaux": {
+      "Oui, pour moins d'une heure": "La place est réservée aux livraisons pendant les heures indiquées.",
+      "Oui, si tu restes dans la voiture": "Ce serait toujours du stationnement.",
+      "Oui, avec le disque": "Le disque ne donne pas accès à une place de livraison."
+    }
+  },
+  {
+    "id": "sta-025",
+    "theme": "stationnement",
+    "question": "Une ligne jaune discontinue borde le trottoir. Peux-tu t'arrêter pour faire descendre un passager ?",
+    "choix": [
+      "Non, l'arrêt est interdit",
+      "Oui, mais seulement la nuit",
+      "Oui, l'arrêt est permis",
+      "Non, sauf pour les taxis"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Ligne jaune discontinue : stationnement interdit, arrêt permis.",
+    "pourquoiFaux": {
+      "Non, l'arrêt est interdit": "C'est la ligne jaune continue qui interdit l'arrêt.",
+      "Oui, mais seulement la nuit": "L'arrêt est permis à toute heure.",
+      "Non, sauf pour les taxis": "Tout conducteur peut s'arrêter le temps de faire descendre quelqu'un."
+    }
+  },
+  {
+    "id": "sta-026",
+    "theme": "stationnement",
+    "question": "Une ligne jaune continue borde le trottoir. Peux-tu t'arrêter 2 minutes pour décharger tes courses ?",
+    "choix": [
+      "Oui, avec les feux de détresse",
+      "Non",
+      "Oui, si tu restes près de la voiture",
+      "Oui, 2 minutes c'est un arrêt"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Ligne jaune continue : arrêt et stationnement interdits.",
+    "pourquoiFaux": {
+      "Oui, 2 minutes c'est un arrêt": "La ligne jaune continue interdit aussi l'arrêt.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas l'arrêt permis.",
+      "Oui, si tu restes près de la voiture": "C'est interdit quand même."
+    }
+  },
+  {
+    "id": "sta-027",
+    "theme": "stationnement",
+    "question": "En agglomération, sans accotement ni parking, où stationnes-tu ?",
+    "choix": [
+      "Sur la piste cyclable",
+      "Sur le trottoir",
+      "Sur la chaussée, du côté droit, le plus près possible du bord",
+      "Au milieu de la chaussée"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "On stationne parallèlement au bord de la chaussée, du côté droit, en laissant 3 m libres.",
+    "pourquoiFaux": {
+      "Sur le trottoir": "Le trottoir est réservé aux piétons, sauf marquage qui l'autorise.",
+      "Au milieu de la chaussée": "Ce serait très gênant et dangereux.",
+      "Sur la piste cyclable": "La piste cyclable est interdite aux voitures."
+    }
+  },
+  {
+    "id": "sta-028",
+    "theme": "stationnement",
+    "question": "Des emplacements sont peints sur le trottoir. Peux-tu y stationner ?",
+    "choix": [
+      "Oui, mais seulement avec deux roues",
+      "Oui, le marquage l'autorise",
+      "Oui, la nuit seulement",
+      "Non, jamais sur un trottoir"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le stationnement sur le trottoir est interdit, sauf si une signalisation ou un marquage l'autorise.",
+    "pourquoiFaux": {
+      "Non, jamais sur un trottoir": "Le marquage crée justement une exception.",
+      "Oui, mais seulement avec deux roues": "On stationne comme indiqué par le marquage.",
+      "Oui, la nuit seulement": "Le marquage vaut à toute heure, sauf indication contraire."
+    }
+  },
+  {
+    "id": "sta-029",
+    "theme": "stationnement",
+    "question": "La nuit, tu stationnes dans une rue bien éclairée. Dois-tu laisser tes feux de position allumés ?",
+    "choix": [
+      "Oui, les feux de croisement",
+      "Oui, les feux de détresse",
+      "Non, si l'éclairage public permet de bien voir ta voiture",
+      "Oui, toujours"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les feux de position sont exigés quand le véhicule n'est pas assez visible grâce à l'éclairage public.",
+    "pourquoiFaux": {
+      "Oui, toujours": "Si l'éclairage rend la voiture bien visible, ce n'est pas nécessaire.",
+      "Oui, les feux de croisement": "Les feux de croisement servent à rouler.",
+      "Oui, les feux de détresse": "Les feux de détresse ne servent pas au stationnement normal."
+    }
+  },
+  {
+    "id": "sta-030",
+    "theme": "stationnement",
+    "question": "Peux-tu t'arrêter sur un passage à niveau ?",
+    "choix": [
+      "Oui, s'il n'y a pas de train en vue",
+      "Oui, pour quelques secondes",
+      "Non, jamais",
+      "Oui, si les barrières sont levées"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "On ne s'engage sur un passage à niveau que si l'on peut le dégager complètement.",
+    "pourquoiFaux": {
+      "Oui, si les barrières sont levées": "Un train peut arriver : on ne s'arrête jamais sur les rails.",
+      "Oui, pour quelques secondes": "C'est interdit et extrêmement dangereux.",
+      "Oui, s'il n'y a pas de train en vue": "Un train arrive vite et ne peut pas s'arrêter."
+    }
+  },
+  {
+    "id": "sta-031",
+    "theme": "stationnement",
+    "question": "Peux-tu stationner à un endroit où ta voiture cache un panneau ou un feu aux autres usagers ?",
+    "choix": [
+      "Oui, la nuit",
+      "Non",
+      "Oui, si c'est un petit panneau",
+      "Oui, si tu restes peu de temps"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "On ne s'arrête ni ne stationne à un endroit où l'on masque la signalisation.",
+    "pourquoiFaux": {
+      "Oui, si tu restes peu de temps": "Cacher la signalisation est dangereux et interdit.",
+      "Oui, la nuit": "C'est interdit à toute heure.",
+      "Oui, si c'est un petit panneau": "Tous les panneaux doivent rester visibles."
+    }
   }
 ]

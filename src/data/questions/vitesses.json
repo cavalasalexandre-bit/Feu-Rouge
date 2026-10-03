@@ -402,5 +402,305 @@
       "Rouler à 70 km/h exactement": "Il n'y a pas de vitesse imposée exacte : tu adaptes selon l'état de la route.",
       "Allumer tes feux de détresse": "Les feux de détresse signalent un danger ou une panne, pas une route enneigée."
     }
+  },
+  {
+    "id": "vit-021",
+    "theme": "vitesses",
+    "question": "À Bruxelles, sur un grand axe où un panneau indique 50, tu peux rouler au maximum à :",
+    "choix": [
+      "70 km/h",
+      "50 km/h",
+      "30 km/h",
+      "20 km/h"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "À Bruxelles, la limite par défaut est 30 km/h, mais un panneau peut autoriser 50 km/h sur certains grands axes. Le panneau prime.",
+    "pourquoiFaux": {
+      "30 km/h": "30 km/h est la règle par défaut, mais ici un panneau autorise 50 km/h.",
+      "70 km/h": "70 km/h n'est pas autorisé en agglomération sur cet axe.",
+      "20 km/h": "20 km/h est la limite des zones résidentielles."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C43",
+      "valeur": "50"
+    },
+    "region": "bruxelles"
+  },
+  {
+    "id": "vit-022",
+    "theme": "vitesses",
+    "question": "Tu respectes la limite affichée, mais la route est très glissante. Peux-tu être sanctionné pour ta vitesse ?",
+    "choix": [
+      "Seulement en agglomération",
+      "Non, tant que tu respectes la limite",
+      "Oui, pour vitesse inadaptée aux circonstances",
+      "Seulement si tu as un accident"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Tu dois toujours adapter ta vitesse à l'état de la route, à la visibilité et à la circulation, même sous la limite affichée.",
+    "pourquoiFaux": {
+      "Non, tant que tu respectes la limite": "La limite est un maximum : rouler trop vite pour les conditions est aussi une infraction.",
+      "Seulement en agglomération": "La règle de la vitesse adaptée s'applique partout.",
+      "Seulement si tu as un accident": "L'infraction existe même sans accident."
+    }
+  },
+  {
+    "id": "vit-023",
+    "theme": "vitesses",
+    "question": "Après un panneau de fin de limitation de vitesse (le nombre barré), quelle limite s'applique ?",
+    "choix": [
+      "Plus aucune limite",
+      "La même que sur le panneau précédent",
+      "30 km/h",
+      "La limite générale de l'endroit (agglomération, hors agglomération, autoroute…)"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Quand une limitation prend fin, on revient aux limites générales selon l'endroit et la région.",
+    "pourquoiFaux": {
+      "Plus aucune limite": "Il y a toujours une limite : la limite générale reprend.",
+      "La même que sur le panneau précédent": "Le panneau barré met justement fin à cette limite.",
+      "30 km/h": "30 km/h ne s'applique que s'il s'agit de la limite générale (à Bruxelles en agglomération par exemple)."
+    }
+  },
+  {
+    "id": "vit-024",
+    "theme": "vitesses",
+    "question": "En Flandre, en agglomération, sans signalisation particulière, la vitesse maximale est de :",
+    "choix": [
+      "40 km/h",
+      "70 km/h",
+      "50 km/h",
+      "30 km/h"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "En agglomération, la limite générale est de 50 km/h en Flandre et en Wallonie, 30 km/h à Bruxelles.",
+    "pourquoiFaux": {
+      "30 km/h": "30 km/h par défaut, c'est Bruxelles. En Flandre, beaucoup de rues sont en zone 30, mais signalées.",
+      "70 km/h": "70 km/h est la limite flamande hors agglomération.",
+      "40 km/h": "40 km/h n'est pas une limite générale en Belgique."
+    },
+    "region": "flandre"
+  },
+  {
+    "id": "vit-025",
+    "theme": "vitesses",
+    "question": "Dans une zone piétonne où certains véhicules sont admis (livraisons par exemple), à quelle vitesse doivent-ils rouler ?",
+    "choix": [
+      "50 km/h",
+      "20 km/h",
+      "Au pas",
+      "30 km/h"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Dans une zone piétonne, les véhicules admis circulent au pas et cèdent le passage aux piétons.",
+    "pourquoiFaux": {
+      "30 km/h": "30 km/h est la limite d'une zone 30, pas d'une zone piétonne.",
+      "20 km/h": "20 km/h est la limite des zones résidentielles, pas des zones piétonnes.",
+      "50 km/h": "50 km/h serait très dangereux au milieu des piétons."
+    }
+  },
+  {
+    "id": "vit-026",
+    "theme": "vitesses",
+    "question": "Avec un permis provisoire, les limites de vitesse sont-elles plus basses ?",
+    "choix": [
+      "Non, ce sont les mêmes limites que pour les autres conducteurs",
+      "Oui, la nuit seulement",
+      "Oui, 70 km/h maximum partout",
+      "Oui, 90 km/h maximum sur autoroute"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "En Belgique, le permis provisoire ne change pas les limites de vitesse. Il impose d'autres conditions (guide, plaque L, horaires selon la formule).",
+    "pourquoiFaux": {
+      "Oui, 90 km/h maximum sur autoroute": "Il n'existe pas de limite spéciale pour le permis provisoire en Belgique.",
+      "Oui, 70 km/h maximum partout": "Aucune limite spéciale n'existe pour les conducteurs en apprentissage.",
+      "Oui, la nuit seulement": "Les limites sont les mêmes de jour comme de nuit."
+    }
+  },
+  {
+    "id": "vit-027",
+    "theme": "vitesses",
+    "question": "Un panneau lumineux au-dessus de l'autoroute affiche 90. Que fais-tu ?",
+    "choix": [
+      "Je ne respecte la limite que s'il pleut",
+      "Je ne dépasse pas 90 km/h",
+      "Je roule à 120 km/h, c'est seulement un conseil",
+      "Je ralentis seulement sur la bande de droite"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "La signalisation dynamique (panneaux lumineux) a la même valeur qu'un panneau fixe : la limite est obligatoire.",
+    "pourquoiFaux": {
+      "Je roule à 120 km/h, c'est seulement un conseil": "Une limite affichée sur un panneau lumineux est obligatoire, comme un panneau fixe.",
+      "Je ne respecte la limite que s'il pleut": "La limite s'applique dès qu'elle est affichée, quel que soit le temps.",
+      "Je ralentis seulement sur la bande de droite": "La limite vaut pour toutes les bandes concernées."
+    }
+  },
+  {
+    "id": "vit-028",
+    "theme": "vitesses",
+    "question": "Un panneau « zone 30 » aux abords d'une école est complété par des heures. Quand la limite s'applique-t-elle ?",
+    "choix": [
+      "Jamais, c'est un conseil",
+      "Seulement les jours d'école, sans tenir compte des heures",
+      "Pendant les heures indiquées",
+      "Toute la journée, y compris la nuit"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Un panneau additionnel peut limiter la validité d'un panneau à certaines heures ou certains jours.",
+    "pourquoiFaux": {
+      "Toute la journée, y compris la nuit": "Le panneau additionnel limite la règle aux heures indiquées.",
+      "Seulement les jours d'école, sans tenir compte des heures": "Ce sont les heures du panneau qui comptent.",
+      "Jamais, c'est un conseil": "La limite est obligatoire pendant les heures affichées."
+    }
+  },
+  {
+    "id": "vit-029",
+    "theme": "vitesses",
+    "question": "Hors agglomération en Wallonie (limite générale 90 km/h), un panneau indique 70. Quelle est ta vitesse maximale ?",
+    "choix": [
+      "70 km/h",
+      "80 km/h",
+      "50 km/h",
+      "90 km/h"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Un panneau de limitation l'emporte toujours sur la limite générale de la région.",
+    "pourquoiFaux": {
+      "90 km/h": "Le panneau prime sur la limite générale.",
+      "80 km/h": "Il n'y a pas de moyenne : c'est le panneau qui compte.",
+      "50 km/h": "50 km/h est la limite en agglomération."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C43",
+      "valeur": "70"
+    },
+    "region": "wallonie"
+  },
+  {
+    "id": "vit-030",
+    "theme": "vitesses",
+    "question": "En Flandre, hors agglomération, sur une route à deux fois deux bandes séparées par une berme centrale, la vitesse maximale est de :",
+    "choix": [
+      "90 km/h",
+      "100 km/h",
+      "70 km/h",
+      "120 km/h"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Les routes à au moins 2 × 2 bandes séparées sont limitées à 120 km/h, comme l'autoroute, sauf panneau.",
+    "pourquoiFaux": {
+      "70 km/h": "70 km/h est la limite flamande sur les routes ordinaires hors agglomération.",
+      "90 km/h": "90 km/h est la limite des camions sur ces routes, pas des voitures.",
+      "100 km/h": "100 km/h n'est pas une limite générale en Belgique."
+    },
+    "region": "flandre"
+  },
+  {
+    "id": "vit-031",
+    "theme": "vitesses",
+    "question": "Quel panneau marque la sortie d'une agglomération ?",
+    "choix": [
+      "Le panneau avec le nom de la localité",
+      "Un panneau 90 km/h",
+      "Le dernier lampadaire",
+      "Le panneau avec le nom de la localité barré"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le panneau d'entrée porte le nom de la localité ; à la sortie, le même nom est barré. La limite générale change alors.",
+    "pourquoiFaux": {
+      "Le panneau avec le nom de la localité": "Ce panneau marque au contraire l'entrée dans l'agglomération.",
+      "Un panneau 90 km/h": "Un panneau de vitesse ne marque pas la fin de l'agglomération.",
+      "Le dernier lampadaire": "C'est le panneau qui compte, pas l'éclairage."
+    }
+  },
+  {
+    "id": "vit-032",
+    "theme": "vitesses",
+    "question": "Sur autoroute, la circulation est très dense et tout le monde roule à 50 km/h. Es-tu en infraction (vitesse minimale de 70 km/h) ?",
+    "choix": [
+      "Non, la vitesse minimale ne s'applique que si les conditions permettent de rouler à 70 km/h",
+      "Non, car il n'y a pas de vitesse minimale",
+      "Oui, tu dois quitter l'autoroute",
+      "Oui, il faut toujours rouler à 70 km/h minimum"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La vitesse minimale de 70 km/h vaut en conditions normales. Dans un bouchon ou par mauvais temps, on roule plus lentement.",
+    "pourquoiFaux": {
+      "Oui, il faut toujours rouler à 70 km/h minimum": "En bouchon, il est impossible et dangereux de rouler à 70 km/h.",
+      "Oui, tu dois quitter l'autoroute": "Rien ne t'oblige à sortir en cas de ralentissement.",
+      "Non, car il n'y a pas de vitesse minimale": "Il y a une vitesse minimale, mais elle dépend des conditions de circulation."
+    }
+  },
+  {
+    "id": "vit-033",
+    "theme": "vitesses",
+    "question": "Pourquoi la vitesse est-elle limitée à 30 km/h aux abords des écoles ?",
+    "choix": [
+      "Parce que les voitures consomment moins",
+      "Pour fluidifier la circulation",
+      "Pour réduire le bruit uniquement",
+      "La distance d'arrêt est bien plus courte et un piéton heurté a beaucoup plus de chances de survivre"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "À 30 km/h, la distance d'arrêt est d'environ 13,5 m contre 27,5 m à 50 km/h, et la violence d'un choc est bien plus faible.",
+    "pourquoiFaux": {
+      "Pour réduire le bruit uniquement": "Le bruit diminue aussi, mais la raison principale est la sécurité des enfants.",
+      "Pour fluidifier la circulation": "Ce n'est pas l'objectif de cette limite.",
+      "Parce que les voitures consomment moins": "La consommation n'est pas la raison de cette limite."
+    }
+  },
+  {
+    "id": "vit-034",
+    "theme": "vitesses",
+    "question": "Pour dépasser plus vite, peux-tu dépasser la limite de vitesse quelques secondes ?",
+    "choix": [
+      "Non, la limite s'applique aussi pendant un dépassement",
+      "Oui, hors agglomération",
+      "Oui, de 10 km/h maximum",
+      "Oui, si le véhicule dépassé roule lentement"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Un dépassement doit se faire dans le respect de la limite. Sinon, il faut y renoncer.",
+    "pourquoiFaux": {
+      "Oui, de 10 km/h maximum": "Aucune tolérance n'est prévue pendant un dépassement.",
+      "Oui, hors agglomération": "La limite s'applique partout, dépassement ou non.",
+      "Oui, si le véhicule dépassé roule lentement": "Si tu ne peux pas dépasser sans excès de vitesse, tu ne dépasses pas."
+    }
+  },
+  {
+    "id": "vit-035",
+    "theme": "vitesses",
+    "question": "En agglomération en Wallonie, la limite de 50 km/h s'applique-t-elle aussi aux camions ?",
+    "choix": [
+      "Oui, elle s'applique à tous les véhicules",
+      "Non, les camions sont limités à 30 km/h",
+      "Non, les camions peuvent rouler à 70 km/h",
+      "Seulement pour les camions de moins de 3,5 t"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "La limite générale en agglomération vaut pour tous les véhicules, sauf panneau particulier.",
+    "pourquoiFaux": {
+      "Non, les camions sont limités à 30 km/h": "Il n'y a pas de limite générale de 30 km/h pour les camions en agglomération wallonne.",
+      "Non, les camions peuvent rouler à 70 km/h": "Aucun véhicule ne peut dépasser 50 km/h en agglomération sans panneau.",
+      "Seulement pour les camions de moins de 3,5 t": "La limite s'applique quel que soit le poids."
+    },
+    "region": "wallonie"
   }
 ]

@@ -410,5 +410,328 @@
       "type": "panneau",
       "code": "D1"
     }
+  },
+  {
+    "id": "sig-021",
+    "theme": "signalisation",
+    "question": "Un panneau triangulaire à bord rouge montre deux enfants. Que signale-t-il ?",
+    "choix": [
+      "Un passage pour piétons",
+      "Une interdiction aux piétons",
+      "Une zone résidentielle",
+      "Un endroit fréquenté par des enfants, comme une école ou une plaine de jeux"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Ce panneau de danger demande d'être particulièrement attentif aux enfants et de ralentir.",
+    "pourquoiFaux": {
+      "Une zone résidentielle": "La zone résidentielle a un panneau rectangulaire bleu.",
+      "Un passage pour piétons": "Le passage pour piétons a son propre symbole (un piéton sur des bandes).",
+      "Une interdiction aux piétons": "Un triangle annonce un danger, pas une interdiction."
+    }
+  },
+  {
+    "id": "sig-022",
+    "theme": "signalisation",
+    "question": "Des flèches blanches courbées sont peintes sur ta bande, pointées vers la droite. Que signifient-elles ?",
+    "choix": [
+      "Je peux dépasser",
+      "La bande de droite est fermée",
+      "Je dois tourner à droite au prochain carrefour",
+      "Je dois me rabattre : une ligne continue approche"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Les flèches de rabattement annoncent qu'une ligne continue va commencer : termine ton dépassement et reviens à droite.",
+    "pourquoiFaux": {
+      "Je peux dépasser": "Ces flèches annoncent au contraire la fin de la possibilité de dépasser.",
+      "Je dois tourner à droite au prochain carrefour": "Ce ne sont pas des flèches de direction.",
+      "La bande de droite est fermée": "Elles demandent de revenir vers la droite."
+    }
+  },
+  {
+    "id": "sig-023",
+    "theme": "signalisation",
+    "question": "Deux lignes de carrés blancs traversent la chaussée. Qu'indiquent-elles ?",
+    "choix": [
+      "Un passage pour piétons",
+      "Un passage pour cyclistes",
+      "Une ligne d'arrêt",
+      "Un ralentisseur"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Les carrés blancs marquent l'endroit où les cyclistes traversent la chaussée.",
+    "pourquoiFaux": {
+      "Un passage pour piétons": "Le passage pour piétons est fait de larges bandes blanches parallèles.",
+      "Une ligne d'arrêt": "Une ligne d'arrêt est une ligne blanche continue large.",
+      "Un ralentisseur": "Un ralentisseur est signalé autrement (panneau, triangles, damier)."
+    }
+  },
+  {
+    "id": "sig-024",
+    "theme": "signalisation",
+    "question": "Au feu rouge, une large ligne blanche continue est tracée en travers de ta bande. Où t'arrêtes-tu ?",
+    "choix": [
+      "Sur la ligne",
+      "Où je veux, si je ne gêne pas",
+      "Juste avant le feu, après la ligne",
+      "Avant la ligne"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La ligne d'arrêt marque l'endroit où l'on s'arrête au feu rouge, au STOP ou sur ordre d'un agent.",
+    "pourquoiFaux": {
+      "Sur la ligne": "On s'arrête avant la ligne, pas dessus.",
+      "Juste avant le feu, après la ligne": "La ligne d'arrêt indique où s'arrêter, même si le feu est plus loin.",
+      "Où je veux, si je ne gêne pas": "La ligne d'arrêt est obligatoire."
+    }
+  },
+  {
+    "id": "sig-025",
+    "theme": "signalisation",
+    "question": "Peux-tu rouler sur une bande réservée aux bus pour éviter un bouchon ?",
+    "choix": [
+      "Non, sauf si un panneau l'autorise pour ton véhicule",
+      "Oui, avec les feux de détresse",
+      "Oui, s'il n'y a pas de bus",
+      "Oui, aux heures creuses"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Une bande bus est réservée aux bus et, si les panneaux le prévoient, à d'autres usagers (taxis, vélos…).",
+    "pourquoiFaux": {
+      "Oui, s'il n'y a pas de bus": "La bande reste réservée, même vide.",
+      "Oui, aux heures creuses": "Seul un panneau peut prévoir des horaires.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne donnent aucun droit."
+    }
+  },
+  {
+    "id": "sig-026",
+    "theme": "signalisation",
+    "question": "En Belgique, après le feu rouge, le feu passe directement au :",
+    "choix": [
+      "Vert",
+      "Orange clignotant",
+      "Rouge et orange en même temps",
+      "Orange"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le cycle belge est : vert, orange, rouge, puis à nouveau vert.",
+    "pourquoiFaux": {
+      "Orange": "En Belgique, l'orange vient après le vert, pas après le rouge.",
+      "Rouge et orange en même temps": "Cette phase existe dans d'autres pays, pas en Belgique.",
+      "Orange clignotant": "L'orange clignotant est un fonctionnement à part."
+    }
+  },
+  {
+    "id": "sig-027",
+    "theme": "signalisation",
+    "question": "À quoi sert un petit panneau rectangulaire placé sous un panneau principal ?",
+    "choix": [
+      "À annuler le panneau principal",
+      "À indiquer le nom de la rue",
+      "À préciser le panneau : distance, longueur, heures, véhicules concernés…",
+      "À donner un conseil facultatif"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le panneau additionnel limite ou précise la portée du panneau principal.",
+    "pourquoiFaux": {
+      "À annuler le panneau principal": "Il précise le panneau, il ne l'annule pas.",
+      "À donner un conseil facultatif": "Ses indications sont aussi obligatoires que le panneau.",
+      "À indiquer le nom de la rue": "Le nom de rue n'est pas un panneau additionnel."
+    }
+  },
+  {
+    "id": "sig-028",
+    "theme": "signalisation",
+    "question": "Un panneau d'accès interdit porte la mention « excepté circulation locale ». Qui peut entrer ?",
+    "choix": [
+      "Seulement les vélos",
+      "Ceux qui doivent se rendre dans cette zone (riverains, visiteurs, livraisons)",
+      "Tout le monde",
+      "Personne"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "« Circulation locale » : on peut entrer pour se rendre à une adresse de la zone, pas pour la traverser.",
+    "pourquoiFaux": {
+      "Personne": "La mention fait justement une exception.",
+      "Tout le monde": "Seuls ceux qui ont une destination dans la zone peuvent entrer.",
+      "Seulement les vélos": "La mention vise la desserte locale, pas un type de véhicule."
+    }
+  },
+  {
+    "id": "sig-029",
+    "theme": "signalisation",
+    "question": "Tu aperçois un panneau de danger. Que fais-tu ?",
+    "choix": [
+      "Rien de particulier",
+      "Je m'arrête obligatoirement",
+      "Je klaxonne",
+      "J'adapte ma vitesse et je suis plus attentif"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Les panneaux de danger se trouvent en général 150 m avant le danger hors agglomération : ils laissent le temps de ralentir.",
+    "pourquoiFaux": {
+      "Je m'arrête obligatoirement": "Un panneau de danger n'impose pas l'arrêt.",
+      "Rien de particulier": "Il annonce un danger : il faut l'anticiper.",
+      "Je klaxonne": "Le klaxon n'est pas la réponse à un panneau de danger."
+    }
+  },
+  {
+    "id": "sig-030",
+    "theme": "signalisation",
+    "question": "Un panneau rond bleu montre un vélo blanc. Que signifie-t-il ?",
+    "choix": [
+      "Un magasin de vélos",
+      "Les vélos sont interdits",
+      "Voitures et vélos roulent ensemble",
+      "Piste cyclable obligatoire : réservée aux cyclistes, interdite aux voitures"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le rond bleu avec un vélo désigne une piste cyclable que les cyclistes doivent emprunter.",
+    "pourquoiFaux": {
+      "Les vélos sont interdits": "Une interdiction serait un panneau rond à bord rouge.",
+      "Un magasin de vélos": "Les indications de service sont carrées ou rectangulaires.",
+      "Voitures et vélos roulent ensemble": "Le rond bleu impose ce chemin aux cyclistes et l'interdit aux voitures."
+    }
+  },
+  {
+    "id": "sig-031",
+    "theme": "signalisation",
+    "question": "Une croix blanche en forme de X, bordée de rouge, est placée près de voies ferrées. Que signale-t-elle ?",
+    "choix": [
+      "Une route fermée",
+      "Une interdiction de stationner",
+      "Un carrefour à priorité de droite",
+      "Un passage à niveau"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La croix de Saint-André se place juste avant les rails : prudence, un train peut arriver.",
+    "pourquoiFaux": {
+      "Une interdiction de stationner": "L'interdiction de stationner est un rond bleu à bord rouge.",
+      "Un carrefour à priorité de droite": "Ce panneau est un triangle avec une croix noire.",
+      "Une route fermée": "La croix signale l'endroit où la route croise la voie ferrée."
+    }
+  },
+  {
+    "id": "sig-032",
+    "theme": "signalisation",
+    "question": "Un panneau carré bleu montre une flèche blanche vers le haut. Que signifie-t-il ?",
+    "choix": [
+      "Autoroute",
+      "Tout droit obligatoire",
+      "Sens unique : la circulation se fait dans le sens de la flèche",
+      "Priorité"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le panneau carré bleu à flèche indique que tu es dans une rue à sens unique.",
+    "pourquoiFaux": {
+      "Tout droit obligatoire": "L'obligation de direction est un panneau rond bleu.",
+      "Autoroute": "L'autoroute a son propre panneau bleu avec un pont.",
+      "Priorité": "La priorité se signale par un losange jaune."
+    }
+  },
+  {
+    "id": "sig-033",
+    "theme": "signalisation",
+    "question": "Un panneau carré bleu montre une barre blanche verticale terminée par une barre rouge en travers. Que signifie-t-il ?",
+    "choix": [
+      "Un sens interdit",
+      "Un passage à niveau",
+      "Un parking",
+      "Une impasse"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Ce panneau signale une voie sans issue.",
+    "pourquoiFaux": {
+      "Un parking": "Le parking est un P blanc sur fond bleu.",
+      "Un sens interdit": "Le sens interdit est un rond rouge à barre blanche.",
+      "Un passage à niveau": "Le passage à niveau a d'autres panneaux."
+    }
+  },
+  {
+    "id": "sig-034",
+    "theme": "signalisation",
+    "question": "Un panneau de danger annonce un virage dangereux. Quand ralentis-tu ?",
+    "choix": [
+      "Avant le virage",
+      "Après le virage",
+      "Je ne ralentis pas si la route est sèche",
+      "Dans le virage, en freinant fort"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "On ralentit en ligne droite, avant le virage, pour le prendre sans freiner.",
+    "pourquoiFaux": {
+      "Dans le virage, en freinant fort": "Freiner fort dans un virage peut faire perdre le contrôle.",
+      "Après le virage": "C'est avant qu'il faut adapter sa vitesse.",
+      "Je ne ralentis pas si la route est sèche": "Le virage reste dangereux, sec ou mouillé."
+    }
+  },
+  {
+    "id": "sig-035",
+    "theme": "signalisation",
+    "question": "Un panneau triangulaire à bord rouge montre un piéton qui marche sur des bandes. Que signale-t-il ?",
+    "choix": [
+      "Une interdiction aux piétons",
+      "Une zone piétonne",
+      "L'approche d'un passage pour piétons",
+      "Un trottoir"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Ce panneau annonce un passage pour piétons, surtout là où on ne s'y attend pas.",
+    "pourquoiFaux": {
+      "Une zone piétonne": "La zone piétonne a un panneau rectangulaire.",
+      "Un trottoir": "Il n'y a pas de panneau pour un simple trottoir.",
+      "Une interdiction aux piétons": "Un triangle annonce un danger, pas une interdiction."
+    }
+  },
+  {
+    "id": "sig-036",
+    "theme": "signalisation",
+    "question": "Un feu de signalisation montre le symbole d'un vélo. Qui doit le respecter ?",
+    "choix": [
+      "Les cyclistes seulement",
+      "Les cyclomoteurs et les voitures",
+      "Les piétons",
+      "Tous les usagers"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Un feu peut s'adresser à une seule catégorie d'usagers grâce à un symbole.",
+    "pourquoiFaux": {
+      "Tous les usagers": "Un feu avec un symbole de vélo ne concerne que les cyclistes.",
+      "Les piétons": "Les piétons ont leurs propres feux.",
+      "Les cyclomoteurs et les voitures": "Les voitures suivent leur propre feu."
+    }
+  },
+  {
+    "id": "sig-037",
+    "theme": "signalisation",
+    "question": "Un panneau STOP est placé avant un carrefour, sans ligne d'arrêt sur la chaussée. Où t'arrêtes-tu ?",
+    "choix": [
+      "Je ne m'arrête pas, il n'y a pas de ligne",
+      "À un endroit d'où je vois bien la route que je vais croiser",
+      "À hauteur du panneau, même sans visibilité",
+      "Au milieu du carrefour"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Sans ligne d'arrêt, on s'arrête avant de s'engager, à l'endroit d'où l'on voit la circulation.",
+    "pourquoiFaux": {
+      "Je ne m'arrête pas, il n'y a pas de ligne": "Le STOP impose l'arrêt même sans marquage.",
+      "À hauteur du panneau, même sans visibilité": "Sans ligne, tu t'arrêtes là où tu vois la route transversale.",
+      "Au milieu du carrefour": "S'arrêter au milieu du carrefour est dangereux."
+    }
   }
 ]

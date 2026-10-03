@@ -340,5 +340,309 @@
       "Les feux de route": "Les feux de route sont interdits quand l'éclairage public suffit.",
       "Aucun feu": "Rouler sans feux la nuit est interdit, même en ville."
     }
+  },
+  {
+    "id": "ecl-019",
+    "theme": "eclairage",
+    "question": "Quand peux-tu utiliser les feux de brouillard avant ?",
+    "choix": [
+      "Par brouillard, neige ou forte pluie qui réduisent la visibilité",
+      "Seulement sur autoroute",
+      "Dès la tombée de la nuit",
+      "En permanence pour être mieux vu"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Les feux de brouillard avant servent par brouillard, chute de neige ou pluie intense.",
+    "pourquoiFaux": {
+      "Dès la tombée de la nuit": "La nuit seule ne justifie pas les feux de brouillard.",
+      "En permanence pour être mieux vu": "Ils peuvent éblouir : on ne les utilise qu'en cas de mauvaise visibilité.",
+      "Seulement sur autoroute": "Ils sont utilisables partout quand le temps l'exige."
+    }
+  },
+  {
+    "id": "ecl-020",
+    "theme": "eclairage",
+    "question": "Quel témoin s'allume au tableau de bord quand les feux de croisement sont allumés ?",
+    "choix": [
+      "Un témoin vert",
+      "Un témoin rouge",
+      "Un témoin bleu",
+      "Un témoin orange"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Vert : feux de croisement. Bleu : feux de route. Orange : brouillard arrière.",
+    "pourquoiFaux": {
+      "Un témoin bleu": "Le bleu correspond aux feux de route.",
+      "Un témoin orange": "L'orange correspond au feu de brouillard arrière.",
+      "Un témoin rouge": "Le rouge signale un problème urgent (huile, freins…)."
+    }
+  },
+  {
+    "id": "ecl-021",
+    "theme": "eclairage",
+    "question": "La nuit, quels feux un vélo doit-il avoir ?",
+    "choix": [
+      "Un feu rouge à l'avant et un feu blanc à l'arrière",
+      "Un feu blanc ou jaune à l'avant et un feu rouge à l'arrière",
+      "Seulement des réflecteurs",
+      "Aucun feu en agglomération éclairée"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Comme une voiture : feu blanc ou jaune vers l'avant, rouge vers l'arrière.",
+    "pourquoiFaux": {
+      "Un feu rouge à l'avant et un feu blanc à l'arrière": "C'est l'inverse : blanc ou jaune devant, rouge derrière.",
+      "Seulement des réflecteurs": "Les réflecteurs ne suffisent pas : il faut des feux la nuit.",
+      "Aucun feu en agglomération éclairée": "Les feux sont obligatoires la nuit, même en ville."
+    }
+  },
+  {
+    "id": "ecl-022",
+    "theme": "eclairage",
+    "question": "Pourquoi un piéton qui marche la nuit hors agglomération a-t-il intérêt à porter un gilet réfléchissant ?",
+    "choix": [
+      "C'est obligatoire pour tous les piétons",
+      "Il n'a aucun intérêt avec l'éclairage public",
+      "Il éclaire la route",
+      "Il est vu de beaucoup plus loin par les conducteurs"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Habillé en sombre, un piéton n'est vu qu'au dernier moment. Un gilet réfléchissant le rend visible de loin.",
+    "pourquoiFaux": {
+      "C'est obligatoire pour tous les piétons": "Ce n'est pas une obligation générale, mais c'est fortement conseillé.",
+      "Il éclaire la route": "Un gilet réfléchissant renvoie la lumière des phares, il n'éclaire pas.",
+      "Il n'a aucun intérêt avec l'éclairage public": "Hors agglomération, il n'y a souvent pas d'éclairage public."
+    }
+  },
+  {
+    "id": "ecl-023",
+    "theme": "eclairage",
+    "question": "Ta voiture tombe en panne la nuit sur l'accotement d'une route non éclairée. Quels feux allumes-tu ?",
+    "choix": [
+      "Les feux de route",
+      "Les feux de détresse",
+      "Aucun, pour économiser la batterie",
+      "Le feu de brouillard arrière"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Un véhicule immobilisé qui constitue un danger est signalé par les feux de détresse, et par le triangle.",
+    "pourquoiFaux": {
+      "Les feux de route": "Ils éblouiraient les conducteurs qui arrivent.",
+      "Aucun, pour économiser la batterie": "Une voiture sans feux la nuit est presque invisible : c'est très dangereux.",
+      "Le feu de brouillard arrière": "Il n'est permis que par visibilité inférieure à 100 m."
+    }
+  },
+  {
+    "id": "ecl-024",
+    "theme": "eclairage",
+    "question": "En agglomération, peux-tu faire un appel de phares pour avertir que tu dépasses ?",
+    "choix": [
+      "Oui, la nuit seulement",
+      "Oui, toujours",
+      "Oui, s'il y a plusieurs bandes",
+      "Non, ce n'est permis que hors agglomération"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "L'appel de phares pour avertir d'un dépassement n'est permis que hors agglomération. Partout, il reste permis pour éviter un accident.",
+    "pourquoiFaux": {
+      "Oui, toujours": "En agglomération, l'appel de phares pour dépasser n'est pas prévu.",
+      "Oui, la nuit seulement": "La nuit ne change rien à cette règle.",
+      "Oui, s'il y a plusieurs bandes": "Le nombre de bandes ne change rien."
+    }
+  },
+  {
+    "id": "ecl-025",
+    "theme": "eclairage",
+    "question": "En agglomération, dans une rue non éclairée, sans personne en face, peux-tu utiliser tes feux de route ?",
+    "choix": [
+      "Oui, si l'éclairage ne permet pas de voir à environ 100 mètres et que tu n'éblouis personne",
+      "Oui, même si une voiture arrive en face",
+      "Non, jamais en agglomération",
+      "Seulement avec les feux de brouillard"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Les feux de route sont interdits quand l'éclairage public suffit (environ 100 m de visibilité), en croisant ou en suivant de près.",
+    "pourquoiFaux": {
+      "Non, jamais en agglomération": "La règle dépend de l'éclairage, pas du fait d'être en agglomération.",
+      "Oui, même si une voiture arrive en face": "Il faut toujours repasser en croisement pour croiser.",
+      "Seulement avec les feux de brouillard": "Les feux de brouillard n'ont rien à voir ici."
+    }
+  },
+  {
+    "id": "ecl-026",
+    "theme": "eclairage",
+    "question": "La nuit, le conducteur qui arrive en face garde ses feux de route et t'éblouit. Que peux-tu faire ?",
+    "choix": [
+      "Lui faire un bref appel de phares, puis ralentir et regarder vers le bord droit",
+      "Klaxonner longuement",
+      "Accélérer pour le croiser plus vite",
+      "Allumer mes feux de route pour lui répondre"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Un appel de phares bref est permis pour signaler à un conducteur que ses feux t'éblouissent.",
+    "pourquoiFaux": {
+      "Allumer mes feux de route pour lui répondre": "Deux conducteurs éblouis, c'est deux fois plus de danger.",
+      "Klaxonner longuement": "Le klaxon ne sert pas à signaler un éblouissement.",
+      "Accélérer pour le croiser plus vite": "Ébloui, tu vois mal : il faut ralentir, pas accélérer."
+    }
+  },
+  {
+    "id": "ecl-027",
+    "theme": "eclairage",
+    "question": "Avant de partir un matin d'hiver, que dois-tu dégager ?",
+    "choix": [
+      "Toutes les vitres, les rétroviseurs et les feux",
+      "Rien, le chauffage le fera en roulant",
+      "Seulement le pare-brise et la vitre conducteur",
+      "Seulement une partie du pare-brise"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le conducteur doit avoir une bonne visibilité tout autour et ses feux doivent être visibles.",
+    "pourquoiFaux": {
+      "Seulement une partie du pare-brise": "Il faut voir dans toutes les directions et être vu.",
+      "Seulement le pare-brise et la vitre conducteur": "Les autres vitres et les rétroviseurs comptent aussi.",
+      "Rien, le chauffage le fera en roulant": "Partir sans visibilité est dangereux et interdit."
+    }
+  },
+  {
+    "id": "ecl-028",
+    "theme": "eclairage",
+    "question": "À quoi servent les feux stop, les feux rouges qui s'allument plus fort à l'arrière ?",
+    "choix": [
+      "À signaler que le conducteur freine",
+      "À signaler que la voiture est garée",
+      "À remplacer les feux de position",
+      "À signaler la marche arrière"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Les feux stop s'allument quand on appuie sur la pédale de frein, pour prévenir ceux qui suivent.",
+    "pourquoiFaux": {
+      "À signaler que la voiture est garée": "Ce sont les feux de position qui signalent un véhicule garé.",
+      "À signaler la marche arrière": "La marche arrière est signalée par un feu blanc.",
+      "À remplacer les feux de position": "Ils ne s'allument qu'au freinage."
+    }
+  },
+  {
+    "id": "ecl-029",
+    "theme": "eclairage",
+    "question": "Que signale un feu blanc allumé à l'arrière d'une voiture ?",
+    "choix": [
+      "Un feu de brouillard",
+      "La marche arrière",
+      "Un changement de direction",
+      "Un freinage"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le feu de recul, blanc, s'allume quand la marche arrière est engagée.",
+    "pourquoiFaux": {
+      "Un freinage": "Le freinage est signalé par les feux stop rouges.",
+      "Un feu de brouillard": "Le feu de brouillard arrière est rouge.",
+      "Un changement de direction": "Les changements de direction se signalent avec les clignotants orange."
+    }
+  },
+  {
+    "id": "ecl-030",
+    "theme": "eclairage",
+    "question": "Un de tes feux stop ne fonctionne plus. Peux-tu continuer à rouler comme si de rien n'était ?",
+    "choix": [
+      "Oui, un seul suffit",
+      "Oui, jusqu'au prochain contrôle technique",
+      "Oui, s'il fait jour",
+      "Non, il faut le faire réparer rapidement : c'est un défaut d'éclairage"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Un véhicule doit avoir tous ses feux obligatoires en état de marche.",
+    "pourquoiFaux": {
+      "Oui, un seul suffit": "Tous les feux obligatoires doivent fonctionner.",
+      "Oui, s'il fait jour": "Les feux stop servent aussi de jour.",
+      "Oui, jusqu'au prochain contrôle technique": "On ne roule pas avec un feu défectueux en attendant le contrôle."
+    }
+  },
+  {
+    "id": "ecl-031",
+    "theme": "eclairage",
+    "question": "Ta voiture est très chargée à l'arrière. Pourquoi régler la hauteur de tes phares ?",
+    "choix": [
+      "Pour éclairer plus loin",
+      "Ce n'est jamais nécessaire",
+      "Pour ne pas éblouir les conducteurs venant en face",
+      "Pour consommer moins"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Quand l'arrière s'abaisse, les phares visent plus haut. Le réglage de hauteur corrige cela.",
+    "pourquoiFaux": {
+      "Pour éclairer plus loin": "Le but est d'éviter que les phares, relevés par la charge, éblouissent.",
+      "Pour consommer moins": "Le réglage n'a pas d'effet sur la consommation.",
+      "Ce n'est jamais nécessaire": "Une forte charge relève l'avant et donc les faisceaux."
+    }
+  },
+  {
+    "id": "ecl-032",
+    "theme": "eclairage",
+    "question": "En plein jour, il pleut fort en ville et tu ne vois plus qu'à 150 mètres. Que fais-tu ?",
+    "choix": [
+      "J'allume les feux de détresse en roulant",
+      "J'allume le feu de brouillard arrière",
+      "J'allume les feux de croisement",
+      "Je garde seulement les feux de jour"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Dès que la visibilité tombe sous environ 200 m, les feux de croisement sont obligatoires, même de jour.",
+    "pourquoiFaux": {
+      "Je garde seulement les feux de jour": "Sous 200 m de visibilité, les feux de croisement sont obligatoires.",
+      "J'allume le feu de brouillard arrière": "Il n'est permis que sous 100 m de visibilité.",
+      "J'allume les feux de détresse en roulant": "Les feux de détresse ne servent pas à rouler sous la pluie."
+    }
+  },
+  {
+    "id": "ecl-033",
+    "theme": "eclairage",
+    "question": "La nuit, sur une route non éclairée, tu suis un camion à 40 mètres. Quels feux utilises-tu ?",
+    "choix": [
+      "Les feux de route",
+      "Les feux de croisement",
+      "Le feu de brouillard arrière",
+      "Les feux de position seuls"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "On quitte les feux de route quand on suit un véhicule à moins de 50 m, sauf pour le dépasser.",
+    "pourquoiFaux": {
+      "Les feux de route": "À moins de 50 m derrière un véhicule, les feux de route sont interdits.",
+      "Les feux de position seuls": "En roulant la nuit, les feux de position ne suffisent pas.",
+      "Le feu de brouillard arrière": "Il n'est permis que sous 100 m de visibilité."
+    }
+  },
+  {
+    "id": "ecl-034",
+    "theme": "eclairage",
+    "question": "Brouillard épais : tu ne vois qu'à 50 mètres. Quels feux peux-tu allumer ?",
+    "choix": [
+      "Les feux de détresse en roulant",
+      "Les feux de route",
+      "Seulement les feux de position",
+      "Les feux de croisement et le feu de brouillard arrière (et les feux de brouillard avant si tu en as)"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Sous 100 m de visibilité par brouillard, le feu de brouillard arrière est permis, en plus des feux de croisement.",
+    "pourquoiFaux": {
+      "Les feux de route": "Dans le brouillard, les feux de route se reflètent et aveuglent.",
+      "Seulement les feux de position": "Les feux de position ne suffisent pas pour rouler.",
+      "Les feux de détresse en roulant": "Les feux de détresse ne remplacent pas l'éclairage normal."
+    }
   }
 ]

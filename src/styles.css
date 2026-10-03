@@ -1,7 +1,7 @@
 /* Feu Rouge — direction « tableau de bord » : un habitacle de nuit.
    Fond bleu nuit, cadrans et voyants (rouge, ambre, vert), aiguille ambre, affichages en chiffres mono.
    Mise en page : barre supérieure à soulignement, colonne de 1200 px, navigation en bas sur téléphone.
-   Thème volontairement unique (sombre) : c'est l'identité du site. */
+   Le sombre est l'identité du site ; un thème clair est proposé en option (data-theme="clair"). */
 :root {
   color-scheme: dark;
 
@@ -15,7 +15,9 @@
   --muted: #93a0b5;
   --dim: #5d6a80;
 
+  --ink-strong: #ffffff;
   --accent: #ffb020; /* aiguille, boutons principaux */
+  --accent-text: #ffb020; /* accent utilisé comme couleur de texte */
   --accent-ink: #1a1205;
   --accent-soft: #241c0c;
   --cyan: #4fd1ff; /* informations, progression */
@@ -40,6 +42,36 @@
   --step-2: 1.5rem;
   --step-3: 2.4rem;
   --step-4: clamp(2.4rem, 6vw, 4rem);
+}
+
+/* Thème clair (réglage « Apparence ») : même structure, couleurs assombries pour rester lisibles sur fond clair. */
+:root[data-theme='clair'] {
+  color-scheme: light;
+
+  --bg: #eef1f5;
+  --bg-2: #e5e9f0;
+  --surface: #ffffff;
+  --surface-2: #f2f4f8;
+  --line: #d4dae4;
+  --line-2: #b6bfcd;
+  --ink: #141a24;
+  --ink-strong: #000000;
+  --muted: #566073;
+  --dim: #8792a5;
+
+  --accent: #f5a300;
+  --accent-ink: #1a1205;
+  --accent-text: #9a5b00;
+  --accent-soft: #fff1d6;
+  --cyan: #0b6f9c;
+  --cyan-soft: #ddf0f8;
+  --signal: #d02f40;
+  --signal-soft: #fbe3e6;
+  --amber: #b86e00;
+  --amber-soft: #fdf0d9;
+  --go: #16804a;
+  --go-soft: #dcf2e5;
+  --zone-rouge: #f1d9dc;
 }
 
 *,
@@ -254,6 +286,27 @@ main {
 .bottomnav {
   display: none;
 }
+.site-footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 16px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.site-footer a {
+  color: var(--muted);
+}
+@media (max-width: 860px) {
+  .site-footer {
+    padding-bottom: 96px;
+  }
+}
 
 @media (max-width: 860px) {
   .topnav {
@@ -286,7 +339,7 @@ main {
     text-decoration: none;
   }
   .bottomnav a.active {
-    color: var(--accent);
+    color: var(--accent-text);
   }
   .bottomnav svg {
     width: 22px;
@@ -457,7 +510,7 @@ main {
 }
 .chip-accent {
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .bar {
@@ -590,7 +643,7 @@ main {
   font-weight: 700;
   font-size: 2.6rem;
   line-height: 1;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .countdown .eyebrow {
   line-height: 1.4;
@@ -658,6 +711,68 @@ main {
   margin-left: 8px;
 }
 
+.badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: 10px;
+}
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  min-width: 0;
+}
+.badge[data-obtenu='true'] {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  background: var(--accent-soft);
+}
+.badge[data-obtenu='false'] .badge-texte {
+  opacity: 0.7;
+}
+.badge-texte {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.badge-texte strong {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.badge-texte .muted {
+  font-size: 0.82rem;
+}
+.badge-prog {
+  font-size: 0.78rem;
+}
+.annonces {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.annonce {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--go-soft);
+  border: 1px solid color-mix(in srgb, var(--go) 35%, transparent);
+}
+.annonce-badge {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+.annonce strong {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
 .spark {
   width: 100%;
   height: auto;
@@ -696,6 +811,13 @@ main {
   border-radius: 8px;
   border: 1px solid var(--line);
 }
+.timer.lecture {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--cyan);
+  border-color: color-mix(in srgb, var(--cyan) 40%, var(--line));
+}
 .timer.low {
   color: var(--signal);
   border-color: var(--signal);
@@ -720,6 +842,23 @@ main {
   align-items: center;
   margin-bottom: 14px;
 }
+.ecouter {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid var(--line-2);
+  background: transparent;
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
 .qtext {
   font-family: var(--font-display);
   font-size: 1.4rem;
@@ -740,6 +879,28 @@ main {
   max-height: 200px;
   width: auto;
 }
+.qphoto {
+  margin: 18px 0 4px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+.qphoto img {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+}
+.qphoto figcaption {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.qphoto a {
+  color: var(--muted);
+}
+
 .choices {
   display: flex;
   flex-direction: column;
@@ -861,6 +1022,58 @@ main {
 }
 .correction-lien:hover {
   text-decoration: underline;
+}
+
+.signaler-bouton {
+  align-self: flex-start;
+  margin-top: 12px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.signaler-bouton:hover {
+  color: var(--ink);
+}
+.signaler {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  background: var(--bg);
+}
+.signaler strong {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.signaler-texte {
+  margin: 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  user-select: all;
+}
+.field textarea {
+  font: inherit;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line-2);
+  background: var(--bg);
+  color: var(--ink);
+  resize: vertical;
 }
 
 .session-foot {
@@ -998,7 +1211,7 @@ main {
   margin-block: 5px;
 }
 .prose li::marker {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .prose blockquote {
   margin: 16px 0;
@@ -1040,16 +1253,34 @@ main {
   background: var(--surface-2);
 }
 .prose td:first-child {
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 600;
 }
 .prose strong {
   font-weight: 600;
-  color: #ffffff;
+  color: var(--ink-strong);
 }
 .prose em {
   color: var(--cyan);
   font-style: normal;
+}
+
+.sources {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-2);
+  max-width: 72ch;
+}
+.sources ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.sources li {
+  margin-block: 4px;
 }
 
 .theme-card {
@@ -1127,7 +1358,7 @@ fieldset {
   border: 2px solid var(--accent);
   padding: 0 17px;
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .seg input:focus-visible + span {
   outline: 2px solid var(--cyan);

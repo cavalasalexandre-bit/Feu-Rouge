@@ -9,6 +9,7 @@ import { Feu, niveauTheme, couleurNiveau } from '../components/Feu'
 import { Compteur } from '../components/Compteur'
 import { Icone, type NomIcone } from '../components/Icone'
 import type { ExamResult } from '../types'
+import { badges, serieEnCours } from '../lib/motivation'
 
 interface LienTache {
   to: string
@@ -95,6 +96,10 @@ export function TableauDeBord() {
   const dernier = state.examens.at(-1)
   const nbSegments = Math.min(40, Math.max(10, plan.objectif))
   const faitsSegments = Math.round((Math.min(plan.faitAujourdhui, plan.objectif) / plan.objectif) * nbSegments)
+  const objectifAtteint = plan.faitAujourdhui >= plan.objectif
+  const serie = serieEnCours(state.activite)
+  const listeBadges = badges(QUESTIONS, state)
+  const obtenus = listeBadges.filter((b) => b.obtenu).length
 
   return (
     <div className="stack-lg">
@@ -146,13 +151,17 @@ export function TableauDeBord() {
         <section className="panel stack">
           <div className="row" style={{ justifyContent: 'space-between' }}>
             <h2>Aujourd'hui</h2>
-            <span className="num muted" style={{ fontSize: '0.85rem' }}>
-              {plan.faitAujourdhui} / {plan.objectif} questions
-            </span>
+            {objectifAtteint ? (
+              <span className="chip chip-ok">Objectif atteint · {plan.faitAujourdhui}</span>
+            ) : (
+              <span className="num muted" style={{ fontSize: '0.85rem' }}>
+                {plan.faitAujourdhui} / {plan.objectif} questions
+              </span>
+            )}
           </div>
           <div className="segments" role="img" aria-label={`${plan.faitAujourdhui} questions sur un objectif de ${plan.objectif}`}>
             {Array.from({ length: nbSegments }, (_, i) => (
-              <span key={i} className={i < faitsSegments ? 'on' : undefined} />
+              <span key={i} className={i < faitsSegments ? (objectifAtteint ? 'done' : 'on') : undefined} />
             ))}
           </div>
           <div className="readouts">
@@ -168,10 +177,10 @@ export function TableauDeBord() {
               <strong style={{ color: erreurs ? 'var(--signal)' : undefined }}>{erreurs}</strong>
             </div>
             <div className="readout">
-              <span className="eyebrow">Examens</span>
-              <strong>
-                {reussis}
-                <small>/{state.examens.length}</small>
+              <span className="eyebrow">Série</span>
+              <strong style={{ color: serie > 0 ? 'var(--accent-text)' : undefined }}>
+                {serie}
+                <small> j</small>
               </strong>
             </div>
           </div>
@@ -242,6 +251,26 @@ export function TableauDeBord() {
           </div>
         </section>
       </div>
+      <section className="panel stack">
+        <div className="row" style={{ justifyContent: 'space-between' }}>
+          <h2>Badges</h2>
+          <span className="num muted" style={{ fontSize: '0.82rem' }}>
+            {obtenus} / {listeBadges.length}
+          </span>
+        </div>
+        <div className="badges">
+          {listeBadges.map((b) => (
+            <div key={b.id} className="badge" data-obtenu={b.obtenu}>
+              <span className="voyant" data-level={b.obtenu ? '1' : 'x'} style={{ width: 12, height: 12 }} />
+              <span className="badge-texte">
+                <strong>{b.titre}</strong>
+                <span className="muted">{b.description}</span>
+              </span>
+              {!b.obtenu && b.progression && <span className="num muted badge-prog">{b.progression}</span>}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }

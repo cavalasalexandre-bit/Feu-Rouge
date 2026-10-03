@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Question } from '../types'
@@ -13,8 +13,8 @@ const toutes: Question[] = fichiers.flatMap((f) => JSON.parse(readFileSync(join(
 const themesConnus = new Set(THEMES.map((t) => t.id))
 
 describe('banque de questions', () => {
-  it('contient au moins 200 questions', () => {
-    expect(toutes.length).toBeGreaterThanOrEqual(200)
+  it('contient au moins 400 questions', () => {
+    expect(toutes.length).toBeGreaterThanOrEqual(400)
   })
 
   it('a un fichier par thème, et chaque thème au moins 8 questions', () => {
@@ -60,5 +60,21 @@ describe('banque de questions', () => {
 
   it('il y a assez de questions graves pour un examen réaliste', () => {
     expect(toutes.filter((q) => q.grave).length).toBeGreaterThanOrEqual(30)
+  })
+})
+
+describe('photos', () => {
+  const racine = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
+  const credits: Record<string, { fichier: string; auteur: string; licence: string; lienSource: string }> = JSON.parse(
+    readFileSync(join(racine, 'src', 'data', 'photos.json'), 'utf8'),
+  )
+  const ids = new Set(toutes.map((q) => q.id))
+
+  it('chaque photo correspond à une question, un fichier présent et des crédits complets', () => {
+    for (const [id, p] of Object.entries(credits)) {
+      expect(ids.has(id), `photo pour une question inconnue : ${id}`).toBe(true)
+      expect(existsSync(join(racine, 'public', p.fichier)), `fichier manquant : public/${p.fichier}`).toBe(true)
+      expect(p.auteur && p.licence && p.lienSource, `crédits incomplets pour ${id}`).toBeTruthy()
+    }
   })
 })

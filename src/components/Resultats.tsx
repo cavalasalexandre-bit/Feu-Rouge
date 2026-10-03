@@ -4,6 +4,8 @@ import { THEME_PAR_ID } from '../data/themes'
 import type { ModeSession } from './Session'
 import { Compteur } from './Compteur'
 import { Correction } from './Correction'
+import { Signaler } from './Signaler'
+import { Annonces } from './Annonces'
 
 interface Props {
   reponses: Reponse[]
@@ -36,6 +38,7 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
 
   return (
     <div className="stack-lg session">
+      <Annonces />
       <section className="panel stack">
         {estExamen ? (
           <div className="verdict">
@@ -160,6 +163,7 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
                   <strong style={{ color: 'var(--go)', fontWeight: 600 }}>{r.question.choix[r.question.bonne]}</strong>
                 </p>
                 <Correction question={r.question} choix={r.choix} />
+                <Signaler question={r.question} choix={r.choix} />
               </article>
             ),
           )}

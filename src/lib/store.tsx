@@ -18,6 +18,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     sauver(state)
   }, [state])
 
+  // Apparence : sombre (par défaut), clair, ou selon le réglage du système.
+  const apparence = state.settings.apparence
+  useEffect(() => {
+    const racine = document.documentElement
+    if (apparence !== 'auto') {
+      racine.dataset.theme = apparence
+      return
+    }
+    const mq = window.matchMedia('(prefers-color-scheme: light)')
+    const appliquer = () => (racine.dataset.theme = mq.matches ? 'clair' : 'sombre')
+    appliquer()
+    mq.addEventListener('change', appliquer)
+    return () => mq.removeEventListener('change', appliquer)
+  }, [apparence])
+
   const update = useCallback((fn: (s: AppState) => AppState) => setState((s) => fn(s)), [])
   const remplacer = useCallback((s: AppState) => setState(s), [])
 

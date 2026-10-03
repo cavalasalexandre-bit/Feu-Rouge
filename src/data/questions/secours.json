@@ -150,5 +150,385 @@
       "Je le laisse sur le dos sans surveiller": "Sur le dos, il risque de s'étouffer.",
       "Je le secoue pour le réveiller": "Le secouer peut aggraver ses blessures."
     }
+  },
+  {
+    "id": "sec-009",
+    "theme": "secours",
+    "question": "Une personne ne réagit pas et ne respire pas normalement. Que fais-tu ?",
+    "choix": [
+      "J'appelle le 112 et je commence le massage cardiaque",
+      "J'attends les secours sans rien faire",
+      "Je la mets en position latérale de sécurité",
+      "Je lui donne à boire"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Sans respiration normale : 112, massage cardiaque, et défibrillateur s'il y en a un à proximité.",
+    "pourquoiFaux": {
+      "Je la mets en position latérale de sécurité": "La position latérale est pour quelqu'un d'inconscient qui respire.",
+      "Je lui donne à boire": "Il ne faut jamais donner à boire à une victime.",
+      "J'attends les secours sans rien faire": "Chaque minute compte : le massage cardiaque peut sauver la vie."
+    }
+  },
+  {
+    "id": "sec-010",
+    "theme": "secours",
+    "question": "Qui peut utiliser un défibrillateur automatique (DEA) ?",
+    "choix": [
+      "Seulement les pompiers",
+      "Seulement les secouristes diplômés",
+      "Tout le monde : l'appareil guide l'utilisateur à voix haute",
+      "Seulement un médecin"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le DEA analyse le cœur et ne délivre un choc que si c'est nécessaire. Il donne les instructions à suivre.",
+    "pourquoiFaux": {
+      "Seulement un médecin": "Les DEA sont faits pour être utilisés par le public.",
+      "Seulement les secouristes diplômés": "Aucun diplôme n'est nécessaire.",
+      "Seulement les pompiers": "N'importe qui peut l'utiliser en attendant les secours."
+    }
+  },
+  {
+    "id": "sec-011",
+    "theme": "secours",
+    "question": "Un blessé saigne abondamment d'une plaie au bras. Que fais-tu ?",
+    "choix": [
+      "Je le fais marcher jusqu'à la voiture",
+      "Je laisse saigner pour nettoyer la plaie",
+      "Je lui donne à boire",
+      "Je comprime fortement la plaie, avec un tissu propre si possible"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La compression directe de la plaie arrête la plupart des saignements en attendant les secours.",
+    "pourquoiFaux": {
+      "Je laisse saigner pour nettoyer la plaie": "Une hémorragie peut être mortelle : il faut l'arrêter.",
+      "Je lui donne à boire": "Il ne faut pas donner à boire à un blessé.",
+      "Je le fais marcher jusqu'à la voiture": "Il doit rester immobile, allongé si possible."
+    }
+  },
+  {
+    "id": "sec-012",
+    "theme": "secours",
+    "question": "Une personne s'est brûlée la main. Que fais-tu ?",
+    "choix": [
+      "Je perce les cloques",
+      "Je mets de la glace directement",
+      "J'applique du beurre",
+      "Je refroidis la brûlure sous l'eau tempérée pendant plusieurs minutes"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Refroidir longuement à l'eau (environ 20 minutes) limite l'étendue de la brûlure.",
+    "pourquoiFaux": {
+      "J'applique du beurre": "Les corps gras gardent la chaleur et favorisent l'infection.",
+      "Je perce les cloques": "Percer les cloques augmente le risque d'infection.",
+      "Je mets de la glace directement": "La glace peut aggraver la brûlure."
+    }
+  },
+  {
+    "id": "sec-013",
+    "theme": "secours",
+    "question": "Un objet est planté dans la jambe d'un blessé. Que fais-tu ?",
+    "choix": [
+      "Je le laisse en place et j'appelle les secours",
+      "Je le coupe au ras de la peau",
+      "Je le retire rapidement",
+      "Je le tourne pour voir la profondeur"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "L'objet bouche souvent la plaie : le retirer peut déclencher un saignement grave.",
+    "pourquoiFaux": {
+      "Je le retire rapidement": "Le retirer peut provoquer une hémorragie importante.",
+      "Je le tourne pour voir la profondeur": "Toute manipulation aggrave la blessure.",
+      "Je le coupe au ras de la peau": "Il faut le laisser tel quel jusqu'à l'arrivée des secours."
+    }
+  },
+  {
+    "id": "sec-014",
+    "theme": "secours",
+    "question": "Un blessé conscient tremble et semble choqué. Que fais-tu en attendant les secours ?",
+    "choix": [
+      "Je le fais marcher pour qu'il se réchauffe",
+      "Je le couvre, je le rassure et je reste avec lui",
+      "Je lui donne un alcool fort",
+      "Je le laisse seul pour aller chercher de l'aide"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Couvrir la victime limite le refroidissement ; la rassurer et lui parler l'aide à rester calme.",
+    "pourquoiFaux": {
+      "Je le laisse seul pour aller chercher de l'aide": "Une victime choquée ne doit pas rester seule si possible.",
+      "Je lui donne un alcool fort": "L'alcool est à proscrire.",
+      "Je le fais marcher pour qu'il se réchauffe": "Il doit rester au repos."
+    }
+  },
+  {
+    "id": "sec-015",
+    "theme": "secours",
+    "question": "De la fumée sort du moteur après un accident. Que fais-tu ?",
+    "choix": [
+      "J'ouvre grand le capot",
+      "Je reste dans la voiture",
+      "Je redémarre pour voir si ça fonctionne",
+      "J'éloigne tout le monde du véhicule et j'appelle le 112"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Si un début de feu est petit, l'extincteur peut servir, mais la priorité est de mettre les personnes à l'abri.",
+    "pourquoiFaux": {
+      "J'ouvre grand le capot": "Ouvrir le capot apporte de l'air au feu.",
+      "Je reste dans la voiture": "Il faut s'éloigner du véhicule.",
+      "Je redémarre pour voir si ça fonctionne": "Redémarrer peut aggraver le feu."
+    }
+  },
+  {
+    "id": "sec-016",
+    "theme": "secours",
+    "question": "Accrochage sans blessé, les deux conducteurs sont d'accord sur les faits. Faut-il appeler la police ?",
+    "choix": [
+      "Oui, sinon l'assurance refuse",
+      "Oui, toujours",
+      "Oui, pour obtenir un procès-verbal",
+      "Non, un constat amiable suffit"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "On appelle la police en cas de blessé, de désaccord, de délit de fuite ou si un conducteur semble sous influence.",
+    "pourquoiFaux": {
+      "Oui, toujours": "Sans blessé et avec un accord, le constat amiable suffit.",
+      "Oui, sinon l'assurance refuse": "L'assurance accepte le constat amiable.",
+      "Oui, pour obtenir un procès-verbal": "Un procès-verbal n'est pas nécessaire dans ce cas."
+    }
+  },
+  {
+    "id": "sec-017",
+    "theme": "secours",
+    "question": "Un accident fait un blessé. La police doit-elle intervenir ?",
+    "choix": [
+      "Seulement la nuit",
+      "Oui, elle est prévenue via le 112 ou le 101",
+      "Non, le constat amiable suffit",
+      "Seulement si le blessé le demande"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En cas d'accident avec blessé, il faut prévenir les secours et la police.",
+    "pourquoiFaux": {
+      "Non, le constat amiable suffit": "Dès qu'il y a un blessé, la police intervient.",
+      "Seulement si le blessé le demande": "Ce n'est pas au blessé de décider.",
+      "Seulement la nuit": "L'heure ne change rien."
+    }
+  },
+  {
+    "id": "sec-018",
+    "theme": "secours",
+    "question": "Tu passes près d'un accident et une personne est en danger. Es-tu obligé d'aider ?",
+    "choix": [
+      "Oui, dans la mesure de tes moyens et sans te mettre en danger",
+      "Seulement si tu es secouriste",
+      "Non, ce n'est pas ton accident",
+      "Non, si d'autres personnes sont déjà là"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Au minimum, tout le monde peut sécuriser les lieux et appeler le 112.",
+    "pourquoiFaux": {
+      "Non, ce n'est pas ton accident": "La non-assistance à personne en danger est punissable.",
+      "Seulement si tu es secouriste": "Tout le monde doit au moins prévenir les secours.",
+      "Non, si d'autres personnes sont déjà là": "Vérifie que les secours ont bien été appelés."
+    }
+  },
+  {
+    "id": "sec-019",
+    "theme": "secours",
+    "question": "Après un accident, quand dois-tu prévenir ton assurance ?",
+    "choix": [
+      "Jamais, c'est l'autre conducteur qui s'en charge",
+      "Dans l'année",
+      "Le plus vite possible, en général dans les 8 jours",
+      "Seulement si tu es responsable"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Envoie ton exemplaire du constat amiable à ton assurance rapidement, en respectant le délai du contrat.",
+    "pourquoiFaux": {
+      "Dans l'année": "C'est beaucoup trop tard.",
+      "Seulement si tu es responsable": "Tu dois déclarer l'accident dans tous les cas.",
+      "Jamais, c'est l'autre conducteur qui s'en charge": "Chaque conducteur prévient sa propre assurance."
+    }
+  },
+  {
+    "id": "sec-020",
+    "theme": "secours",
+    "question": "Comment se remplit un constat amiable ?",
+    "choix": [
+      "Chacun de son côté, plus tard",
+      "Seulement par le conducteur responsable",
+      "Par téléphone avec l'assurance",
+      "Ensemble, sur un seul formulaire en deux exemplaires, avec un croquis et les cases cochées"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Chaque conducteur garde un exemplaire signé et l'envoie à son assurance.",
+    "pourquoiFaux": {
+      "Chacun de son côté, plus tard": "On le remplit ensemble, sur place.",
+      "Seulement par le conducteur responsable": "Les deux conducteurs le remplissent et le signent.",
+      "Par téléphone avec l'assurance": "Le constat se remplit et se signe sur place."
+    }
+  },
+  {
+    "id": "sec-021",
+    "theme": "secours",
+    "question": "Tu heurtes un animal sauvage (un chevreuil par exemple). Que fais-tu ?",
+    "choix": [
+      "Je sécurise les lieux et je préviens la police",
+      "Je mets l'animal dans mon coffre",
+      "Je m'approche pour le soigner",
+      "Je repars sans rien dire"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La police doit être prévenue ; elle te remettra aussi une attestation utile pour l'assurance.",
+    "pourquoiFaux": {
+      "Je mets l'animal dans mon coffre": "Ce n'est pas permis et l'animal peut être dangereux.",
+      "Je repars sans rien dire": "Il faut prévenir la police, qui contacte les services compétents.",
+      "Je m'approche pour le soigner": "Un animal blessé peut réagir violemment."
+    }
+  },
+  {
+    "id": "sec-022",
+    "theme": "secours",
+    "question": "L'autre conducteur refuse de remplir le constat amiable. Que fais-tu ?",
+    "choix": [
+      "J'appelle la police",
+      "Je remplis le constat seul et je signe à sa place",
+      "Je le force à signer",
+      "Je pars sans rien faire"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "En cas de désaccord ou de refus, la police vient constater l'accident.",
+    "pourquoiFaux": {
+      "Je le force à signer": "La force est interdite.",
+      "Je pars sans rien faire": "Tu perdrais la trace de l'accident.",
+      "Je remplis le constat seul et je signe à sa place": "Signer à sa place est un faux."
+    }
+  },
+  {
+    "id": "sec-023",
+    "theme": "secours",
+    "question": "Quel est le numéro de la police en Belgique ?",
+    "choix": [
+      "Le 100",
+      "Le 101",
+      "Le 911",
+      "Le 105"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En cas d'urgence, le 112 fonctionne pour tout ; le 101 joint directement la police.",
+    "pourquoiFaux": {
+      "Le 100": "Le 100 est l'ancien numéro des pompiers et de l'ambulance.",
+      "Le 911": "Le 911 est le numéro d'urgence américain.",
+      "Le 105": "Le 105 n'est pas un numéro d'urgence belge."
+    }
+  },
+  {
+    "id": "sec-024",
+    "theme": "secours",
+    "question": "Une victime est coincée dans sa voiture, mais il n'y a ni feu ni autre danger. Que fais-tu ?",
+    "choix": [
+      "Je lui retire la ceinture et je la tire",
+      "Je redémarre la voiture pour la mettre sur le côté",
+      "Je la sors le plus vite possible",
+      "Je ne la sors pas, je lui parle et j'attends les secours"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "On ne déplace une victime qu'en cas de danger immédiat. Les pompiers ont le matériel pour la dégager.",
+    "pourquoiFaux": {
+      "Je la sors le plus vite possible": "La sortir peut aggraver une blessure à la colonne vertébrale.",
+      "Je lui retire la ceinture et je la tire": "Ne la déplace pas sans danger immédiat.",
+      "Je redémarre la voiture pour la mettre sur le côté": "Ne touche pas au véhicule accidenté."
+    }
+  },
+  {
+    "id": "sec-025",
+    "theme": "secours",
+    "question": "Pourquoi mettre des gants avant de toucher une plaie qui saigne ?",
+    "choix": [
+      "Pour ne pas salir tes mains",
+      "C'est obligatoire pour la police",
+      "Ça n'a aucune utilité",
+      "Pour te protéger, et protéger la victime, contre les infections"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La trousse de secours contient des gants ; à défaut, un sac plastique peut servir.",
+    "pourquoiFaux": {
+      "Pour ne pas salir tes mains": "Le but est d'éviter les infections, dans les deux sens.",
+      "C'est obligatoire pour la police": "C'est une précaution d'hygiène, pas une obligation policière.",
+      "Ça n'a aucune utilité": "Le sang peut transmettre des maladies."
+    }
+  },
+  {
+    "id": "sec-026",
+    "theme": "secours",
+    "question": "Ton GSM n'a pas de réseau de ton opérateur. Peux-tu appeler le 112 ?",
+    "choix": [
+      "Oui, le 112 passe par n'importe quel réseau disponible",
+      "Seulement en Belgique",
+      "Non, il faut ton réseau",
+      "Seulement avec du crédit"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le 112 est gratuit et accessible même sans crédit, partout dans l'Union européenne.",
+    "pourquoiFaux": {
+      "Non, il faut ton réseau": "Le 112 utilise tout réseau mobile disponible.",
+      "Seulement avec du crédit": "Le 112 est gratuit, même sans crédit.",
+      "Seulement en Belgique": "Le 112 fonctionne dans toute l'Union européenne."
+    }
+  },
+  {
+    "id": "sec-027",
+    "theme": "secours",
+    "question": "Après un accrochage léger sans blessé, les voitures bloquent la circulation. Que fais-tu ?",
+    "choix": [
+      "Je pars et je règle ça plus tard",
+      "Je les déplace avant de vérifier si quelqu'un est blessé",
+      "Après avoir noté leur position (photos), je les déplace pour dégager la route",
+      "Je les laisse en place jusqu'à l'arrivée de l'assurance"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Sans blessé, on dégage la route pour éviter un sur-accident, après avoir gardé une trace de la position des véhicules.",
+    "pourquoiFaux": {
+      "Je les laisse en place jusqu'à l'arrivée de l'assurance": "Elles gêneraient la circulation et risqueraient un nouvel accident.",
+      "Je les déplace avant de vérifier si quelqu'un est blessé": "On vérifie d'abord qu'il n'y a pas de blessé.",
+      "Je pars et je règle ça plus tard": "Partir sans échanger les informations est un délit de fuite."
+    }
+  },
+  {
+    "id": "sec-028",
+    "theme": "secours",
+    "question": "Après un accident, tu sors de ta voiture sur une route hors agglomération. Que mets-tu d'abord ?",
+    "choix": [
+      "Rien, il fait jour",
+      "Mes lunettes de soleil",
+      "Le triangle sur le toit",
+      "Mon gilet de sécurité fluorescent"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le gilet fluo se met avant de sortir du véhicule pour être vu par les autres conducteurs.",
+    "pourquoiFaux": {
+      "Rien, il fait jour": "Le gilet te rend visible, de jour comme de nuit.",
+      "Mes lunettes de soleil": "Ce n'est pas la priorité.",
+      "Le triangle sur le toit": "Le triangle se place derrière le véhicule, et on enfile d'abord le gilet."
+    }
   }
 ]

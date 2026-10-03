@@ -302,5 +302,271 @@
       "3e degré": "Le 3e degré vise un danger direct, comme le feu rouge.",
       "4e degré": "Le 4e degré vise les comportements les plus graves."
     }
+  },
+  {
+    "id": "inf-017",
+    "theme": "infractions",
+    "question": "Depuis le 1er juillet 2026, quel est le montant de la perception immédiate pour une infraction du 2e degré ?",
+    "choix": [
+      "191 €",
+      "116 €",
+      "64 €",
+      "128 €"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "1er degré : 64 €. 2e degré : 128 €. 3e degré : 191 €.",
+    "pourquoiFaux": {
+      "116 €": "116 € était l'ancien montant, avant juillet 2026.",
+      "64 €": "64 € est le montant du 1er degré.",
+      "191 €": "191 € est le montant du 3e degré."
+    }
+  },
+  {
+    "id": "inf-018",
+    "theme": "infractions",
+    "question": "Un conducteur sans domicile en Belgique commet une infraction du 4e degré. Que paie-t-il sur place ?",
+    "choix": [
+      "Une perception immédiate de 520 €",
+      "64 €",
+      "191 €",
+      "Rien, il est convoqué au tribunal comme un résident"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Pour éviter qu'il échappe à la justice, un conducteur sans domicile en Belgique paie 520 € sur place pour le 4e degré.",
+    "pourquoiFaux": {
+      "Rien, il est convoqué au tribunal comme un résident": "Pour un conducteur sans domicile en Belgique, une perception est réclamée sur place.",
+      "191 €": "191 € est le montant du 3e degré.",
+      "64 €": "64 € est le montant du 1er degré."
+    }
+  },
+  {
+    "id": "inf-019",
+    "theme": "infractions",
+    "question": "Quel montant s'ajoute à une perception immédiate ?",
+    "choix": [
+      "50 €",
+      "10 % du montant",
+      "Rien",
+      "Une redevance administrative de 10,67 €"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Exemple : 64 € + 10,67 € = 74,67 € pour une infraction du 1er degré.",
+    "pourquoiFaux": {
+      "Rien": "Une redevance administrative s'ajoute au montant.",
+      "10 % du montant": "C'est un montant fixe, pas un pourcentage.",
+      "50 €": "Le montant est de 10,67 €."
+    }
+  },
+  {
+    "id": "inf-020",
+    "theme": "infractions",
+    "question": "Tu paies la perception immédiate dans le délai demandé. Que se passe-t-il ?",
+    "choix": [
+      "Tu dois repasser l'examen",
+      "L'affaire est clôturée",
+      "Tu perds des points sur ton permis",
+      "Tu passes quand même au tribunal"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le paiement de la perception immédiate éteint l'action publique pour cette infraction.",
+    "pourquoiFaux": {
+      "Tu passes quand même au tribunal": "Payer la perception met fin aux poursuites pour cette infraction.",
+      "Tu perds des points sur ton permis": "La Belgique n'applique pas de permis à points.",
+      "Tu dois repasser l'examen": "Payer une perception n'entraîne pas d'examen."
+    }
+  },
+  {
+    "id": "inf-021",
+    "theme": "infractions",
+    "question": "Qui peut prononcer une déchéance du droit de conduire (retrait du permis par décision de justice) ?",
+    "choix": [
+      "La commune",
+      "Le policier qui t'arrête",
+      "Le juge du tribunal de police",
+      "La compagnie d'assurance"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "La déchéance est une peine prononcée par le tribunal de police, par exemple pour une infraction grave.",
+    "pourquoiFaux": {
+      "Le policier qui t'arrête": "La police peut retirer le permis immédiatement, mais la déchéance est décidée par un juge.",
+      "La commune": "La commune n'a pas ce pouvoir.",
+      "La compagnie d'assurance": "Une assurance ne peut pas retirer un permis."
+    }
+  },
+  {
+    "id": "inf-022",
+    "theme": "infractions",
+    "question": "Tu ne paies pas une perception immédiate. Que peut-il se passer ?",
+    "choix": [
+      "Rien, l'infraction est oubliée",
+      "Le parquet peut t'envoyer un ordre de paiement plus élevé ou te convoquer au tribunal",
+      "Le montant diminue avec le temps",
+      "Ton permis est automatiquement annulé"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Sans paiement, le dossier part au parquet, avec un montant plus élevé ou une citation au tribunal.",
+    "pourquoiFaux": {
+      "Rien, l'infraction est oubliée": "Le dossier est transmis au parquet.",
+      "Ton permis est automatiquement annulé": "Il n'y a pas d'annulation automatique.",
+      "Le montant diminue avec le temps": "C'est l'inverse : il augmente."
+    }
+  },
+  {
+    "id": "inf-023",
+    "theme": "infractions",
+    "question": "De combien les perceptions immédiates ont-elles augmenté au 1er juillet 2026 ?",
+    "choix": [
+      "De 50 %",
+      "Elles n'ont pas changé",
+      "Elles ont doublé",
+      "De 10 %"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Exemple : le 1er degré est passé de 58 € à 64 €, le 3e degré de 174 € à 191 €.",
+    "pourquoiFaux": {
+      "De 50 %": "L'augmentation est de 10 %.",
+      "Elles n'ont pas changé": "Elles ont bien augmenté au 1er juillet 2026.",
+      "Elles ont doublé": "L'augmentation est de 10 %."
+    }
+  },
+  {
+    "id": "inf-024",
+    "theme": "infractions",
+    "question": "Quel est le montant de la perception immédiate pour l'usage du GSM en main au volant ?",
+    "choix": [
+      "520 €",
+      "128 €",
+      "191 €",
+      "64 €"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Le GSM en main est une infraction du 3e degré : 191 €, plus la redevance de 10,67 €.",
+    "pourquoiFaux": {
+      "64 €": "64 € est le montant du 1er degré ; le GSM en main est une infraction du 3e degré.",
+      "128 €": "128 € est le montant du 2e degré.",
+      "520 €": "520 € concerne le 4e degré pour un conducteur sans domicile en Belgique."
+    }
+  },
+  {
+    "id": "inf-025",
+    "theme": "infractions",
+    "question": "Comment le montant d'une amende pour excès de vitesse est-il fixé ?",
+    "choix": [
+      "Toujours 64 €",
+      "Selon la puissance de la voiture",
+      "Selon le degré, comme les autres infractions",
+      "Selon le nombre de km/h au-dessus de la limite"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Plus l'excès est important, plus l'amende est élevée. Au-delà d'un certain excès, c'est le tribunal.",
+    "pourquoiFaux": {
+      "Selon le degré, comme les autres infractions": "Les excès de vitesse ont leur propre barème.",
+      "Toujours 64 €": "Le montant augmente avec l'excès.",
+      "Selon la puissance de la voiture": "La puissance ne compte pas."
+    }
+  },
+  {
+    "id": "inf-026",
+    "theme": "infractions",
+    "question": "Qui peut proposer une perception immédiate ?",
+    "choix": [
+      "La police",
+      "N'importe quel témoin",
+      "Le garagiste",
+      "La commune par courrier"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La police constate l'infraction et peut proposer une perception immédiate.",
+    "pourquoiFaux": {
+      "N'importe quel témoin": "Seuls des agents habilités peuvent constater et proposer une perception.",
+      "La commune par courrier": "La perception immédiate est proposée par la police lors du constat.",
+      "Le garagiste": "Il n'a aucun rôle dans les infractions."
+    }
+  },
+  {
+    "id": "inf-027",
+    "theme": "infractions",
+    "question": "Tu n'es pas d'accord avec l'infraction constatée. Que peux-tu faire ?",
+    "choix": [
+      "Ne pas payer la perception : le dossier ira au parquet et tu pourras te défendre",
+      "Payer d'abord, puis contester",
+      "Rien, aucune contestation n'est possible",
+      "Envoyer un e-mail au policier"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Payer, c'est accepter. Si tu contestes, tu ne paies pas et l'affaire suit son cours.",
+    "pourquoiFaux": {
+      "Payer d'abord, puis contester": "Payer clôture l'affaire : tu ne pourras plus contester.",
+      "Rien, aucune contestation n'est possible": "Tu peux contester devant la justice.",
+      "Envoyer un e-mail au policier": "La contestation passe par le parquet et le tribunal."
+    }
+  },
+  {
+    "id": "inf-028",
+    "theme": "infractions",
+    "question": "Un radar photographie une voiture. Qui reçoit le courrier ?",
+    "choix": [
+      "Le titulaire de la plaque, qui doit indiquer qui conduisait",
+      "La compagnie d'assurance",
+      "Le conducteur, reconnu sur la photo",
+      "Personne si le conducteur n'est pas reconnaissable"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le titulaire de la plaque doit identifier le conducteur. Ne pas le faire est aussi sanctionné.",
+    "pourquoiFaux": {
+      "Le conducteur, reconnu sur la photo": "Le courrier va d'abord au titulaire de la plaque.",
+      "Personne si le conducteur n'est pas reconnaissable": "Le titulaire doit désigner le conducteur.",
+      "La compagnie d'assurance": "L'assurance n'est pas concernée."
+    }
+  },
+  {
+    "id": "inf-029",
+    "theme": "infractions",
+    "question": "Conduire sans permis valable, c'est :",
+    "choix": [
+      "Une infraction du 1er degré",
+      "Permis si on est accompagné",
+      "Une infraction grave, jugée par le tribunal",
+      "Sans conséquence pour un court trajet"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Conduire sans permis valable expose à de lourdes sanctions, et l'assurance peut se retourner contre le conducteur.",
+    "pourquoiFaux": {
+      "Une infraction du 1er degré": "C'est bien plus grave qu'une infraction du 1er degré.",
+      "Permis si on est accompagné": "Seul le permis provisoire permet de conduire accompagné, selon ses conditions.",
+      "Sans conséquence pour un court trajet": "La durée du trajet ne change rien."
+    }
+  },
+  {
+    "id": "inf-030",
+    "theme": "infractions",
+    "question": "Peux-tu rouler avec une voiture qui n'est pas assurée ?",
+    "choix": [
+      "Oui, si tu es prudent",
+      "Oui, pour un court trajet",
+      "Oui, si la voiture est vieille",
+      "Non, l'assurance responsabilité civile est obligatoire"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Rouler sans assurance est sévèrement sanctionné. En cas d'accident, tu paierais tous les dégâts toi-même.",
+    "pourquoiFaux": {
+      "Oui, pour un court trajet": "L'assurance est obligatoire pour tout trajet sur la voie publique.",
+      "Oui, si tu es prudent": "La prudence ne remplace pas l'assurance obligatoire.",
+      "Oui, si la voiture est vieille": "L'âge de la voiture ne change rien."
+    }
   }
 ]

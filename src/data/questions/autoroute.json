@@ -306,5 +306,290 @@
       "90 km/h": "90 km/h n'est pas le minimum.",
       "100 km/h": "100 km/h n'est pas le minimum."
     }
+  },
+  {
+    "id": "aut-017",
+    "theme": "autoroute",
+    "question": "Tu dois t'arrêter sur la bande d'arrêt d'urgence à cause d'une panne. Que fais-tu d'abord ?",
+    "choix": [
+      "J'allume mes feux de détresse",
+      "Je sors immédiatement poser le triangle sans gilet",
+      "Je reste dans la voiture et j'attends",
+      "J'ouvre le capot pour chercher la panne"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Feux de détresse, gilet fluo, sortie côté droit, tout le monde derrière la glissière, puis triangle et appel.",
+    "pourquoiFaux": {
+      "Je sors immédiatement poser le triangle sans gilet": "Le gilet fluo se met avant de sortir.",
+      "J'ouvre le capot pour chercher la panne": "Ta sécurité passe avant la réparation.",
+      "Je reste dans la voiture et j'attends": "Rester dans la voiture est dangereux en cas de choc."
+    }
+  },
+  {
+    "id": "aut-018",
+    "theme": "autoroute",
+    "question": "Après une panne sur l'autoroute, peux-tu marcher le long de la bande d'arrêt d'urgence pour chercher de l'aide ?",
+    "choix": [
+      "Oui, sur la bande de droite",
+      "Oui, sur la bande d'arrêt d'urgence",
+      "Oui, en traversant vers l'autre côté",
+      "Il faut rester derrière la glissière et appeler les secours"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "On attend en sécurité derrière la glissière et on appelle le 112 ou un dépanneur.",
+    "pourquoiFaux": {
+      "Oui, sur la bande d'arrêt d'urgence": "Les piétons sont interdits sur l'autoroute : c'est très dangereux.",
+      "Oui, sur la bande de droite": "Marcher sur une bande de circulation est extrêmement dangereux.",
+      "Oui, en traversant vers l'autre côté": "Traverser une autoroute à pied peut être mortel."
+    }
+  },
+  {
+    "id": "aut-019",
+    "theme": "autoroute",
+    "question": "Comment quittes-tu l'autoroute ?",
+    "choix": [
+      "Je coupe toutes les bandes au dernier moment",
+      "Je freine sur la bande de droite avant la sortie",
+      "Je me place tôt sur la bande de droite et je ralentis sur la bande de décélération",
+      "Je ralentis sur la bande de gauche"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "On ralentit sur la bande de décélération, pas sur l'autoroute elle-même.",
+    "pourquoiFaux": {
+      "Je freine sur la bande de droite avant la sortie": "Freiner sur l'autoroute surprend ceux qui suivent.",
+      "Je coupe toutes les bandes au dernier moment": "C'est très dangereux.",
+      "Je ralentis sur la bande de gauche": "Il faut se placer à droite bien avant."
+    }
+  },
+  {
+    "id": "aut-020",
+    "theme": "autoroute",
+    "question": "Sur la bande d'accélération, quel est ton but ?",
+    "choix": [
+      "Rouler lentement pour laisser passer tout le monde",
+      "M'arrêter au bout pour regarder",
+      "Forcer le passage, je suis prioritaire",
+      "Atteindre la vitesse de la circulation pour m'insérer en sécurité"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La bande d'accélération sert à prendre de la vitesse, tout en cédant le passage à ceux qui sont déjà sur l'autoroute.",
+    "pourquoiFaux": {
+      "M'arrêter au bout pour regarder": "S'arrêter au bout de la bande rend l'insertion très difficile.",
+      "Rouler lentement pour laisser passer tout le monde": "Une vitesse trop basse rend l'insertion dangereuse.",
+      "Forcer le passage, je suis prioritaire": "Tu dois céder le passage aux usagers de l'autoroute."
+    }
+  },
+  {
+    "id": "aut-021",
+    "theme": "autoroute",
+    "question": "Avant de changer de bande sur l'autoroute, que fais-tu ?",
+    "choix": [
+      "Je regarde dans les rétroviseurs et l'angle mort, puis je mets le clignotant",
+      "Je regarde seulement le rétroviseur intérieur",
+      "Je change sans clignotant si personne n'est là",
+      "Je mets le clignotant et je change tout de suite"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Rétroviseurs, angle mort, clignotant, puis changement de bande progressif.",
+    "pourquoiFaux": {
+      "Je mets le clignotant et je change tout de suite": "Le clignotant ne garantit pas que la voie est libre.",
+      "Je regarde seulement le rétroviseur intérieur": "Un véhicule peut se trouver dans l'angle mort.",
+      "Je change sans clignotant si personne n'est là": "Le clignotant reste obligatoire."
+    }
+  },
+  {
+    "id": "aut-022",
+    "theme": "autoroute",
+    "question": "Un panneau lumineux affiche une croix rouge au-dessus de ta bande. Que fais-tu ?",
+    "choix": [
+      "Je quitte cette bande dès que possible : elle est fermée",
+      "Je continue, c'est un conseil",
+      "Je m'arrête sous le panneau",
+      "Je ralentis seulement"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Une croix rouge au-dessus d'une bande signifie qu'on ne peut plus l'emprunter (accident, travaux…).",
+    "pourquoiFaux": {
+      "Je continue, c'est un conseil": "La croix rouge interdit de rouler sur cette bande.",
+      "Je m'arrête sous le panneau": "S'arrêter sur l'autoroute est dangereux : change de bande.",
+      "Je ralentis seulement": "Ralentir ne suffit pas : la bande est fermée."
+    }
+  },
+  {
+    "id": "aut-023",
+    "theme": "autoroute",
+    "question": "Un panneau lumineux montre une flèche verte au-dessus de ta bande. Que signifie-t-il ?",
+    "choix": [
+      "Je dois accélérer",
+      "Je dois sortir",
+      "La bande est ouverte à la circulation",
+      "La bande est réservée aux bus"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Flèche verte : bande ouverte. Croix rouge : bande fermée.",
+    "pourquoiFaux": {
+      "Je dois accélérer": "La flèche verte n'impose pas de vitesse.",
+      "Je dois sortir": "Elle indique seulement que la bande est ouverte.",
+      "La bande est réservée aux bus": "Ce n'est pas le sens de la flèche verte."
+    }
+  },
+  {
+    "id": "aut-024",
+    "theme": "autoroute",
+    "question": "Sur certaines autoroutes, la bande d'arrêt d'urgence peut être ouverte à la circulation aux heures de pointe. Quand peux-tu y rouler ?",
+    "choix": [
+      "Jamais",
+      "Toujours en semaine",
+      "Seulement quand la signalisation (panneaux lumineux) l'indique",
+      "Dès qu'il y a un bouchon"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Une bande d'arrêt d'urgence ouverte au trafic est signalée par des panneaux lumineux au-dessus des bandes.",
+    "pourquoiFaux": {
+      "Dès qu'il y a un bouchon": "Sans signalisation, elle reste réservée aux urgences.",
+      "Toujours en semaine": "C'est la signalisation qui décide, pas le jour.",
+      "Jamais": "Elle peut être ouverte, mais seulement si c'est signalé."
+    }
+  },
+  {
+    "id": "aut-025",
+    "theme": "autoroute",
+    "question": "Tu remorques une voiture en panne et tu te trouves sur l'autoroute. Que dois-tu faire ?",
+    "choix": [
+      "Rouler sur la bande d'arrêt d'urgence",
+      "Rouler à 120 km/h pour ne pas gêner",
+      "La quitter à la première sortie",
+      "Rouler jusqu'à destination"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un véhicule en panne remorqué sur l'autoroute doit la quitter à la première sortie.",
+    "pourquoiFaux": {
+      "Rouler jusqu'à destination": "Un remorquage sur l'autoroute doit être le plus court possible.",
+      "Rouler sur la bande d'arrêt d'urgence": "On ne circule pas sur la bande d'arrêt d'urgence.",
+      "Rouler à 120 km/h pour ne pas gêner": "Un remorquage se fait lentement et prudemment."
+    }
+  },
+  {
+    "id": "aut-026",
+    "theme": "autoroute",
+    "question": "Un accident a eu lieu de l'autre côté de l'autoroute. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête sur la bande d'arrêt d'urgence",
+      "Je continue à rouler normalement, sans ralentir pour regarder",
+      "Je ralentis pour voir ce qui se passe",
+      "Je prends une photo"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "La curiosité crée des sur-accidents. Garde les yeux sur ta route.",
+    "pourquoiFaux": {
+      "Je ralentis pour voir ce qui se passe": "Ralentir pour regarder provoque des bouchons et des accidents.",
+      "Je m'arrête sur la bande d'arrêt d'urgence": "Les secours sont sur place : ne t'arrête pas sans raison.",
+      "Je prends une photo": "Utiliser ton GSM en roulant est interdit et dangereux."
+    }
+  },
+  {
+    "id": "aut-027",
+    "theme": "autoroute",
+    "question": "Tu viens de dépasser un camion sur l'autoroute. Que fais-tu ensuite ?",
+    "choix": [
+      "Je ralentis devant le camion",
+      "Je reste sur la bande de gauche",
+      "Je reviens sur la bande de droite dès que c'est possible sans danger",
+      "Je me rabats juste devant le camion"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Après un dépassement, on revient à droite en laissant assez de distance devant le véhicule dépassé.",
+    "pourquoiFaux": {
+      "Je reste sur la bande de gauche": "La bande de gauche sert seulement à dépasser.",
+      "Je me rabats juste devant le camion": "Un camion a besoin de beaucoup de distance pour freiner.",
+      "Je ralentis devant le camion": "Ralentir juste devant lui est dangereux."
+    }
+  },
+  {
+    "id": "aut-028",
+    "theme": "autoroute",
+    "question": "Il y a un fort vent latéral sur un viaduc. Que fais-tu ?",
+    "choix": [
+      "Je roule au milieu de deux bandes",
+      "Je tiens fermement le volant et je ralentis",
+      "J'accélère pour passer plus vite",
+      "Je me colle au véhicule devant pour m'abriter"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Par vent fort, les rafales peuvent déporter la voiture, surtout en sortant d'un abri (tunnel, camion).",
+    "pourquoiFaux": {
+      "J'accélère pour passer plus vite": "La vitesse aggrave l'effet du vent.",
+      "Je roule au milieu de deux bandes": "Rouler à cheval sur deux bandes est dangereux.",
+      "Je me colle au véhicule devant pour m'abriter": "Suivre de trop près est dangereux."
+    }
+  },
+  {
+    "id": "aut-029",
+    "theme": "autoroute",
+    "question": "Un passager fait un malaise grave sur l'autoroute. Peux-tu t'arrêter sur la bande d'arrêt d'urgence ?",
+    "choix": [
+      "Oui, c'est une situation d'urgence",
+      "Non, jamais",
+      "Oui, mais sans feux de détresse",
+      "Non, il faut attendre la prochaine aire"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Arrête-toi le plus à droite possible, feux de détresse, et appelle le 112.",
+    "pourquoiFaux": {
+      "Non, jamais": "La bande d'arrêt d'urgence est justement faite pour les urgences.",
+      "Non, il faut attendre la prochaine aire": "En cas d'urgence grave, tu peux t'arrêter.",
+      "Oui, mais sans feux de détresse": "Les feux de détresse sont nécessaires."
+    }
+  },
+  {
+    "id": "aut-030",
+    "theme": "autoroute",
+    "question": "Tu te rends compte que tu es entré à contresens sur une bretelle d'autoroute. Que fais-tu ?",
+    "choix": [
+      "Je continue jusqu'à la prochaine sortie",
+      "Je fais demi-tour aussitôt",
+      "Je m'arrête le plus à droite possible, j'allume les feux de détresse et j'appelle les secours",
+      "Je fais marche arrière jusqu'au début de la bretelle"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "S'arrêter et prévenir les secours est la façon la plus sûre de sortir de cette situation.",
+    "pourquoiFaux": {
+      "Je fais demi-tour aussitôt": "Le demi-tour sur l'autoroute est interdit et dangereux.",
+      "Je continue jusqu'à la prochaine sortie": "Rouler à contresens met tout le monde en danger.",
+      "Je fais marche arrière jusqu'au début de la bretelle": "La marche arrière est interdite et dangereuse."
+    }
+  },
+  {
+    "id": "aut-031",
+    "theme": "autoroute",
+    "question": "Tu as soudain sommeil sur l'autoroute. Que fais-tu ?",
+    "choix": [
+      "J'accélère pour arriver plus vite",
+      "Je m'arrête sur la bande d'arrêt d'urgence pour dormir",
+      "J'ouvre la fenêtre et je continue",
+      "Je m'arrête sur la prochaine aire de repos pour dormir un peu"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Une courte sieste de 15 à 20 minutes sur une aire de repos est la solution la plus efficace.",
+    "pourquoiFaux": {
+      "Je m'arrête sur la bande d'arrêt d'urgence pour dormir": "La bande d'arrêt d'urgence ne sert pas à se reposer.",
+      "J'ouvre la fenêtre et je continue": "L'air frais n'agit que quelques minutes.",
+      "J'accélère pour arriver plus vite": "La fatigue et la vitesse s'additionnent."
+    }
   }
 ]

@@ -62,6 +62,21 @@ Après modification : `npm run check:questions` vérifie que tout est bien form�
 
 Les fiches de cours sont dans `src/data/cours/<theme>.md`.
 
+## Photos libres de droits
+
+Les questions peuvent être illustrées par de vraies photos (Wikimedia Commons, Mapillary), avec l'auteur et la licence affichés sous la photo et sur la page « Sources et crédits ».
+
+1. (Optionnel) Pour Mapillary : copie `.env.example` en `.env` et colle ton jeton client.
+2. `npm run photos:chercher` : télécharge des photos candidates dans `photos/candidats/` (ouvre `photos/candidats/index.html` pour les comparer).
+3. Choisis une photo par question dans `photos/selection.json`.
+4. `npm run photos:installer` : installe les photos choisies et leurs crédits.
+
+La liste des questions à illustrer est dans `photos/a-trouver.json`. Le détail de la procédure (pour Claude Code) est dans `CLAUDE.md`.
+
+## Signalement des erreurs
+
+Renseigne `depotGithub` (et éventuellement `emailSignalement`) dans `src/config.ts` : le bouton « Signaler une erreur » ouvrira alors une fiche pré-remplie sur GitHub.
+
 ## Publier sur GitHub Pages
 
 1. Crée un dépôt sur GitHub (par ex. `feu-rouge`).

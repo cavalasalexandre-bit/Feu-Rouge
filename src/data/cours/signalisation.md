@@ -36,3 +36,13 @@ La signalisation **temporaire** (chantiers) prime sur la signalisation permanent
 
 - Feux rouges clignotants ou barrières en mouvement : **interdiction de s'engager**.
 - Ne pas respecter cette signalisation est une infraction du **4e degré**.
+
+## Autres marquages et feux
+
+- **Flèches de rabattement** (flèches courbées sur la chaussée) : une ligne continue approche, termine ton dépassement.
+- **Carrés blancs** en travers de la chaussée : passage pour cyclistes.
+- **Ligne d'arrêt** : on s'arrête avant elle (feu, STOP, agent).
+- **Bande bus** : réservée aux bus, sauf panneau qui autorise d'autres usagers.
+- En Belgique, le feu passe du **rouge directement au vert**.
+- **Panneau additionnel** : précise distance, heures, véhicules concernés. « Excepté circulation locale » : accès pour ceux qui ont une destination dans la zone.
+- Les panneaux de danger sont placés en général **150 m** avant le danger hors agglomération.

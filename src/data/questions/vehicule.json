@@ -226,5 +226,423 @@
       "Au plus bas possible": "Au plus bas, il peut même aggraver le coup du lapin.",
       "Il n'a pas besoin d'être réglé": "Mal réglé, il ne protège pas la nuque."
     }
+  },
+  {
+    "id": "veh-013",
+    "theme": "vehicule",
+    "question": "Les pneus d'hiver sont-ils obligatoires en Belgique ?",
+    "choix": [
+      "Oui, dès qu'il neige",
+      "Oui, du 1er novembre au 31 mars",
+      "Oui, en Wallonie seulement",
+      "Non, ils sont conseillés mais pas obligatoires"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Les pneus d'hiver améliorent l'adhérence par temps froid, mais ne sont pas obligatoires en Belgique.",
+    "pourquoiFaux": {
+      "Oui, du 1er novembre au 31 mars": "Cette obligation existe dans d'autres pays, pas en Belgique.",
+      "Oui, en Wallonie seulement": "Aucune région belge ne les impose.",
+      "Oui, dès qu'il neige": "Ils ne sont pas obligatoires, même quand il neige."
+    }
+  },
+  {
+    "id": "veh-014",
+    "theme": "vehicule",
+    "question": "Quand peux-tu utiliser des chaînes à neige ?",
+    "choix": [
+      "Tout l'hiver",
+      "Seulement sur une route couverte de neige ou de verglas",
+      "Sur autoroute sèche par sécurité",
+      "Jamais en Belgique"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Les chaînes ne se montent que si la route est couverte de neige ou de glace.",
+    "pourquoiFaux": {
+      "Tout l'hiver": "Sur route dégagée, les chaînes abîment la route et les pneus.",
+      "Sur autoroute sèche par sécurité": "Sur route sèche, elles sont interdites et dangereuses.",
+      "Jamais en Belgique": "Elles sont permises quand la route est enneigée ou verglacée."
+    }
+  },
+  {
+    "id": "veh-015",
+    "theme": "vehicule",
+    "question": "Peux-tu monter deux pneus de types différents sur un même essieu ?",
+    "choix": [
+      "Oui, si la taille est la même",
+      "Oui, à l'arrière seulement",
+      "Oui, sans restriction",
+      "Non, les pneus d'un même essieu doivent être du même type"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Deux pneus différents sur un même essieu adhèrent différemment, ce qui peut déstabiliser la voiture au freinage.",
+    "pourquoiFaux": {
+      "Oui, si la taille est la même": "Le type (été, hiver, toutes saisons) doit aussi être le même.",
+      "Oui, à l'arrière seulement": "La règle vaut pour chaque essieu.",
+      "Oui, sans restriction": "Des pneus différents sur un essieu déséquilibrent le véhicule."
+    }
+  },
+  {
+    "id": "veh-016",
+    "theme": "vehicule",
+    "question": "Comment régler un rétroviseur extérieur ?",
+    "choix": [
+      "Je vois à peine le flanc de ma voiture et surtout la route derrière et à côté",
+      "Je vois surtout le ciel",
+      "Je vois surtout le flanc de ma voiture",
+      "Le réglage n'a pas d'importance"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Un léger morceau du flanc sert de repère ; le reste du miroir montre la route.",
+    "pourquoiFaux": {
+      "Je vois surtout le flanc de ma voiture": "Le rétroviseur doit montrer la route, pas ta portière.",
+      "Je vois surtout le ciel": "Il serait réglé trop haut.",
+      "Le réglage n'a pas d'importance": "Un mauvais réglage agrandit l'angle mort."
+    }
+  },
+  {
+    "id": "veh-017",
+    "theme": "vehicule",
+    "question": "Comment vérifier l'angle mort avant de changer de bande ?",
+    "choix": [
+      "Ce n'est pas utile sur autoroute",
+      "En regardant plus longtemps dans le rétroviseur intérieur",
+      "En mettant le clignotant plus tôt",
+      "En tournant brièvement la tête sur le côté"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "L'angle mort est la zone que les rétroviseurs ne montrent pas. Un coup d'œil par-dessus l'épaule la vérifie.",
+    "pourquoiFaux": {
+      "En regardant plus longtemps dans le rétroviseur intérieur": "L'angle mort est justement invisible dans les rétroviseurs.",
+      "En mettant le clignotant plus tôt": "Le clignotant ne te montre rien.",
+      "Ce n'est pas utile sur autoroute": "Sur autoroute aussi, un véhicule peut se trouver dans l'angle mort."
+    }
+  },
+  {
+    "id": "veh-018",
+    "theme": "vehicule",
+    "question": "Jusqu'à quand est-il conseillé de transporter un jeune enfant dos à la route ?",
+    "choix": [
+      "Jusqu'à 6 mois seulement",
+      "Seulement à l'avant",
+      "Jamais, c'est moins sûr",
+      "Le plus longtemps possible, selon les limites du siège"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "En cas de choc avant, un siège dos à la route répartit les forces sur tout le dos de l'enfant.",
+    "pourquoiFaux": {
+      "Jusqu'à 6 mois seulement": "Le dos à la route protège mieux la tête et la nuque des petits.",
+      "Jamais, c'est moins sûr": "C'est la position la plus sûre pour les jeunes enfants.",
+      "Seulement à l'avant": "Le sens du siège ne dépend pas de la place."
+    }
+  },
+  {
+    "id": "veh-019",
+    "theme": "vehicule",
+    "question": "Le voyant ABS orange s'allume et reste allumé. Que signifie-t-il ?",
+    "choix": [
+      "Les freins ne fonctionnent plus du tout",
+      "Rien, c'est normal en hiver",
+      "Il faut faire le plein",
+      "L'ABS est hors service : les freins fonctionnent, mais sans ABS. Il faut faire réparer"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Sans ABS, les roues peuvent se bloquer en cas de freinage d'urgence. Roule prudemment et fais réparer.",
+    "pourquoiFaux": {
+      "Les freins ne fonctionnent plus du tout": "Les freins classiques restent actifs.",
+      "Il faut faire le plein": "Le voyant ABS ne concerne pas le carburant.",
+      "Rien, c'est normal en hiver": "Un voyant qui reste allumé signale une panne."
+    }
+  },
+  {
+    "id": "veh-020",
+    "theme": "vehicule",
+    "question": "Qu'est-ce que l'éco-conduite ?",
+    "choix": [
+      "Rouler au point mort en descente",
+      "Couper le moteur dans les virages",
+      "Rouler en souplesse, anticiper et éviter les accélérations brusques",
+      "Rouler toujours très lentement"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Anticiper et rouler en souplesse réduit la consommation, l'usure et le risque d'accident.",
+    "pourquoiFaux": {
+      "Rouler toujours très lentement": "L'éco-conduite n'est pas rouler lentement, mais en souplesse.",
+      "Rouler au point mort en descente": "Au point mort, tu perds le frein moteur et le contrôle.",
+      "Couper le moteur dans les virages": "C'est dangereux : tu perds l'assistance de direction et de freinage."
+    }
+  },
+  {
+    "id": "veh-021",
+    "theme": "vehicule",
+    "question": "Des pneus pas assez gonflés entraînent :",
+    "choix": [
+      "Un meilleur freinage",
+      "Aucune différence",
+      "Une tenue de route moins bonne, plus de consommation et plus d'usure",
+      "Moins de consommation"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Vérifie la pression régulièrement, pneus froids, selon les valeurs indiquées par le constructeur.",
+    "pourquoiFaux": {
+      "Un meilleur freinage": "Un pneu sous-gonflé freine moins bien.",
+      "Aucune différence": "La pression influence beaucoup le comportement de la voiture.",
+      "Moins de consommation": "C'est l'inverse : la consommation augmente."
+    }
+  },
+  {
+    "id": "veh-022",
+    "theme": "vehicule",
+    "question": "Tu transportes des bagages sur le toit. Qu'est-ce qui change ?",
+    "choix": [
+      "Elle consomme moins",
+      "La voiture est plus stable",
+      "La voiture est plus sensible au vent, consomme plus et freine moins bien",
+      "Rien du tout"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Une charge sur le toit élève le centre de gravité et augmente la prise au vent : adapte ta conduite.",
+    "pourquoiFaux": {
+      "Rien du tout": "Le poids et la prise au vent changent le comportement.",
+      "La voiture est plus stable": "Le centre de gravité monte : la voiture est moins stable.",
+      "Elle consomme moins": "La prise au vent augmente la consommation."
+    }
+  },
+  {
+    "id": "veh-023",
+    "theme": "vehicule",
+    "question": "La plaque d'immatriculation arrière doit être :",
+    "choix": [
+      "Facultative à l'arrière",
+      "Visible seulement de jour",
+      "Décorée à ton goût",
+      "Propre, lisible et éclairée la nuit"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Une plaque sale, masquée ou non éclairée est une infraction.",
+    "pourquoiFaux": {
+      "Visible seulement de jour": "Elle doit aussi être éclairée la nuit.",
+      "Décorée à ton goût": "Une plaque modifiée ou illisible est interdite.",
+      "Facultative à l'arrière": "La plaque arrière est obligatoire."
+    }
+  },
+  {
+    "id": "veh-024",
+    "theme": "vehicule",
+    "question": "Tu vends ta voiture d'occasion. Quel contrôle est nécessaire ?",
+    "choix": [
+      "Une nouvelle immatriculation par le vendeur",
+      "Seulement un passage au garage",
+      "Un contrôle technique pour la vente",
+      "Aucun"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Avant la vente d'une voiture d'occasion, un contrôle technique spécifique est réalisé.",
+    "pourquoiFaux": {
+      "Aucun": "Un contrôle technique est exigé pour la vente d'un véhicule d'occasion.",
+      "Seulement un passage au garage": "C'est le contrôle technique officiel qui est exigé.",
+      "Une nouvelle immatriculation par le vendeur": "C'est l'acheteur qui immatricule la voiture à son nom."
+    }
+  },
+  {
+    "id": "veh-025",
+    "theme": "vehicule",
+    "question": "Combien de gilets de sécurité fluorescents faut-il au minimum dans une voiture ?",
+    "choix": [
+      "Au moins un, à portée de main du conducteur",
+      "Un dans le coffre suffit, peu importe où",
+      "Aucun",
+      "Un par passager"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Garde le gilet dans l'habitacle, pas au fond du coffre : tu dois pouvoir l'enfiler avant de sortir.",
+    "pourquoiFaux": {
+      "Un par passager": "L'obligation légale porte sur au moins un gilet, mais en avoir un par passager est conseillé.",
+      "Aucun": "Le gilet fluo est obligatoire en Belgique.",
+      "Un dans le coffre suffit, peu importe où": "Il doit être accessible pour être enfilé avant de sortir."
+    }
+  },
+  {
+    "id": "veh-026",
+    "theme": "vehicule",
+    "question": "Comment une femme enceinte doit-elle porter la ceinture ?",
+    "choix": [
+      "Seulement la sangle haute",
+      "Elle est dispensée de ceinture",
+      "La sangle basse sous le ventre, sur les hanches, et la sangle haute entre les seins",
+      "La sangle basse sur le ventre"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Bien portée, la ceinture protège aussi le bébé.",
+    "pourquoiFaux": {
+      "Elle est dispensée de ceinture": "La ceinture protège la mère et l'enfant : elle doit la porter.",
+      "La sangle basse sur le ventre": "La sangle basse doit passer sous le ventre.",
+      "Seulement la sangle haute": "Les deux sangles doivent être portées."
+    }
+  },
+  {
+    "id": "veh-027",
+    "theme": "vehicule",
+    "question": "Les balais d'essuie-glace laissent des traces. Que fais-tu ?",
+    "choix": [
+      "Je roule sans les utiliser",
+      "Je les remplace : la visibilité doit être bonne",
+      "Rien, ils fonctionnent encore",
+      "J'attends le contrôle technique"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Des essuie-glaces usés réduisent fortement la visibilité sous la pluie.",
+    "pourquoiFaux": {
+      "Rien, ils fonctionnent encore": "Des traces gênent la vision, surtout la nuit et sous la pluie.",
+      "J'attends le contrôle technique": "Mieux vaut les remplacer rapidement.",
+      "Je roule sans les utiliser": "Par temps de pluie, ils sont indispensables."
+    }
+  },
+  {
+    "id": "veh-028",
+    "theme": "vehicule",
+    "question": "Où un enfant de moins de 3 ans doit-il voyager dans une voiture ?",
+    "choix": [
+      "Avec la ceinture adulte seule",
+      "Couché sur la banquette",
+      "Sur les genoux d'un adulte",
+      "Dans un siège adapté (dispositif de retenue), sur un siège équipé d'une ceinture"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Un enfant de moins de 3 ans voyage toujours dans un dispositif de retenue adapté.",
+    "pourquoiFaux": {
+      "Sur les genoux d'un adulte": "En cas de choc, l'enfant serait projeté.",
+      "Avec la ceinture adulte seule": "La ceinture adulte ne convient pas à un enfant de cet âge.",
+      "Couché sur la banquette": "Sans dispositif adapté, il n'est pas protégé."
+    }
+  },
+  {
+    "id": "veh-029",
+    "theme": "vehicule",
+    "question": "Un enfant mesure 1,40 m. Comment voyage-t-il ?",
+    "choix": [
+      "Il ne peut pas voyager à l'avant",
+      "Sans ceinture à l'arrière",
+      "Il doit encore avoir un rehausseur",
+      "Avec la ceinture de sécurité normale"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Au-delà de 1,35 m, les règles des adultes s'appliquent : la ceinture normale suffit.",
+    "pourquoiFaux": {
+      "Il doit encore avoir un rehausseur": "Le dispositif de retenue est exigé sous 1,35 m.",
+      "Il ne peut pas voyager à l'avant": "Au-dessus de 1,35 m, il peut voyager à l'avant avec la ceinture.",
+      "Sans ceinture à l'arrière": "La ceinture est obligatoire pour tous."
+    }
+  },
+  {
+    "id": "veh-030",
+    "theme": "vehicule",
+    "question": "Dans un taxi, un enfant voyage sans siège enfant. Où peut-il s'asseoir ?",
+    "choix": [
+      "Sur les genoux du chauffeur",
+      "Où il veut",
+      "Seulement à l'arrière",
+      "À l'avant, avec la ceinture"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Dans un taxi, le siège enfant n'est pas obligatoire, mais un enfant sans siège voyage à l'arrière.",
+    "pourquoiFaux": {
+      "À l'avant, avec la ceinture": "Sans dispositif de retenue, l'enfant ne peut pas être à l'avant d'un taxi.",
+      "Sur les genoux du chauffeur": "C'est évidemment interdit.",
+      "Où il veut": "La place avant lui est interdite sans siège adapté."
+    }
+  },
+  {
+    "id": "veh-031",
+    "theme": "vehicule",
+    "question": "Où doit se trouver l'extincteur de la voiture ?",
+    "choix": [
+      "À un endroit facilement accessible, en bon état",
+      "Il n'est pas obligatoire",
+      "N'importe où, même sous les bagages",
+      "Chez soi, au garage"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "L'extincteur doit être accessible rapidement et en état de fonctionner.",
+    "pourquoiFaux": {
+      "N'importe où, même sous les bagages": "En cas de feu, il faut pouvoir le prendre vite.",
+      "Chez soi, au garage": "Il doit être dans le véhicule.",
+      "Il n'est pas obligatoire": "L'extincteur est obligatoire dans une voiture en Belgique."
+    }
+  },
+  {
+    "id": "veh-032",
+    "theme": "vehicule",
+    "question": "Comment contrôler le niveau d'huile moteur ?",
+    "choix": [
+      "Voiture en pente",
+      "Moteur en marche",
+      "Moteur froid ou arrêté depuis quelques minutes, voiture sur un sol plat",
+      "Seulement au contrôle technique"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Sur sol plat et moteur arrêté, l'huile redescend dans le carter et la jauge est fiable.",
+    "pourquoiFaux": {
+      "Moteur en marche": "Moteur en marche, la mesure est fausse et c'est dangereux.",
+      "Voiture en pente": "En pente, la jauge donne une mesure fausse.",
+      "Seulement au contrôle technique": "Le niveau se contrôle régulièrement, par exemple tous les mois."
+    }
+  },
+  {
+    "id": "veh-033",
+    "theme": "vehicule",
+    "question": "Le moteur surchauffe. Peux-tu ouvrir tout de suite le bouchon du liquide de refroidissement ?",
+    "choix": [
+      "Oui, pour faire baisser la température",
+      "Non, il faut attendre que le moteur refroidisse",
+      "Oui, avec un chiffon",
+      "Oui, si le moteur tourne"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le circuit de refroidissement est sous pression quand il est chaud : attends qu'il refroidisse.",
+    "pourquoiFaux": {
+      "Oui, pour faire baisser la température": "Le liquide brûlant sous pression peut jaillir et te brûler.",
+      "Oui, avec un chiffon": "Un chiffon ne protège pas d'une projection de liquide brûlant.",
+      "Oui, si le moteur tourne": "C'est encore plus dangereux moteur en marche."
+    }
+  },
+  {
+    "id": "veh-034",
+    "theme": "vehicule",
+    "question": "Ton chargement cache la vue dans le rétroviseur intérieur. Que faut-il ?",
+    "choix": [
+      "Rouler avec les feux de détresse",
+      "Rien, le rétroviseur gauche suffit",
+      "Ouvrir le coffre",
+      "Deux rétroviseurs extérieurs, à gauche et à droite"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Quand la vue vers l'arrière est bouchée, deux rétroviseurs extérieurs sont nécessaires.",
+    "pourquoiFaux": {
+      "Rien, le rétroviseur gauche suffit": "Sans vue vers l'arrière par l'intérieur, il faut un rétroviseur de chaque côté.",
+      "Rouler avec les feux de détresse": "Les feux de détresse ne remplacent pas la vue vers l'arrière.",
+      "Ouvrir le coffre": "Rouler coffre ouvert est dangereux."
+    }
   }
 ]

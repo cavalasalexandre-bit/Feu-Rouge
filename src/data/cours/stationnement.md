@@ -39,3 +39,15 @@
 ## En quittant la voiture
 
 Frein de stationnement, vitesse engagée, roues braquées vers le trottoir en pente. Regarde derrière toi avant d'ouvrir ta portière.
+
+## Encore interdit
+
+- Double file.
+- Passages pour cyclistes, rails de tram, passages à niveau.
+- Tunnels, virages et sommets de côte sans visibilité.
+- Tout endroit où le véhicule cache un panneau ou un feu.
+
+## Zone bleue, précisions
+
+- Sauf indication contraire : **jours ouvrables de 9 h à 18 h**.
+- Disque **derrière le pare-brise**, lisible de l'extérieur.

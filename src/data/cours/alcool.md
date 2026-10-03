@@ -29,3 +29,18 @@ Temps de réaction plus long, champ de vision réduit, excès de confiance. C'es
 - Tenu en main : **interdit**, même arrêté à un feu ou dans un bouchon.
 - C'est une infraction du **3e degré** (faute grave).
 - Mains libres, appareil fixé : permis.
+
+## Montants depuis le 1er juillet 2026 (perception immédiate)
+
+| Taux (air expiré) | Montant |
+|---|---|
+| 0,22 à 0,35 mg/l | 197 € |
+| 0,35 à 0,44 mg/l | 462 € |
+| 0,44 à 0,50 mg/l | 636 € |
+| 0,50 mg/l et plus | Tribunal, pas de perception |
+
+- Les **cyclistes** sont soumis aux mêmes limites.
+- Le lendemain d'une soirée, il peut rester de l'alcool dans le sang.
+- **Bob** : désigner à l'avance un conducteur qui ne boit pas.
+- Même en mains libres, une conversation réduit l'attention.
+- Moments de forte somnolence : la nuit et le début d'après-midi.

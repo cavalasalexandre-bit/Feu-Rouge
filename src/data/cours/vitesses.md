@@ -33,3 +33,12 @@ Une zone reste valable jusqu'au **panneau de fin de zone**, même après plusieu
 
 - Toute question de vitesse peut être une **faute grave** (−5 points).
 - Neige, verglas, brouillard : la limite ne change pas, mais tu dois rouler moins vite.
+
+## Autres règles utiles
+
+- **Zone piétonne** : les véhicules admis roulent **au pas**.
+- **Panneaux lumineux** (autoroute, ring) : la limite affichée est **obligatoire**, comme un panneau fixe.
+- **Fin de limitation** (nombre barré) : retour à la limite générale de l'endroit.
+- Panneau additionnel avec des **heures** : la limite ne vaut que pendant ces heures.
+- **Permis provisoire** : mêmes limites que les autres conducteurs.
+- Pas de dépassement de la limite, même pour dépasser un autre véhicule.

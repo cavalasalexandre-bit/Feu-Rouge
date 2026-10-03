@@ -21,3 +21,20 @@ Ne donne jamais à boire à un blessé.
 
 - Rester sur place et permettre d'établir son identité. Partir est un **délit de fuite**.
 - **Constat amiable** : rempli et signé par les deux conducteurs, il ne se modifie plus après signature.
+
+## Gestes complémentaires
+
+| Situation | Geste |
+|---|---|
+| Ne respire pas | 112, massage cardiaque, défibrillateur (utilisable par tous) |
+| Saigne beaucoup | Comprimer la plaie |
+| Brûlure | Refroidir longuement à l'eau tempérée |
+| Objet planté | Le laisser en place |
+| Victime choquée | La couvrir, la rassurer, rester avec elle |
+
+## Police ou constat ?
+
+- **Sans blessé et d'accord** : constat amiable, pas besoin de police.
+- **Blessé, désaccord, refus de signer, animal sauvage heurté** : appeler la police (101 ou 112).
+- Prévenir son assurance rapidement, en général dans les 8 jours.
+- Le **112** fonctionne sans crédit et sur n'importe quel réseau.

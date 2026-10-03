@@ -264,5 +264,347 @@
       "Rien de particulier": "Le mélange est dangereux.",
       "Le taux d'alcool baisse": "Les médicaments ne font pas baisser le taux d'alcool."
     }
+  },
+  {
+    "id": "alc-015",
+    "theme": "alcool",
+    "question": "Depuis le 1er juillet 2026, quelle est la perception immédiate pour un taux de 0,22 à 0,35 mg/l d'air expiré ?",
+    "choix": [
+      "64 €",
+      "179 €",
+      "197 €",
+      "462 €"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Les perceptions immédiates ont augmenté de 10 % au 1er juillet 2026 : 197 € entre 0,22 et 0,35 mg/l.",
+    "pourquoiFaux": {
+      "179 €": "179 € était l'ancien montant, avant l'augmentation de juillet 2026.",
+      "462 €": "462 € concerne un taux plus élevé (0,35 à 0,44 mg/l).",
+      "64 €": "64 € est la perception d'une infraction du 1er degré."
+    }
+  },
+  {
+    "id": "alc-016",
+    "theme": "alcool",
+    "question": "Depuis le 1er juillet 2026, quelle est la perception immédiate pour un taux de 0,35 à 0,44 mg/l d'air expiré ?",
+    "choix": [
+      "462 €",
+      "420 €",
+      "197 €",
+      "636 €"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Plus le taux est élevé, plus la sanction est lourde : 462 € entre 0,35 et 0,44 mg/l.",
+    "pourquoiFaux": {
+      "197 €": "197 € vaut pour un taux de 0,22 à 0,35 mg/l.",
+      "636 €": "636 € vaut pour un taux de 0,44 à 0,50 mg/l.",
+      "420 €": "420 € était l'ancien montant, avant juillet 2026."
+    }
+  },
+  {
+    "id": "alc-017",
+    "theme": "alcool",
+    "question": "Depuis le 1er juillet 2026, quelle est la perception immédiate pour un taux de 0,44 à 0,50 mg/l d'air expiré ?",
+    "choix": [
+      "636 €",
+      "578 €",
+      "462 €",
+      "191 €"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Entre 0,44 et 0,50 mg/l, la perception immédiate est de 636 €.",
+    "pourquoiFaux": {
+      "462 €": "462 € vaut pour un taux de 0,35 à 0,44 mg/l.",
+      "578 €": "578 € était l'ancien montant, avant juillet 2026.",
+      "191 €": "191 € est la perception d'une infraction du 3e degré."
+    }
+  },
+  {
+    "id": "alc-018",
+    "theme": "alcool",
+    "question": "À partir de 0,50 mg/l d'air expiré, peut-on encore payer une perception immédiate ?",
+    "choix": [
+      "Oui, s'il n'y a pas d'accident",
+      "Non, le conducteur passe devant le tribunal",
+      "Oui, 636 €",
+      "Oui, 1 000 €"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "À partir de 0,50 mg/l (environ 1,2 g/l de sang), il n'y a plus de perception immédiate : c'est le tribunal.",
+    "pourquoiFaux": {
+      "Oui, 636 €": "636 € s'arrête à 0,50 mg/l.",
+      "Oui, 1 000 €": "Il n'y a plus de perception immédiate à partir de ce taux.",
+      "Oui, s'il n'y a pas d'accident": "L'absence d'accident ne change rien."
+    }
+  },
+  {
+    "id": "alc-019",
+    "theme": "alcool",
+    "question": "La limite de 0,5 g/l s'applique-t-elle aussi aux cyclistes ?",
+    "choix": [
+      "Non, seulement aux automobilistes",
+      "Oui, à tous les conducteurs, cyclistes compris",
+      "Seulement pour les vélos électriques",
+      "Non, les cyclistes n'ont pas de limite"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "À vélo comme en voiture, les mêmes limites d'alcool et les mêmes sanctions s'appliquent.",
+    "pourquoiFaux": {
+      "Non, seulement aux automobilistes": "Le code de la route vise tous les conducteurs, y compris à vélo.",
+      "Non, les cyclistes n'ont pas de limite": "Les cyclistes sont soumis aux mêmes règles et sanctions.",
+      "Seulement pour les vélos électriques": "La règle vaut pour tous les vélos."
+    }
+  },
+  {
+    "id": "alc-020",
+    "theme": "alcool",
+    "question": "Tu as beaucoup bu hier soir et tu as dormi 6 heures. Peux-tu conduire sans risque ce matin ?",
+    "choix": [
+      "Pas forcément : il peut rester de l'alcool dans le sang",
+      "Oui, si je prends un café",
+      "Oui, après une douche",
+      "Oui, le sommeil élimine l'alcool"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "L'alcool s'élimine lentement (environ 0,1 à 0,15 g/l par heure). Après une grosse soirée, le taux peut rester trop élevé le lendemain.",
+    "pourquoiFaux": {
+      "Oui, le sommeil élimine l'alcool": "Le sommeil n'accélère pas l'élimination.",
+      "Oui, si je prends un café": "Le café ne fait pas baisser le taux.",
+      "Oui, après une douche": "La douche ne change pas le taux."
+    }
+  },
+  {
+    "id": "alc-021",
+    "theme": "alcool",
+    "question": "Un chauffeur de bus a un taux de 0,3 g/l de sang. Est-il en infraction ?",
+    "choix": [
+      "Non, la limite est 0,5 g/l",
+      "Oui, la limite des conducteurs professionnels est de 0,2 g/l",
+      "Non, s'il n'a pas de passagers",
+      "Seulement s'il a un accident"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Bus, camion, taxi : limite de 0,2 g/l de sang (0,09 mg/l d'air expiré).",
+    "pourquoiFaux": {
+      "Non, la limite est 0,5 g/l": "0,5 g/l vaut pour les conducteurs ordinaires, pas pour les professionnels.",
+      "Non, s'il n'a pas de passagers": "La limite s'applique pendant son travail de conducteur.",
+      "Seulement s'il a un accident": "L'infraction existe sans accident."
+    }
+  },
+  {
+    "id": "alc-022",
+    "theme": "alcool",
+    "question": "Ta voiture est garée sur un parking, moteur coupé. Peux-tu utiliser ton GSM en main ?",
+    "choix": [
+      "Seulement si le contact est mis",
+      "Non, jamais dans une voiture",
+      "Seulement en mains libres",
+      "Oui, tu ne participes pas à la circulation"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "L'interdiction du GSM en main vaut quand tu conduis, y compris arrêté à un feu ou dans un bouchon. Garé, c'est permis.",
+    "pourquoiFaux": {
+      "Non, jamais dans une voiture": "L'interdiction vise la conduite, pas une voiture garée.",
+      "Seulement en mains libres": "À l'arrêt hors circulation, ce n'est pas nécessaire.",
+      "Seulement si le contact est mis": "Ce qui compte, c'est d'être garé hors de la circulation."
+    }
+  },
+  {
+    "id": "alc-023",
+    "theme": "alcool",
+    "question": "Quand régler ton GPS ?",
+    "choix": [
+      "Au feu rouge",
+      "En roulant, si la route est droite",
+      "Avant de partir, ou en t'arrêtant dans un endroit sûr",
+      "Dans un bouchon"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Toute manipulation d'un appareil distrait le conducteur : on programme le trajet avant de partir.",
+    "pourquoiFaux": {
+      "En roulant, si la route est droite": "Manipuler le GPS en roulant détourne ton attention.",
+      "Au feu rouge": "Au feu rouge, tu participes toujours à la circulation.",
+      "Dans un bouchon": "Même lentement, tu conduis."
+    }
+  },
+  {
+    "id": "alc-024",
+    "theme": "alcool",
+    "question": "Qu'est-ce qu'un microsommeil au volant ?",
+    "choix": [
+      "Un réflexe sans danger",
+      "Un endormissement de quelques secondes, pendant lequel la voiture parcourt des dizaines de mètres sans contrôle",
+      "Une sieste de 20 minutes sur une aire",
+      "Un bâillement"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "À 90 km/h, on parcourt environ 25 m par seconde. Quelques secondes d'endormissement suffisent pour quitter la route.",
+    "pourquoiFaux": {
+      "Une sieste de 20 minutes sur une aire": "Une sieste sur une aire est une bonne chose ; le microsommeil est involontaire.",
+      "Un bâillement": "Le bâillement est un signe de fatigue, pas un endormissement.",
+      "Un réflexe sans danger": "C'est très dangereux : à 90 km/h, 3 secondes = environ 75 m."
+    }
+  },
+  {
+    "id": "alc-025",
+    "theme": "alcool",
+    "question": "À quels moments de la journée le risque de s'endormir au volant est-il le plus élevé ?",
+    "choix": [
+      "Le risque est le même toute la journée",
+      "Juste après le lever",
+      "La nuit et en début d'après-midi",
+      "En fin de matinée"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le corps a des creux de vigilance la nuit (surtout entre 2 h et 6 h) et en début d'après-midi.",
+    "pourquoiFaux": {
+      "En fin de matinée": "Ce n'est pas un moment de forte somnolence.",
+      "Juste après le lever": "Le risque principal est la nuit et après le repas de midi.",
+      "Le risque est le même toute la journée": "L'horloge du corps crée des moments de forte somnolence."
+    }
+  },
+  {
+    "id": "alc-026",
+    "theme": "alcool",
+    "question": "Quels sont les effets du cannabis sur la conduite ?",
+    "choix": [
+      "Une meilleure concentration",
+      "Un effet seulement sur la vue",
+      "Aucun effet si on en a peu pris",
+      "Réflexes ralentis, attention et perception des distances perturbées"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le cannabis ralentit les réactions et trouble la perception. Sa détection au volant est une infraction.",
+    "pourquoiFaux": {
+      "Aucun effet si on en a peu pris": "Même une petite quantité peut perturber la conduite.",
+      "Une meilleure concentration": "Le cannabis diminue l'attention.",
+      "Un effet seulement sur la vue": "Il agit aussi sur les réflexes et le jugement."
+    }
+  },
+  {
+    "id": "alc-027",
+    "theme": "alcool",
+    "question": "Peux-tu regarder une vidéo sur ton GSM fixé à un support pendant que tu conduis ?",
+    "choix": [
+      "Non",
+      "Oui, s'il est fixé",
+      "Oui, si le son est coupé",
+      "Oui, sur autoroute"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Regarder des images en conduisant détourne les yeux de la route : c'est interdit et très dangereux.",
+    "pourquoiFaux": {
+      "Oui, s'il est fixé": "Le support permet le GPS ou les appels en mains libres, pas de regarder une vidéo.",
+      "Oui, sur autoroute": "C'est encore plus dangereux à grande vitesse.",
+      "Oui, si le son est coupé": "C'est le fait de regarder qui détourne l'attention."
+    }
+  },
+  {
+    "id": "alc-028",
+    "theme": "alcool",
+    "question": "Tu viens de te disputer et tu es très en colère. Que fais-tu avant de conduire ?",
+    "choix": [
+      "J'attends de m'être calmé",
+      "Je roule plus vite pour me défouler",
+      "Je mets la musique très fort",
+      "Je pars tout de suite pour me changer les idées"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Les émotions fortes réduisent l'attention et poussent à l'agressivité au volant.",
+    "pourquoiFaux": {
+      "Je pars tout de suite pour me changer les idées": "La colère pousse à prendre des risques.",
+      "Je roule plus vite pour me défouler": "C'est dangereux pour toi et les autres.",
+      "Je mets la musique très fort": "La musique forte n'aide pas à te calmer et gêne ton attention."
+    }
+  },
+  {
+    "id": "alc-029",
+    "theme": "alcool",
+    "question": "Tu as pris un somnifère hier soir. Que dois-tu savoir avant de conduire ce matin ?",
+    "choix": [
+      "Seule la conduite de nuit est concernée",
+      "Aucun effet le lendemain",
+      "Un café annule ses effets",
+      "Ses effets peuvent encore durer : il faut vérifier la notice"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La notice et le pharmacien indiquent combien de temps éviter de conduire après la prise.",
+    "pourquoiFaux": {
+      "Aucun effet le lendemain": "Certains somnifères agissent encore plusieurs heures après le réveil.",
+      "Un café annule ses effets": "Le café ne supprime pas l'effet d'un médicament.",
+      "Seule la conduite de nuit est concernée": "La somnolence peut survenir à tout moment."
+    }
+  },
+  {
+    "id": "alc-030",
+    "theme": "alcool",
+    "question": "Vous sortez à plusieurs et quelqu'un doit reconduire tout le monde. Quelle est la bonne solution ?",
+    "choix": [
+      "On attend une heure et on part",
+      "Le conducteur boit un café",
+      "Celui qui a le moins bu conduit",
+      "Désigner à l'avance un conducteur qui ne boira pas d'alcool (le « Bob »)"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Bob, le conducteur désigné, est le symbole des campagnes belges contre l'alcool au volant.",
+    "pourquoiFaux": {
+      "Celui qui a le moins bu conduit": "Même un peu d'alcool diminue les réflexes, et il peut dépasser la limite.",
+      "On attend une heure et on part": "Une heure ne suffit souvent pas à éliminer l'alcool.",
+      "Le conducteur boit un café": "Le café ne fait pas baisser le taux."
+    }
+  },
+  {
+    "id": "alc-031",
+    "theme": "alcool",
+    "question": "Téléphoner en mains libres pendant la conduite, est-ce sans effet sur l'attention ?",
+    "choix": [
+      "Oui, si l'appel est court",
+      "Non, même en mains libres, une conversation réduit l'attention",
+      "Oui, sur autoroute",
+      "Oui, les mains restent sur le volant"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le mains libres est permis, mais une conversation reste une distraction. Garde les appels courts ou arrête-toi.",
+    "pourquoiFaux": {
+      "Oui, les mains restent sur le volant": "L'esprit est occupé par la conversation, pas seulement les mains.",
+      "Oui, si l'appel est court": "Même un appel court détourne l'attention.",
+      "Oui, sur autoroute": "Le risque existe partout."
+    }
+  },
+  {
+    "id": "alc-032",
+    "theme": "alcool",
+    "question": "Après un repas copieux, tu as un long trajet. À quoi dois-tu faire attention ?",
+    "choix": [
+      "À rien de particulier",
+      "À la somnolence : je fais des pauses et je m'arrête si je me sens fatigué",
+      "Je prends un énergisant et je ne m'arrête pas",
+      "Je peux rouler plus longtemps sans pause"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le début d'après-midi après un repas est un moment de forte somnolence.",
+    "pourquoiFaux": {
+      "À rien de particulier": "La digestion favorise la somnolence, surtout en début d'après-midi.",
+      "Je peux rouler plus longtemps sans pause": "C'est l'inverse : la fatigue arrive plus vite.",
+      "Je prends un énergisant et je ne m'arrête pas": "Un énergisant ne remplace pas le repos."
+    }
   }
 ]
