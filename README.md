@@ -45,6 +45,7 @@ Les questions sont dans `src/data/questions/<theme>.json` :
   "bonne": 0,
   "grave": true,
   "explication": "…",
+  "pourquoiFaux": { "texte exact d'une mauvaise réponse": "pourquoi elle est fausse" },
   "schema": { "type": "panneau", "code": "C43", "valeur": "70" },
   "region": "wallonie"
 }
@@ -52,6 +53,8 @@ Les questions sont dans `src/data/questions/<theme>.json` :
 
 - `bonne` : index de la bonne réponse (0 = la première).
 - `grave` : `true` si une erreur coûte 5 points (infraction du 3e/4e degré ou vitesse).
+- `explication` : la règle, affichée après chaque réponse.
+- `pourquoiFaux` : une phrase par mauvaise réponse, affichée quand on la choisit. Obligatoire pour chaque mauvaise réponse (le test le vérifie).
 - `schema` (optionnel) : panneau (`src/components/schemas.ts` liste les codes disponibles) ou scène.
 - `region` (optionnel) : `wallonie`, `bruxelles` ou `flandre`.
 

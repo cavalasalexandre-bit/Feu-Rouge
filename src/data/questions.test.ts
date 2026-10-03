@@ -44,6 +44,14 @@ describe('banque de questions', () => {
         expect(Number.isInteger(q.bonne) && q.bonne >= 0 && q.bonne < q.choix.length, ctx).toBe(true)
         expect(typeof q.grave, ctx).toBe('boolean')
         expect(q.explication.trim().length, `${ctx} : explication manquante`).toBeGreaterThan(10)
+        // Chaque mauvaise réponse doit expliquer pourquoi elle est fausse.
+        q.choix.forEach((c, i) => {
+          if (i === q.bonne) return
+          expect(q.pourquoiFaux?.[c]?.trim().length ?? 0, `${ctx} : « ${c} » sans explication`).toBeGreaterThan(10)
+        })
+        for (const cle of Object.keys(q.pourquoiFaux ?? {})) {
+          expect(q.choix.includes(cle) && q.choix.indexOf(cle) !== q.bonne, `${ctx} : clé « ${cle} » inconnue`).toBe(true)
+        }
         if (q.schema?.type === 'panneau') expect(CODES_PANNEAUX, ctx).toContain(q.schema.code)
         if (q.schema?.type === 'scene') expect(SCENES, ctx).toContain(q.schema.id)
       }

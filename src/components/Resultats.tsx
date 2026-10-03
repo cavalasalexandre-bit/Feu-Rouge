@@ -3,6 +3,7 @@ import { EXAMEN, estJuste, scoreExamen, type Reponse } from '../lib/scoring'
 import { THEME_PAR_ID } from '../data/themes'
 import type { ModeSession } from './Session'
 import { Compteur } from './Compteur'
+import { Correction } from './Correction'
 
 interface Props {
   reponses: Reponse[]
@@ -158,7 +159,7 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
                   <span className="muted">Bonne réponse : </span>
                   <strong style={{ color: 'var(--go)', fontWeight: 600 }}>{r.question.choix[r.question.bonne]}</strong>
                 </p>
-                <p className="muted">{r.question.explication}</p>
+                <Correction question={r.question} choix={r.choix} />
               </article>
             ),
           )}

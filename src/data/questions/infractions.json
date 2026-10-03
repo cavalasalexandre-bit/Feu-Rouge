@@ -11,7 +11,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Du 1er degré (gêne) au 4e degré (danger direct de blessures), selon le danger créé pour les personnes."
+    "explication": "Du 1er degré (gêne) au 4e degré (danger direct de blessures), selon le danger créé pour les personnes.",
+    "pourquoiFaux": {
+      "3": "Il y a un degré de plus : on compte 4 degrés.",
+      "5": "Il n'y a pas de 5e degré.",
+      "2": "Il y a 4 degrés, pas 2."
+    }
   },
   {
     "id": "inf-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Une faute grave coûte 5 points au lieu d'un seul. Avec deux fautes graves, l'examen est raté."
+    "explication": "Une faute grave coûte 5 points au lieu d'un seul. Avec deux fautes graves, l'examen est raté.",
+    "pourquoiFaux": {
+      "Toute erreur sur un panneau": "Une erreur sur un panneau n'est grave que si elle porte sur une infraction lourde.",
+      "Une erreur sur une question de mécanique": "La mécanique ne relève pas des fautes graves.",
+      "Deux erreurs consécutives": "Deux erreurs à la suite ne font pas une faute grave."
+    }
   },
   {
     "id": "inf-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 1,
     "grave": true,
-    "explication": "Le passage au feu rouge crée un danger direct : c'est une infraction du 3e degré."
+    "explication": "Le passage au feu rouge crée un danger direct : c'est une infraction du 3e degré.",
+    "pourquoiFaux": {
+      "1er degré": "Le 1er degré concerne la simple gêne, pas le feu rouge.",
+      "2e degré": "Le feu rouge crée un danger direct : c'est plus que le 2e degré.",
+      "4e degré": "Le 4e degré vise les comportements les plus graves, comme le demi-tour sur autoroute."
+    }
   },
   {
     "id": "inf-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Le demi-tour sur autoroute fait partie des infractions les plus graves (4e degré)."
+    "explication": "Le demi-tour sur autoroute fait partie des infractions les plus graves (4e degré).",
+    "pourquoiFaux": {
+      "2e degré": "Le demi-tour sur autoroute fait partie des plus graves.",
+      "3e degré": "C'est encore plus grave que le 3e degré.",
+      "1er degré": "Le 1er degré concerne la simple gêne."
+    }
   },
   {
     "id": "inf-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 1,
     "grave": true,
-    "explication": "Le non-respect des feux ou barrières d'un passage à niveau est une infraction du 4e degré."
+    "explication": "Le non-respect des feux ou barrières d'un passage à niveau est une infraction du 4e degré.",
+    "pourquoiFaux": {
+      "2e degré": "Un passage à niveau peut causer des blessures très graves.",
+      "3e degré": "C'est encore plus grave que le 3e degré.",
+      "1er degré": "Le 1er degré concerne la simple gêne."
+    }
   },
   {
     "id": "inf-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "C'est une infraction du 1er degré, qui gêne la circulation sans danger direct."
+    "explication": "C'est une infraction du 1er degré, qui gêne la circulation sans danger direct.",
+    "pourquoiFaux": {
+      "2e degré": "Le 2e degré vise une mise en danger indirecte, comme la ceinture.",
+      "3e degré": "Le 3e degré vise un danger direct, comme le feu rouge.",
+      "4e degré": "Le 4e degré vise les comportements les plus graves."
+    }
   },
   {
     "id": "inf-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le défaut de ceinture met indirectement en danger : c'est une infraction du 2e degré."
+    "explication": "Le défaut de ceinture met indirectement en danger : c'est une infraction du 2e degré.",
+    "pourquoiFaux": {
+      "1er degré": "Le 1er degré concerne une simple gêne.",
+      "3e degré": "Le 3e degré vise un danger direct pour les autres.",
+      "4e degré": "Le 4e degré vise les comportements les plus graves."
+    }
   },
   {
     "id": "inf-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Depuis 2018, l'usage du GSM tenu en main au volant est une infraction du 3e degré."
+    "explication": "Depuis 2018, l'usage du GSM tenu en main au volant est une infraction du 3e degré.",
+    "pourquoiFaux": {
+      "1er degré": "Le GSM en main n'est pas une simple gêne.",
+      "2e degré": "Depuis 2018, le GSM en main est passé au 3e degré.",
+      "4e degré": "Le 4e degré vise les comportements les plus graves."
+    }
   },
   {
     "id": "inf-009",
@@ -123,7 +163,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Dépasser malgré une interdiction est une infraction du 3e degré."
+    "explication": "Dépasser malgré une interdiction est une infraction du 3e degré.",
+    "pourquoiFaux": {
+      "1er degré": "Le 1er degré concerne une simple gêne.",
+      "2e degré": "Le 2e degré, c'est par exemple dépasser par la droite quand c'est interdit.",
+      "4e degré": "Le 4e degré vise par exemple le dépassement dans un virage sans visibilité."
+    }
   },
   {
     "id": "inf-010",
@@ -137,7 +182,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Les courses de vitesse sur la voie publique sont des infractions du 4e degré."
+    "explication": "Les courses de vitesse sur la voie publique sont des infractions du 4e degré.",
+    "pourquoiFaux": {
+      "2e degré": "Une course de vitesse est bien plus grave que le 2e degré.",
+      "3e degré": "C'est encore plus grave que le 3e degré.",
+      "1er degré": "Le 1er degré concerne une simple gêne."
+    }
   },
   {
     "id": "inf-011",
@@ -151,7 +201,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Ce dépassement rend presque inévitable un accident en cas de véhicule en face : 4e degré."
+    "explication": "Ce dépassement rend presque inévitable un accident en cas de véhicule en face : 4e degré.",
+    "pourquoiFaux": {
+      "2e degré": "Ce dépassement rend un accident presque inévitable : c'est plus que le 2e degré.",
+      "3e degré": "C'est encore plus grave que le 3e degré.",
+      "1er degré": "Le 1er degré concerne une simple gêne."
+    }
   },
   {
     "id": "inf-012",
@@ -165,7 +220,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Pour un résident belge, une infraction du 4e degré passe toujours devant le tribunal de police."
+    "explication": "Pour un résident belge, une infraction du 4e degré passe toujours devant le tribunal de police.",
+    "pourquoiFaux": {
+      "Il paie une perception immédiate de 64 €": "64 €, c'est la perception immédiate du 1er degré.",
+      "Il reçoit un simple avertissement": "Le 4e degré n'est jamais un simple avertissement.",
+      "Il paie 191 € sur place": "191 €, c'est la perception immédiate du 3e degré."
+    }
   },
   {
     "id": "inf-013",
@@ -179,7 +239,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Les montants ont augmenté de 10 % au 1er juillet 2026 : 64 € (1er degré), 128 € (2e), 191 € (3e)."
+    "explication": "Les montants ont augmenté de 10 % au 1er juillet 2026 : 64 € (1er degré), 128 € (2e), 191 € (3e).",
+    "pourquoiFaux": {
+      "58 €": "58 € était l'ancien montant, avant le 1er juillet 2026.",
+      "128 €": "128 €, c'est le 2e degré.",
+      "191 €": "191 €, c'est le 3e degré."
+    }
   },
   {
     "id": "inf-014",
@@ -193,7 +258,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "191 € pour le 3e degré. Les 520 € concernent le 4e degré, seulement pour les conducteurs sans domicile en Belgique."
+    "explication": "191 € pour le 3e degré. Les 520 € concernent le 4e degré, seulement pour les conducteurs sans domicile en Belgique.",
+    "pourquoiFaux": {
+      "174 €": "174 € était l'ancien montant du 3e degré, avant juillet 2026.",
+      "128 €": "128 €, c'est le 2e degré.",
+      "520 €": "520 €, c'est le 4e degré pour un conducteur sans domicile en Belgique."
+    }
   },
   {
     "id": "inf-015",
@@ -207,7 +277,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Plus le comportement met les personnes en danger, plus le degré est élevé."
+    "explication": "Plus le comportement met les personnes en danger, plus le degré est élevé.",
+    "pourquoiFaux": {
+      "Sur le montant des dégâts": "Le degré dépend du danger, pas des dégâts matériels.",
+      "Sur l'âge du conducteur": "L'âge du conducteur ne change pas le degré.",
+      "Sur le type de route": "Le type de route ne fixe pas le degré."
+    }
   },
   {
     "id": "inf-016",
@@ -221,6 +296,11 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le dépassement par la droite interdit est une infraction du 2e degré."
+    "explication": "Le dépassement par la droite interdit est une infraction du 2e degré.",
+    "pourquoiFaux": {
+      "1er degré": "Le 1er degré concerne une simple gêne.",
+      "3e degré": "Le 3e degré vise un danger direct, comme le feu rouge.",
+      "4e degré": "Le 4e degré vise les comportements les plus graves."
+    }
   }
 ]

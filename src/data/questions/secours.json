@@ -11,7 +11,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "L'ordre est : protéger, alerter, secourir. Sans protection, un deuxième accident peut survenir."
+    "explication": "L'ordre est : protéger, alerter, secourir. Sans protection, un deuxième accident peut survenir.",
+    "pourquoiFaux": {
+      "Déplacer les blessés": "Déplacer un blessé peut aggraver ses blessures.",
+      "Prendre des photos": "Les photos ne protègent personne d'un deuxième accident.",
+      "Donner à boire aux blessés": "Il ne faut jamais donner à boire à un blessé."
+    }
   },
   {
     "id": "sec-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le 112 fonctionne dans toute l'Union européenne, même sans crédit sur la carte SIM."
+    "explication": "Le 112 fonctionne dans toute l'Union européenne, même sans crédit sur la carte SIM.",
+    "pourquoiFaux": {
+      "101": "Le 101 est le numéro de la police en Belgique : le 112 est le numéro européen.",
+      "911": "Le 911 est le numéro d'urgence américain.",
+      "100": "Le 100 est un ancien numéro belge : le numéro européen est le 112."
+    }
   },
   {
     "id": "sec-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Retirer un casque peut aggraver une blessure à la colonne vertébrale."
+    "explication": "Retirer un casque peut aggraver une blessure à la colonne vertébrale.",
+    "pourquoiFaux": {
+      "J'enlève son casque pour qu'il respire mieux": "Retirer le casque peut aggraver une blessure à la colonne vertébrale.",
+      "Je l'assieds": "Asseoir un blessé peut aggraver ses blessures.",
+      "Je le mets debout": "Le mettre debout est dangereux."
+    }
   },
   {
     "id": "sec-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Déplacer un blessé peut aggraver ses lésions. On ne le fait qu'en cas de danger immédiat."
+    "explication": "Déplacer un blessé peut aggraver ses lésions. On ne le fait qu'en cas de danger immédiat.",
+    "pourquoiFaux": {
+      "Toujours, pour le mettre à l'aise": "Le déplacer peut aggraver ses blessures.",
+      "Jamais, quelle que soit la situation": "En cas de danger immédiat (feu, circulation), il faut le déplacer.",
+      "Dès qu'il le demande": "Ce n'est pas sa demande qui compte, c'est le danger."
+    }
   },
   {
     "id": "sec-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Les secours doivent savoir où aller et quoi prévoir. Ne raccroche pas avant qu'on te le dise."
+    "explication": "Les secours doivent savoir où aller et quoi prévoir. Ne raccroche pas avant qu'on te le dise.",
+    "pourquoiFaux": {
+      "La marque des voitures": "La marque des voitures n'aide pas les secours.",
+      "Les noms des conducteurs": "Les noms ne sont pas prioritaires pour les secours.",
+      "Qui est responsable": "La responsabilité se règle plus tard, pas au téléphone."
+    }
   },
   {
     "id": "sec-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le constat européen décrit les faits. Une fois signé par les deux, chacun garde son exemplaire tel quel."
+    "explication": "Le constat européen décrit les faits. Une fois signé par les deux, chacun garde son exemplaire tel quel.",
+    "pourquoiFaux": {
+      "Est rempli par la police uniquement": "Le constat se remplit entre conducteurs, sans la police.",
+      "Peut être modifié chez soi après signature": "Après signature, on ne le modifie plus.",
+      "Est signé par un seul conducteur": "Les deux conducteurs le signent."
+    }
   },
   {
     "id": "sec-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Le conducteur impliqué doit rester sur place et permettre d'établir son identité. Fuir est un délit."
+    "explication": "Le conducteur impliqué doit rester sur place et permettre d'établir son identité. Fuir est un délit.",
+    "pourquoiFaux": {
+      "Oui, s'il n'y a pas de blessé": "Même sans blessé, on doit rester et donner son identité.",
+      "Oui, si les dégâts sont légers": "Même pour des dégâts légers, partir est un délit de fuite.",
+      "Oui, la nuit": "La règle est la même la nuit."
+    }
   },
   {
     "id": "sec-008",
@@ -109,6 +144,11 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "La position latérale de sécurité évite qu'il s'étouffe. Sans respiration, il faut commencer la réanimation."
+    "explication": "La position latérale de sécurité évite qu'il s'étouffe. Sans respiration, il faut commencer la réanimation.",
+    "pourquoiFaux": {
+      "Je lui donne à boire": "Il ne faut jamais donner à boire à un blessé.",
+      "Je le laisse sur le dos sans surveiller": "Sur le dos, il risque de s'étouffer.",
+      "Je le secoue pour le réveiller": "Le secouer peut aggraver ses blessures."
+    }
   }
 ]

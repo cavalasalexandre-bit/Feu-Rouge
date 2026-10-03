@@ -11,7 +11,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Retiens l'escalier 30, 100, 150, 200 : croisement 30 m, route 100 m, position visibles à 150 m, seuil de visibilité 200 m."
+    "explication": "Retiens l'escalier 30, 100, 150, 200 : croisement 30 m, route 100 m, position visibles à 150 m, seuil de visibilité 200 m.",
+    "pourquoiFaux": {
+      "100 mètres": "100 m, c'est la portée des feux de route.",
+      "150 mètres": "150 m, c'est la distance à laquelle les feux de position doivent être visibles.",
+      "10 mètres": "10 m serait beaucoup trop peu pour rouler la nuit."
+    }
   },
   {
     "id": "ecl-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Les feux de route (« grands phares ») éclairent au moins 100 m devant le véhicule."
+    "explication": "Les feux de route (« grands phares ») éclairent au moins 100 m devant le véhicule.",
+    "pourquoiFaux": {
+      "30 mètres": "30 m, c'est la portée des feux de croisement.",
+      "200 mètres": "200 m, c'est le seuil de visibilité qui oblige à allumer les feux de croisement.",
+      "50 mètres": "50 m, c'est la distance derrière un véhicule à partir de laquelle on quitte les feux de route."
+    }
   },
   {
     "id": "ecl-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Les feux de position servent à être vu, pas à voir : ils doivent être visibles à 150 m."
+    "explication": "Les feux de position servent à être vu, pas à voir : ils doivent être visibles à 150 m.",
+    "pourquoiFaux": {
+      "30 mètres": "30 m, c'est la portée des feux de croisement.",
+      "100 mètres": "100 m, c'est la portée des feux de route.",
+      "300 mètres": "300 m n'est pas une distance du code pour les feux."
+    }
   },
   {
     "id": "ecl-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Dès que la visibilité tombe sous environ 200 m (pluie, brouillard, neige, fumée), les feux de croisement sont obligatoires, même de jour."
+    "explication": "Dès que la visibilité tombe sous environ 200 m (pluie, brouillard, neige, fumée), les feux de croisement sont obligatoires, même de jour.",
+    "pourquoiFaux": {
+      "100 mètres": "100 m, c'est le seuil du feu de brouillard arrière.",
+      "50 mètres": "50 m serait trop tard : la règle est 200 m.",
+      "300 mètres": "300 m n'est pas un seuil du code."
+    }
   },
   {
     "id": "ecl-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Les feux de route sont interdits quand tu suis un véhicule à moins de 50 m, sauf au moment de le dépasser."
+    "explication": "Les feux de route sont interdits quand tu suis un véhicule à moins de 50 m, sauf au moment de le dépasser.",
+    "pourquoiFaux": {
+      "À moins de 100 mètres": "100 m, c'est l'éclairage public qui rend les feux de route inutiles.",
+      "À moins de 30 mètres": "30 m serait trop près : tu éblouirais le conducteur bien avant.",
+      "À moins de 150 mètres": "150 m n'est pas la règle : on change à 50 m."
+    }
   },
   {
     "id": "ecl-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Si l'éclairage de la route est continu et suffisant pour voir à environ 100 m, les feux de route sont inutiles et interdits."
+    "explication": "Si l'éclairage de la route est continu et suffisant pour voir à environ 100 m, les feux de route sont inutiles et interdits.",
+    "pourquoiFaux": {
+      "Environ 30 mètres": "30 m, c'est la portée des feux de croisement.",
+      "Environ 200 mètres": "200 m, c'est le seuil de visibilité pour les feux de croisement de jour.",
+      "Environ 50 mètres": "50 m, c'est la distance de suivi pour couper les feux de route."
+    }
   },
   {
     "id": "ecl-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "On passe en feux de croisement pour croiser un usager, pour ne pas l'éblouir."
+    "explication": "On passe en feux de croisement pour croiser un usager, pour ne pas l'éblouir.",
+    "pourquoiFaux": {
+      "Garder tes feux de route": "Garder les feux de route éblouirait le conducteur d'en face.",
+      "Allumer tes feux de brouillard": "Les feux de brouillard servent par brouillard, pas pour croiser.",
+      "Éteindre tous tes feux": "Rouler sans feux la nuit est interdit et très dangereux."
+    }
   },
   {
     "id": "ecl-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Le feu de brouillard arrière éblouit fortement : il n'est permis que si la visibilité descend sous 100 m à cause du brouillard, de la neige ou d'une pluie intense."
+    "explication": "Le feu de brouillard arrière éblouit fortement : il n'est permis que si la visibilité descend sous 100 m à cause du brouillard, de la neige ou d'une pluie intense.",
+    "pourquoiFaux": {
+      "Dès qu'il pleut": "Une simple pluie ne suffit pas : il faut moins de 100 m de visibilité.",
+      "La nuit, en permanence": "La nuit ne justifie pas le brouillard arrière : il éblouit ceux qui suivent.",
+      "Quand la visibilité est inférieure à 200 mètres": "200 m, c'est le seuil des feux de croisement, pas du brouillard arrière."
+    }
   },
   {
     "id": "ecl-009",
@@ -123,7 +163,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Avec 300 m de visibilité, le feu de brouillard arrière est interdit : il éblouirait les conducteurs derrière toi."
+    "explication": "Avec 300 m de visibilité, le feu de brouillard arrière est interdit : il éblouirait les conducteurs derrière toi.",
+    "pourquoiFaux": {
+      "Oui, toujours quand il pleut": "Pluie ne veut pas dire brouillard arrière : il faut moins de 100 m de visibilité.",
+      "Oui, mais seulement la nuit": "La nuit ne change rien : avec 300 m de visibilité, c'est interdit.",
+      "Oui, sur autoroute": "Sur autoroute aussi, il faut moins de 100 m de visibilité."
+    }
   },
   {
     "id": "ecl-010",
@@ -137,7 +182,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "L'appel de phares sert à éviter un accident, à avertir qu'on dépasse (hors agglomération) ou à signaler qu'on est ébloui."
+    "explication": "L'appel de phares sert à éviter un accident, à avertir qu'on dépasse (hors agglomération) ou à signaler qu'on est ébloui.",
+    "pourquoiFaux": {
+      "Pour saluer un autre conducteur": "Saluer n'est pas une raison permise pour un appel de phares.",
+      "Pour demander le passage dans un carrefour": "Un appel de phares ne donne jamais la priorité dans un carrefour.",
+      "Pour signaler un contrôle de police": "Prévenir d'un contrôle de police n'est pas un usage prévu."
+    }
   },
   {
     "id": "ecl-011",
@@ -151,7 +201,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "En agglomération, le klaxon est réservé au danger imminent. Hors agglomération, il peut aussi servir à avertir qu'on dépasse."
+    "explication": "En agglomération, le klaxon est réservé au danger imminent. Hors agglomération, il peut aussi servir à avertir qu'on dépasse.",
+    "pourquoiFaux": {
+      "Pour avertir que tu dépasses": "En agglomération, on n'avertit pas avec le klaxon qu'on dépasse.",
+      "Pour faire avancer le véhicule devant toi au feu vert": "Klaxonner pour faire avancer quelqu'un est interdit.",
+      "Jamais": "Le klaxon reste permis pour éviter un accident."
+    }
   },
   {
     "id": "ecl-012",
@@ -165,7 +220,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Regarder le bord droit de la chaussée évite d'être aveuglé ; ralentir compense la perte de visibilité."
+    "explication": "Regarder le bord droit de la chaussée évite d'être aveuglé ; ralentir compense la perte de visibilité.",
+    "pourquoiFaux": {
+      "Tu fais des appels de phares répétés": "Les appels répétés peuvent aveugler l'autre conducteur à son tour.",
+      "Tu allumes tes feux de route": "Les feux de route éblouiraient encore plus le conducteur d'en face.",
+      "Tu fermes les yeux un instant": "Fermer les yeux en roulant est extrêmement dangereux."
+    }
   },
   {
     "id": "ecl-013",
@@ -179,7 +239,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Les feux de détresse signalent un danger : panne, accident, ou fin de bouchon soudaine pour prévenir ceux qui arrivent."
+    "explication": "Les feux de détresse signalent un danger : panne, accident, ou fin de bouchon soudaine pour prévenir ceux qui arrivent.",
+    "pourquoiFaux": {
+      "Pour stationner en double file": "Le stationnement en double file reste interdit, avec ou sans feux de détresse.",
+      "Quand il pleut fort en roulant": "Sous une forte pluie en roulant, on utilise les feux de croisement.",
+      "Pour remercier un autre conducteur": "Les feux de détresse ne servent pas à remercier."
+    }
   },
   {
     "id": "ecl-014",
@@ -193,7 +258,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Dès que la visibilité est inférieure à 200 m, même dans un tunnel éclairé, les feux de croisement sont obligatoires."
+    "explication": "Dès que la visibilité est inférieure à 200 m, même dans un tunnel éclairé, les feux de croisement sont obligatoires.",
+    "pourquoiFaux": {
+      "Les feux de route": "Les feux de route éblouiraient les autres usagers du tunnel.",
+      "Les feux de brouillard arrière": "Le feu de brouillard arrière n'est permis que sous 100 m de visibilité.",
+      "Aucun, le tunnel est éclairé": "Même dans un tunnel éclairé, les feux de croisement sont obligatoires sous 200 m."
+    }
   },
   {
     "id": "ecl-015",
@@ -207,7 +277,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Un véhicule à l'arrêt ou en stationnement sur une route non éclairée la nuit doit être signalé par ses feux de position."
+    "explication": "Un véhicule à l'arrêt ou en stationnement sur une route non éclairée la nuit doit être signalé par ses feux de position.",
+    "pourquoiFaux": {
+      "Les feux de croisement": "Les feux de croisement servent à rouler, pas à stationner.",
+      "Les feux de détresse": "Les feux de détresse signalent un danger, pas un stationnement normal.",
+      "Rien": "Sans feux, ta voiture est invisible sur une route non éclairée."
+    }
   },
   {
     "id": "ecl-016",
@@ -221,7 +296,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le témoin bleu correspond aux feux de route. Les feux de croisement ont un témoin vert, le brouillard arrière un témoin orange."
+    "explication": "Le témoin bleu correspond aux feux de route. Les feux de croisement ont un témoin vert, le brouillard arrière un témoin orange.",
+    "pourquoiFaux": {
+      "Les feux de croisement sont allumés": "Les feux de croisement ont un témoin vert.",
+      "Le moteur est trop froid": "Il n'existe pas de voyant bleu pour un moteur froid.",
+      "Le feu de brouillard arrière est allumé": "Le feu de brouillard arrière a un témoin orange."
+    }
   },
   {
     "id": "ecl-017",
@@ -235,7 +315,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Les feux diurnes n'éclairent pas la route et souvent pas l'arrière du véhicule. Par visibilité réduite, les feux de croisement sont obligatoires."
+    "explication": "Les feux diurnes n'éclairent pas la route et souvent pas l'arrière du véhicule. Par visibilité réduite, les feux de croisement sont obligatoires.",
+    "pourquoiFaux": {
+      "Oui, ils remplacent les feux de croisement": "Les feux diurnes n'éclairent pas la route et souvent pas l'arrière.",
+      "Oui, si la voiture est récente": "L'âge de la voiture ne change rien à la règle.",
+      "Oui, sauf sur autoroute": "Partout, y compris sur autoroute, les feux de croisement sont obligatoires sous 200 m."
+    }
   },
   {
     "id": "ecl-018",
@@ -249,6 +334,11 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Entre la tombée de la nuit et le lever du jour, un véhicule qui roule doit avoir ses feux de croisement allumés. Les feux de position seuls ne suffisent pas."
+    "explication": "Entre la tombée de la nuit et le lever du jour, un véhicule qui roule doit avoir ses feux de croisement allumés. Les feux de position seuls ne suffisent pas.",
+    "pourquoiFaux": {
+      "Les feux de position seuls": "Les feux de position servent à être vu à l'arrêt, pas à rouler.",
+      "Les feux de route": "Les feux de route sont interdits quand l'éclairage public suffit.",
+      "Aucun feu": "Rouler sans feux la nuit est interdit, même en ville."
+    }
   }
 ]

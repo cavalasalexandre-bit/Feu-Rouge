@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './',
   plugins: [react()],
+  // La banque de questions est embarquée dans le site : ~170 ko compressés, acceptable.
+  build: { chunkSizeWarningLimit: 900 },
   test: {
     environment: 'node',
   },

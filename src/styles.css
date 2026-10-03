@@ -830,6 +830,39 @@ main {
   color: var(--signal);
 }
 
+.correction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+.correction p {
+  line-height: 1.5;
+}
+.correction-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.correction-lien {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--cyan);
+  text-decoration: none;
+}
+.correction-lien:hover {
+  text-decoration: underline;
+}
+
 .session-foot {
   display: flex;
   justify-content: space-between;

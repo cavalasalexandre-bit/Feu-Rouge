@@ -12,6 +12,11 @@
     "bonne": 3,
     "grave": true,
     "explication": "Sans signalisation, la priorité de droite s'applique : tu cèdes le passage à celui qui vient de ta droite.",
+    "pourquoiFaux": {
+      "Je passe, je suis sur la route la plus large": "La largeur de la route ne donne aucune priorité.",
+      "Je passe, j'étais là le premier": "Arriver le premier ne donne pas la priorité.",
+      "Je klaxonne et je passe": "Klaxonner ne donne aucun droit de passage."
+    },
     "schema": {
       "type": "scene",
       "id": "carrefour-droite"
@@ -30,6 +35,11 @@
     "bonne": 1,
     "grave": true,
     "explication": "Le triangle pointe en bas impose de céder le passage, sans obligation de s'arrêter si la voie est libre.",
+    "pourquoiFaux": {
+      "T'arrêter obligatoirement même si la route est libre": "L'arrêt obligatoire, c'est le STOP, pas le triangle.",
+      "Céder le passage seulement à ceux qui viennent de droite": "Tu cèdes dans les deux sens, pas seulement à droite.",
+      "Ralentir à 30 km/h": "Ce panneau n'impose aucune vitesse."
+    },
     "schema": {
       "type": "panneau",
       "code": "B1"
@@ -48,6 +58,11 @@
     "bonne": 1,
     "grave": true,
     "explication": "Au STOP, l'arrêt complet est obligatoire, même si la route est libre. Ensuite, tu cèdes le passage à tous.",
+    "pourquoiFaux": {
+      "Je ralentis fortement et je passe sans m'arrêter": "Au STOP, un ralentissement ne suffit pas : l'arrêt doit être complet.",
+      "Je passe, la route est libre": "Même route libre, l'arrêt au STOP est obligatoire.",
+      "Je m'arrête seulement la nuit": "Le STOP s'applique de jour comme de nuit."
+    },
     "schema": {
       "type": "panneau",
       "code": "B5"
@@ -66,6 +81,11 @@
     "bonne": 1,
     "grave": false,
     "explication": "Le losange jaune indique une route à priorité. Elle le reste à tous les carrefours, jusqu'au panneau de fin.",
+    "pourquoiFaux": {
+      "Priorité au prochain carrefour uniquement": "La priorité limitée au prochain carrefour, c'est un triangle avec un trait vertical.",
+      "Fin de la route à priorité": "La fin de priorité, c'est le losange barré.",
+      "Tu dois céder le passage": "Le losange jaune donne la priorité, il ne l'enlève pas."
+    },
     "schema": {
       "type": "panneau",
       "code": "B9"
@@ -84,6 +104,11 @@
     "bonne": 2,
     "grave": false,
     "explication": "Ce triangle avec un trait vertical épais annonce une priorité valable au prochain carrefour uniquement.",
+    "pourquoiFaux": {
+      "À tous les carrefours suivants": "Pour tous les carrefours suivants, c'est le losange jaune.",
+      "Jusqu'à la fin de l'agglomération": "Ce panneau ne vaut que pour un carrefour, pas pour l'agglomération.",
+      "Uniquement face aux trams": "Il ne concerne pas spécialement les trams."
+    },
     "schema": {
       "type": "panneau",
       "code": "B15"
@@ -102,6 +127,11 @@
     "bonne": 0,
     "grave": true,
     "explication": "Le triangle avec une croix rappelle que la priorité de droite s'applique au prochain carrefour.",
+    "pourquoiFaux": {
+      "Un passage à niveau": "Le passage à niveau a ses propres panneaux (croix de Saint-André, barrières).",
+      "Un carrefour où tu es prioritaire": "Ce triangle rappelle la priorité de droite : tu n'es pas prioritaire.",
+      "Une interdiction de tourner": "Une interdiction de tourner serait un panneau rond."
+    },
     "schema": {
       "type": "panneau",
       "code": "B17"
@@ -119,7 +149,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Quand tu sors d'un lieu non ouvert à la circulation (parking, garage, propriété), tu cèdes le passage à tous les usagers."
+    "explication": "Quand tu sors d'un lieu non ouvert à la circulation (parking, garage, propriété), tu cèdes le passage à tous les usagers.",
+    "pourquoiFaux": {
+      "Seulement à ceux qui viennent de droite": "En sortant d'un parking, tu cèdes à tout le monde, pas seulement à droite.",
+      "À personne si tu es à droite": "La priorité de droite ne s'applique pas quand tu sors d'un parking.",
+      "Seulement aux piétons": "Tu cèdes aussi aux véhicules, pas seulement aux piétons."
+    }
   },
   {
     "id": "pri-008",
@@ -133,7 +168,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Celui qui sort d'un chemin de terre ou d'un sentier doit céder le passage à tous, même à ceux qui viennent de gauche."
+    "explication": "Celui qui sort d'un chemin de terre ou d'un sentier doit céder le passage à tous, même à ceux qui viennent de gauche.",
+    "pourquoiFaux": {
+      "Je passe : elle vient de ma gauche": "Depuis un chemin de terre, tu cèdes aussi à ceux qui viennent de gauche.",
+      "Je passe en klaxonnant": "Klaxonner ne donne aucune priorité.",
+      "Je passe si je roule vite": "Rouler vite ne donne aucun droit, au contraire."
+    }
   },
   {
     "id": "pri-009",
@@ -148,6 +188,11 @@
     "bonne": 0,
     "grave": true,
     "explication": "Quand tu changes de direction à gauche, tu cèdes le passage aux usagers qui viennent en sens inverse.",
+    "pourquoiFaux": {
+      "Je tourne : j'ai mis mon clignotant": "Le clignotant annonce ta manœuvre, il ne te donne pas la priorité.",
+      "Je tourne : elle vient de ma droite": "Une voiture qui arrive en face ne vient pas de ta droite.",
+      "Je tourne si elle est encore loin et roule vite": "Même loin, elle est prioritaire : attends si tu n'es pas sûr."
+    },
     "schema": {
       "type": "scene",
       "id": "carrefour-gauche"
@@ -165,7 +210,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Quand tu tournes, tu cèdes le passage aux cyclistes qui continuent tout droit et aux piétons qui traversent. Vérifie ton angle mort."
+    "explication": "Quand tu tournes, tu cèdes le passage aux cyclistes qui continuent tout droit et aux piétons qui traversent. Vérifie ton angle mort.",
+    "pourquoiFaux": {
+      "Je tourne, j'ai mis mon clignotant": "Le clignotant ne te donne pas la priorité sur le cycliste.",
+      "Je tourne, les voitures sont prioritaires": "Les voitures ne sont pas prioritaires sur un cycliste qui va tout droit.",
+      "Je klaxonne pour qu'il s'arrête": "Klaxonner ne remplace pas l'obligation de céder."
+    }
   },
   {
     "id": "pri-011",
@@ -180,6 +230,11 @@
     "bonne": 2,
     "grave": true,
     "explication": "Aux ronds-points signalés, tu cèdes le passage aux usagers qui y circulent déjà.",
+    "pourquoiFaux": {
+      "Moi, car je viens de droite": "Dans un rond-point signalé, la priorité de droite ne s'applique pas à l'entrée.",
+      "Celui qui roule le plus vite": "La vitesse ne donne jamais la priorité.",
+      "Les véhicules qui entrent": "Ceux qui entrent doivent céder, ils ne sont pas prioritaires."
+    },
     "schema": {
       "type": "panneau",
       "code": "D5"
@@ -197,7 +252,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Avant de quitter le rond-point, tu signales ta sortie avec le clignotant droit."
+    "explication": "Avant de quitter le rond-point, tu signales ta sortie avec le clignotant droit.",
+    "pourquoiFaux": {
+      "J'allume mon clignotant gauche": "On sort vers la droite : le clignotant gauche tromperait les autres.",
+      "Je n'allume aucun clignotant": "Il faut signaler la sortie avec le clignotant droit.",
+      "Je m'arrête avant de sortir": "S'arrêter dans le rond-point sans raison gênerait la circulation."
+    }
   },
   {
     "id": "pri-013",
@@ -211,7 +271,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Les véhicules sur rails sont prioritaires sur les autres usagers, sauf si un agent ou des feux en décident autrement."
+    "explication": "Les véhicules sur rails sont prioritaires sur les autres usagers, sauf si un agent ou des feux en décident autrement.",
+    "pourquoiFaux": {
+      "Le tram doit te céder s'il vient de gauche": "Le tram est prioritaire d'où qu'il vienne.",
+      "Le premier arrivé passe": "La règle du premier arrivé n'existe pas.",
+      "Le tram doit s'arrêter": "C'est à toi de céder, pas au tram de s'arrêter."
+    }
   },
   {
     "id": "pri-014",
@@ -225,7 +290,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Un véhicule prioritaire qui utilise ses feux bleus et sa sirène doit pouvoir passer : tu libères le passage en sécurité."
+    "explication": "Un véhicule prioritaire qui utilise ses feux bleus et sa sirène doit pouvoir passer : tu libères le passage en sécurité.",
+    "pourquoiFaux": {
+      "Je continue normalement": "Continuer sans réagir bloque un véhicule en urgence.",
+      "J'accélère pour rester devant elle": "Accélérer pour rester devant gêne l'intervention et crée un danger.",
+      "Je m'arrête immédiatement au milieu de ma bande": "S'arrêter net au milieu de la bande peut provoquer un accident."
+    }
   },
   {
     "id": "pri-015",
@@ -239,7 +309,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "L'orange fixe signifie l'arrêt, comme le rouge, sauf si tu es si proche que freiner serait dangereux."
+    "explication": "L'orange fixe signifie l'arrêt, comme le rouge, sauf si tu es si proche que freiner serait dangereux.",
+    "pourquoiFaux": {
+      "Accélérer pour passer": "Accélérer à l'orange est dangereux : l'orange signifie l'arrêt.",
+      "Passer si personne n'arrive": "L'orange fixe impose l'arrêt même si personne n'arrive.",
+      "Klaxonner et passer": "Klaxonner ne donne aucun droit de passer."
+    }
   },
   {
     "id": "pri-016",
@@ -253,7 +328,12 @@
     ],
     "bonne": 1,
     "grave": true,
-    "explication": "L'orange clignotant autorise le passage avec prudence. Ce sont alors les panneaux de priorité, ou la priorité de droite, qui s'appliquent."
+    "explication": "L'orange clignotant autorise le passage avec prudence. Ce sont alors les panneaux de priorité, ou la priorité de droite, qui s'appliquent.",
+    "pourquoiFaux": {
+      "Tu dois t'arrêter": "L'orange clignotant n'impose pas l'arrêt.",
+      "Tu es prioritaire": "Il ne donne pas la priorité : les panneaux et priorités s'appliquent.",
+      "Le carrefour est fermé": "Le carrefour reste ouvert à la circulation."
+    }
   },
   {
     "id": "pri-017",
@@ -267,7 +347,12 @@
     ],
     "bonne": 3,
     "grave": true,
-    "explication": "Le bras levé verticalement est un signal d'arrêt général. Ceux qui sont déjà engagés dégagent le carrefour."
+    "explication": "Le bras levé verticalement est un signal d'arrêt général. Ceux qui sont déjà engagés dégagent le carrefour.",
+    "pourquoiFaux": {
+      "Tu peux passer": "Le bras levé signifie l'arrêt, pas le passage.",
+      "Ralentir seulement": "Ce n'est pas une invitation à ralentir : c'est un arrêt.",
+      "Arrêt seulement pour ceux qui viennent de face": "Ce geste arrête tous les usagers, pas seulement ceux de face."
+    }
   },
   {
     "id": "pri-018",
@@ -281,7 +366,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Ordre de priorité : agent > feux > panneaux > règles générales."
+    "explication": "Ordre de priorité : agent > feux > panneaux > règles générales.",
+    "pourquoiFaux": {
+      "Le feu": "L'agent passe avant les feux.",
+      "Les panneaux": "L'agent passe avant les panneaux.",
+      "La règle de la priorité de droite": "L'agent passe avant toutes les règles générales."
+    }
   },
   {
     "id": "pri-019",
@@ -295,7 +385,12 @@
     ],
     "bonne": 3,
     "grave": true,
-    "explication": "Tu dois céder le passage aux piétons qui se trouvent sur le passage ou qui s'y engagent, et t'en approcher à allure modérée."
+    "explication": "Tu dois céder le passage aux piétons qui se trouvent sur le passage ou qui s'y engagent, et t'en approcher à allure modérée.",
+    "pourquoiFaux": {
+      "Je passe s'il est encore sur le trottoir d'en face": "Un piéton engagé sur le passage est prioritaire, même s'il est encore loin.",
+      "Je klaxonne pour qu'il attende": "Klaxonner pour faire attendre un piéton est interdit.",
+      "Je contourne le piéton": "Contourner un piéton sur le passage est dangereux et interdit."
+    }
   },
   {
     "id": "pri-020",
@@ -309,7 +404,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Quand les feux ne fonctionnent pas, on applique les panneaux présents ; sans panneau, la priorité de droite."
+    "explication": "Quand les feux ne fonctionnent pas, on applique les panneaux présents ; sans panneau, la priorité de droite.",
+    "pourquoiFaux": {
+      "Le premier arrivé passe": "La règle du premier arrivé n'existe pas.",
+      "La route la plus large est prioritaire": "La largeur de la route ne donne pas la priorité.",
+      "Tout le monde s'arrête comme à un STOP": "Il n'y a pas d'arrêt obligatoire pour tous : on applique panneaux puis priorité de droite."
+    }
   },
   {
     "id": "pri-021",
@@ -323,7 +423,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "En agglomération, tu dois permettre au bus de quitter un arrêt signalé quand il indique son départ."
+    "explication": "En agglomération, tu dois permettre au bus de quitter un arrêt signalé quand il indique son départ.",
+    "pourquoiFaux": {
+      "Accélérer pour passer avant lui": "Accélérer pour couper la route au bus est dangereux et interdit.",
+      "Le dépasser par la gauche en klaxonnant": "Le dépasser en klaxonnant au moment où il démarre est dangereux.",
+      "Ne rien faire de particulier": "En agglomération, tu dois faciliter son départ."
+    }
   },
   {
     "id": "pri-022",
@@ -338,6 +443,11 @@
     "bonne": 3,
     "grave": true,
     "explication": "Après la fin de la route à priorité, on revient aux règles générales : priorité de droite si rien d'autre n'est indiqué.",
+    "pourquoiFaux": {
+      "Tu restes prioritaire": "Après le panneau de fin, tu n'es plus prioritaire.",
+      "Tu dois t'arrêter": "Il n'y a pas d'arrêt obligatoire, sauf panneau STOP.",
+      "La priorité au plus grand véhicule": "La taille du véhicule ne donne jamais la priorité."
+    },
     "schema": {
       "type": "panneau",
       "code": "B11"

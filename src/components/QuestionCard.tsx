@@ -1,6 +1,7 @@
 import type { Question } from '../types'
 import { THEME_PAR_ID, NOMS_REGIONS } from '../data/themes'
 import { Schema } from './Schema'
+import { Correction } from './Correction'
 
 const LETTRES = ['A', 'B', 'C', 'D']
 
@@ -62,8 +63,8 @@ export function QuestionCard({ question, selection, onSelect, corrige, montrerGr
                 : question.grave
                   ? 'Faute grave : −5 points à l’examen.'
                   : 'Mauvaise réponse : −1 point à l’examen.'}
-          </strong>{' '}
-          {question.explication}
+          </strong>
+          <Correction question={question} choix={selection} />
         </div>
       )}
     </article>

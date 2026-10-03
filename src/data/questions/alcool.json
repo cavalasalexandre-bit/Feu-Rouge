@@ -11,7 +11,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "La limite est de 0,5 g/l de sang (0,22 mg/l d'air expiré). Au-delà, tu commets une infraction."
+    "explication": "La limite est de 0,5 g/l de sang (0,22 mg/l d'air expiré). Au-delà, tu commets une infraction.",
+    "pourquoiFaux": {
+      "0,8 gramme par litre": "0,8 g/l était l'ancienne limite, aujourd'hui c'est 0,5 g/l.",
+      "0,2 gramme par litre": "0,2 g/l, c'est la limite des conducteurs professionnels.",
+      "0 gramme par litre": "La Belgique tolère 0,5 g/l pour un conducteur ordinaire."
+    }
   },
   {
     "id": "alc-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 3,
     "grave": true,
-    "explication": "0,22 mg/l d'air expiré équivaut à 0,5 g/l de sang. C'est ce que mesure l'éthylomètre de la police."
+    "explication": "0,22 mg/l d'air expiré équivaut à 0,5 g/l de sang. C'est ce que mesure l'éthylomètre de la police.",
+    "pourquoiFaux": {
+      "0,5 milligramme par litre": "0,5, c'est la limite dans le sang (en g/l), pas dans l'air expiré.",
+      "0,09 milligramme par litre": "0,09 mg/l, c'est la limite des conducteurs professionnels.",
+      "0,35 milligramme par litre": "0,35 mg/l est un seuil de sanction plus lourde, pas la limite légale."
+    }
   },
   {
     "id": "alc-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Les professionnels ont une limite plus stricte : 0,2 g/l de sang, soit 0,09 mg/l d'air expiré."
+    "explication": "Les professionnels ont une limite plus stricte : 0,2 g/l de sang, soit 0,09 mg/l d'air expiré.",
+    "pourquoiFaux": {
+      "0,5 gramme par litre": "0,5 g/l, c'est la limite des conducteurs ordinaires.",
+      "0,8 gramme par litre": "0,8 g/l était l'ancienne limite générale.",
+      "1 gramme par litre": "1 g/l est très au-dessus de toute limite légale."
+    }
   },
   {
     "id": "alc-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le foie élimine l'alcool à un rythme fixe, environ 0,1 à 0,15 g/l par heure. Café, douche ou repas n'y changent rien."
+    "explication": "Le foie élimine l'alcool à un rythme fixe, environ 0,1 à 0,15 g/l par heure. Café, douche ou repas n'y changent rien.",
+    "pourquoiFaux": {
+      "Boire un café serré": "Le café réveille un peu mais ne fait pas baisser le taux.",
+      "Prendre une douche froide": "Une douche froide ne change rien au taux d'alcool.",
+      "Manger beaucoup": "Manger avant de boire ralentit l'absorption, mais ne fait pas baisser le taux après."
+    }
   },
   {
     "id": "alc-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "Pour les drogues, il n'y a pas de taux toléré comme pour l'alcool : la détection suffit pour constater l'infraction."
+    "explication": "Pour les drogues, il n'y a pas de taux toléré comme pour l'alcool : la détection suffit pour constater l'infraction.",
+    "pourquoiFaux": {
+      "C'est permis sous un certain taux, comme l'alcool": "Pour les drogues, il n'y a pas de taux toléré comme pour l'alcool.",
+      "C'est permis si le conducteur se sent bien": "Se sentir bien ne change rien : la détection suffit.",
+      "C'est permis la journée": "La règle est la même de jour comme de nuit."
+    }
   },
   {
     "id": "alc-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Certains médicaments provoquent somnolence ou réflexes ralentis. La notice et le pharmacien te disent si tu peux conduire."
+    "explication": "Certains médicaments provoquent somnolence ou réflexes ralentis. La notice et le pharmacien te disent si tu peux conduire.",
+    "pourquoiFaux": {
+      "Je conduis normalement": "Certains médicaments endorment ou ralentissent les réflexes.",
+      "Je bois un café pour compenser": "Le café ne compense pas l'effet d'un médicament.",
+      "Je conduis seulement la nuit": "La nuit, la somnolence est encore plus dangereuse."
+    }
   },
   {
     "id": "alc-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Une pause d'au moins un quart d'heure toutes les 2 heures limite les risques liés à la fatigue."
+    "explication": "Une pause d'au moins un quart d'heure toutes les 2 heures limite les risques liés à la fatigue.",
+    "pourquoiFaux": {
+      "Toutes les 4 heures": "4 heures sans pause, c'est trop long.",
+      "Toutes les 30 minutes": "Toutes les 30 minutes n'est pas nécessaire.",
+      "Seulement quand on a faim": "La pause sert à combattre la fatigue, pas la faim."
+    }
   },
   {
     "id": "alc-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Ouvrir la fenêtre ou monter la musique ne combat pas la fatigue. Seuls l'arrêt et le repos sont efficaces."
+    "explication": "Ouvrir la fenêtre ou monter la musique ne combat pas la fatigue. Seuls l'arrêt et le repos sont efficaces.",
+    "pourquoiFaux": {
+      "J'ouvre la fenêtre et je continue": "L'air frais réveille quelques minutes seulement.",
+      "J'augmente le volume de la radio": "La musique ne combat pas la fatigue.",
+      "J'accélère pour arriver plus vite": "Accélérer quand on est fatigué augmente encore le danger."
+    }
   },
   {
     "id": "alc-009",
@@ -123,7 +163,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "L'usage du GSM tenu en main est interdit tant que tu participes à la circulation, même arrêté à un feu ou dans un bouchon. C'est une infraction du 3e degré."
+    "explication": "L'usage du GSM tenu en main est interdit tant que tu participes à la circulation, même arrêté à un feu ou dans un bouchon. C'est une infraction du 3e degré.",
+    "pourquoiFaux": {
+      "Oui, le véhicule est à l'arrêt": "À l'arrêt au feu, tu participes toujours à la circulation.",
+      "Oui, si le moteur est coupé automatiquement": "Le moteur coupé automatiquement ne change rien.",
+      "Oui, pour moins de 10 secondes": "Même quelques secondes, c'est interdit."
+    }
   },
   {
     "id": "alc-010",
@@ -137,7 +182,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Téléphoner reste permis en mains libres, appareil fixé. Toute manipulation en main est interdite."
+    "explication": "Téléphoner reste permis en mains libres, appareil fixé. Toute manipulation en main est interdite.",
+    "pourquoiFaux": {
+      "Oui, si l'appel dure moins d'une minute": "La durée de l'appel ne change rien : seul le mains libres est permis.",
+      "Non, jamais": "Téléphoner en mains libres est permis.",
+      "Oui, avec le GSM tenu en main en agglomération": "Le GSM tenu en main est interdit partout."
+    }
   },
   {
     "id": "alc-011",
@@ -151,7 +201,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Même sous la limite légale, l'alcool diminue tes capacités et augmente le risque d'accident."
+    "explication": "Même sous la limite légale, l'alcool diminue tes capacités et augmente le risque d'accident.",
+    "pourquoiFaux": {
+      "Il améliore la concentration": "L'alcool diminue la concentration, il ne l'améliore pas.",
+      "Il n'a d'effet qu'au-delà de 1 g/l": "Les effets commencent dès les premiers verres.",
+      "Il n'agit que sur la vue": "L'alcool agit aussi sur les réflexes et le jugement."
+    }
   },
   {
     "id": "alc-012",
@@ -165,7 +220,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Refuser le test est sanctionné sévèrement, au moins autant qu'une alcoolémie élevée."
+    "explication": "Refuser le test est sanctionné sévèrement, au moins autant qu'une alcoolémie élevée.",
+    "pourquoiFaux": {
+      "Rien, c'est son droit": "Refuser le test n'est pas un droit sans conséquence : c'est une infraction.",
+      "Une simple remarque": "Le refus est sanctionné bien plus qu'une remarque.",
+      "Seulement un avertissement écrit": "Le refus entraîne de vraies sanctions."
+    }
   },
   {
     "id": "alc-013",
@@ -179,7 +239,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "0,6 g/l dépasse la limite de 0,5 g/l : il est en infraction."
+    "explication": "0,6 g/l dépasse la limite de 0,5 g/l : il est en infraction.",
+    "pourquoiFaux": {
+      "Non, la limite est 0,8 g/l": "La limite est 0,5 g/l : 0,6 la dépasse.",
+      "Non, s'il se sent bien": "Se sentir bien ne change pas le taux mesuré.",
+      "Seulement s'il a un accident": "L'infraction existe même sans accident."
+    }
   },
   {
     "id": "alc-014",
@@ -193,6 +258,11 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Alcool et médicaments agissant sur le cerveau se renforcent mutuellement."
+    "explication": "Alcool et médicaments agissant sur le cerveau se renforcent mutuellement.",
+    "pourquoiFaux": {
+      "Les effets s'annulent": "Les effets ne s'annulent pas, ils s'additionnent.",
+      "Rien de particulier": "Le mélange est dangereux.",
+      "Le taux d'alcool baisse": "Les médicaments ne font pas baisser le taux d'alcool."
+    }
   }
 ]

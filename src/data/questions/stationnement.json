@@ -11,7 +11,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Un véhicule est à l'arrêt le temps nécessaire pour embarquer ou débarquer des personnes ou des choses. Sinon, il est en stationnement."
+    "explication": "Un véhicule est à l'arrêt le temps nécessaire pour embarquer ou débarquer des personnes ou des choses. Sinon, il est en stationnement.",
+    "pourquoiFaux": {
+      "L'arrêt dure maximum 15 minutes": "L'arrêt n'a pas de durée fixe : il dure le temps de charger ou décharger.",
+      "L'arrêt se fait moteur allumé, le stationnement moteur coupé": "Le moteur allumé ou coupé ne fait pas la différence.",
+      "Il n'y a aucune différence": "Il y a une différence : l'arrêt est limité au chargement et au déchargement."
+    }
   },
   {
     "id": "sta-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le stationnement est interdit à moins de 15 m de part et d'autre d'un panneau d'arrêt de bus, de tram ou de trolleybus."
+    "explication": "Le stationnement est interdit à moins de 15 m de part et d'autre d'un panneau d'arrêt de bus, de tram ou de trolleybus.",
+    "pourquoiFaux": {
+      "À moins de 5 mètres": "5 m, c'est la distance pour les passages pour piétons et les carrefours.",
+      "À moins de 30 mètres": "30 m n'est pas la règle : c'est 15 m.",
+      "Seulement devant le panneau": "L'interdiction s'étend sur 15 m de chaque côté."
+    }
   },
   {
     "id": "sta-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Il faut laisser libres les 5 m avant le passage pour que les piétons et les conducteurs se voient."
+    "explication": "Il faut laisser libres les 5 m avant le passage pour que les piétons et les conducteurs se voient.",
+    "pourquoiFaux": {
+      "À moins de 15 mètres": "15 m, c'est pour les arrêts de bus.",
+      "À moins de 1 mètre": "1 m serait bien trop près pour la visibilité.",
+      "À moins de 20 mètres": "20 m n'est pas la règle."
+    }
   },
   {
     "id": "sta-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Il faut laisser 5 m libres de part et d'autre du carrefour pour garder la visibilité."
+    "explication": "Il faut laisser 5 m libres de part et d'autre du carrefour pour garder la visibilité.",
+    "pourquoiFaux": {
+      "À moins de 15 mètres": "15 m, c'est pour les arrêts de bus.",
+      "À moins de 1 mètre": "1 m serait bien trop près du carrefour.",
+      "Ils sont permis": "C'est interdit à moins de 5 m."
+    }
   },
   {
     "id": "sta-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Il faut laisser au moins 3 m de chaussée libre pour la circulation."
+    "explication": "Il faut laisser au moins 3 m de chaussée libre pour la circulation.",
+    "pourquoiFaux": {
+      "2 mètres": "2 m serait trop étroit pour passer.",
+      "5 mètres": "5 m n'est pas le minimum légal.",
+      "1,5 mètre": "1,5 m serait bien trop étroit."
+    }
   },
   {
     "id": "sta-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Dans une rue à double sens, on stationne à droite. Dans une rue à sens unique, on peut stationner des deux côtés."
+    "explication": "Dans une rue à double sens, on stationne à droite. Dans une rue à sens unique, on peut stationner des deux côtés.",
+    "pourquoiFaux": {
+      "Du côté que tu veux": "Dans une rue à double sens, ce n'est pas au choix.",
+      "À gauche": "À gauche, c'est seulement en rue à sens unique.",
+      "Au milieu de la chaussée": "Au milieu de la chaussée, c'est interdit."
+    }
   },
   {
     "id": "sta-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "En zone bleue, la durée maximale est de 2 heures, sauf indication contraire sur le panneau."
+    "explication": "En zone bleue, la durée maximale est de 2 heures, sauf indication contraire sur le panneau.",
+    "pourquoiFaux": {
+      "1 heure": "1 heure n'est pas la durée de la zone bleue.",
+      "30 minutes": "30 minutes n'est pas la règle.",
+      "4 heures": "4 heures dépasse la durée permise."
+    }
   },
   {
     "id": "sta-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le disque est gradué par demi-heure : on place l'indicateur sur le trait qui suit l'heure d'arrivée, ici 10 h 30."
+    "explication": "Le disque est gradué par demi-heure : on place l'indicateur sur le trait qui suit l'heure d'arrivée, ici 10 h 30.",
+    "pourquoiFaux": {
+      "10 h 00": "Tu ne peux pas régler le disque avant ton heure d'arrivée.",
+      "10 h 10": "On ne règle pas l'heure exacte, mais le trait suivant.",
+      "12 h 10": "Le disque indique l'arrivée, pas l'heure de départ."
+    }
   },
   {
     "id": "sta-009",
@@ -124,6 +164,11 @@
     "bonne": 2,
     "grave": false,
     "explication": "Une seule barre : seul le stationnement est interdit. L'arrêt pour faire descendre quelqu'un reste permis.",
+    "pourquoiFaux": {
+      "Non, l'arrêt est interdit": "Une seule barre : seul le stationnement est interdit.",
+      "Oui, mais seulement la nuit": "La règle vaut de jour comme de nuit.",
+      "Non, sauf pour les taxis": "Ce panneau ne vise pas seulement les taxis."
+    },
     "schema": {
       "type": "panneau",
       "code": "E1"
@@ -142,6 +187,11 @@
     "bonne": 1,
     "grave": false,
     "explication": "Avec la croix, ni l'arrêt ni le stationnement ne sont permis.",
+    "pourquoiFaux": {
+      "Stationnement interdit, arrêt permis": "Une seule barre, c'est le stationnement interdit. La croix interdit aussi l'arrêt.",
+      "Fin de zone bleue": "La fin de zone bleue a un autre panneau.",
+      "Parking payant": "Un parking payant est indiqué par un P et un panneau additionnel."
+    },
     "schema": {
       "type": "panneau",
       "code": "E3"
@@ -159,7 +209,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le stationnement est interdit devant les accès carrossables des propriétés."
+    "explication": "Le stationnement est interdit devant les accès carrossables des propriétés.",
+    "pourquoiFaux": {
+      "Oui, pour moins de 15 minutes": "Même 15 minutes, c'est interdit devant un garage.",
+      "Oui, si le garage semble inutilisé": "Tu ne peux pas savoir si le garage est utilisé.",
+      "Oui, la nuit": "C'est interdit de jour comme de nuit."
+    }
   },
   {
     "id": "sta-012",
@@ -173,7 +228,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Le trottoir est réservé aux piétons. Le stationnement n'y est permis que si un panneau ou un marquage l'autorise."
+    "explication": "Le trottoir est réservé aux piétons. Le stationnement n'y est permis que si un panneau ou un marquage l'autorise.",
+    "pourquoiFaux": {
+      "Oui, avec deux roues": "Deux roues sur le trottoir, c'est quand même du stationnement sur le trottoir.",
+      "Oui, si tu laisses 1 mètre aux piétons": "Laisser un passage ne rend pas le stationnement permis.",
+      "Oui, pour moins d'une heure": "La durée ne change rien à l'interdiction."
+    }
   },
   {
     "id": "sta-013",
@@ -187,7 +247,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "S'arrêter sur une piste cyclable oblige les cyclistes à se déporter dans la circulation : c'est interdit."
+    "explication": "S'arrêter sur une piste cyclable oblige les cyclistes à se déporter dans la circulation : c'est interdit.",
+    "pourquoiFaux": {
+      "Oui, le temps de déposer quelqu'un": "Même un arrêt court force les cyclistes à se déporter.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas l'arrêt permis.",
+      "Oui, la nuit": "C'est interdit à toute heure."
+    }
   },
   {
     "id": "sta-014",
@@ -201,7 +266,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Ces places sont réservées aux véhicules qui affichent la carte spéciale."
+    "explication": "Ces places sont réservées aux véhicules qui affichent la carte spéciale.",
+    "pourquoiFaux": {
+      "Oui, pour moins de 5 minutes": "Même quelques minutes, c'est interdit.",
+      "Oui, si les feux de détresse sont allumés": "Les feux de détresse ne rendent pas l'arrêt permis.",
+      "Oui, la nuit": "La place reste réservée la nuit aussi."
+    }
   },
   {
     "id": "sta-015",
@@ -215,7 +285,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Roues braquées vers la bordure et vitesse engagée : si le frein lâche, la voiture se bloque contre le trottoir."
+    "explication": "Roues braquées vers la bordure et vitesse engagée : si le frein lâche, la voiture se bloque contre le trottoir.",
+    "pourquoiFaux": {
+      "Je laisse le moteur tourner": "Il faut couper le moteur en quittant le véhicule.",
+      "Je laisse les roues droites": "Roues droites, la voiture pourrait dévaler la pente si le frein lâche.",
+      "J'allume les feux de détresse": "Les feux de détresse ne servent pas au stationnement normal."
+    }
   },
   {
     "id": "sta-016",
@@ -229,6 +304,11 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Ouvrir une portière sans regarder est une cause fréquente d'accidents de cyclistes. Ouvre avec la main opposée pour te tourner et regarder."
+    "explication": "Ouvrir une portière sans regarder est une cause fréquente d'accidents de cyclistes. Ouvre avec la main opposée pour te tourner et regarder.",
+    "pourquoiFaux": {
+      "Allumer tes feux de détresse": "Les feux de détresse ne te protègent pas en ouvrant ta portière.",
+      "Klaxonner": "Klaxonner n'est pas la règle : il faut regarder.",
+      "Rien de particulier": "Il faut vérifier, sinon tu risques de renverser un cycliste."
+    }
   }
 ]

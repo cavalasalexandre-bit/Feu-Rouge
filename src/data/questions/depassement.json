@@ -11,7 +11,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Le dépassement se fait par la gauche, sauf exceptions prévues par le code."
+    "explication": "Le dépassement se fait par la gauche, sauf exceptions prévues par le code.",
+    "pourquoiFaux": {
+      "Par la droite": "Par la droite, c'est l'exception, pas la règle.",
+      "Par le côté le plus large": "La largeur ne décide pas : on dépasse par la gauche.",
+      "Indifféremment": "Le côté n'est pas libre : c'est la gauche."
+    }
   },
   {
     "id": "dep-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le dépassement par la droite est permis quand le conducteur devant tourne à gauche et s'est déporté pour le faire. C'est aussi le cas pour dépasser un tram."
+    "explication": "Le dépassement par la droite est permis quand le conducteur devant tourne à gauche et s'est déporté pour le faire. C'est aussi le cas pour dépasser un tram.",
+    "pourquoiFaux": {
+      "Quand il roule trop lentement à gauche": "Un véhicule lent à gauche ne t'autorise pas à dépasser par la droite.",
+      "Jamais": "C'est parfois permis, par exemple quand le véhicule tourne à gauche.",
+      "Toujours sur autoroute": "Sur autoroute aussi, on dépasse par la gauche."
+    }
   },
   {
     "id": "dep-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Hors agglomération : au moins 1,5 m. En agglomération : au moins 1 m."
+    "explication": "Hors agglomération : au moins 1,5 m. En agglomération : au moins 1 m.",
+    "pourquoiFaux": {
+      "1 mètre": "1 m, c'est le minimum en agglomération.",
+      "50 centimètres": "50 cm est bien trop près d'un cycliste.",
+      "2,5 mètres": "2,5 m n'est pas le minimum légal."
+    }
   },
   {
     "id": "dep-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "En agglomération, au moins 1 m entre ta voiture et le cycliste. Si la place manque, tu attends."
+    "explication": "En agglomération, au moins 1 m entre ta voiture et le cycliste. Si la place manque, tu attends.",
+    "pourquoiFaux": {
+      "1,5 mètre": "1,5 m, c'est le minimum hors agglomération.",
+      "50 centimètres": "50 cm est bien trop près d'un cycliste.",
+      "2 mètres": "2 m n'est pas le minimum légal."
+    }
   },
   {
     "id": "dep-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Dépasser par la gauche dans un virage ou en haut d'une côte sans visibilité suffisante est une infraction du 4e degré."
+    "explication": "Dépasser par la gauche dans un virage ou en haut d'une côte sans visibilité suffisante est une infraction du 4e degré.",
+    "pourquoiFaux": {
+      "Oui, si tu klaxonnes": "Klaxonner ne rend pas un dépassement sans visibilité permis.",
+      "Oui, si le véhicule devant roule lentement": "La lenteur du véhicule devant ne change rien à l'interdiction.",
+      "Oui, hors agglomération": "Hors agglomération, c'est encore plus dangereux."
+    }
   },
   {
     "id": "dep-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Il est interdit de dépasser un véhicule qui s'arrête ou ralentit devant un passage pour piétons : un piéton peut être caché devant lui."
+    "explication": "Il est interdit de dépasser un véhicule qui s'arrête ou ralentit devant un passage pour piétons : un piéton peut être caché devant lui.",
+    "pourquoiFaux": {
+      "Oui, par la gauche": "Un piéton peut être caché devant le véhicule arrêté.",
+      "Oui, si tu ne vois pas de piéton": "Ne pas voir de piéton ne veut pas dire qu'il n'y en a pas.",
+      "Oui, s'il est lent": "Peu importe sa vitesse : il s'arrête pour un piéton."
+    }
   },
   {
     "id": "dep-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le conducteur dépassé doit faciliter la manœuvre : ne pas accélérer et serrer à droite."
+    "explication": "Le conducteur dépassé doit faciliter la manœuvre : ne pas accélérer et serrer à droite.",
+    "pourquoiFaux": {
+      "J'accélère pour l'empêcher de passer": "Accélérer pour empêcher un dépassement est dangereux et interdit.",
+      "Je freine brusquement": "Freiner brusquement risque de provoquer une collision.",
+      "Je me déporte à gauche": "Te déporter à gauche couperait la route au conducteur qui te dépasse."
+    }
   },
   {
     "id": "dep-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Un tram se dépasse par la droite, sauf si l'espace manque ou dans une rue à sens unique où la gauche est possible."
+    "explication": "Un tram se dépasse par la droite, sauf si l'espace manque ou dans une rue à sens unique où la gauche est possible.",
+    "pourquoiFaux": {
+      "Par la gauche": "Un tram se dépasse en principe par la droite.",
+      "Il est interdit de dépasser un tram": "On peut dépasser un tram, en principe par la droite.",
+      "Du côté où il y a le plus de place": "Le côté n'est pas libre : c'est la droite."
+    }
   },
   {
     "id": "dep-009",
@@ -123,7 +163,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Un dépassement se prépare : visibilité devant, personne derrière qui dépasse déjà, espace suffisant pour revenir à droite, clignotant."
+    "explication": "Un dépassement se prépare : visibilité devant, personne derrière qui dépasse déjà, espace suffisant pour revenir à droite, clignotant.",
+    "pourquoiFaux": {
+      "Seulement le rétroviseur intérieur": "Il faut aussi vérifier l'angle mort et les rétroviseurs extérieurs.",
+      "Seulement que la route en face est libre": "Il faut aussi vérifier derrière toi.",
+      "Rien, si tu mets ton clignotant": "Le clignotant ne remplace pas les vérifications."
+    }
   },
   {
     "id": "dep-010",
@@ -137,7 +182,12 @@
     ],
     "bonne": 3,
     "grave": true,
-    "explication": "La ligne continue s'applique à tous les dépassements, même d'un véhicule lent."
+    "explication": "La ligne continue s'applique à tous les dépassements, même d'un véhicule lent.",
+    "pourquoiFaux": {
+      "Oui, s'il roule à moins de 25 km/h": "La vitesse du véhicule devant ne permet pas de franchir la ligne continue.",
+      "Oui, si la route est libre": "Route libre ou non, la ligne continue reste infranchissable.",
+      "Oui, hors agglomération": "La ligne continue vaut aussi hors agglomération."
+    }
   },
   {
     "id": "dep-011",
@@ -151,7 +201,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Le dépassement est interdit à l'approche et sur un carrefour, sauf si tu es sur une route à priorité, si le carrefour est réglé par feux ou agent, ou si tu dépasses un deux-roues."
+    "explication": "Le dépassement est interdit à l'approche et sur un carrefour, sauf si tu es sur une route à priorité, si le carrefour est réglé par feux ou agent, ou si tu dépasses un deux-roues.",
+    "pourquoiFaux": {
+      "Oui, toujours": "Ce n'est pas toujours permis : il y a des exceptions précises.",
+      "Oui, si tu roules vite": "Rouler vite ne donne aucun droit de dépasser.",
+      "Oui, si tu klaxonnes": "Klaxonner ne rend pas le dépassement permis."
+    }
   },
   {
     "id": "dep-012",
@@ -165,7 +220,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Le dépassement est interdit à l'approche d'un passage à niveau sans barrières."
+    "explication": "Le dépassement est interdit à l'approche d'un passage à niveau sans barrières.",
+    "pourquoiFaux": {
+      "Oui, s'il n'y a pas de train en vue": "Un train peut surgir rapidement.",
+      "Oui, de jour": "De jour comme de nuit, c'est interdit.",
+      "Oui, si le véhicule devant est lent": "La lenteur du véhicule devant ne change rien."
+    }
   },
   {
     "id": "dep-013",
@@ -180,6 +240,11 @@
     "bonne": 0,
     "grave": false,
     "explication": "Ce panneau interdit de dépasser des véhicules à plus de deux roues. Une moto, un cyclomoteur ou un vélo peuvent être dépassés.",
+    "pourquoiFaux": {
+      "Non, aucun dépassement n'est permis": "Les deux-roues restent dépassables.",
+      "Oui, mais seulement par la droite": "On dépasse toujours par la gauche.",
+      "Non, sauf hors agglomération": "Le panneau vaut aussi hors agglomération, et les deux-roues restent dépassables."
+    },
     "schema": {
       "type": "panneau",
       "code": "C35"
@@ -197,7 +262,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Voir le véhicule dépassé dans le rétroviseur intérieur garantit que tu ne lui coupes pas la route."
+    "explication": "Voir le véhicule dépassé dans le rétroviseur intérieur garantit que tu ne lui coupes pas la route.",
+    "pourquoiFaux": {
+      "Dès que ton avant dépasse son avant": "Tu lui couperais la route.",
+      "Immédiatement": "Te rabattre aussitôt couperait la route au véhicule dépassé.",
+      "Après 100 mètres": "Il n'y a pas de distance fixe : c'est le rétroviseur intérieur qui compte."
+    }
   },
   {
     "id": "dep-015",
@@ -211,7 +281,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Dans une rue cyclable, les véhicules à moteur ne peuvent pas dépasser les cyclistes."
+    "explication": "Dans une rue cyclable, les véhicules à moteur ne peuvent pas dépasser les cyclistes.",
+    "pourquoiFaux": {
+      "Oui, à 1 mètre de distance": "Dans une rue cyclable, on ne dépasse pas les cyclistes, même à 1 m.",
+      "Oui, s'il roule lentement": "Même lent, le cycliste ne peut pas être dépassé dans une rue cyclable.",
+      "Oui, par la droite": "Par la droite non plus."
+    }
   },
   {
     "id": "dep-016",
@@ -225,6 +300,11 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Si tu ne peux pas laisser 1 m (agglomération) ou 1,5 m (hors agglomération), tu attends."
+    "explication": "Si tu ne peux pas laisser 1 m (agglomération) ou 1,5 m (hors agglomération), tu attends.",
+    "pourquoiFaux": {
+      "Le dépasser en le frôlant lentement": "Le frôler est très dangereux, même lentement.",
+      "Klaxonner pour qu'il se mette sur le côté": "Le cycliste a le droit de rouler sur la chaussée.",
+      "Le dépasser par la droite": "Dépasser par la droite est interdit et dangereux."
+    }
   }
 ]

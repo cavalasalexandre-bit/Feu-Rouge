@@ -28,7 +28,10 @@ export interface Question {
   bonne: number
   /** Faute grave : une erreur coûte 5 points au lieu de 1. */
   grave: boolean
+  /** Explique pourquoi la bonne réponse est juste (la règle). */
   explication: string
+  /** Pour chaque mauvaise réponse (clé = son texte exact), pourquoi elle est fausse. */
+  pourquoiFaux?: Record<string, string>
   schema?: Schema
   /** Question propre à une région (sinon valable partout). */
   region?: Region

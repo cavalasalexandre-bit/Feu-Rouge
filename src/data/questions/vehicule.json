@@ -11,7 +11,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "En dessous de 1,6 mm, le pneu est interdit. Sous la pluie, un pneu usé favorise l'aquaplaning."
+    "explication": "En dessous de 1,6 mm, le pneu est interdit. Sous la pluie, un pneu usé favorise l'aquaplaning.",
+    "pourquoiFaux": {
+      "1 millimètre": "1 mm, c'est sous le minimum légal.",
+      "3 millimètres": "3 mm est conseillé en hiver, mais le minimum légal est 1,6 mm.",
+      "0,5 millimètre": "0,5 mm, c'est un pneu lisse et interdit."
+    }
   },
   {
     "id": "veh-002",
@@ -25,7 +30,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "La ceinture est obligatoire pour tous les occupants, à toutes les places équipées."
+    "explication": "La ceinture est obligatoire pour tous les occupants, à toutes les places équipées.",
+    "pourquoiFaux": {
+      "Seulement le conducteur": "Les passagers aussi doivent la porter.",
+      "Seulement les passagers avant": "Les passagers arrière aussi doivent la porter.",
+      "Seulement hors agglomération": "La ceinture est obligatoire partout, en ville aussi."
+    }
   },
   {
     "id": "veh-003",
@@ -39,7 +49,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "En dessous de 1,35 m, un siège ou un rehausseur homologué est obligatoire."
+    "explication": "En dessous de 1,35 m, un siège ou un rehausseur homologué est obligatoire.",
+    "pourquoiFaux": {
+      "Avec la ceinture adulte seule": "La ceinture adulte seule ne protège pas un enfant de moins de 1,35 m.",
+      "Sur les genoux d'un adulte": "Un enfant sur les genoux serait projeté en cas de choc.",
+      "Sans ceinture à l'arrière": "La ceinture et le dispositif adapté sont obligatoires à l'arrière aussi."
+    }
   },
   {
     "id": "veh-004",
@@ -53,7 +68,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "Un airbag qui se déclenche contre un siège dos à la route peut gravement blesser le bébé."
+    "explication": "Un airbag qui se déclenche contre un siège dos à la route peut gravement blesser le bébé.",
+    "pourquoiFaux": {
+      "Rien de particulier": "L'airbag peut gravement blesser un bébé dos à la route.",
+      "Reculer le siège au maximum": "Reculer le siège ne suffit pas : l'airbag doit être coupé.",
+      "C'est interdit dans tous les cas": "C'est permis si l'airbag passager est désactivé."
+    }
   },
   {
     "id": "veh-005",
@@ -67,7 +87,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "À bord : permis, certificat d'immatriculation, certificat d'assurance et, si le véhicule y est soumis, le certificat de contrôle technique."
+    "explication": "À bord : permis, certificat d'immatriculation, certificat d'assurance et, si le véhicule y est soumis, le certificat de contrôle technique.",
+    "pourquoiFaux": {
+      "Le permis de conduire": "Le permis de conduire est obligatoire à bord.",
+      "Le certificat d'immatriculation": "Le certificat d'immatriculation est obligatoire à bord.",
+      "Le certificat d'assurance": "Le certificat d'assurance est obligatoire à bord."
+    }
   },
   {
     "id": "veh-006",
@@ -81,7 +106,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Sont obligatoires : triangle, extincteur, trousse de secours et gilet de sécurité fluorescent."
+    "explication": "Sont obligatoires : triangle, extincteur, trousse de secours et gilet de sécurité fluorescent.",
+    "pourquoiFaux": {
+      "Un triangle de danger": "Le triangle de danger est obligatoire.",
+      "Un extincteur": "L'extincteur est obligatoire en Belgique.",
+      "Une trousse de secours": "La trousse de secours est obligatoire en Belgique."
+    }
   },
   {
     "id": "veh-007",
@@ -95,7 +125,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Le premier contrôle technique a lieu 4 ans après la première mise en circulation."
+    "explication": "Le premier contrôle technique a lieu 4 ans après la première mise en circulation.",
+    "pourquoiFaux": {
+      "Dès l'achat": "Une voiture neuve ne passe pas au contrôle dès l'achat.",
+      "Après 1 an": "Le premier contrôle n'a pas lieu après 1 an.",
+      "Après 10 ans": "10 ans, c'est beaucoup trop tard."
+    }
   },
   {
     "id": "veh-008",
@@ -109,7 +144,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Un voyant rouge signale un problème urgent. Rouler sans pression d'huile peut détruire le moteur."
+    "explication": "Un voyant rouge signale un problème urgent. Rouler sans pression d'huile peut détruire le moteur.",
+    "pourquoiFaux": {
+      "Je continue jusqu'à destination": "Continuer peut détruire le moteur.",
+      "J'accélère pour faire circuler l'huile": "Accélérer aggrave le problème.",
+      "Je l'ignore s'il s'éteint parfois": "Un voyant rouge qui s'allume, même par moments, signale un problème."
+    }
   },
   {
     "id": "veh-009",
@@ -123,7 +163,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "L'ABS permet de continuer à diriger la voiture pendant un freinage d'urgence."
+    "explication": "L'ABS permet de continuer à diriger la voiture pendant un freinage d'urgence.",
+    "pourquoiFaux": {
+      "À réduire la consommation": "L'ABS ne réduit pas la consommation.",
+      "À accélérer plus vite": "L'ABS n'a rien à voir avec l'accélération.",
+      "À freiner automatiquement devant un obstacle": "Le freinage automatique d'urgence est un autre système."
+    }
   },
   {
     "id": "veh-010",
@@ -137,7 +182,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "En aquaplaning, les pneus ne touchent plus la route : freiner ou braquer fort aggraverait la glissade."
+    "explication": "En aquaplaning, les pneus ne touchent plus la route : freiner ou braquer fort aggraverait la glissade.",
+    "pourquoiFaux": {
+      "Je freine à fond": "Freiner à fond bloque le contrôle sur l'eau.",
+      "J'accélère": "Accélérer aggrave la glissade.",
+      "Je donne un grand coup de volant": "Un grand coup de volant peut faire partir la voiture en tête-à-queue."
+    }
   },
   {
     "id": "veh-011",
@@ -151,7 +201,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "La pression augmente quand le pneu chauffe : la mesure est fiable à froid."
+    "explication": "La pression augmente quand le pneu chauffe : la mesure est fiable à froid.",
+    "pourquoiFaux": {
+      "Pneus chauds, après un long trajet": "Un pneu chaud donne une pression faussement élevée.",
+      "Seulement au contrôle technique": "Il faut contrôler régulièrement, pas seulement au contrôle technique.",
+      "Uniquement en hiver": "La pression se contrôle toute l'année."
+    }
   },
   {
     "id": "veh-012",
@@ -165,6 +220,11 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Bien réglé, l'appui-tête protège la nuque en cas de choc arrière (coup du lapin)."
+    "explication": "Bien réglé, l'appui-tête protège la nuque en cas de choc arrière (coup du lapin).",
+    "pourquoiFaux": {
+      "Au niveau de la nuque": "Trop bas, l'appui-tête ne retient pas la tête en cas de choc.",
+      "Au plus bas possible": "Au plus bas, il peut même aggraver le coup du lapin.",
+      "Il n'a pas besoin d'être réglé": "Mal réglé, il ne protège pas la nuque."
+    }
   }
 ]

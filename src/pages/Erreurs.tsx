@@ -3,6 +3,7 @@ import { QUESTIONS } from '../data'
 import { THEME_PAR_ID } from '../data/themes'
 import { BOITE_MAITRISE, questionsAReviser } from '../lib/adaptive'
 import { useStore } from '../lib/store'
+import { Icone } from '../components/Icone'
 
 export function Erreurs() {
   const { state } = useStore()
@@ -51,14 +52,19 @@ export function Erreurs() {
                   <div className="row" style={{ gap: 8 }}>
                     <span className="chip">{THEME_PAR_ID[q.theme].court}</span>
                     {q.grave && <span className="chip chip-grave">Faute grave</span>}
-                    <span className="chip num">
+                    <span className="chip">
                       {s.boite}/{BOITE_MAITRISE} réussites
                     </span>
                   </div>
                   <strong>{q.question}</strong>
                   <p className="muted">
-                    Bonne réponse : <span style={{ color: 'var(--go)', fontWeight: 700 }}>{q.choix[q.bonne]}</span>
+                    Bonne réponse : <span style={{ color: 'var(--go)', fontWeight: 600 }}>{q.choix[q.bonne]}</span>
                   </p>
+                  <p className="muted" style={{ fontSize: '0.92rem' }}>{q.explication}</p>
+                  <Link className="correction-lien" to={`/cours/${q.theme}`}>
+                    <Icone nom="livre" taille={18} />
+                    Revoir la fiche « {THEME_PAR_ID[q.theme].court} »
+                  </Link>
                 </article>
               )
             })}

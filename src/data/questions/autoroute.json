@@ -11,7 +11,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Les piétons, cyclistes, cyclomoteurs et véhicules trop lents sont interdits sur l'autoroute."
+    "explication": "Les piétons, cyclistes, cyclomoteurs et véhicules trop lents sont interdits sur l'autoroute.",
+    "pourquoiFaux": {
+      "Une moto de 125 cc": "Une moto de 125 cc peut rouler sur l'autoroute.",
+      "Une camionnette": "Une camionnette peut rouler sur l'autoroute.",
+      "Une voiture avec remorque": "Une voiture avec remorque peut rouler sur l'autoroute."
+    }
   },
   {
     "id": "aut-002",
@@ -26,6 +31,11 @@
     "bonne": 3,
     "grave": true,
     "explication": "Sur la bande d'accélération, tu adaptes ta vitesse mais tu dois céder le passage aux usagers déjà sur l'autoroute.",
+    "pourquoiFaux": {
+      "Je m'insère, je suis prioritaire": "Sur la bande d'accélération, tu n'es pas prioritaire.",
+      "Je m'arrête au bout de la bande": "S'arrêter au bout de la bande est dangereux : adapte ta vitesse avant.",
+      "Je klaxonne pour qu'elle se déporte": "Klaxonner ne t'autorise pas à t'insérer."
+    },
     "schema": {
       "type": "scene",
       "id": "autoroute-insertion"
@@ -43,7 +53,12 @@
     ],
     "bonne": 0,
     "grave": true,
-    "explication": "Marche arrière et demi-tour sont interdits sur l'autoroute. Le demi-tour est une infraction du 4e degré."
+    "explication": "Marche arrière et demi-tour sont interdits sur l'autoroute. Le demi-tour est une infraction du 4e degré.",
+    "pourquoiFaux": {
+      "Je fais marche arrière sur la bande d'arrêt d'urgence": "La marche arrière est interdite partout sur l'autoroute.",
+      "Je fais demi-tour par la berme centrale": "Le demi-tour sur autoroute est une infraction du 4e degré.",
+      "Je m'arrête et j'attends": "S'arrêter sur l'autoroute est dangereux et interdit."
+    }
   },
   {
     "id": "aut-004",
@@ -57,7 +72,12 @@
     ],
     "bonne": 2,
     "grave": true,
-    "explication": "La marche arrière est interdite sur toute l'autoroute, bande d'arrêt d'urgence comprise."
+    "explication": "La marche arrière est interdite sur toute l'autoroute, bande d'arrêt d'urgence comprise.",
+    "pourquoiFaux": {
+      "Oui, sur moins de 50 mètres": "Même sur quelques mètres, c'est interdit.",
+      "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas la manœuvre permise.",
+      "Oui, la nuit": "C'est interdit à toute heure."
+    }
   },
   {
     "id": "aut-005",
@@ -71,7 +91,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "La bande d'arrêt d'urgence est réservée aux situations d'urgence."
+    "explication": "La bande d'arrêt d'urgence est réservée aux situations d'urgence.",
+    "pourquoiFaux": {
+      "Pour dépasser un bouchon": "Doubler un bouchon par la bande d'arrêt d'urgence est interdit.",
+      "Pour téléphoner": "Pour téléphoner, utilise une aire ou un kit mains libres.",
+      "Pour te reposer": "Pour te reposer, utilise une aire de repos."
+    }
   },
   {
     "id": "aut-006",
@@ -85,7 +110,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Sur autoroute : au moins 100 m. Sur les autres routes : au moins 30 m, visible à 50 m."
+    "explication": "Sur autoroute : au moins 100 m. Sur les autres routes : au moins 30 m, visible à 50 m.",
+    "pourquoiFaux": {
+      "À 30 mètres": "30 m, c'est la règle hors autoroute.",
+      "À 10 mètres": "10 m serait beaucoup trop près.",
+      "Il ne faut pas de triangle sur autoroute": "Le triangle est aussi obligatoire sur autoroute."
+    }
   },
   {
     "id": "aut-007",
@@ -99,7 +129,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Hors autoroute, le triangle se place à au moins 30 m du véhicule, de façon à être vu à 50 m."
+    "explication": "Hors autoroute, le triangle se place à au moins 30 m du véhicule, de façon à être vu à 50 m.",
+    "pourquoiFaux": {
+      "À au moins 100 mètres": "100 m, c'est la règle sur autoroute.",
+      "Contre le véhicule": "Contre le véhicule, il ne prévient de rien.",
+      "À 5 mètres": "5 m est beaucoup trop près."
+    }
   },
   {
     "id": "aut-008",
@@ -113,7 +148,12 @@
     ],
     "bonne": 0,
     "grave": false,
-    "explication": "Le gilet fluo doit être porté par le conducteur qui sort de son véhicule en panne ou accidenté sur l'autoroute."
+    "explication": "Le gilet fluo doit être porté par le conducteur qui sort de son véhicule en panne ou accidenté sur l'autoroute.",
+    "pourquoiFaux": {
+      "Rien de particulier": "Le gilet fluo est obligatoire quand tu sors.",
+      "Un casque": "Un casque n'a pas de sens ici.",
+      "Une lampe de poche allumée": "Une lampe ne remplace pas le gilet fluo."
+    }
   },
   {
     "id": "aut-009",
@@ -127,7 +167,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Rester dans la voiture ou sur la bande d'arrêt d'urgence est très dangereux. Tout le monde sort côté droit et se met à l'abri."
+    "explication": "Rester dans la voiture ou sur la bande d'arrêt d'urgence est très dangereux. Tout le monde sort côté droit et se met à l'abri.",
+    "pourquoiFaux": {
+      "Dans la voiture, ceinture attachée": "Rester dans la voiture est très dangereux en cas de collision.",
+      "Sur la bande d'arrêt d'urgence, devant la voiture": "La bande d'arrêt d'urgence est exposée au trafic.",
+      "Sur la berme centrale": "La berme centrale est la zone la plus dangereuse."
+    }
   },
   {
     "id": "aut-010",
@@ -141,7 +186,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "On roule le plus à droite possible et on utilise les bandes de gauche pour dépasser."
+    "explication": "On roule le plus à droite possible et on utilise les bandes de gauche pour dépasser.",
+    "pourquoiFaux": {
+      "Sur la bande du milieu": "Sans dépasser, on ne reste pas sur la bande du milieu.",
+      "Sur la bande de gauche": "La bande de gauche sert à dépasser.",
+      "Sur la bande de ton choix": "Ce n'est pas au choix : on roule à droite."
+    }
   },
   {
     "id": "aut-011",
@@ -155,7 +205,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Les véhicules de plus de 3,5 t et les véhicules de plus de 7 m ne peuvent pas emprunter la bande de gauche quand il y en a au moins trois."
+    "explication": "Les véhicules de plus de 3,5 t et les véhicules de plus de 7 m ne peuvent pas emprunter la bande de gauche quand il y en a au moins trois.",
+    "pourquoiFaux": {
+      "Les motos": "Les motos peuvent utiliser toutes les bandes.",
+      "Les voitures avec remorque légère": "La règle vise les véhicules de plus de 3,5 t ou de plus de 7 m.",
+      "Les camionnettes": "Une camionnette de moins de 3,5 t peut utiliser la bande de gauche."
+    }
   },
   {
     "id": "aut-012",
@@ -169,7 +224,12 @@
     ],
     "bonne": 3,
     "grave": false,
-    "explication": "L'arrêt et le stationnement sont interdits sur l'autoroute, sauf sur les emplacements aménagés."
+    "explication": "L'arrêt et le stationnement sont interdits sur l'autoroute, sauf sur les emplacements aménagés.",
+    "pourquoiFaux": {
+      "Sur la bande d'arrêt d'urgence pour te reposer": "La bande d'arrêt d'urgence ne sert pas à se reposer.",
+      "Sur la bande de droite avec les feux de détresse": "S'arrêter sur la bande de droite est très dangereux.",
+      "Partout la nuit": "C'est interdit à toute heure."
+    }
   },
   {
     "id": "aut-013",
@@ -183,7 +243,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Les feux de détresse avertissent les conducteurs qui arrivent d'un ralentissement brusque."
+    "explication": "Les feux de détresse avertissent les conducteurs qui arrivent d'un ralentissement brusque.",
+    "pourquoiFaux": {
+      "Je fais des appels de phares": "Les appels de phares s'adressent à ceux devant toi, pas derrière.",
+      "Je klaxonne": "Le klaxon ne prévient pas ceux qui arrivent derrière.",
+      "J'allume mon feu de brouillard arrière": "Le feu de brouillard arrière est réservé à une visibilité sous 100 m."
+    }
   },
   {
     "id": "aut-014",
@@ -197,7 +262,12 @@
     ],
     "bonne": 1,
     "grave": false,
-    "explication": "Le panneau de début d'autoroute est placé à l'entrée de la bretelle : ses règles s'appliquent dès ce point."
+    "explication": "Le panneau de début d'autoroute est placé à l'entrée de la bretelle : ses règles s'appliquent dès ce point.",
+    "pourquoiFaux": {
+      "Seulement sur les bandes principales": "Les règles s'appliquent déjà sur la bretelle d'accès.",
+      "Après la bande d'accélération": "Elles s'appliquent avant, dès le panneau.",
+      "À partir du premier péage": "Le péage n'a rien à voir : les règles s'appliquent dès le panneau de début d'autoroute."
+    }
   },
   {
     "id": "aut-015",
@@ -211,7 +281,12 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Un conducteur à contresens roule souvent sur ce qu'il croit être la bande de droite, donc ta bande de gauche."
+    "explication": "Un conducteur à contresens roule souvent sur ce qu'il croit être la bande de droite, donc ta bande de gauche.",
+    "pourquoiFaux": {
+      "Je roule sur la bande de gauche": "Le conducteur à contresens risque justement d'arriver sur ta bande de gauche.",
+      "Je m'arrête sur la bande de gauche": "S'arrêter sur la bande de gauche est très dangereux.",
+      "Je fais demi-tour": "Le demi-tour est interdit sur l'autoroute."
+    }
   },
   {
     "id": "aut-016",
@@ -225,6 +300,11 @@
     ],
     "bonne": 2,
     "grave": false,
-    "explication": "Un véhicule doit pouvoir rouler à au moins 70 km/h sur autoroute dans des conditions normales."
+    "explication": "Un véhicule doit pouvoir rouler à au moins 70 km/h sur autoroute dans des conditions normales.",
+    "pourquoiFaux": {
+      "50 km/h": "50 km/h est trop lent : c'est dangereux sur autoroute.",
+      "90 km/h": "90 km/h n'est pas le minimum.",
+      "100 km/h": "100 km/h n'est pas le minimum."
+    }
   }
 ]
