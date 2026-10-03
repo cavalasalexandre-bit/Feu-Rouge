@@ -1,0 +1,314 @@
+[
+  {
+    "id": "sig-001",
+    "theme": "signalisation",
+    "question": "Un panneau triangulaire à bord rouge, pointe vers le haut, est un panneau :",
+    "choix": [
+      "D'interdiction",
+      "D'obligation",
+      "De danger",
+      "D'indication"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les panneaux de danger (série A) sont des triangles pointe en haut à bord rouge."
+  },
+  {
+    "id": "sig-002",
+    "theme": "signalisation",
+    "question": "Un panneau rond à bord rouge est en général un panneau :",
+    "choix": [
+      "De danger",
+      "D'indication",
+      "D'obligation",
+      "D'interdiction"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Rond à bord rouge = interdiction (série C). Rond bleu = obligation (série D)."
+  },
+  {
+    "id": "sig-003",
+    "theme": "signalisation",
+    "question": "Un panneau rond à fond bleu est un panneau :",
+    "choix": [
+      "De danger",
+      "D'interdiction",
+      "D'indication",
+      "D'obligation"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Les panneaux d'obligation (série D) sont ronds et bleus, avec un symbole blanc."
+  },
+  {
+    "id": "sig-004",
+    "theme": "signalisation",
+    "question": "Un panneau carré ou rectangulaire à fond bleu est en général un panneau :",
+    "choix": [
+      "D'obligation",
+      "D'indication",
+      "De danger",
+      "D'interdiction"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Les panneaux d'indication (série F) donnent une information : parking, autoroute, zone, impasse…"
+  },
+  {
+    "id": "sig-005",
+    "theme": "signalisation",
+    "question": "Que signifie ce panneau ?",
+    "choix": [
+      "Route fermée aux camions",
+      "Sens interdit : tu ne peux pas entrer dans cette rue par ce côté",
+      "Accès interdit dans les deux sens",
+      "Stationnement interdit"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le rond rouge à barre blanche interdit l'accès dans ce sens. La rue peut être empruntée dans l'autre sens.",
+    "schema": {
+      "type": "panneau",
+      "code": "C1"
+    }
+  },
+  {
+    "id": "sig-006",
+    "theme": "signalisation",
+    "question": "Que signifie ce panneau ?",
+    "choix": [
+      "Zone piétonne",
+      "Accès interdit à tout conducteur, dans les deux sens",
+      "Sens interdit",
+      "Fin de toutes les interdictions"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le rond blanc à bord rouge, sans symbole, interdit la circulation à tout conducteur, dans les deux sens.",
+    "schema": {
+      "type": "panneau",
+      "code": "C3"
+    }
+  },
+  {
+    "id": "sig-007",
+    "theme": "signalisation",
+    "question": "Une ligne blanche continue sépare les deux sens de circulation. Tu peux :",
+    "choix": [
+      "Rouler dessus mais pas la franchir",
+      "La franchir si la route est libre",
+      "La franchir pour dépasser un tracteur",
+      "Ni la franchir ni rouler dessus"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Une ligne continue ne peut être ni franchie ni chevauchée. La franchir est une infraction grave.",
+    "schema": {
+      "type": "scene",
+      "id": "ligne-continue"
+    }
+  },
+  {
+    "id": "sig-008",
+    "theme": "signalisation",
+    "question": "Une ligne discontinue est tracée à côté d'une ligne continue. Qui peut la franchir ?",
+    "choix": [
+      "Tout le monde",
+      "Personne",
+      "Seulement les conducteurs du côté de la ligne discontinue",
+      "Seulement les conducteurs du côté de la ligne continue"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Tu peux franchir l'ensemble seulement si la ligne discontinue est de ton côté. Du côté de la continue, c'est interdit."
+  },
+  {
+    "id": "sig-009",
+    "theme": "signalisation",
+    "question": "Une ligne jaune discontinue est tracée sur la bordure du trottoir. Elle signifie :",
+    "choix": [
+      "Arrêt et stationnement interdits",
+      "Stationnement réservé aux livraisons",
+      "Zone bleue",
+      "Stationnement interdit"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Ligne jaune discontinue = stationnement interdit (l'arrêt reste permis). Ligne jaune continue = arrêt et stationnement interdits."
+  },
+  {
+    "id": "sig-010",
+    "theme": "signalisation",
+    "question": "Une ligne jaune continue est tracée le long du bord de la chaussée. Elle signifie :",
+    "choix": [
+      "Stationnement interdit, arrêt permis",
+      "Bande bus",
+      "Arrêt et stationnement interdits",
+      "Piste cyclable"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "La ligne jaune continue interdit l'arrêt comme le stationnement."
+  },
+  {
+    "id": "sig-011",
+    "theme": "signalisation",
+    "question": "Une ligne jaune en zigzag est peinte sur la chaussée le long du trottoir. Elle signifie :",
+    "choix": [
+      "Stationnement interdit",
+      "Zone de livraison libre",
+      "Ralentisseur",
+      "Piste cyclable"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La ligne jaune en zigzag interdit le stationnement, souvent à hauteur des arrêts de bus."
+  },
+  {
+    "id": "sig-012",
+    "theme": "signalisation",
+    "question": "À un passage à niveau, deux feux rouges clignotent en alternance. Que fais-tu ?",
+    "choix": [
+      "Je ralentis et je passe",
+      "Je passe si les barrières sont encore levées",
+      "Je passe vite si aucun train n'est visible",
+      "Je m'arrête et j'attends qu'ils s'éteignent"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Les feux rouges clignotants imposent l'arrêt. Ne pas respecter la signalisation d'un passage à niveau est une infraction du 4e degré."
+  },
+  {
+    "id": "sig-013",
+    "theme": "signalisation",
+    "question": "Les barrières d'un passage à niveau commencent à descendre. Tu dois :",
+    "choix": [
+      "Ne pas t'engager",
+      "Passer en klaxonnant",
+      "Passer si tu es déjà très près",
+      "Accélérer pour passer avant la fermeture"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Il est interdit de s'engager quand les barrières sont en mouvement ou fermées."
+  },
+  {
+    "id": "sig-014",
+    "theme": "signalisation",
+    "question": "Des triangles blancs (« dents de requin ») sont peints en travers de ta bande, pointe vers toi. Ils signifient :",
+    "choix": [
+      "Ralentisseur",
+      "Tu dois céder le passage",
+      "Passage pour piétons",
+      "Tu es prioritaire"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Ces triangles ont la même signification que le panneau « cédez le passage »."
+  },
+  {
+    "id": "sig-015",
+    "theme": "signalisation",
+    "question": "Que signifie ce panneau ?",
+    "choix": [
+      "Un danger qui n'est pas indiqué par un autre panneau, souvent précisé par un panneau additionnel",
+      "Fin de toutes les interdictions",
+      "Priorité de droite",
+      "Interdiction de stationner"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le triangle avec un point d'exclamation annonce un autre danger. Un panneau additionnel précise souvent lequel.",
+    "schema": {
+      "type": "panneau",
+      "code": "A51"
+    }
+  },
+  {
+    "id": "sig-016",
+    "theme": "signalisation",
+    "question": "Un panneau de chantier temporaire contredit un panneau permanent. Lequel suis-tu ?",
+    "choix": [
+      "Le panneau temporaire",
+      "Celui qui est le plus à droite",
+      "Le panneau permanent",
+      "Aucun des deux"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La signalisation temporaire prime sur la signalisation permanente."
+  },
+  {
+    "id": "sig-017",
+    "theme": "signalisation",
+    "question": "Ce panneau indique :",
+    "choix": [
+      "Une station-service",
+      "Un poste de police",
+      "Une zone piétonne",
+      "Un parking"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le P blanc sur fond bleu indique un parking.",
+    "schema": {
+      "type": "panneau",
+      "code": "E9a"
+    }
+  },
+  {
+    "id": "sig-018",
+    "theme": "signalisation",
+    "question": "Ce panneau indique :",
+    "choix": [
+      "La fin d'une autoroute",
+      "Un pont",
+      "Une route pour automobiles",
+      "Le début d'une autoroute"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Ce panneau bleu marque le début d'une autoroute et de ses règles particulières.",
+    "schema": {
+      "type": "panneau",
+      "code": "F5"
+    }
+  },
+  {
+    "id": "sig-019",
+    "theme": "signalisation",
+    "question": "Que t'interdit ce panneau ?",
+    "choix": [
+      "Dépasser tous les véhicules, motos comprises",
+      "Dépasser des véhicules à plus de deux roues",
+      "Entrer avec une voiture",
+      "Rouler à deux de front"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Ce panneau interdit de dépasser un véhicule à plus de deux roues. Dépasser une moto ou un vélo reste permis si c'est sans danger.",
+    "schema": {
+      "type": "panneau",
+      "code": "C35"
+    }
+  },
+  {
+    "id": "sig-020",
+    "theme": "signalisation",
+    "question": "Que t'impose ce panneau ?",
+    "choix": [
+      "Suivre la direction indiquée par la flèche",
+      "Direction conseillée",
+      "Sens unique autorisé",
+      "Tourner est interdit"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Un panneau rond bleu avec une flèche oblige à suivre la direction indiquée.",
+    "schema": {
+      "type": "panneau",
+      "code": "D1"
+    }
+  }
+]

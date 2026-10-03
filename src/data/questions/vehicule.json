@@ -1,0 +1,170 @@
+[
+  {
+    "id": "veh-001",
+    "theme": "vehicule",
+    "question": "Quelle est la profondeur minimale des sculptures d'un pneu de voiture ?",
+    "choix": [
+      "0,5 millimètre",
+      "1,6 millimètre",
+      "1 millimètre",
+      "3 millimètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En dessous de 1,6 mm, le pneu est interdit. Sous la pluie, un pneu usé favorise l'aquaplaning."
+  },
+  {
+    "id": "veh-002",
+    "theme": "vehicule",
+    "question": "Qui doit porter la ceinture de sécurité dans une voiture ?",
+    "choix": [
+      "Tous les occupants, à l'avant comme à l'arrière",
+      "Seulement les passagers avant",
+      "Seulement hors agglomération",
+      "Seulement le conducteur"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La ceinture est obligatoire pour tous les occupants, à toutes les places équipées."
+  },
+  {
+    "id": "veh-003",
+    "theme": "vehicule",
+    "question": "Un enfant mesure moins de 1,35 mètre. Comment doit-il être transporté ?",
+    "choix": [
+      "Avec la ceinture adulte seule",
+      "Sans ceinture à l'arrière",
+      "Dans un dispositif de retenue adapté à sa taille et à son poids (siège enfant, rehausseur)",
+      "Sur les genoux d'un adulte"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "En dessous de 1,35 m, un siège ou un rehausseur homologué est obligatoire."
+  },
+  {
+    "id": "veh-004",
+    "theme": "vehicule",
+    "question": "Tu installes un siège bébé dos à la route sur le siège passager avant. Que dois-tu faire ?",
+    "choix": [
+      "Rien de particulier",
+      "Reculer le siège au maximum",
+      "C'est interdit dans tous les cas",
+      "Désactiver l'airbag passager"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Un airbag qui se déclenche contre un siège dos à la route peut gravement blesser le bébé."
+  },
+  {
+    "id": "veh-005",
+    "theme": "vehicule",
+    "question": "Lequel de ces documents n'est pas obligatoire à bord d'une voiture ?",
+    "choix": [
+      "Le certificat d'assurance",
+      "Le permis de conduire",
+      "La facture d'achat du véhicule",
+      "Le certificat d'immatriculation"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "À bord : permis, certificat d'immatriculation, certificat d'assurance et, si le véhicule y est soumis, le certificat de contrôle technique."
+  },
+  {
+    "id": "veh-006",
+    "theme": "vehicule",
+    "question": "Lequel de ces équipements n'est pas obligatoire dans une voiture en Belgique ?",
+    "choix": [
+      "Une trousse de secours",
+      "Une roue de secours",
+      "Un extincteur",
+      "Un triangle de danger"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Sont obligatoires : triangle, extincteur, trousse de secours et gilet de sécurité fluorescent."
+  },
+  {
+    "id": "veh-007",
+    "theme": "vehicule",
+    "question": "Une voiture neuve passe son premier contrôle technique :",
+    "choix": [
+      "Après 10 ans",
+      "Dès l'achat",
+      "4 ans après sa première immatriculation",
+      "Après 1 an"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le premier contrôle technique a lieu 4 ans après la première mise en circulation."
+  },
+  {
+    "id": "veh-008",
+    "theme": "vehicule",
+    "question": "Le voyant rouge de pression d'huile s'allume en roulant. Que fais-tu ?",
+    "choix": [
+      "Je l'ignore s'il s'éteint parfois",
+      "J'accélère pour faire circuler l'huile",
+      "Je m'arrête dès que possible en sécurité et je coupe le moteur",
+      "Je continue jusqu'à destination"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un voyant rouge signale un problème urgent. Rouler sans pression d'huile peut détruire le moteur."
+  },
+  {
+    "id": "veh-009",
+    "theme": "vehicule",
+    "question": "À quoi sert l'ABS ?",
+    "choix": [
+      "À freiner automatiquement devant un obstacle",
+      "À empêcher le blocage des roues au freinage pour garder le contrôle de la direction",
+      "À réduire la consommation",
+      "À accélérer plus vite"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "L'ABS permet de continuer à diriger la voiture pendant un freinage d'urgence."
+  },
+  {
+    "id": "veh-010",
+    "theme": "vehicule",
+    "question": "Ta voiture part en aquaplaning (elle glisse sur l'eau). Que fais-tu ?",
+    "choix": [
+      "Je donne un grand coup de volant",
+      "Je lâche l'accélérateur et je tiens fermement le volant sans freiner brusquement",
+      "J'accélère",
+      "Je freine à fond"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En aquaplaning, les pneus ne touchent plus la route : freiner ou braquer fort aggraverait la glissade."
+  },
+  {
+    "id": "veh-011",
+    "theme": "vehicule",
+    "question": "Quand faut-il contrôler la pression des pneus ?",
+    "choix": [
+      "Pneus froids, avant de rouler ou après un court trajet",
+      "Pneus chauds, après un long trajet",
+      "Seulement au contrôle technique",
+      "Uniquement en hiver"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La pression augmente quand le pneu chauffe : la mesure est fiable à froid."
+  },
+  {
+    "id": "veh-012",
+    "theme": "vehicule",
+    "question": "Comment régler l'appui-tête ?",
+    "choix": [
+      "Le haut de l'appui-tête au niveau du sommet de ta tête",
+      "Il n'a pas besoin d'être réglé",
+      "Au niveau de la nuque",
+      "Au plus bas possible"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Bien réglé, l'appui-tête protège la nuque en cas de choc arrière (coup du lapin)."
+  }
+]

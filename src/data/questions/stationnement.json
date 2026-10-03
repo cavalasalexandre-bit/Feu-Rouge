@@ -1,0 +1,234 @@
+[
+  {
+    "id": "sta-001",
+    "theme": "stationnement",
+    "question": "Quelle est la différence entre l'arrêt et le stationnement ?",
+    "choix": [
+      "L'arrêt dure maximum 15 minutes",
+      "Il n'y a aucune différence",
+      "L'arrêt se fait moteur allumé, le stationnement moteur coupé",
+      "L'arrêt dure le temps de faire monter ou descendre des personnes ou des choses ; au-delà, c'est du stationnement"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Un véhicule est à l'arrêt le temps nécessaire pour embarquer ou débarquer des personnes ou des choses. Sinon, il est en stationnement."
+  },
+  {
+    "id": "sta-002",
+    "theme": "stationnement",
+    "question": "À quelle distance d'un panneau d'arrêt de bus le stationnement est-il interdit ?",
+    "choix": [
+      "À moins de 30 mètres",
+      "À moins de 15 mètres de part et d'autre du panneau",
+      "Seulement devant le panneau",
+      "À moins de 5 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le stationnement est interdit à moins de 15 m de part et d'autre d'un panneau d'arrêt de bus, de tram ou de trolleybus."
+  },
+  {
+    "id": "sta-003",
+    "theme": "stationnement",
+    "question": "L'arrêt et le stationnement sont interdits sur un passage pour piétons et :",
+    "choix": [
+      "À moins de 20 mètres",
+      "À moins de 5 mètres avant celui-ci",
+      "À moins de 1 mètre",
+      "À moins de 15 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Il faut laisser libres les 5 m avant le passage pour que les piétons et les conducteurs se voient."
+  },
+  {
+    "id": "sta-004",
+    "theme": "stationnement",
+    "question": "À un carrefour, l'arrêt et le stationnement sont interdits :",
+    "choix": [
+      "À moins de 5 mètres du prolongement du bord de la chaussée transversale",
+      "À moins de 15 mètres",
+      "À moins de 1 mètre",
+      "Ils sont permis"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Il faut laisser 5 m libres de part et d'autre du carrefour pour garder la visibilité."
+  },
+  {
+    "id": "sta-005",
+    "theme": "stationnement",
+    "question": "Tu ne peux pas stationner si la partie libre de la chaussée devient inférieure à :",
+    "choix": [
+      "3 mètres",
+      "1,5 mètre",
+      "5 mètres",
+      "2 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Il faut laisser au moins 3 m de chaussée libre pour la circulation."
+  },
+  {
+    "id": "sta-006",
+    "theme": "stationnement",
+    "question": "Dans une rue à double sens, de quel côté stationnes-tu ?",
+    "choix": [
+      "Au milieu de la chaussée",
+      "Du côté que tu veux",
+      "À droite par rapport à ton sens de circulation",
+      "À gauche"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Dans une rue à double sens, on stationne à droite. Dans une rue à sens unique, on peut stationner des deux côtés."
+  },
+  {
+    "id": "sta-007",
+    "theme": "stationnement",
+    "question": "En zone bleue, avec le disque de stationnement, combien de temps peux-tu stationner au maximum ?",
+    "choix": [
+      "2 heures",
+      "4 heures",
+      "1 heure",
+      "30 minutes"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "En zone bleue, la durée maximale est de 2 heures, sauf indication contraire sur le panneau."
+  },
+  {
+    "id": "sta-008",
+    "theme": "stationnement",
+    "question": "Tu arrives en zone bleue à 10 h 10. Sur quelle heure règles-tu ton disque ?",
+    "choix": [
+      "10 h 30",
+      "10 h 00",
+      "10 h 10",
+      "12 h 10"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le disque est gradué par demi-heure : on place l'indicateur sur le trait qui suit l'heure d'arrivée, ici 10 h 30."
+  },
+  {
+    "id": "sta-009",
+    "theme": "stationnement",
+    "question": "Ce panneau est placé dans ta rue. Peux-tu t'arrêter pour déposer un passager ?",
+    "choix": [
+      "Oui, mais seulement la nuit",
+      "Non, sauf pour les taxis",
+      "Oui, l'arrêt reste permis",
+      "Non, l'arrêt est interdit"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Une seule barre : seul le stationnement est interdit. L'arrêt pour faire descendre quelqu'un reste permis.",
+    "schema": {
+      "type": "panneau",
+      "code": "E1"
+    }
+  },
+  {
+    "id": "sta-010",
+    "theme": "stationnement",
+    "question": "Que signifie ce panneau ?",
+    "choix": [
+      "Fin de zone bleue",
+      "Arrêt et stationnement interdits",
+      "Parking payant",
+      "Stationnement interdit, arrêt permis"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Avec la croix, ni l'arrêt ni le stationnement ne sont permis.",
+    "schema": {
+      "type": "panneau",
+      "code": "E3"
+    }
+  },
+  {
+    "id": "sta-011",
+    "theme": "stationnement",
+    "question": "Peux-tu stationner devant l'entrée d'un garage qui n'est pas le tien ?",
+    "choix": [
+      "Non, c'est interdit",
+      "Oui, pour moins de 15 minutes",
+      "Oui, la nuit",
+      "Oui, si le garage semble inutilisé"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le stationnement est interdit devant les accès carrossables des propriétés."
+  },
+  {
+    "id": "sta-012",
+    "theme": "stationnement",
+    "question": "Peux-tu stationner sur le trottoir ?",
+    "choix": [
+      "Oui, avec deux roues",
+      "Oui, pour moins d'une heure",
+      "Oui, si tu laisses 1 mètre aux piétons",
+      "Non, sauf si une signalisation l'autorise"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le trottoir est réservé aux piétons. Le stationnement n'y est permis que si un panneau ou un marquage l'autorise."
+  },
+  {
+    "id": "sta-013",
+    "theme": "stationnement",
+    "question": "Peux-tu t'arrêter quelques secondes sur une piste cyclable pour déposer quelqu'un ?",
+    "choix": [
+      "Oui, la nuit",
+      "Oui, avec les feux de détresse",
+      "Oui, le temps de déposer quelqu'un",
+      "Non, l'arrêt et le stationnement y sont interdits"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "S'arrêter sur une piste cyclable oblige les cyclistes à se déporter dans la circulation : c'est interdit."
+  },
+  {
+    "id": "sta-014",
+    "theme": "stationnement",
+    "question": "Peux-tu utiliser une place réservée aux personnes handicapées sans carte de stationnement ?",
+    "choix": [
+      "Oui, pour moins de 5 minutes",
+      "Oui, la nuit",
+      "Non, jamais",
+      "Oui, si les feux de détresse sont allumés"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Ces places sont réservées aux véhicules qui affichent la carte spéciale."
+  },
+  {
+    "id": "sta-015",
+    "theme": "stationnement",
+    "question": "Tu stationnes dans une rue en pente avec un trottoir. Que fais-tu en plus du frein de stationnement ?",
+    "choix": [
+      "Je laisse le moteur tourner",
+      "J'allume les feux de détresse",
+      "Je laisse les roues droites",
+      "Je braque les roues vers le trottoir et j'engage une vitesse"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Roues braquées vers la bordure et vitesse engagée : si le frein lâche, la voiture se bloque contre le trottoir."
+  },
+  {
+    "id": "sta-016",
+    "theme": "stationnement",
+    "question": "Avant d'ouvrir ta portière côté rue, tu dois :",
+    "choix": [
+      "Allumer tes feux de détresse",
+      "Vérifier que tu ne mets en danger aucun usager, notamment un cycliste",
+      "Rien de particulier",
+      "Klaxonner"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Ouvrir une portière sans regarder est une cause fréquente d'accidents de cyclistes. Ouvre avec la main opposée pour te tourner et regarder."
+  }
+]

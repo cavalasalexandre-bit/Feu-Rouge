@@ -1,0 +1,306 @@
+[
+  {
+    "id": "vit-001",
+    "theme": "vitesses",
+    "question": "En Wallonie, quelle est la vitesse maximale en agglomération, sans signalisation particulière ?",
+    "choix": [
+      "60 km/h",
+      "70 km/h",
+      "30 km/h",
+      "50 km/h"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "En agglomération, la limite générale est de 50 km/h en Wallonie et en Flandre. Bruxelles applique 30 km/h par défaut.",
+    "region": "wallonie"
+  },
+  {
+    "id": "vit-002",
+    "theme": "vitesses",
+    "question": "Dans la Région de Bruxelles-Capitale, quelle est la vitesse maximale par défaut en agglomération ?",
+    "choix": [
+      "30 km/h",
+      "40 km/h",
+      "20 km/h",
+      "50 km/h"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Depuis 2021, toute la Région bruxelloise est en « ville 30 » : 30 km/h sauf si un panneau autorise 50 km/h sur certains axes.",
+    "region": "bruxelles"
+  },
+  {
+    "id": "vit-003",
+    "theme": "vitesses",
+    "question": "En Wallonie, sur une route ordinaire hors agglomération, sans signalisation, tu peux rouler au maximum à :",
+    "choix": [
+      "90 km/h",
+      "70 km/h",
+      "80 km/h",
+      "120 km/h"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Hors agglomération, la limite générale est de 90 km/h en Wallonie (70 km/h en Flandre).",
+    "region": "wallonie"
+  },
+  {
+    "id": "vit-004",
+    "theme": "vitesses",
+    "question": "En Flandre, sur une route ordinaire hors agglomération, sans signalisation, la vitesse maximale est de :",
+    "choix": [
+      "50 km/h",
+      "80 km/h",
+      "70 km/h",
+      "90 km/h"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Depuis 2017, la Flandre limite les routes hors agglomération à 70 km/h par défaut. Les régions ont des règles différentes : à l'examen, lis bien quelle région est citée.",
+    "region": "flandre"
+  },
+  {
+    "id": "vit-005",
+    "theme": "vitesses",
+    "question": "Quelle est la vitesse maximale d'une voiture sur autoroute en Belgique ?",
+    "choix": [
+      "110 km/h",
+      "100 km/h",
+      "130 km/h",
+      "120 km/h"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "La vitesse maximale sur autoroute est de 120 km/h, sauf signalisation plus basse."
+  },
+  {
+    "id": "vit-006",
+    "theme": "vitesses",
+    "question": "Sur autoroute, quelle est la vitesse minimale quand les conditions sont normales ?",
+    "choix": [
+      "90 km/h",
+      "50 km/h",
+      "70 km/h",
+      "Il n'y a pas de vitesse minimale"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Sur autoroute, il faut pouvoir rouler à au moins 70 km/h dans des conditions normales de circulation. Rouler trop lentement crée un danger."
+  },
+  {
+    "id": "vit-007",
+    "theme": "vitesses",
+    "question": "Hors agglomération en Wallonie, sur une route à deux fois deux bandes séparées par une berme centrale, la vitesse maximale est de :",
+    "choix": [
+      "70 km/h",
+      "90 km/h",
+      "120 km/h",
+      "100 km/h"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Les routes à au moins 2 × 2 bandes séparées par une berme centrale sont limitées à 120 km/h, comme l'autoroute, sauf signalisation."
+  },
+  {
+    "id": "vit-008",
+    "theme": "vitesses",
+    "question": "Tu entres dans une zone signalée par ce panneau. Quelle est ta vitesse maximale ?",
+    "choix": [
+      "30 km/h",
+      "40 km/h",
+      "20 km/h",
+      "50 km/h"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Le panneau « ZONE 30 » limite la vitesse à 30 km/h dans toute la zone, jusqu'au panneau de fin de zone.",
+    "schema": {
+      "type": "panneau",
+      "code": "F4a",
+      "valeur": "30"
+    }
+  },
+  {
+    "id": "vit-009",
+    "theme": "vitesses",
+    "question": "Ce panneau annonce une zone résidentielle ou de rencontre. Quelle est la vitesse maximale ?",
+    "choix": [
+      "30 km/h",
+      "20 km/h",
+      "10 km/h",
+      "Au pas"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "En zone résidentielle ou de rencontre, la vitesse est limitée à 20 km/h. Les piétons peuvent utiliser toute la largeur de la voie publique.",
+    "schema": {
+      "type": "panneau",
+      "code": "F12a"
+    }
+  },
+  {
+    "id": "vit-010",
+    "theme": "vitesses",
+    "question": "Dans une rue cyclable, la vitesse maximale des véhicules à moteur est de :",
+    "choix": [
+      "40 km/h",
+      "20 km/h",
+      "30 km/h",
+      "50 km/h"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Dans une rue cyclable, les véhicules à moteur ne peuvent pas dépasser 30 km/h ni dépasser les cyclistes."
+  },
+  {
+    "id": "vit-011",
+    "theme": "vitesses",
+    "question": "Tu passes ce panneau en Wallonie, sans autre signalisation. Quelle est ta vitesse maximale ?",
+    "choix": [
+      "90 km/h",
+      "50 km/h",
+      "70 km/h",
+      "30 km/h"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Ce panneau marque le début d'une agglomération. La limite générale y est de 50 km/h en Wallonie.",
+    "schema": {
+      "type": "panneau",
+      "code": "F1"
+    },
+    "region": "wallonie"
+  },
+  {
+    "id": "vit-012",
+    "theme": "vitesses",
+    "question": "La loi te demande de toujours rouler à une vitesse qui te permet de t'arrêter :",
+    "choix": [
+      "Uniquement en agglomération",
+      "Dans les 100 mètres",
+      "Devant un obstacle prévisible, dans la distance que tu vois libre devant toi",
+      "Seulement si la route est sèche"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "C'est la règle de base : adapter sa vitesse pour pouvoir s'arrêter devant tout obstacle prévisible, même en dessous de la limite affichée."
+  },
+  {
+    "id": "vit-013",
+    "theme": "vitesses",
+    "question": "Il pleut sur l'autoroute. Sans signalisation particulière, la vitesse maximale autorisée est de :",
+    "choix": [
+      "120 km/h, mais tu dois adapter ta vitesse aux conditions",
+      "100 km/h",
+      "110 km/h",
+      "90 km/h"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Contrairement à la France, la Belgique n'a pas de limite réduite automatique par temps de pluie. Tu restes cependant obligé d'adapter ta vitesse."
+  },
+  {
+    "id": "vit-014",
+    "theme": "vitesses",
+    "question": "Sur autoroute, un camion de plus de 3,5 tonnes peut rouler au maximum à :",
+    "choix": [
+      "100 km/h",
+      "70 km/h",
+      "120 km/h",
+      "90 km/h"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Les véhicules de plus de 3,5 tonnes sont limités à 90 km/h sur autoroute. Utile pour anticiper leur vitesse."
+  },
+  {
+    "id": "vit-015",
+    "theme": "vitesses",
+    "question": "Aux abords d'une école signalés par un panneau « zone 30 » avec le symbole école, la vitesse maximale est de :",
+    "choix": [
+      "40 km/h",
+      "20 km/h",
+      "50 km/h",
+      "30 km/h"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Les abords d'écoles sont généralement en zone 30. La limite vaut jusqu'à la fin de la zone."
+  },
+  {
+    "id": "vit-016",
+    "theme": "vitesses",
+    "question": "Hors agglomération, tu croises ce panneau. Que dois-tu faire ?",
+    "choix": [
+      "Ne pas dépasser 50 km/h",
+      "Rouler à au moins 50 km/h",
+      "Rouler à 50 km/h seulement par mauvais temps",
+      "Ne pas dépasser 50 km/h seulement en agglomération"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Un panneau rond à bord rouge avec un nombre fixe une vitesse maximale. Il s'applique aussi hors agglomération.",
+    "schema": {
+      "type": "panneau",
+      "code": "C43",
+      "valeur": "50"
+    }
+  },
+  {
+    "id": "vit-017",
+    "theme": "vitesses",
+    "question": "En Flandre, tu quittes une agglomération et aucun panneau n'indique de limite. Quelle est la vitesse maximale ?",
+    "choix": [
+      "70 km/h",
+      "90 km/h",
+      "50 km/h",
+      "120 km/h"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Hors agglomération en Flandre, la limite par défaut est de 70 km/h.",
+    "region": "flandre"
+  },
+  {
+    "id": "vit-018",
+    "theme": "vitesses",
+    "question": "Comment se termine une zone 30 ?",
+    "choix": [
+      "Au premier carrefour",
+      "Quand l'éclairage public s'arrête",
+      "Après 1 kilomètre",
+      "Par un panneau de fin de zone 30"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Une zone 30 reste valable jusqu'au panneau qui en marque la fin, même après plusieurs carrefours."
+  },
+  {
+    "id": "vit-019",
+    "theme": "vitesses",
+    "question": "Qui fixe les vitesses maximales générales hors agglomération en Belgique ?",
+    "choix": [
+      "La province",
+      "L'Union européenne",
+      "Chaque région (Wallonie, Flandre, Bruxelles)",
+      "La commune"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Depuis la régionalisation, chaque région fixe ses limites générales : c'est pour cela que la Wallonie (90 km/h) et la Flandre (70 km/h) diffèrent."
+  },
+  {
+    "id": "vit-020",
+    "theme": "vitesses",
+    "question": "La route est couverte de neige. Le panneau indique 90 km/h. Tu dois :",
+    "choix": [
+      "Rouler à 70 km/h exactement",
+      "Rouler moins vite que 90 km/h si les conditions l'exigent",
+      "Rouler à 90 km/h puisque c'est autorisé",
+      "Allumer tes feux de détresse"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "La limite affichée est un maximum, pas un objectif. Par neige ou verglas, tu dois adapter ta vitesse à l'état de la route."
+  }
+]

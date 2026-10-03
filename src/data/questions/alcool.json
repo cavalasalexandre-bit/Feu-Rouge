@@ -1,0 +1,198 @@
+[
+  {
+    "id": "alc-001",
+    "theme": "alcool",
+    "question": "Quel est le taux d'alcool maximal autorisé dans le sang pour un conducteur non professionnel ?",
+    "choix": [
+      "0,5 gramme par litre",
+      "0,2 gramme par litre",
+      "0,8 gramme par litre",
+      "0 gramme par litre"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "La limite est de 0,5 g/l de sang (0,22 mg/l d'air expiré). Au-delà, tu commets une infraction."
+  },
+  {
+    "id": "alc-002",
+    "theme": "alcool",
+    "question": "Dans l'air expiré, la limite légale pour un conducteur non professionnel correspond à :",
+    "choix": [
+      "0,35 milligramme par litre",
+      "0,09 milligramme par litre",
+      "0,5 milligramme par litre",
+      "0,22 milligramme par litre"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "0,22 mg/l d'air expiré équivaut à 0,5 g/l de sang. C'est ce que mesure l'éthylomètre de la police."
+  },
+  {
+    "id": "alc-003",
+    "theme": "alcool",
+    "question": "Quel est le taux maximal pour les conducteurs professionnels (bus, camion, taxi) ?",
+    "choix": [
+      "0,5 gramme par litre",
+      "0,8 gramme par litre",
+      "0,2 gramme par litre de sang",
+      "1 gramme par litre"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les professionnels ont une limite plus stricte : 0,2 g/l de sang, soit 0,09 mg/l d'air expiré."
+  },
+  {
+    "id": "alc-004",
+    "theme": "alcool",
+    "question": "Comment faire baisser plus vite son taux d'alcool ?",
+    "choix": [
+      "C'est impossible : seul le temps fait baisser le taux",
+      "Boire un café serré",
+      "Manger beaucoup",
+      "Prendre une douche froide"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le foie élimine l'alcool à un rythme fixe, environ 0,1 à 0,15 g/l par heure. Café, douche ou repas n'y changent rien."
+  },
+  {
+    "id": "alc-005",
+    "theme": "alcool",
+    "question": "Un test salivaire révèle du cannabis chez un conducteur. Que dit la loi ?",
+    "choix": [
+      "C'est permis sous un certain taux, comme l'alcool",
+      "C'est permis la journée",
+      "Conduire est interdit dès que la présence de drogue est détectée",
+      "C'est permis si le conducteur se sent bien"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Pour les drogues, il n'y a pas de taux toléré comme pour l'alcool : la détection suffit pour constater l'infraction."
+  },
+  {
+    "id": "alc-006",
+    "theme": "alcool",
+    "question": "Un médicament porte un avertissement sur la conduite. Que fais-tu ?",
+    "choix": [
+      "Je conduis seulement la nuit",
+      "Je bois un café pour compenser",
+      "Je conduis normalement",
+      "Je lis la notice et je demande conseil à mon médecin ou pharmacien avant de conduire"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Certains médicaments provoquent somnolence ou réflexes ralentis. La notice et le pharmacien te disent si tu peux conduire."
+  },
+  {
+    "id": "alc-007",
+    "theme": "alcool",
+    "question": "Sur un long trajet, à quelle fréquence est-il conseillé de faire une pause ?",
+    "choix": [
+      "Toutes les 4 heures",
+      "Toutes les 2 heures environ",
+      "Seulement quand on a faim",
+      "Toutes les 30 minutes"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Une pause d'au moins un quart d'heure toutes les 2 heures limite les risques liés à la fatigue."
+  },
+  {
+    "id": "alc-008",
+    "theme": "alcool",
+    "question": "Tu bâilles souvent et tes paupières deviennent lourdes au volant. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête dans un endroit sûr pour me reposer",
+      "J'augmente le volume de la radio",
+      "J'accélère pour arriver plus vite",
+      "J'ouvre la fenêtre et je continue"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Ouvrir la fenêtre ou monter la musique ne combat pas la fatigue. Seuls l'arrêt et le repos sont efficaces."
+  },
+  {
+    "id": "alc-009",
+    "theme": "alcool",
+    "question": "Tu es arrêté à un feu rouge. Peux-tu prendre ton GSM en main pour lire un message ?",
+    "choix": [
+      "Non",
+      "Oui, pour moins de 10 secondes",
+      "Oui, le véhicule est à l'arrêt",
+      "Oui, si le moteur est coupé automatiquement"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "L'usage du GSM tenu en main est interdit tant que tu participes à la circulation, même arrêté à un feu ou dans un bouchon. C'est une infraction du 3e degré."
+  },
+  {
+    "id": "alc-010",
+    "theme": "alcool",
+    "question": "Peux-tu téléphoner en conduisant ?",
+    "choix": [
+      "Non, jamais",
+      "Oui, avec un système mains libres, sans tenir l'appareil",
+      "Oui, si l'appel dure moins d'une minute",
+      "Oui, avec le GSM tenu en main en agglomération"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Téléphoner reste permis en mains libres, appareil fixé. Toute manipulation en main est interdite."
+  },
+  {
+    "id": "alc-011",
+    "theme": "alcool",
+    "question": "Quel est l'effet de l'alcool sur la conduite ?",
+    "choix": [
+      "Il n'a d'effet qu'au-delà de 1 g/l",
+      "Il allonge le temps de réaction, réduit le champ de vision et fait surestimer ses capacités",
+      "Il n'agit que sur la vue",
+      "Il améliore la concentration"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Même sous la limite légale, l'alcool diminue tes capacités et augmente le risque d'accident."
+  },
+  {
+    "id": "alc-012",
+    "theme": "alcool",
+    "question": "Un conducteur refuse de souffler dans l'éthylotest. Que risque-t-il ?",
+    "choix": [
+      "Une sanction lourde : le refus est lui-même une infraction",
+      "Seulement un avertissement écrit",
+      "Rien, c'est son droit",
+      "Une simple remarque"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Refuser le test est sanctionné sévèrement, au moins autant qu'une alcoolémie élevée."
+  },
+  {
+    "id": "alc-013",
+    "theme": "alcool",
+    "question": "Un conducteur ordinaire a un taux de 0,6 g/l de sang. Est-il en infraction ?",
+    "choix": [
+      "Non, la limite est 0,8 g/l",
+      "Non, s'il se sent bien",
+      "Oui",
+      "Seulement s'il a un accident"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "0,6 g/l dépasse la limite de 0,5 g/l : il est en infraction."
+  },
+  {
+    "id": "alc-014",
+    "theme": "alcool",
+    "question": "Que se passe-t-il quand on combine alcool et médicaments calmants ?",
+    "choix": [
+      "Les effets s'annulent",
+      "Les effets se renforcent et la conduite devient encore plus dangereuse",
+      "Rien de particulier",
+      "Le taux d'alcool baisse"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Alcool et médicaments agissant sur le cerveau se renforcent mutuellement."
+  }
+]

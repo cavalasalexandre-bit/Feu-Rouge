@@ -1,0 +1,29 @@
+{
+  "name": "feu-rouge",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Feu Rouge — préparation gratuite et personnalisée à l'examen théorique du permis B en Belgique",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "check:questions": "vitest run src/data"
+  },
+  "dependencies": {
+    "marked": "^18.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
+  }
+}

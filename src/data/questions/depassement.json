@@ -1,0 +1,230 @@
+[
+  {
+    "id": "dep-001",
+    "theme": "depassement",
+    "question": "En règle générale, de quel côté dépasses-tu un autre véhicule ?",
+    "choix": [
+      "Indifféremment",
+      "Par la droite",
+      "Par le côté le plus large",
+      "Par la gauche"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le dépassement se fait par la gauche, sauf exceptions prévues par le code."
+  },
+  {
+    "id": "dep-002",
+    "theme": "depassement",
+    "question": "Quand peux-tu dépasser un véhicule par la droite ?",
+    "choix": [
+      "Toujours sur autoroute",
+      "Quand il a signalé qu'il tourne à gauche et s'est placé à gauche de la chaussée",
+      "Jamais",
+      "Quand il roule trop lentement à gauche"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le dépassement par la droite est permis quand le conducteur devant tourne à gauche et s'est déporté pour le faire. C'est aussi le cas pour dépasser un tram."
+  },
+  {
+    "id": "dep-003",
+    "theme": "depassement",
+    "question": "Hors agglomération, quelle distance latérale minimale dois-tu laisser en dépassant un cycliste ?",
+    "choix": [
+      "1 mètre",
+      "50 centimètres",
+      "2,5 mètres",
+      "1,5 mètre"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Hors agglomération : au moins 1,5 m. En agglomération : au moins 1 m."
+  },
+  {
+    "id": "dep-004",
+    "theme": "depassement",
+    "question": "En agglomération, quelle distance latérale minimale dois-tu laisser en dépassant un cycliste ?",
+    "choix": [
+      "1,5 mètre",
+      "50 centimètres",
+      "2 mètres",
+      "1 mètre"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "En agglomération, au moins 1 m entre ta voiture et le cycliste. Si la place manque, tu attends."
+  },
+  {
+    "id": "dep-005",
+    "theme": "depassement",
+    "question": "Peux-tu dépasser au sommet d'une côte quand la visibilité est insuffisante ?",
+    "choix": [
+      "Non, c'est interdit",
+      "Oui, si tu klaxonnes",
+      "Oui, hors agglomération",
+      "Oui, si le véhicule devant roule lentement"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Dépasser par la gauche dans un virage ou en haut d'une côte sans visibilité suffisante est une infraction du 4e degré."
+  },
+  {
+    "id": "dep-006",
+    "theme": "depassement",
+    "question": "Un véhicule s'arrête devant un passage pour piétons pour laisser traverser. Peux-tu le dépasser ?",
+    "choix": [
+      "Oui, si tu ne vois pas de piéton",
+      "Oui, s'il est lent",
+      "Oui, par la gauche",
+      "Non"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Il est interdit de dépasser un véhicule qui s'arrête ou ralentit devant un passage pour piétons : un piéton peut être caché devant lui."
+  },
+  {
+    "id": "dep-007",
+    "theme": "depassement",
+    "question": "Un autre conducteur te dépasse. Que fais-tu ?",
+    "choix": [
+      "Je serre à droite et je n'accélère pas",
+      "Je me déporte à gauche",
+      "J'accélère pour l'empêcher de passer",
+      "Je freine brusquement"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le conducteur dépassé doit faciliter la manœuvre : ne pas accélérer et serrer à droite."
+  },
+  {
+    "id": "dep-008",
+    "theme": "depassement",
+    "question": "Un tram roule au milieu de la chaussée. De quel côté le dépasses-tu en principe ?",
+    "choix": [
+      "Il est interdit de dépasser un tram",
+      "Par la gauche",
+      "Par la droite",
+      "Du côté où il y a le plus de place"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un tram se dépasse par la droite, sauf si l'espace manque ou dans une rue à sens unique où la gauche est possible."
+  },
+  {
+    "id": "dep-009",
+    "theme": "depassement",
+    "question": "Avant de commencer un dépassement, que dois-tu vérifier ?",
+    "choix": [
+      "Rien, si tu mets ton clignotant",
+      "Seulement que la route en face est libre",
+      "Rétroviseurs, angle mort, que personne ne te dépasse déjà, et la place pour te rabattre",
+      "Seulement le rétroviseur intérieur"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un dépassement se prépare : visibilité devant, personne derrière qui dépasse déjà, espace suffisant pour revenir à droite, clignotant."
+  },
+  {
+    "id": "dep-010",
+    "theme": "depassement",
+    "question": "Un tracteur roule lentement devant toi et une ligne continue sépare les sens. Peux-tu le dépasser ?",
+    "choix": [
+      "Oui, hors agglomération",
+      "Oui, s'il roule à moins de 25 km/h",
+      "Oui, si la route est libre",
+      "Non, pas en franchissant la ligne continue"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "La ligne continue s'applique à tous les dépassements, même d'un véhicule lent."
+  },
+  {
+    "id": "dep-011",
+    "theme": "depassement",
+    "question": "À l'approche d'un carrefour où la priorité de droite s'applique, peux-tu dépasser une voiture ?",
+    "choix": [
+      "Oui, toujours",
+      "Oui, si tu klaxonnes",
+      "Non, sauf exceptions (route à priorité, carrefour réglé par feux ou agent, dépassement d'un deux-roues)",
+      "Oui, si tu roules vite"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le dépassement est interdit à l'approche et sur un carrefour, sauf si tu es sur une route à priorité, si le carrefour est réglé par feux ou agent, ou si tu dépasses un deux-roues."
+  },
+  {
+    "id": "dep-012",
+    "theme": "depassement",
+    "question": "Peux-tu dépasser à l'approche d'un passage à niveau sans barrières ?",
+    "choix": [
+      "Oui, de jour",
+      "Oui, s'il n'y a pas de train en vue",
+      "Oui, si le véhicule devant est lent",
+      "Non"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Le dépassement est interdit à l'approche d'un passage à niveau sans barrières."
+  },
+  {
+    "id": "dep-013",
+    "theme": "depassement",
+    "question": "Ce panneau est en place. Peux-tu dépasser une moto ?",
+    "choix": [
+      "Oui, si c'est sans danger",
+      "Oui, mais seulement par la droite",
+      "Non, aucun dépassement n'est permis",
+      "Non, sauf hors agglomération"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Ce panneau interdit de dépasser des véhicules à plus de deux roues. Une moto, un cyclomoteur ou un vélo peuvent être dépassés.",
+    "schema": {
+      "type": "panneau",
+      "code": "C35"
+    }
+  },
+  {
+    "id": "dep-014",
+    "theme": "depassement",
+    "question": "Après avoir dépassé, quand peux-tu te rabattre ?",
+    "choix": [
+      "Dès que ton avant dépasse son avant",
+      "Après 100 mètres",
+      "Quand tu vois le véhicule dépassé dans ton rétroviseur intérieur",
+      "Immédiatement"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Voir le véhicule dépassé dans le rétroviseur intérieur garantit que tu ne lui coupes pas la route."
+  },
+  {
+    "id": "dep-015",
+    "theme": "depassement",
+    "question": "Dans une rue cyclable, peux-tu dépasser un cycliste avec une voiture ?",
+    "choix": [
+      "Oui, par la droite",
+      "Non",
+      "Oui, s'il roule lentement",
+      "Oui, à 1 mètre de distance"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Dans une rue cyclable, les véhicules à moteur ne peuvent pas dépasser les cyclistes."
+  },
+  {
+    "id": "dep-016",
+    "theme": "depassement",
+    "question": "La route est étroite et un cycliste roule devant toi. Il n'y a pas la place de garder la distance latérale minimale. Tu dois :",
+    "choix": [
+      "Rester derrière lui jusqu'à ce que tu puisses dépasser avec la distance requise",
+      "Le dépasser par la droite",
+      "Le dépasser en le frôlant lentement",
+      "Klaxonner pour qu'il se mette sur le côté"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Si tu ne peux pas laisser 1 m (agglomération) ou 1,5 m (hors agglomération), tu attends."
+  }
+]

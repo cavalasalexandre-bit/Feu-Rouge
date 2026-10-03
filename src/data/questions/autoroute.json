@@ -1,0 +1,230 @@
+[
+  {
+    "id": "aut-001",
+    "theme": "autoroute",
+    "question": "Lequel de ces usagers est interdit sur l'autoroute ?",
+    "choix": [
+      "Une camionnette",
+      "Un cyclomoteur",
+      "Une moto de 125 cc",
+      "Une voiture avec remorque"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Les piétons, cyclistes, cyclomoteurs et véhicules trop lents sont interdits sur l'autoroute."
+  },
+  {
+    "id": "aut-002",
+    "theme": "autoroute",
+    "question": "Tu arrives sur la bande d'accélération. Une voiture roule sur la bande de droite de l'autoroute. Que fais-tu ?",
+    "choix": [
+      "Je m'insère, je suis prioritaire",
+      "Je m'arrête au bout de la bande",
+      "Je klaxonne pour qu'elle se déporte",
+      "Je lui cède le passage et je m'insère derrière ou devant elle si la place le permet"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Sur la bande d'accélération, tu adaptes ta vitesse mais tu dois céder le passage aux usagers déjà sur l'autoroute.",
+    "schema": {
+      "type": "scene",
+      "id": "autoroute-insertion"
+    }
+  },
+  {
+    "id": "aut-003",
+    "theme": "autoroute",
+    "question": "Tu as raté ta sortie d'autoroute. Que fais-tu ?",
+    "choix": [
+      "Je continue jusqu'à la sortie suivante",
+      "Je fais demi-tour par la berme centrale",
+      "Je fais marche arrière sur la bande d'arrêt d'urgence",
+      "Je m'arrête et j'attends"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Marche arrière et demi-tour sont interdits sur l'autoroute. Le demi-tour est une infraction du 4e degré."
+  },
+  {
+    "id": "aut-004",
+    "theme": "autoroute",
+    "question": "Peux-tu faire marche arrière sur la bande d'arrêt d'urgence ?",
+    "choix": [
+      "Oui, sur moins de 50 mètres",
+      "Oui, la nuit",
+      "Non, jamais",
+      "Oui, avec les feux de détresse"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "La marche arrière est interdite sur toute l'autoroute, bande d'arrêt d'urgence comprise."
+  },
+  {
+    "id": "aut-005",
+    "theme": "autoroute",
+    "question": "Quand peux-tu utiliser la bande d'arrêt d'urgence ?",
+    "choix": [
+      "En cas de nécessité, par exemple une panne",
+      "Pour téléphoner",
+      "Pour te reposer",
+      "Pour dépasser un bouchon"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "La bande d'arrêt d'urgence est réservée aux situations d'urgence."
+  },
+  {
+    "id": "aut-006",
+    "theme": "autoroute",
+    "question": "Tu es en panne sur l'autoroute. À quelle distance places-tu le triangle de danger ?",
+    "choix": [
+      "Il ne faut pas de triangle sur autoroute",
+      "À au moins 100 mètres derrière le véhicule",
+      "À 30 mètres",
+      "À 10 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Sur autoroute : au moins 100 m. Sur les autres routes : au moins 30 m, visible à 50 m."
+  },
+  {
+    "id": "aut-007",
+    "theme": "autoroute",
+    "question": "Tu es en panne sur une route ordinaire. À quelle distance places-tu le triangle de danger ?",
+    "choix": [
+      "À au moins 100 mètres",
+      "Contre le véhicule",
+      "À au moins 30 mètres, visible à 50 mètres",
+      "À 5 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Hors autoroute, le triangle se place à au moins 30 m du véhicule, de façon à être vu à 50 m."
+  },
+  {
+    "id": "aut-008",
+    "theme": "autoroute",
+    "question": "Tu sors de ta voiture en panne sur l'autoroute. Que dois-tu porter ?",
+    "choix": [
+      "Un gilet de sécurité fluorescent",
+      "Un casque",
+      "Rien de particulier",
+      "Une lampe de poche allumée"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le gilet fluo doit être porté par le conducteur qui sort de son véhicule en panne ou accidenté sur l'autoroute."
+  },
+  {
+    "id": "aut-009",
+    "theme": "autoroute",
+    "question": "Après une panne sur l'autoroute, où doivent attendre les passagers ?",
+    "choix": [
+      "Sur la berme centrale",
+      "Derrière la glissière de sécurité, en sortant du côté droit",
+      "Sur la bande d'arrêt d'urgence, devant la voiture",
+      "Dans la voiture, ceinture attachée"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Rester dans la voiture ou sur la bande d'arrêt d'urgence est très dangereux. Tout le monde sort côté droit et se met à l'abri."
+  },
+  {
+    "id": "aut-010",
+    "theme": "autoroute",
+    "question": "Sur une autoroute à trois bandes peu chargée, sur quelle bande roules-tu ?",
+    "choix": [
+      "Sur la bande de gauche",
+      "Sur la bande de droite, sauf pour dépasser",
+      "Sur la bande de ton choix",
+      "Sur la bande du milieu"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "On roule le plus à droite possible et on utilise les bandes de gauche pour dépasser."
+  },
+  {
+    "id": "aut-011",
+    "theme": "autoroute",
+    "question": "Sur une autoroute de trois bandes ou plus, quels véhicules ne peuvent pas utiliser la bande de gauche ?",
+    "choix": [
+      "Les camionnettes",
+      "Les voitures avec remorque légère",
+      "Les véhicules de plus de 3,5 tonnes",
+      "Les motos"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les véhicules de plus de 3,5 t et les véhicules de plus de 7 m ne peuvent pas emprunter la bande de gauche quand il y en a au moins trois."
+  },
+  {
+    "id": "aut-012",
+    "theme": "autoroute",
+    "question": "Peux-tu stationner sur l'autoroute ?",
+    "choix": [
+      "Sur la bande de droite avec les feux de détresse",
+      "Partout la nuit",
+      "Sur la bande d'arrêt d'urgence pour te reposer",
+      "Seulement sur les aires et parkings prévus"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "L'arrêt et le stationnement sont interdits sur l'autoroute, sauf sur les emplacements aménagés."
+  },
+  {
+    "id": "aut-013",
+    "theme": "autoroute",
+    "question": "Tu arrives à la fin d'un bouchon sur l'autoroute. Que fais-tu pour prévenir ceux qui arrivent derrière ?",
+    "choix": [
+      "J'allume mon feu de brouillard arrière",
+      "J'allume mes feux de détresse",
+      "Je fais des appels de phares",
+      "Je klaxonne"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Les feux de détresse avertissent les conducteurs qui arrivent d'un ralentissement brusque."
+  },
+  {
+    "id": "aut-014",
+    "theme": "autoroute",
+    "question": "À partir d'où les règles de l'autoroute s'appliquent-elles ?",
+    "choix": [
+      "À partir du premier péage",
+      "Dès le panneau de début d'autoroute, bretelle d'accès comprise",
+      "Après la bande d'accélération",
+      "Seulement sur les bandes principales"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le panneau de début d'autoroute est placé à l'entrée de la bretelle : ses règles s'appliquent dès ce point."
+  },
+  {
+    "id": "aut-015",
+    "theme": "autoroute",
+    "question": "La radio annonce un conducteur à contresens sur ton autoroute. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête sur la bande de gauche",
+      "Je fais demi-tour",
+      "Je roule sur la bande de droite, je ne dépasse pas et je reste très prudent",
+      "Je roule sur la bande de gauche"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un conducteur à contresens roule souvent sur ce qu'il croit être la bande de droite, donc ta bande de gauche."
+  },
+  {
+    "id": "aut-016",
+    "theme": "autoroute",
+    "question": "Quelle est la vitesse minimale sur autoroute pour un véhicule en conditions normales ?",
+    "choix": [
+      "50 km/h",
+      "90 km/h",
+      "70 km/h",
+      "100 km/h"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Un véhicule doit pouvoir rouler à au moins 70 km/h sur autoroute dans des conditions normales."
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "inf-001",
+    "theme": "infractions",
+    "question": "En combien de degrés les infractions au code de la route sont-elles classées ?",
+    "choix": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Du 1er degré (gêne) au 4e degré (danger direct de blessures), selon le danger créé pour les personnes."
+  },
+  {
+    "id": "inf-002",
+    "theme": "infractions",
+    "question": "À l'examen théorique, qu'est-ce qu'une faute grave ?",
+    "choix": [
+      "Deux erreurs consécutives",
+      "Une erreur sur une question de mécanique",
+      "Toute erreur sur un panneau",
+      "Une erreur sur une question qui porte sur une infraction du 3e ou du 4e degré, ou sur la vitesse"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Une faute grave coûte 5 points au lieu d'un seul. Avec deux fautes graves, l'examen est raté."
+  },
+  {
+    "id": "inf-003",
+    "theme": "infractions",
+    "question": "Brûler un feu rouge est une infraction de quel degré ?",
+    "choix": [
+      "2e degré",
+      "3e degré",
+      "1er degré",
+      "4e degré"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Le passage au feu rouge crée un danger direct : c'est une infraction du 3e degré."
+  },
+  {
+    "id": "inf-004",
+    "theme": "infractions",
+    "question": "Faire demi-tour sur l'autoroute est une infraction de quel degré ?",
+    "choix": [
+      "1er degré",
+      "2e degré",
+      "4e degré",
+      "3e degré"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Le demi-tour sur autoroute fait partie des infractions les plus graves (4e degré)."
+  },
+  {
+    "id": "inf-005",
+    "theme": "infractions",
+    "question": "Ne pas respecter la signalisation d'un passage à niveau est une infraction de quel degré ?",
+    "choix": [
+      "1er degré",
+      "4e degré",
+      "3e degré",
+      "2e degré"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Le non-respect des feux ou barrières d'un passage à niveau est une infraction du 4e degré."
+  },
+  {
+    "id": "inf-006",
+    "theme": "infractions",
+    "question": "Ne pas utiliser son clignotant est une infraction de quel degré ?",
+    "choix": [
+      "1er degré",
+      "4e degré",
+      "2e degré",
+      "3e degré"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "C'est une infraction du 1er degré, qui gêne la circulation sans danger direct."
+  },
+  {
+    "id": "inf-007",
+    "theme": "infractions",
+    "question": "Ne pas porter sa ceinture de sécurité est une infraction de quel degré ?",
+    "choix": [
+      "3e degré",
+      "2e degré",
+      "1er degré",
+      "4e degré"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le défaut de ceinture met indirectement en danger : c'est une infraction du 2e degré."
+  },
+  {
+    "id": "inf-008",
+    "theme": "infractions",
+    "question": "Utiliser son GSM tenu en main en conduisant est une infraction de quel degré ?",
+    "choix": [
+      "3e degré",
+      "1er degré",
+      "4e degré",
+      "2e degré"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Depuis 2018, l'usage du GSM tenu en main au volant est une infraction du 3e degré."
+  },
+  {
+    "id": "inf-009",
+    "theme": "infractions",
+    "question": "Ne pas respecter une interdiction de dépasser est une infraction de quel degré ?",
+    "choix": [
+      "4e degré",
+      "1er degré",
+      "3e degré",
+      "2e degré"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Dépasser malgré une interdiction est une infraction du 3e degré."
+  },
+  {
+    "id": "inf-010",
+    "theme": "infractions",
+    "question": "Participer à une course de vitesse sur la voie publique est une infraction de quel degré ?",
+    "choix": [
+      "4e degré",
+      "3e degré",
+      "1er degré",
+      "2e degré"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Les courses de vitesse sur la voie publique sont des infractions du 4e degré."
+  },
+  {
+    "id": "inf-011",
+    "theme": "infractions",
+    "question": "Dépasser par la gauche dans un virage sans visibilité suffisante est une infraction de quel degré ?",
+    "choix": [
+      "1er degré",
+      "2e degré",
+      "4e degré",
+      "3e degré"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Ce dépassement rend presque inévitable un accident en cas de véhicule en face : 4e degré."
+  },
+  {
+    "id": "inf-012",
+    "theme": "infractions",
+    "question": "Un conducteur domicilié en Belgique commet une infraction du 4e degré. Que se passe-t-il ?",
+    "choix": [
+      "Il reçoit un simple avertissement",
+      "Il paie 191 € sur place",
+      "Il n'y a pas de perception immédiate : il est convoqué au tribunal de police",
+      "Il paie une perception immédiate de 64 €"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Pour un résident belge, une infraction du 4e degré passe toujours devant le tribunal de police."
+  },
+  {
+    "id": "inf-013",
+    "theme": "infractions",
+    "question": "Depuis le 1er juillet 2026, quel est le montant de la perception immédiate pour une infraction du 1er degré ?",
+    "choix": [
+      "191 €",
+      "58 €",
+      "64 €",
+      "128 €"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les montants ont augmenté de 10 % au 1er juillet 2026 : 64 € (1er degré), 128 € (2e), 191 € (3e)."
+  },
+  {
+    "id": "inf-014",
+    "theme": "infractions",
+    "question": "Depuis le 1er juillet 2026, quel est le montant de la perception immédiate pour une infraction du 3e degré ?",
+    "choix": [
+      "191 €",
+      "128 €",
+      "174 €",
+      "520 €"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "191 € pour le 3e degré. Les 520 € concernent le 4e degré, seulement pour les conducteurs sans domicile en Belgique."
+  },
+  {
+    "id": "inf-015",
+    "theme": "infractions",
+    "question": "Sur quoi repose le classement d'une infraction dans un degré ?",
+    "choix": [
+      "Sur le montant des dégâts",
+      "Sur le type de route",
+      "Sur le danger qu'elle crée pour la sécurité des personnes",
+      "Sur l'âge du conducteur"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Plus le comportement met les personnes en danger, plus le degré est élevé."
+  },
+  {
+    "id": "inf-016",
+    "theme": "infractions",
+    "question": "Dépasser par la droite quand c'est interdit est une infraction de quel degré ?",
+    "choix": [
+      "4e degré",
+      "2e degré",
+      "3e degré",
+      "1er degré"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le dépassement par la droite interdit est une infraction du 2e degré."
+  }
+]

@@ -1,0 +1,310 @@
+[
+  {
+    "id": "dis-001",
+    "theme": "distances",
+    "question": "À l'examen, on considère un temps de réaction moyen de :",
+    "choix": [
+      "2 secondes",
+      "0,5 seconde",
+      "1 seconde",
+      "3 secondes"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le temps de réaction de référence est de 1 seconde : le temps entre voir le danger et appuyer sur le frein."
+  },
+  {
+    "id": "dis-002",
+    "theme": "distances",
+    "question": "Quelle distance parcours-tu pendant ton temps de réaction à 50 km/h ?",
+    "choix": [
+      "15 mètres",
+      "12,5 mètres",
+      "25 mètres",
+      "5 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Distance de réaction = chiffre des dizaines × 3. À 50 km/h : 5 × 3 = 15 m."
+  },
+  {
+    "id": "dis-003",
+    "theme": "distances",
+    "question": "Quelle est la distance de réaction à 90 km/h ?",
+    "choix": [
+      "27 mètres",
+      "40,5 mètres",
+      "18 mètres",
+      "45 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "9 × 3 = 27 m. Ne confonds pas avec la distance de freinage (40,5 m)."
+  },
+  {
+    "id": "dis-004",
+    "theme": "distances",
+    "question": "Quelle est la distance de réaction à 120 km/h ?",
+    "choix": [
+      "36 mètres",
+      "72 mètres",
+      "24 mètres",
+      "60 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "12 × 3 = 36 m."
+  },
+  {
+    "id": "dis-005",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 50 km/h ?",
+    "choix": [
+      "25 mètres",
+      "12,5 mètres",
+      "15 mètres",
+      "27,5 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Freinage sur sol sec = (dizaines × dizaines) ÷ 2. À 50 km/h : 5 × 5 = 25, ÷ 2 = 12,5 m."
+  },
+  {
+    "id": "dis-006",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 90 km/h ?",
+    "choix": [
+      "67,5 mètres",
+      "40,5 mètres",
+      "27 mètres",
+      "81 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "9 × 9 = 81, ÷ 2 = 40,5 m."
+  },
+  {
+    "id": "dis-007",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol sec à 120 km/h ?",
+    "choix": [
+      "144 mètres",
+      "36 mètres",
+      "108 mètres",
+      "72 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "12 × 12 = 144, ÷ 2 = 72 m."
+  },
+  {
+    "id": "dis-008",
+    "theme": "distances",
+    "question": "Sur sol mouillé, la distance de freinage est multipliée par :",
+    "choix": [
+      "3",
+      "1,5",
+      "2",
+      "Elle ne change pas"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Sur sol mouillé, on compte une fois et demie la distance de freinage sur sol sec."
+  },
+  {
+    "id": "dis-009",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol mouillé à 50 km/h ?",
+    "choix": [
+      "18,75 mètres",
+      "12,5 mètres",
+      "30 mètres",
+      "25 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Sol sec : 12,5 m. Sol mouillé : 12,5 × 1,5 = 18,75 m."
+  },
+  {
+    "id": "dis-010",
+    "theme": "distances",
+    "question": "Quelle est la distance de freinage sur sol mouillé à 90 km/h ?",
+    "choix": [
+      "60,75 mètres",
+      "40,5 mètres",
+      "81 mètres",
+      "54 mètres"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Sol sec : 40,5 m. Sol mouillé : 40,5 × 1,5 = 60,75 m."
+  },
+  {
+    "id": "dis-011",
+    "theme": "distances",
+    "question": "Si tu roules deux fois plus vite, ta distance de freinage est multipliée par :",
+    "choix": [
+      "2",
+      "4",
+      "3",
+      "8"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "La distance de freinage augmente avec le carré de la vitesse : 2 × 2 = 4. De 50 à 100 km/h, on passe de 12,5 m à 50 m."
+  },
+  {
+    "id": "dis-012",
+    "theme": "distances",
+    "question": "La distance d'arrêt est égale à :",
+    "choix": [
+      "La distance de réaction + la distance de freinage",
+      "La distance de réaction × 2",
+      "La distance de freinage seule",
+      "La distance de sécurité + la distance de freinage"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Distance d'arrêt = tout ce que tu parcours entre le moment où tu vois le danger et l'arrêt complet."
+  },
+  {
+    "id": "dis-013",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol sec à 50 km/h ?",
+    "choix": [
+      "50 mètres",
+      "15 mètres",
+      "12,5 mètres",
+      "27,5 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "Réaction : 5 × 3 = 15 m. Freinage : 25 ÷ 2 = 12,5 m. Arrêt : 15 + 12,5 = 27,5 m (environ 25 à 30 m avec la formule simplifiée dizaines × dizaines)."
+  },
+  {
+    "id": "dis-014",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol sec à 90 km/h ?",
+    "choix": [
+      "27 mètres",
+      "40,5 mètres",
+      "67,5 mètres",
+      "81 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Réaction : 27 m. Freinage : 40,5 m. Arrêt : 27 + 40,5 = 67,5 m."
+  },
+  {
+    "id": "dis-015",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol sec à 120 km/h ?",
+    "choix": [
+      "144 mètres",
+      "72 mètres",
+      "108 mètres",
+      "36 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Réaction : 36 m. Freinage : 72 m. Arrêt : 36 + 72 = 108 m."
+  },
+  {
+    "id": "dis-016",
+    "theme": "distances",
+    "question": "Quelle est la distance d'arrêt sur sol mouillé à 50 km/h ?",
+    "choix": [
+      "18,75 mètres",
+      "33,75 mètres",
+      "27,5 mètres",
+      "25 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Réaction : 15 m. Freinage mouillé : 18,75 m. Arrêt : 15 + 18,75 = 33,75 m."
+  },
+  {
+    "id": "dis-017",
+    "theme": "distances",
+    "question": "Quelle règle permet de garder une distance de sécurité suffisante avec le véhicule qui te précède ?",
+    "choix": [
+      "La règle des 2 secondes",
+      "La règle des 5 secondes",
+      "La règle des 10 mètres",
+      "La règle d'une longueur de voiture"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Choisis un repère fixe : quand le véhicule devant le passe, tu dois mettre au moins 2 secondes pour l'atteindre."
+  },
+  {
+    "id": "dis-018",
+    "theme": "distances",
+    "question": "À 90 km/h, quelle distance de sécurité minimale dois-tu garder environ ?",
+    "choix": [
+      "90 mètres",
+      "45 mètres",
+      "20 mètres",
+      "27 mètres"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Formule pratique : la vitesse divisée par 2 (en mètres). 90 ÷ 2 = 45 m, ce qui correspond à environ 2 secondes."
+  },
+  {
+    "id": "dis-019",
+    "theme": "distances",
+    "question": "À 120 km/h, quelle distance de sécurité minimale dois-tu garder environ ?",
+    "choix": [
+      "120 mètres",
+      "36 mètres",
+      "30 mètres",
+      "60 mètres"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "120 ÷ 2 = 60 m. Ce sont environ 2 secondes à cette vitesse."
+  },
+  {
+    "id": "dis-020",
+    "theme": "distances",
+    "question": "Tu es fatigué ou tu as bu de l'alcool. Quelle distance augmente surtout ?",
+    "choix": [
+      "La distance de freinage",
+      "Aucune distance",
+      "La distance de sécurité légale",
+      "La distance de réaction"
+    ],
+    "bonne": 3,
+    "grave": false,
+    "explication": "La fatigue, l'alcool, le GSM allongent le temps de réaction, donc la distance parcourue avant même de freiner."
+  },
+  {
+    "id": "dis-021",
+    "theme": "distances",
+    "question": "Hors agglomération, deux camions de plus de 7,5 tonnes qui se suivent doivent garder entre eux au moins :",
+    "choix": [
+      "10 mètres",
+      "100 mètres",
+      "50 mètres",
+      "20 mètres"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Hors agglomération, les véhicules de plus de 7,5 tonnes ou de plus de 7 mètres doivent garder au moins 50 m entre eux."
+  },
+  {
+    "id": "dis-022",
+    "theme": "distances",
+    "question": "Lequel de ces éléments n'influence pas la distance de freinage ?",
+    "choix": [
+      "Le temps de réaction du conducteur",
+      "L'état des pneus",
+      "La vitesse",
+      "L'état de la route"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le temps de réaction influence la distance de réaction, pas la distance de freinage. La vitesse, les pneus, les freins et la route influencent le freinage."
+  }
+]

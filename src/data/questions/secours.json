@@ -1,0 +1,114 @@
+[
+  {
+    "id": "sec-001",
+    "theme": "secours",
+    "question": "Tu es témoin d'un accident. Quelle est ta première action ?",
+    "choix": [
+      "Sécuriser les lieux (feux de détresse, gilet, triangle) pour éviter un sur-accident",
+      "Prendre des photos",
+      "Déplacer les blessés",
+      "Donner à boire aux blessés"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "L'ordre est : protéger, alerter, secourir. Sans protection, un deuxième accident peut survenir."
+  },
+  {
+    "id": "sec-002",
+    "theme": "secours",
+    "question": "Quel est le numéro d'appel d'urgence européen ?",
+    "choix": [
+      "100",
+      "112",
+      "101",
+      "911"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le 112 fonctionne dans toute l'Union européenne, même sans crédit sur la carte SIM."
+  },
+  {
+    "id": "sec-003",
+    "theme": "secours",
+    "question": "Un motard blessé est au sol, casque sur la tête. Que fais-tu ?",
+    "choix": [
+      "J'enlève son casque pour qu'il respire mieux",
+      "Je l'assieds",
+      "Je ne retire pas son casque, sauf nécessité vitale",
+      "Je le mets debout"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Retirer un casque peut aggraver une blessure à la colonne vertébrale."
+  },
+  {
+    "id": "sec-004",
+    "theme": "secours",
+    "question": "Quand peux-tu déplacer un blessé ?",
+    "choix": [
+      "Seulement s'il est exposé à un danger immédiat (incendie, risque d'être heurté)",
+      "Jamais, quelle que soit la situation",
+      "Toujours, pour le mettre à l'aise",
+      "Dès qu'il le demande"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Déplacer un blessé peut aggraver ses lésions. On ne le fait qu'en cas de danger immédiat."
+  },
+  {
+    "id": "sec-005",
+    "theme": "secours",
+    "question": "En appelant le 112, quelle information est la plus importante ?",
+    "choix": [
+      "Les noms des conducteurs",
+      "La marque des voitures",
+      "Le lieu précis de l'accident, le nombre et l'état des blessés",
+      "Qui est responsable"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Les secours doivent savoir où aller et quoi prévoir. Ne raccroche pas avant qu'on te le dise."
+  },
+  {
+    "id": "sec-006",
+    "theme": "secours",
+    "question": "Après un accrochage sans blessé, le constat amiable :",
+    "choix": [
+      "Est rempli et signé par les deux conducteurs, et ne doit plus être modifié ensuite",
+      "Est rempli par la police uniquement",
+      "Est signé par un seul conducteur",
+      "Peut être modifié chez soi après signature"
+    ],
+    "bonne": 0,
+    "grave": false,
+    "explication": "Le constat européen décrit les faits. Une fois signé par les deux, chacun garde son exemplaire tel quel."
+  },
+  {
+    "id": "sec-007",
+    "theme": "secours",
+    "question": "Tu es impliqué dans un accident. Peux-tu quitter les lieux sans donner ton identité ?",
+    "choix": [
+      "Oui, s'il n'y a pas de blessé",
+      "Oui, la nuit",
+      "Non, c'est un délit de fuite",
+      "Oui, si les dégâts sont légers"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Le conducteur impliqué doit rester sur place et permettre d'établir son identité. Fuir est un délit."
+  },
+  {
+    "id": "sec-008",
+    "theme": "secours",
+    "question": "Un blessé est inconscient mais respire normalement. Que fais-tu ?",
+    "choix": [
+      "Je le laisse sur le dos sans surveiller",
+      "Je lui donne à boire",
+      "Je le mets en position latérale de sécurité et je surveille sa respiration",
+      "Je le secoue pour le réveiller"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "La position latérale de sécurité évite qu'il s'étouffe. Sans respiration, il faut commencer la réanimation."
+  }
+]

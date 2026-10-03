@@ -1,0 +1,346 @@
+[
+  {
+    "id": "pri-001",
+    "theme": "priorites",
+    "question": "Tu arrives à ce carrefour sans aucune signalisation. Une voiture arrive par ta droite. Que fais-tu ?",
+    "choix": [
+      "Je passe, je suis sur la route la plus large",
+      "Je klaxonne et je passe",
+      "Je passe, j'étais là le premier",
+      "Je lui cède le passage"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Sans signalisation, la priorité de droite s'applique : tu cèdes le passage à celui qui vient de ta droite.",
+    "schema": {
+      "type": "scene",
+      "id": "carrefour-droite"
+    }
+  },
+  {
+    "id": "pri-002",
+    "theme": "priorites",
+    "question": "Ce panneau t'oblige à :",
+    "choix": [
+      "T'arrêter obligatoirement même si la route est libre",
+      "Céder le passage aux usagers de la route que tu vas croiser ou emprunter, dans les deux sens",
+      "Céder le passage seulement à ceux qui viennent de droite",
+      "Ralentir à 30 km/h"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Le triangle pointe en bas impose de céder le passage, sans obligation de s'arrêter si la voie est libre.",
+    "schema": {
+      "type": "panneau",
+      "code": "B1"
+    }
+  },
+  {
+    "id": "pri-003",
+    "theme": "priorites",
+    "question": "Tu arrives à ce panneau. La route que tu vas croiser est déserte. Que fais-tu ?",
+    "choix": [
+      "Je ralentis fortement et je passe sans m'arrêter",
+      "Je m'arrête à la ligne d'arrêt, puis je passe",
+      "Je passe, la route est libre",
+      "Je m'arrête seulement la nuit"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "Au STOP, l'arrêt complet est obligatoire, même si la route est libre. Ensuite, tu cèdes le passage à tous.",
+    "schema": {
+      "type": "panneau",
+      "code": "B5"
+    }
+  },
+  {
+    "id": "pri-004",
+    "theme": "priorites",
+    "question": "Ce panneau signifie :",
+    "choix": [
+      "Tu dois céder le passage",
+      "Tu circules sur une route à priorité : les usagers des routes transversales doivent te céder le passage",
+      "Fin de la route à priorité",
+      "Priorité au prochain carrefour uniquement"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Le losange jaune indique une route à priorité. Elle le reste à tous les carrefours, jusqu'au panneau de fin.",
+    "schema": {
+      "type": "panneau",
+      "code": "B9"
+    }
+  },
+  {
+    "id": "pri-005",
+    "theme": "priorites",
+    "question": "Ce panneau te donne la priorité :",
+    "choix": [
+      "Uniquement face aux trams",
+      "Jusqu'à la fin de l'agglomération",
+      "Au prochain carrefour seulement",
+      "À tous les carrefours suivants"
+    ],
+    "bonne": 2,
+    "grave": false,
+    "explication": "Ce triangle avec un trait vertical épais annonce une priorité valable au prochain carrefour uniquement.",
+    "schema": {
+      "type": "panneau",
+      "code": "B15"
+    }
+  },
+  {
+    "id": "pri-006",
+    "theme": "priorites",
+    "question": "Ce panneau annonce :",
+    "choix": [
+      "Un carrefour où la priorité de droite s'applique",
+      "Un carrefour où tu es prioritaire",
+      "Un passage à niveau",
+      "Une interdiction de tourner"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Le triangle avec une croix rappelle que la priorité de droite s'applique au prochain carrefour.",
+    "schema": {
+      "type": "panneau",
+      "code": "B17"
+    }
+  },
+  {
+    "id": "pri-007",
+    "theme": "priorites",
+    "question": "Tu sors d'un parking de supermarché pour rejoindre la route. À qui dois-tu céder le passage ?",
+    "choix": [
+      "À personne si tu es à droite",
+      "Seulement à ceux qui viennent de droite",
+      "À tous les usagers de la route",
+      "Seulement aux piétons"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Quand tu sors d'un lieu non ouvert à la circulation (parking, garage, propriété), tu cèdes le passage à tous les usagers."
+  },
+  {
+    "id": "pri-008",
+    "theme": "priorites",
+    "question": "Tu sors d'un chemin de terre pour rejoindre une route asphaltée. Une voiture arrive de ta gauche. Que fais-tu ?",
+    "choix": [
+      "Je passe si je roule vite",
+      "Je passe : elle vient de ma gauche",
+      "Je lui cède le passage",
+      "Je passe en klaxonnant"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Celui qui sort d'un chemin de terre ou d'un sentier doit céder le passage à tous, même à ceux qui viennent de gauche."
+  },
+  {
+    "id": "pri-009",
+    "theme": "priorites",
+    "question": "Tu tournes à gauche à un carrefour. Une voiture arrive en face et continue tout droit. Que fais-tu ?",
+    "choix": [
+      "Je la laisse passer avant de tourner",
+      "Je tourne : elle vient de ma droite",
+      "Je tourne si elle est encore loin et roule vite",
+      "Je tourne : j'ai mis mon clignotant"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Quand tu changes de direction à gauche, tu cèdes le passage aux usagers qui viennent en sens inverse.",
+    "schema": {
+      "type": "scene",
+      "id": "carrefour-gauche"
+    }
+  },
+  {
+    "id": "pri-010",
+    "theme": "priorites",
+    "question": "Tu tournes à droite. Un cycliste roule tout droit sur la piste cyclable à ta droite. Que fais-tu ?",
+    "choix": [
+      "Je le laisse passer avant de tourner",
+      "Je tourne, les voitures sont prioritaires",
+      "Je tourne, j'ai mis mon clignotant",
+      "Je klaxonne pour qu'il s'arrête"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Quand tu tournes, tu cèdes le passage aux cyclistes qui continuent tout droit et aux piétons qui traversent. Vérifie ton angle mort."
+  },
+  {
+    "id": "pri-011",
+    "theme": "priorites",
+    "question": "Tu arrives à un rond-point signalé par ce panneau et un triangle « cédez le passage ». Qui est prioritaire ?",
+    "choix": [
+      "Celui qui roule le plus vite",
+      "Moi, car je viens de droite",
+      "Les usagers qui circulent déjà dans le rond-point",
+      "Les véhicules qui entrent"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Aux ronds-points signalés, tu cèdes le passage aux usagers qui y circulent déjà.",
+    "schema": {
+      "type": "panneau",
+      "code": "D5"
+    }
+  },
+  {
+    "id": "pri-012",
+    "theme": "priorites",
+    "question": "Tu vas quitter le rond-point à la prochaine sortie. Que fais-tu ?",
+    "choix": [
+      "Je n'allume aucun clignotant",
+      "J'allume mon clignotant droit avant de sortir",
+      "J'allume mon clignotant gauche",
+      "Je m'arrête avant de sortir"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Avant de quitter le rond-point, tu signales ta sortie avec le clignotant droit."
+  },
+  {
+    "id": "pri-013",
+    "theme": "priorites",
+    "question": "Un tram arrive à un carrefour sans feux ni agent. Sauf signalisation contraire :",
+    "choix": [
+      "Le tram doit te céder s'il vient de gauche",
+      "Le tram doit s'arrêter",
+      "Tu dois céder le passage au tram",
+      "Le premier arrivé passe"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Les véhicules sur rails sont prioritaires sur les autres usagers, sauf si un agent ou des feux en décident autrement."
+  },
+  {
+    "id": "pri-014",
+    "theme": "priorites",
+    "question": "Une ambulance arrive derrière toi, feux bleus clignotants et sirène en marche. Que fais-tu ?",
+    "choix": [
+      "Je m'arrête immédiatement au milieu de ma bande",
+      "J'accélère pour rester devant elle",
+      "Je lui laisse le passage en me rangeant dès que c'est possible sans danger",
+      "Je continue normalement"
+    ],
+    "bonne": 2,
+    "grave": true,
+    "explication": "Un véhicule prioritaire qui utilise ses feux bleus et sa sirène doit pouvoir passer : tu libères le passage en sécurité."
+  },
+  {
+    "id": "pri-015",
+    "theme": "priorites",
+    "question": "Le feu passe à l'orange fixe alors que tu es encore à bonne distance. Tu dois :",
+    "choix": [
+      "T'arrêter, sauf si tu ne peux plus le faire en sécurité",
+      "Accélérer pour passer",
+      "Passer si personne n'arrive",
+      "Klaxonner et passer"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "L'orange fixe signifie l'arrêt, comme le rouge, sauf si tu es si proche que freiner serait dangereux."
+  },
+  {
+    "id": "pri-016",
+    "theme": "priorites",
+    "question": "Un feu orange clignote. Que signifie-t-il ?",
+    "choix": [
+      "Tu dois t'arrêter",
+      "Tu peux passer avec prudence en respectant les panneaux et les règles de priorité",
+      "Tu es prioritaire",
+      "Le carrefour est fermé"
+    ],
+    "bonne": 1,
+    "grave": true,
+    "explication": "L'orange clignotant autorise le passage avec prudence. Ce sont alors les panneaux de priorité, ou la priorité de droite, qui s'appliquent."
+  },
+  {
+    "id": "pri-017",
+    "theme": "priorites",
+    "question": "Un agent qualifié lève le bras verticalement. Ce geste signifie :",
+    "choix": [
+      "Ralentir seulement",
+      "Arrêt seulement pour ceux qui viennent de face",
+      "Tu peux passer",
+      "Arrêt pour tous les usagers, sauf ceux déjà engagés dans le carrefour"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Le bras levé verticalement est un signal d'arrêt général. Ceux qui sont déjà engagés dégagent le carrefour."
+  },
+  {
+    "id": "pri-018",
+    "theme": "priorites",
+    "question": "Un agent fait un signe contraire au feu vert. Qui dois-tu suivre ?",
+    "choix": [
+      "Le feu",
+      "L'agent",
+      "La règle de la priorité de droite",
+      "Les panneaux"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "Ordre de priorité : agent > feux > panneaux > règles générales."
+  },
+  {
+    "id": "pri-019",
+    "theme": "priorites",
+    "question": "Un piéton s'engage sur un passage pour piétons devant toi. Que fais-tu ?",
+    "choix": [
+      "Je contourne le piéton",
+      "Je passe s'il est encore sur le trottoir d'en face",
+      "Je klaxonne pour qu'il attende",
+      "Je lui cède le passage"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Tu dois céder le passage aux piétons qui se trouvent sur le passage ou qui s'y engagent, et t'en approcher à allure modérée."
+  },
+  {
+    "id": "pri-020",
+    "theme": "priorites",
+    "question": "Les feux d'un carrefour sont éteints (en panne). Quelle règle appliques-tu ?",
+    "choix": [
+      "Les panneaux de priorité s'il y en a, sinon la priorité de droite",
+      "Tout le monde s'arrête comme à un STOP",
+      "La route la plus large est prioritaire",
+      "Le premier arrivé passe"
+    ],
+    "bonne": 0,
+    "grave": true,
+    "explication": "Quand les feux ne fonctionnent pas, on applique les panneaux présents ; sans panneau, la priorité de droite."
+  },
+  {
+    "id": "pri-021",
+    "theme": "priorites",
+    "question": "En agglomération, un bus quitte son arrêt en mettant son clignotant. Tu dois :",
+    "choix": [
+      "Accélérer pour passer avant lui",
+      "Ralentir et, si nécessaire, t'arrêter pour le laisser partir",
+      "Ne rien faire de particulier",
+      "Le dépasser par la gauche en klaxonnant"
+    ],
+    "bonne": 1,
+    "grave": false,
+    "explication": "En agglomération, tu dois permettre au bus de quitter un arrêt signalé quand il indique son départ."
+  },
+  {
+    "id": "pri-022",
+    "theme": "priorites",
+    "question": "Au panneau de fin de route à priorité, quelle règle retrouves-tu au carrefour suivant, sauf autre signalisation ?",
+    "choix": [
+      "Tu dois t'arrêter",
+      "La priorité au plus grand véhicule",
+      "Tu restes prioritaire",
+      "La priorité de droite"
+    ],
+    "bonne": 3,
+    "grave": true,
+    "explication": "Après la fin de la route à priorité, on revient aux règles générales : priorité de droite si rien d'autre n'est indiqué.",
+    "schema": {
+      "type": "panneau",
+      "code": "B11"
+    }
+  }
+]
