@@ -3,7 +3,7 @@ import { QUESTIONS, coursDuTheme, questionsDuTheme } from '../data'
 import { THEMES, THEME_PAR_ID } from '../data/themes'
 import { maitriseParTheme } from '../lib/adaptive'
 import { useStore } from '../lib/store'
-import { Feu, niveauTheme } from '../components/Feu'
+import { Feu, niveauTheme, couleurNiveau } from '../components/Feu'
 import { Markdown } from '../components/Markdown'
 import type { ThemeId } from '../types'
 
@@ -25,8 +25,8 @@ export function Cours() {
           return (
             <Link key={t.id} to={`/cours/${t.id}`} className="theme-card">
               <div className="row" style={{ justifyContent: 'space-between', gap: 8 }}>
-                <Feu niveau={niveauTheme(m?.precision ?? 0.5, m?.vues ?? 0)} />
-                {prio.has(t.id) && <span className="chip chip-grave">Prioritaire</span>}
+                <Feu niveau={niveauTheme(m?.precision ?? 0.5, m?.vues ?? 0)} taille={14} />
+                {prio.has(t.id) && <span className="chip chip-accent">Prioritaire</span>}
               </div>
               <h3>{t.titre}</h3>
               <p className="muted" style={{ fontSize: '0.92rem' }}>
@@ -42,31 +42,49 @@ export function Cours() {
 
 export function CoursTheme() {
   const { theme } = useParams()
+  const { state } = useStore()
   const info = theme ? THEME_PAR_ID[theme as ThemeId] : undefined
   if (!info) return <Navigate to="/cours" replace />
+  const maitrise = maitriseParTheme(QUESTIONS, state.stats)
   const source = coursDuTheme(info.id) ?? `# ${info.titre}\n\nFiche en cours de rédaction.`
   const nb = questionsDuTheme(info.id).length
   const idx = THEMES.findIndex((t) => t.id === info.id)
   const suivant = THEMES[idx + 1]
+  const m = maitrise.get(info.id)
+  const niv = niveauTheme(m?.precision ?? 0.5, m?.vues ?? 0)
 
   return (
-    <div className="stack-lg">
-      <Link to="/cours" className="btn btn-ghost" style={{ alignSelf: 'flex-start' }}>
-        ‹ Tous les cours
-      </Link>
-      <article className="panel">
+    <div className="cours-layout">
+      <nav className="cours-nav" aria-label="Fiches de cours">
+        <span className="eyebrow" style={{ padding: '0 12px 8px' }}>
+          {THEMES.length} fiches
+        </span>
+        {THEMES.map((t) => {
+          const mt = maitrise.get(t.id)
+          return (
+            <Link key={t.id} to={`/cours/${t.id}`} className={t.id === info.id ? 'active' : undefined}>
+              <Feu niveau={niveauTheme(mt?.precision ?? 0.5, mt?.vues ?? 0)} taille={10} />
+              {t.court}
+            </Link>
+          )
+        })}
+      </nav>
+      <div className="cours-body">
+        <p className="eyebrow" style={{ color: niv === null ? undefined : couleurNiveau(niv) }}>
+          {niv === null ? 'Pas encore évalué' : `Voyant ${['rouge', 'ambre', 'vert'][niv]} · ${Math.round((m?.precision ?? 0) * 100)} % de réussite`}
+        </p>
         <Markdown source={source} />
-      </article>
-      <section className="row">
-        <Link className="btn btn-primary" to={`/entrainement?themes=${info.id}&n=10`}>
-          S'entraîner sur ce thème ({nb} questions)
-        </Link>
-        {suivant && (
-          <Link className="btn btn-secondary" to={`/cours/${suivant.id}`}>
-            Fiche suivante : {suivant.court}
+        <section className="row">
+          <Link className="btn btn-primary" to={`/entrainement?themes=${info.id}&n=10`}>
+            S'entraîner · {nb} questions
           </Link>
-        )}
-      </section>
+          {suivant && (
+            <Link className="btn btn-secondary" to={`/cours/${suivant.id}`}>
+              Fiche suivante : {suivant.court}
+            </Link>
+          )}
+        </section>
+      </div>
     </div>
   )
 }

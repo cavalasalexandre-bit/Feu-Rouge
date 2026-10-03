@@ -85,7 +85,7 @@ export function Positionnement() {
           {profil.map(([t, v]) => {
             const m = maitrise.get(t)
             return (
-              <div key={t} className="theme-row">
+              <div key={t} className="theme-row" style={{ gridTemplateColumns: '14px minmax(0, 1fr) auto' }}>
                 <Feu niveau={niveauTheme(m?.precision ?? 0.5, m?.vues ?? 0)} />
                 <span className="name">{THEME_PAR_ID[t].titre}</span>
                 <span className="num muted">

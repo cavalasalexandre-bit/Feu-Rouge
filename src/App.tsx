@@ -1,4 +1,5 @@
-import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import type { ReactNode } from 'react'
 import { StoreProvider } from './lib/store'
 import { Layout } from './components/Layout'
 import { Accueil } from './pages/Accueil'
@@ -11,6 +12,12 @@ import { Examen } from './pages/Examen'
 import { Erreurs } from './pages/Erreurs'
 import { Reglages } from './pages/Reglages'
 
+/** Recrée la page à chaque navigation, même vers la même adresse (ex. menu « Examen blanc » depuis un résultat). */
+function Neuf({ children }: { children: ReactNode }) {
+  const { key } = useLocation()
+  return <div key={key}>{children}</div>
+}
+
 // HashRouter : les adresses (#/cours…) fonctionnent sur GitHub Pages sans configuration serveur.
 export function App() {
   return (
@@ -19,13 +26,13 @@ export function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Accueil />} />
-            <Route path="positionnement" element={<Positionnement />} />
+            <Route path="positionnement" element={<Neuf><Positionnement /></Neuf>} />
             <Route path="tableau" element={<TableauDeBord />} />
             <Route path="cours" element={<Cours />} />
             <Route path="cours/:theme" element={<CoursTheme />} />
             <Route path="quiz" element={<Quiz />} />
-            <Route path="entrainement" element={<Entrainement />} />
-            <Route path="examen" element={<Examen />} />
+            <Route path="entrainement" element={<Neuf><Entrainement /></Neuf>} />
+            <Route path="examen" element={<Neuf><Examen /></Neuf>} />
             <Route path="erreurs" element={<Erreurs />} />
             <Route path="reglages" element={<Reglages />} />
             <Route path="*" element={<Navigate to="/" replace />} />

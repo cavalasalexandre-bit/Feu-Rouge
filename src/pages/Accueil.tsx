@@ -2,30 +2,36 @@ import { Link } from 'react-router-dom'
 import { useStore } from '../lib/store'
 import { QUESTIONS } from '../data'
 import { THEMES } from '../data/themes'
-
-// Relevé d'exemple : 1 faute grave + 4 fautes simples = 41/50, réussi de justesse.
-const EXEMPLE = Array.from({ length: 50 }, (_, i) => (i === 17 ? 'f5' : [6, 23, 31, 44].includes(i) ? 'f1' : 'ok'))
+import { maitriseParTheme } from '../lib/adaptive'
+import { EXAMEN } from '../lib/scoring'
+import { Compteur } from '../components/Compteur'
+import { Feu, niveauTheme, libelleNiveau } from '../components/Feu'
+import { Icone } from '../components/Icone'
 
 export function Accueil() {
   const { state } = useStore()
   const nouveau = !state.positionnementFait
+  const dernier = state.examens.at(-1)
+  const maitrise = maitriseParTheme(QUESTIONS, state.stats)
 
   return (
     <div className="stack-lg">
       <section className="hero">
         <div>
-          <p className="eyebrow">Permis B · Belgique</p>
-          <h1>
-            Passe ton théorique <em>sans griller</em> de feu.
-          </h1>
+          <p className="eyebrow" style={{ color: 'var(--accent)' }}>
+            Permis B · Belgique · Examen théorique
+          </p>
+          <h1 style={{ marginTop: 14 }}>Règle tes compteurs avant le jour J.</h1>
           <p className="lead">
-            Examens blancs notés comme au centre d'examen, cours clairs, et des révisions qui insistent là où tu perds des points.
+            Chaque réponse met ton tableau de bord à jour. Les voyants s'allument sur les thèmes qui te coûtent des points, et tes
+            révisions vont droit dessus.
           </p>
           <div className="row">
             {nouveau ? (
               <>
                 <Link className="btn btn-primary" to="/positionnement">
-                  Faire le test de positionnement
+                  <Icone nom="demarrer" taille={20} />
+                  Démarrer le test
                 </Link>
                 <Link className="btn btn-secondary" to="/cours">
                   Voir les cours
@@ -34,70 +40,94 @@ export function Accueil() {
             ) : (
               <>
                 <Link className="btn btn-primary" to="/tableau">
-                  Reprendre mes révisions
+                  <Icone nom="compteur" taille={20} />
+                  Mon tableau de bord
                 </Link>
                 <Link className="btn btn-secondary" to="/examen">
-                  Lancer un examen blanc
+                  Examen blanc
                 </Link>
               </>
             )}
           </div>
+          <p className="muted" style={{ marginTop: 18, fontSize: '0.92rem' }}>
+            Gratuit · sans compte · {QUESTIONS.length} questions · {THEMES.length} thèmes
+          </p>
         </div>
 
-        <aside className="bareme" aria-label="Barème de l'examen">
-          <p className="eyebrow">Le barème officiel</p>
-          <div className="bareme-grid" aria-hidden="true">
-            {EXEMPLE.map((c, i) => (
-              <span key={i} className={c} />
-            ))}
+        <aside className="panel hero-gauge" aria-label="Barème de l'examen">
+          <Compteur score={dernier ? dernier.points : 44} largeur={340} />
+          <div className="readouts" style={{ width: '100%' }}>
+            <div className="readout">
+              <span className="eyebrow">Faute simple</span>
+              <strong style={{ color: 'var(--amber)' }}>−{EXAMEN.penaliteSimple}</strong>
+            </div>
+            <div className="readout">
+              <span className="eyebrow">Faute grave</span>
+              <strong style={{ color: 'var(--signal)' }}>−{EXAMEN.penaliteGrave}</strong>
+            </div>
+            <div className="readout">
+              <span className="eyebrow">Pour réussir</span>
+              <strong>
+                {EXAMEN.seuil}
+                <small>/{EXAMEN.questions}</small>
+              </strong>
+            </div>
           </div>
-          <div className="bareme-legend">
-            <span>
-              <i className="dot" style={{ background: '#3cc574' }} />
-              <b>50</b> questions
-            </span>
-            <span>
-              <i className="dot" style={{ background: '#f2b441' }} />
-              faute simple <b>−1</b>
-            </span>
-            <span>
-              <i className="dot" style={{ background: '#e0323e' }} />
-              faute grave <b>−5</b>
-            </span>
-          </div>
-          <p style={{ marginTop: 12, fontSize: '0.95rem' }}>
-            Il faut <b className="num">41/50</b>. Ici : 1 faute grave et 4 simples, réussi de justesse. Deux fautes graves, et c'est raté.
+          <p className="muted" style={{ fontSize: '0.88rem', textAlign: 'center' }}>
+            {dernier ? 'Ton dernier examen blanc.' : 'Exemple : une faute grave et une simple, réussi.'} Deux fautes graves, et c'est raté.
           </p>
         </aside>
       </section>
 
-      <section className="grid-features">
-        <div className="panel feature">
-          <p className="eyebrow">1 · Positionnement</p>
-          <h3>Tes points faibles en 10 minutes</h3>
-          <p className="muted">30 questions sur tout le programme pour savoir par où commencer.</p>
-        </div>
-        <div className="panel feature">
-          <p className="eyebrow">2 · Révision ciblée</p>
-          <h3>Les erreurs reviennent</h3>
-          <p className="muted">Une question ratée revient jusqu'à ce que tu la réussisses trois fois de suite.</p>
-        </div>
-        <div className="panel feature">
-          <p className="eyebrow">3 · Examen blanc</p>
-          <h3>Comme le jour J</h3>
-          <p className="muted">50 questions, chrono, fautes graves cachées et arrêt anticipé sous 41/50.</p>
+      <section className="band">
+        <div className="band-inner stack">
+          <div className="row" style={{ justifyContent: 'space-between', alignItems: 'flex-end' }}>
+            <h2 style={{ fontSize: '2rem' }}>Tes voyants</h2>
+            <p className="muted">{nouveau ? 'Ils s’allument après le test de positionnement.' : 'Allumé = thème à travailler en priorité'}</p>
+          </div>
+          <div className="grid-3" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 170px), 1fr))' }}>
+            {THEMES.map((t) => {
+              const m = maitrise.get(t.id)
+              const niv = niveauTheme(m?.precision ?? 0.5, m?.vues ?? 0)
+              return (
+                <Link key={t.id} to={`/cours/${t.id}`} className="voyant-card" data-allume={niv === 0}>
+                  <Feu niveau={niv} taille={14} />
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '1.05rem' }}>{t.court}</span>
+                  <span className="num" style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>
+                    {m?.vues ? `${Math.round(m.precision * 100)} % · ${libelleNiveau(niv).toLowerCase()}` : 'pas encore évalué'}
+                  </span>
+                </Link>
+              )
+            })}
+          </div>
         </div>
       </section>
 
-      <section className="panel-flat row" style={{ justifyContent: 'space-between' }}>
-        <p>
-          <strong className="num">{QUESTIONS.length}</strong> questions · <strong className="num">{THEMES.length}</strong> thèmes ·{' '}
-          gratuit, sans compte. Ta progression reste sur ton appareil.
-        </p>
-        <Link className="btn btn-ghost" to="/reglages">
-          Personnaliser
-        </Link>
+      <section className="stack">
+        <h2 style={{ fontSize: '2rem' }}>Ordinateur de bord</h2>
+        <div className="grid-features">
+          <div className="feature">
+            <p className="eyebrow">Étape 1</p>
+            <h3>Diagnostic</h3>
+            <p className="muted">30 questions sur les 12 thèmes. En 10 minutes, ton tableau de bord s'allume.</p>
+          </div>
+          <div className="feature">
+            <p className="eyebrow">Étape 2</p>
+            <h3>Entretien</h3>
+            <p className="muted">Tes erreurs reviennent jusqu'à trois réussites d'affilée. Les voyants s'éteignent un à un.</p>
+          </div>
+          <div className="feature">
+            <p className="eyebrow">Étape 3</p>
+            <h3>Contrôle technique</h3>
+            <p className="muted">Examen blanc : 50 questions, 41/50, fautes graves à −5 et arrêt anticipé, comme au centre.</p>
+          </div>
+        </div>
       </section>
+
+      <footer className="row muted" style={{ justifyContent: 'space-between', fontSize: '0.85rem', borderTop: '1px solid var(--line)', paddingTop: 20 }}>
+        <span>Feu Rouge · ta progression reste sur ton appareil.</span>
+        <span>Questions originales, pas les questions officielles de l'examen.</span>
+      </footer>
     </div>
   )
 }

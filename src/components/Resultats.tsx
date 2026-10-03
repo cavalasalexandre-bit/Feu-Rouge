@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { EXAMEN, estJuste, scoreExamen, type Reponse } from '../lib/scoring'
 import { THEME_PAR_ID } from '../data/themes'
 import type { ModeSession } from './Session'
+import { Compteur } from './Compteur'
 
 interface Props {
   reponses: Reponse[]
@@ -12,6 +13,13 @@ interface Props {
   onRecommencer?: () => void
   /** Contenu ajouté sous le verdict (ex. profil après le positionnement). */
   children?: React.ReactNode
+}
+
+function titreVerdict(points: number, reussi: boolean): string {
+  const marge = points - EXAMEN.seuil
+  if (!reussi) return `Il manque ${-marge} point${-marge > 1 ? 's' : ''}.`
+  if (marge === 0) return 'Feu vert, de justesse.'
+  return `Feu vert, avec ${marge} point${marge > 1 ? 's' : ''} de marge.`
 }
 
 function classe(r: Reponse): string {
@@ -29,36 +37,46 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
     <div className="stack-lg session">
       <section className="panel stack">
         {estExamen ? (
-          <div className={score.reussi ? 'verdict ok' : 'verdict ko'}>
-            <div className="verdict-score">
-              {score.points}
-              <small>/50</small>
-            </div>
-            <div className="stack" style={{ gap: 6 }}>
-              <h1>{score.reussi ? 'Examen réussi' : 'Examen raté'}</h1>
-              <p className="muted">
-                {arrete && 'L’épreuve s’est arrêtée : 41/50 n’était plus atteignable. '}
-                {tempsEcoule && 'Temps écoulé : les questions restantes comptent comme fautes. '}
-                <span className="num">{score.fautesSimples}</span> faute{score.fautesSimples > 1 ? 's' : ''} simple
-                {score.fautesSimples > 1 ? 's' : ''} (−1) · <span className="num">{score.fautesGraves}</span> faute
-                {score.fautesGraves > 1 ? 's' : ''} grave{score.fautesGraves > 1 ? 's' : ''} (−5)
-                {dureeSec !== undefined && (
-                  <>
-                    {' '}
-                    · <span className="num">{Math.floor(dureeSec / 60)} min {dureeSec % 60} s</span>
-                  </>
-                )}
-              </p>
-              <p className="muted">Il faut au moins {EXAMEN.seuil}/50.</p>
+          <div className="verdict">
+            <Compteur score={score.points} largeur={250} />
+            <div className="verdict-body">
+              <span className={score.reussi ? 'chip chip-ok' : 'chip chip-grave'} style={{ alignSelf: 'flex-start' }}>
+                {score.reussi ? 'Examen réussi' : 'Examen raté'}
+              </span>
+              <h1>{titreVerdict(score.points, score.reussi)}</h1>
+              {(arrete || tempsEcoule) && (
+                <p className="muted">
+                  {arrete && 'L’épreuve s’est arrêtée : 41/50 n’était plus atteignable. '}
+                  {tempsEcoule && 'Temps écoulé : les questions restantes comptent comme fautes.'}
+                </p>
+              )}
+              <div className="readouts">
+                <div className="readout">
+                  <span className="eyebrow">Simples</span>
+                  <strong style={{ color: 'var(--amber)' }}>
+                    {score.fautesSimples} <small>× −1</small>
+                  </strong>
+                </div>
+                <div className="readout">
+                  <span className="eyebrow">Graves</span>
+                  <strong style={{ color: 'var(--signal)' }}>
+                    {score.fautesGraves} <small>× −5</small>
+                  </strong>
+                </div>
+                <div className="readout">
+                  <span className="eyebrow">Temps</span>
+                  <strong>{dureeSec !== undefined ? `${Math.floor(dureeSec / 60)}:${String(dureeSec % 60).padStart(2, '0')}` : '—'}</strong>
+                </div>
+              </div>
             </div>
           </div>
         ) : (
-          <div className="verdict ok">
+          <div className="verdict">
             <div className="verdict-score">
               {score.justes}
               <small>/{reponses.length}</small>
             </div>
-            <div className="stack" style={{ gap: 6 }}>
+            <div className="verdict-body" style={{ gap: 6 }}>
               <h1>{mode === 'test' ? 'Positionnement terminé' : 'Série terminée'}</h1>
               <p className="muted">
                 {erreurs.length === 0
@@ -129,16 +147,16 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
                 <div className="row" style={{ gap: 8 }}>
                   <span className="chip num">Q{i + 1}</span>
                   <span className="chip">{THEME_PAR_ID[r.question.theme].court}</span>
-                  {r.question.grave && <span className="chip chip-grave">▲ Faute grave · −5</span>}
+                  {r.question.grave ? <span className="chip chip-grave">Faute grave · −5</span> : <span className="chip chip-simple">Faute simple · −1</span>}
                 </div>
-                <strong>{r.question.question}</strong>
+                <strong style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '1.1rem' }}>{r.question.question}</strong>
                 <p>
                   <span className="muted">Ta réponse : </span>
                   {r.choix === null ? 'aucune' : r.question.choix[r.choix]}
                 </p>
                 <p>
                   <span className="muted">Bonne réponse : </span>
-                  <strong style={{ color: 'var(--go)' }}>{r.question.choix[r.question.bonne]}</strong>
+                  <strong style={{ color: 'var(--go)', fontWeight: 600 }}>{r.question.choix[r.question.bonne]}</strong>
                 </p>
                 <p className="muted">{r.question.explication}</p>
               </article>

@@ -20,7 +20,7 @@ export function QuestionCard({ question, selection, onSelect, corrige, montrerGr
     <article className="qcard" aria-live="polite">
       <div className="qmeta">
         <span className="chip">{THEME_PAR_ID[question.theme].court}</span>
-        {montrerGravite && question.grave && <span className="chip chip-grave">▲ Faute grave · −5</span>}
+        {montrerGravite && question.grave && <span className="chip chip-grave">Faute grave · −5</span>}
         {question.region && <span className="chip chip-region">{NOMS_REGIONS[question.region]}</span>}
       </div>
       <h2 className="qtext">{question.question}</h2>

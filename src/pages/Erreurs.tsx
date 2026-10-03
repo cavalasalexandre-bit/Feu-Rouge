@@ -50,7 +50,7 @@ export function Erreurs() {
                 <article key={q.id} className="panel stack" style={{ gap: 8 }}>
                   <div className="row" style={{ gap: 8 }}>
                     <span className="chip">{THEME_PAR_ID[q.theme].court}</span>
-                    {q.grave && <span className="chip chip-grave">▲ Faute grave</span>}
+                    {q.grave && <span className="chip chip-grave">Faute grave</span>}
                     <span className="chip num">
                       {s.boite}/{BOITE_MAITRISE} réussites
                     </span>

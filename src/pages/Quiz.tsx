@@ -6,6 +6,7 @@ import { maitriseParTheme } from '../lib/adaptive'
 import { useStore } from '../lib/store'
 import { Feu, niveauTheme, libelleNiveau } from '../components/Feu'
 import type { ThemeId } from '../types'
+import { Icone } from '../components/Icone'
 
 const NOMBRES = [10, 20, 30]
 
@@ -32,27 +33,35 @@ export function Quiz() {
   return (
     <div className="stack-lg">
       <header className="stack" style={{ gap: 8 }}>
-        <p className="eyebrow">Entraînement</p>
-        <h1>Quiz</h1>
-        <p className="muted">Correction et explication après chaque question. Tes réponses mettent ton profil à jour.</p>
+        <p className="eyebrow">Entraînement · correction après chaque question</p>
+        <h1>Choisis ton parcours</h1>
+        <p className="muted">Chaque réponse met tes voyants à jour.</p>
       </header>
 
       <section className="grid-2">
         <button type="button" className="task" onClick={() => lancer([], 20, false)} style={{ textAlign: 'left', font: 'inherit' }}>
-          <span className="task-icon blue">20</span>
+          <span className="lamp blue">
+            <Icone nom="cible" />
+          </span>
           <span className="task-body">
             <strong>Révision intelligente</strong>
             <span className="muted">Tout le programme, en insistant sur tes points faibles.</span>
           </span>
-          <span className="task-arrow">›</span>
+          <span className="task-arrow" aria-hidden="true">
+            <Icone nom="chevron" taille={18} />
+          </span>
         </button>
         <button type="button" className="task" onClick={() => lancer([], 15, true)} style={{ textAlign: 'left', font: 'inherit' }}>
-          <span className="task-icon red">▲</span>
+          <span className="lamp red">
+            <Icone nom="danger" />
+          </span>
           <span className="task-body">
             <strong>Spécial fautes graves</strong>
             <span className="muted">Uniquement les questions qui coûtent 5 points.</span>
           </span>
-          <span className="task-arrow">›</span>
+          <span className="task-arrow" aria-hidden="true">
+            <Icone nom="chevron" taille={18} />
+          </span>
         </button>
       </section>
 
@@ -69,8 +78,8 @@ export function Quiz() {
               return (
                 <label key={t.id} className="check">
                   <input type="checkbox" id={`theme-${t.id}`} checked={choisis.includes(t.id)} onChange={() => basculer(t.id)} />
-                  <span style={{ flex: 1, minWidth: 0 }}>{t.court}</span>
                   <Feu niveau={niv} label={libelleNiveau(niv)} />
+                  <span style={{ flex: 1, minWidth: 0 }}>{t.court}</span>
                 </label>
               )
             })}
