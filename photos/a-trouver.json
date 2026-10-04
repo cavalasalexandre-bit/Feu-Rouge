@@ -1,71 +1,3151 @@
 {
-  "_aide": "Questions pour lesquelles on cherche une vraie photo. 'besoin' décrit ce que la photo doit montrer. Les sources Wikimedia (catégories, recherches) et Mapillary (panneaux détectés dans des zones) servent à trouver des candidates. Ajoute des questions ici pour étendre les photos.",
+  "_aide": "Questions pour lesquelles on cherche une vraie photo. 'besoin' décrit ce que la photo doit montrer. Les sources Wikimedia (catégories, recherches) et Mapillary (panneaux détectés dans des zones) servent à trouver des candidates. Ajoute des questions ici pour étendre les photos. Le champ 'lot' regroupe les questions par séries d'environ 20 à traiter ensemble.",
   "zonesMapillary": {
-    "mons": [3.93, 50.44, 3.97, 50.47],
-    "namur": [4.84, 50.45, 4.88, 50.48],
-    "bruxelles": [4.33, 50.83, 4.38, 50.86],
-    "liege": [5.55, 50.62, 5.59, 50.65]
+    "mons": [
+      3.93,
+      50.44,
+      3.97,
+      50.47
+    ],
+    "namur": [
+      4.84,
+      50.45,
+      4.88,
+      50.48
+    ],
+    "bruxelles": [
+      4.33,
+      50.83,
+      4.38,
+      50.86
+    ],
+    "liege": [
+      5.55,
+      50.62,
+      5.59,
+      50.65
+    ]
   },
   "questions": [
     {
       "question": "pri-002",
       "besoin": "Panneau « cédez le passage » (triangle pointe en bas) à l'approche d'un carrefour, vu depuis la route",
-      "wikimedia": { "categories": ["Category:B1 (road sign, Belgium)"], "recherches": ["Belgium yield sign road", "cédez le passage Belgique carrefour"] },
-      "mapillary": { "panneaux": ["regulatory--yield--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:B1 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium yield sign road",
+          "cédez le passage Belgique carrefour"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--yield--g1"
+        ]
+      }
     },
     {
       "question": "pri-003",
       "besoin": "Panneau STOP au bord d'une route, avec la ligne d'arrêt si possible",
-      "wikimedia": { "categories": ["Category:B5 (road sign, Belgium)"], "recherches": ["Belgium stop sign road"] },
-      "mapillary": { "panneaux": ["regulatory--stop--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:B5 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium stop sign road"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--stop--g1"
+        ]
+      }
     },
     {
       "question": "pri-004",
       "besoin": "Panneau de route à priorité (losange jaune bordé de blanc) le long d'une route",
-      "wikimedia": { "categories": ["Category:B9 (road sign, Belgium)"], "recherches": ["Belgium priority road sign"] },
-      "mapillary": { "panneaux": ["regulatory--priority-road--g4", "information--priority-road--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:B9 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium priority road sign"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--priority-road--g4",
+          "information--priority-road--g1"
+        ]
+      }
     },
     {
       "question": "pri-011",
-      "besoin": "Entrée d'un rond-point vue du siège conducteur, avec le panneau rond bleu à flèches et le triangle cédez le passage",
-      "wikimedia": { "categories": ["Category:Roundabouts in Belgium", "Category:D5 (road sign, Belgium)"], "recherches": ["Belgium roundabout entrance sign"] },
-      "mapillary": { "panneaux": ["regulatory--roundabout--g1"] }
+      "besoin": "Entrée d'un rond-point avec le panneau D5 et le triangle « cédez le passage » bien visibles (assez grands)",
+      "wikimedia": {
+        "categories": [
+          "Category:D5 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign D5 roundabout",
+          "verkeersbord D5 België",
+          "panneau D5 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--roundabout--g1"
+        ]
+      },
+      "lot": 4
     },
     {
       "question": "sig-007",
       "besoin": "Route à deux sens séparés par une ligne blanche continue, vue du siège conducteur",
-      "wikimedia": { "categories": ["Category:Road markings in Belgium"], "recherches": ["Belgium road continuous white line", "route ligne blanche continue Belgique", "doorgetrokken streep België", "N-weg België"] },
-      "mapillary": { "panneaux": [] }
+      "wikimedia": {
+        "categories": [
+          "Category:Road markings in Belgium"
+        ],
+        "recherches": [
+          "Belgium road continuous white line",
+          "route ligne blanche continue Belgique",
+          "doorgetrokken streep België",
+          "N-weg België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
     },
     {
       "question": "sig-012",
       "besoin": "Passage à niveau belge avec feux rouges et barrières, vu depuis la route",
-      "wikimedia": { "categories": ["Category:Level crossings in Belgium"], "recherches": ["Belgische overweg", "passage à niveau Belgique"] },
-      "mapillary": { "panneaux": ["warning--railroad-crossing-with-barriers--g1", "warning--railroad-crossing--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:Level crossings in Belgium"
+        ],
+        "recherches": [
+          "Belgische overweg",
+          "passage à niveau Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "warning--railroad-crossing-with-barriers--g1",
+          "warning--railroad-crossing--g1"
+        ]
+      }
     },
     {
       "question": "sig-030",
       "besoin": "Panneau rond bleu avec un vélo blanc (piste cyclable obligatoire) au début d'une piste",
-      "wikimedia": { "categories": ["Category:D7 (road sign, Belgium)"], "recherches": ["Belgium cycle path sign D7"] },
-      "mapillary": { "panneaux": ["regulatory--bicycles-only--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:D7 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium cycle path sign D7"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--bicycles-only--g1"
+        ]
+      }
     },
     {
       "question": "vit-008",
       "besoin": "Panneau d'entrée de « zone 30 » dans une rue belge",
-      "wikimedia": { "categories": ["Category:F4a (road sign, Belgium)"], "recherches": ["zone 30 Belgique panneau rue"] },
-      "mapillary": { "panneaux": ["regulatory--maximum-speed-limit-zone-30--g1", "regulatory--maximum-speed-limit-30--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:F4a (road sign, Belgium)"
+        ],
+        "recherches": [
+          "zone 30 Belgique panneau rue"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "regulatory--maximum-speed-limit-zone-30--g1",
+          "regulatory--maximum-speed-limit-30--g1"
+        ]
+      }
     },
     {
       "question": "vit-009",
       "besoin": "Panneau de zone résidentielle ou de rencontre (rectangle bleu avec maison, personnes et voiture) à l'entrée d'une rue",
-      "wikimedia": { "categories": ["Category:F12a (road sign, Belgium)"], "recherches": ["woonerf België bord", "zone résidentielle Belgique panneau"] },
-      "mapillary": { "panneaux": ["information--living-street--g1"] }
+      "wikimedia": {
+        "categories": [
+          "Category:F12a (road sign, Belgium)"
+        ],
+        "recherches": [
+          "woonerf België bord",
+          "zone résidentielle Belgique panneau"
+        ]
+      },
+      "mapillary": {
+        "panneaux": [
+          "information--living-street--g1"
+        ]
+      }
     },
     {
       "question": "aut-002",
       "besoin": "Bande d'accélération d'une autoroute belge vue du siège conducteur, avec des véhicules sur l'autoroute",
-      "wikimedia": { "categories": ["Category:Motorways in Belgium"], "recherches": ["Belgium motorway on-ramp acceleration lane", "autoroute Belgique bretelle d'accès", "oprit autosnelweg België", "invoegstrook"] },
-      "mapillary": { "panneaux": [] }
+      "wikimedia": {
+        "categories": [
+          "Category:Motorways in Belgium"
+        ],
+        "recherches": [
+          "Belgium motorway on-ramp acceleration lane",
+          "autoroute Belgique bretelle d'accès",
+          "oprit autosnelweg België",
+          "invoegstrook"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-005",
+      "lot": 1,
+      "besoin": "Panneau B15 (triangle de danger avec une barre noire verticale épaisse coupée par une barre fine : priorité au prochain carrefour) le long d'une route belge",
+      "wikimedia": {
+        "categories": [
+          "Category:B15 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign B15 priority at next intersection",
+          "verkeersbord B15 België",
+          "panneau B15 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-006",
+      "lot": 1,
+      "besoin": "Panneau B17 (triangle de danger avec une croix noire, carrefour à priorité de droite) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:B17 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign B17 crossroads priority right",
+          "verkeersbord B17 België",
+          "panneau B17 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-022",
+      "lot": 1,
+      "besoin": "Panneau B11 (losange jaune barré, fin de route à priorité) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:B11 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign B11 end of priority road",
+          "verkeersbord B11 België",
+          "panneau B11 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-030",
+      "lot": 1,
+      "besoin": "Losange jaune B9 avec un feu orange clignotant au carrefour, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium flashing amber traffic light priority road",
+          "feu orange clignotant Belgique carrefour",
+          "knipperlicht oranje kruispunt België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-038",
+      "lot": 1,
+      "besoin": "Panneau B19 (rond, flèche rouge vers le haut et flèche noire vers le bas, céder le passage aux usagers venant en sens inverse) devant un rétrécissement",
+      "wikimedia": {
+        "categories": [
+          "Category:B19 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign B19 give way oncoming traffic narrowing",
+          "verkeersbord B19 België",
+          "panneau B19 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-031",
+      "lot": 1,
+      "besoin": "Feu tricolore et panneau « cédez le passage » B1 au même carrefour, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium traffic light yield sign same intersection",
+          "feu de signalisation et cédez le passage Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-005",
+      "lot": 1,
+      "besoin": "Panneau C1 sens interdit (rond rouge à barre blanche) à l'entrée d'une rue belge",
+      "wikimedia": {
+        "categories": [
+          "Category:C1 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C1 no entry",
+          "verkeersbord C1 België",
+          "panneau C1 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-006",
+      "lot": 1,
+      "besoin": "Panneau C3 accès interdit (rond blanc bordé de rouge, vide) à l'entrée d'une rue",
+      "wikimedia": {
+        "categories": [
+          "Category:C3 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C3 closed to all vehicles",
+          "verkeersbord C3 België",
+          "panneau C3 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-019",
+      "lot": 1,
+      "besoin": "Panneau C35 interdiction de dépasser (voiture rouge et voiture noire) le long d'une route belge",
+      "wikimedia": {
+        "categories": [
+          "Category:C35 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C35 no overtaking",
+          "verkeersbord C35 België",
+          "panneau C35 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-013",
+      "lot": 1,
+      "besoin": "Panneau C35 interdiction de dépasser, sur une route où roule une moto si possible",
+      "wikimedia": {
+        "categories": [
+          "Category:C35 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C35 no overtaking road",
+          "verkeersbord C35 België",
+          "panneau C35 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-020",
+      "lot": 1,
+      "besoin": "Panneau D1 rond bleu à flèche blanche (direction obligatoire) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:D1 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign D1 mandatory direction",
+          "verkeersbord D1 België",
+          "panneau D1 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-015",
+      "lot": 1,
+      "besoin": "Panneau A51 (triangle rouge avec point d'exclamation, danger non défini) avec panneau additionnel",
+      "wikimedia": {
+        "categories": [
+          "Category:A51 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign A51 other danger",
+          "verkeersbord A51 België",
+          "panneau A51 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-021",
+      "lot": 1,
+      "besoin": "Panneau A23 (triangle rouge avec deux enfants) près d'une école en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:A23 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign A23 children school",
+          "verkeersbord A23 België",
+          "panneau A23 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-035",
+      "lot": 1,
+      "besoin": "Panneau A21 (triangle, piéton sur passage) annonçant un passage pour piétons",
+      "wikimedia": {
+        "categories": [
+          "Category:A21 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign A21 pedestrian crossing ahead",
+          "verkeersbord A21 België",
+          "panneau A21 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-031",
+      "lot": 1,
+      "besoin": "Croix de Saint-André (croix blanche bordée de rouge) près d'un passage à niveau belge",
+      "wikimedia": {
+        "categories": [
+          "Category:A45 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign A45 level crossing St Andrew cross",
+          "verkeersbord A45 België",
+          "panneau A45 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-032",
+      "lot": 1,
+      "besoin": "Panneau F19 sens unique (carré bleu, flèche blanche vers le haut) dans une rue belge",
+      "wikimedia": {
+        "categories": [
+          "Category:F19 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F19 one way street",
+          "verkeersbord F19 België",
+          "panneau F19 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-033",
+      "lot": 1,
+      "besoin": "Panneau F45 impasse (carré bleu, barre blanche terminée par une barre rouge)",
+      "wikimedia": {
+        "categories": [
+          "Category:F45 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F45 dead end",
+          "verkeersbord F45 België",
+          "panneau F45 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-017",
+      "lot": 1,
+      "besoin": "Panneau E9a parking (carré bleu, P blanc) devant un parking",
+      "wikimedia": {
+        "categories": [
+          "Category:E9a (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign E9a parking",
+          "verkeersbord E9a België",
+          "panneau E9a Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-018",
+      "lot": 1,
+      "besoin": "Panneau F5 début d'autoroute (bleu, pont et route) à l'entrée d'une autoroute belge",
+      "wikimedia": {
+        "categories": [
+          "Category:F5 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F5 motorway begins",
+          "verkeersbord F5 België",
+          "panneau F5 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-014",
+      "lot": 1,
+      "besoin": "Panneau F5 début d'autoroute placé sur une bretelle d'accès",
+      "wikimedia": {
+        "categories": [
+          "Category:F5 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F5 motorway on-ramp",
+          "verkeersbord F5 België",
+          "panneau F5 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-011",
+      "lot": 2,
+      "besoin": "Panneau F1 d'agglomération (blanc, nom de localité) à l'entrée d'un village wallon",
+      "wikimedia": {
+        "categories": [
+          "Category:F1 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F1 built-up area town sign Wallonia",
+          "verkeersbord F1 België",
+          "panneau F1 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-031",
+      "lot": 2,
+      "besoin": "Panneau F3 de sortie d'agglomération (nom de localité barré de rouge)",
+      "wikimedia": {
+        "categories": [
+          "Category:F3 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F3 end of built-up area",
+          "verkeersbord F3 België",
+          "panneau F3 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-016",
+      "lot": 2,
+      "besoin": "Panneau C43 limitation 50 hors agglomération en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:C43 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C43 speed limit 50",
+          "verkeersbord C43 België",
+          "panneau C43 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-029",
+      "lot": 2,
+      "besoin": "Panneau C43 limitation 70 sur une route de campagne wallonne",
+      "wikimedia": {
+        "categories": [
+          "Category:C43 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C43 speed limit 70",
+          "verkeersbord C43 België",
+          "panneau C43 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-021",
+      "lot": 2,
+      "besoin": "Panneau 50 km/h sur un grand axe à Bruxelles",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Brussels speed limit 50 sign avenue",
+          "Bruxelles panneau 50 km/h boulevard",
+          "Brussel snelheidsbord 50"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-023",
+      "lot": 2,
+      "besoin": "Panneau C45 fin de limitation de vitesse (nombre barré)",
+      "wikimedia": {
+        "categories": [
+          "Category:C45 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign C45 end of speed limit",
+          "verkeersbord C45 België",
+          "panneau C45 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-018",
+      "lot": 2,
+      "besoin": "Panneau de fin de zone 30 (F4b) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:F4b (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F4b end zone 30",
+          "verkeersbord F4b België",
+          "panneau F4b Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-015",
+      "lot": 2,
+      "besoin": "Panneau zone 30 aux abords d'une école (avec symbole école) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium zone 30 school sign",
+          "zone 30 abords d'école Belgique panneau",
+          "schoolomgeving zone 30 bord"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-028",
+      "lot": 2,
+      "besoin": "Panneau zone 30 école avec panonceau d'heures",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium school zone 30 sign hours",
+          "zone 30 école heures panneau Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-010",
+      "lot": 2,
+      "besoin": "Panneau F111 rue cyclable (vélo et voiture) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:F111 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F111 cycle street fietsstraat",
+          "verkeersbord F111 België",
+          "panneau F111 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-015",
+      "lot": 2,
+      "besoin": "Rue cyclable en Belgique avec cyclistes devant une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "fietsstraat België",
+          "rue cyclable Belgique",
+          "bicycle street Belgium"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-025",
+      "lot": 2,
+      "besoin": "Panneau F103 zone piétonne en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:F103 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign F103 pedestrian zone",
+          "verkeersbord F103 België",
+          "panneau F103 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-027",
+      "lot": 2,
+      "besoin": "Portique lumineux d'autoroute affichant une limite de 90 en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway variable speed limit gantry 90",
+          "autoroute Belgique portique vitesse variable",
+          "dynamische snelheidsborden autosnelweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-005",
+      "lot": 2,
+      "besoin": "Panneau 120 km/h sur une autoroute belge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway 120 speed limit sign",
+          "autoroute belge 120"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-020",
+      "lot": 2,
+      "besoin": "Route enneigée avec panneau de limitation de vitesse",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "snow covered road speed limit sign Belgium",
+          "route enneigée Belgique",
+          "besneeuwde weg België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-009",
+      "lot": 2,
+      "besoin": "Panneau E1 stationnement interdit (rond bleu bordé de rouge, une barre) dans une rue belge",
+      "wikimedia": {
+        "categories": [
+          "Category:E1 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign E1 no parking",
+          "verkeersbord E1 België",
+          "panneau E1 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-010",
+      "lot": 2,
+      "besoin": "Panneau E3 arrêt et stationnement interdits (rond bleu, croix rouge)",
+      "wikimedia": {
+        "categories": [
+          "Category:E3 (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign E3 no stopping",
+          "verkeersbord E3 België",
+          "panneau E3 Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-007",
+      "lot": 2,
+      "besoin": "Panneau de zone bleue (disque de stationnement) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium blue zone parking sign",
+          "zone bleue Belgique panneau",
+          "blauwe zone bord België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-008",
+      "lot": 2,
+      "besoin": "Disque de stationnement belge posé derrière un pare-brise",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "parking disc Belgium",
+          "disque de stationnement Belgique",
+          "parkeerschijf"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-022",
+      "lot": 2,
+      "besoin": "Disque de stationnement visible derrière le pare-brise d'une voiture (sans plaque visible)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "parking disc windscreen",
+          "parkeerschijf achter voorruit"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-014",
+      "lot": 2,
+      "besoin": "Place de stationnement réservée aux personnes handicapées (marquage et panneau)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium disabled parking space",
+          "place handicapé parking Belgique",
+          "invalidenparkeerplaats"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-024",
+      "lot": 2,
+      "besoin": "Emplacement de livraison avec panneau et heures en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium loading zone sign delivery hours",
+          "emplacement livraison Belgique",
+          "laad- en loszone België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-008",
+      "lot": 3,
+      "besoin": "Ligne continue doublée d'une ligne discontinue au milieu de la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "continuous and broken line road marking",
+          "ligne mixte continue discontinue route",
+          "dubbele lijn doorgetrokken onderbroken"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-009",
+      "lot": 3,
+      "besoin": "Ligne jaune discontinue peinte sur la bordure du trottoir, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "yellow broken line kerb Belgium",
+          "ligne jaune discontinue trottoir",
+          "gele onderbroken streep boordsteen"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-010",
+      "lot": 3,
+      "besoin": "Ligne jaune continue le long du bord de la chaussée, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "yellow continuous line kerb Belgium",
+          "ligne jaune continue bord chaussée",
+          "gele doorlopende streep"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-025",
+      "lot": 3,
+      "besoin": "Ligne jaune discontinue sur le bord du trottoir avec une voiture à l'arrêt",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "yellow dashed kerb line parking Belgium",
+          "gele onderbroken lijn stoeprand"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-026",
+      "lot": 3,
+      "besoin": "Ligne jaune continue sur le bord du trottoir",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "yellow solid kerb line Belgium",
+          "ligne jaune continue trottoir Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-011",
+      "lot": 3,
+      "besoin": "Ligne jaune en zigzag le long du trottoir (arrêt de bus)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "yellow zigzag road marking Belgium",
+          "zigzag jaune arrêt de bus",
+          "gele zigzaglijn bushalte"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-014",
+      "lot": 3,
+      "besoin": "Dents de requin (triangles blancs peints en travers de la bande) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "shark teeth road marking Belgium",
+          "dents de requin marquage",
+          "haaientanden wegmarkering"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-022",
+      "lot": 3,
+      "besoin": "Flèches de rabattement blanches courbées peintes sur la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "lane merge arrows road marking",
+          "flèches de rabattement marquage",
+          "inhaalpijlen wegmarkering"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-023",
+      "lot": 3,
+      "besoin": "Passage pour cyclistes (deux lignes de carrés blancs) traversant la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cycle crossing white squares Belgium",
+          "passage pour cyclistes Belgique",
+          "fietsoversteekplaats"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-018",
+      "lot": 3,
+      "besoin": "Passage pour cyclistes marqué au sol à un carrefour",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bicycle crossing marking intersection Belgium",
+          "oversteekplaats fietsers"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-024",
+      "lot": 3,
+      "besoin": "Ligne d'arrêt (large ligne blanche) devant un feu rouge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "stop line traffic light road",
+          "ligne d'arrêt feu rouge",
+          "stopstreep verkeerslicht"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-025",
+      "lot": 3,
+      "besoin": "Bande réservée aux bus marquée « BUS » en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bus lane Belgium",
+          "bande bus Bruxelles",
+          "busbaan België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-027",
+      "lot": 3,
+      "besoin": "Panneau principal avec un panonceau additionnel rectangulaire (distance ou heures) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium road sign additional panel",
+          "panonceau additionnel Belgique",
+          "onderbord verkeersbord"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-028",
+      "lot": 3,
+      "besoin": "Panneau d'accès interdit avec mention « excepté circulation locale »",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "uitgezonderd plaatselijk verkeer bord",
+          "excepté circulation locale panneau"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-013",
+      "lot": 3,
+      "besoin": "Passage à niveau belge avec barrières en train de descendre",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium level crossing barriers",
+          "passage à niveau Belgique barrières",
+          "overweg België slagbomen"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-012",
+      "lot": 3,
+      "besoin": "Passage à niveau sans barrières en campagne, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "unguarded level crossing Belgium",
+          "passage à niveau sans barrière",
+          "onbewaakte overweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "inf-005",
+      "lot": 3,
+      "besoin": "Passage à niveau belge avec feux rouges clignotants",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium level crossing red lights",
+          "overweg rode lichten"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-015",
+      "lot": 3,
+      "besoin": "Feu de signalisation à l'orange fixe",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "amber traffic light Belgium",
+          "feu orange signalisation",
+          "oranje verkeerslicht"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-016",
+      "lot": 3,
+      "besoin": "Feu orange clignotant à un carrefour",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "flashing amber traffic light",
+          "feu orange clignotant",
+          "knipperend oranje licht"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-036",
+      "lot": 3,
+      "besoin": "Feu de signalisation pour cyclistes (symbole vélo) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bicycle traffic light Belgium",
+          "feu cycliste Belgique",
+          "fietslicht verkeerslicht"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "inf-003",
+      "lot": 3,
+      "besoin": "Feu rouge à un carrefour en ville, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "red traffic light Belgium intersection",
+          "feu rouge carrefour Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-026",
+      "lot": 3,
+      "besoin": "Feux tricolores belges (rouge, orange, vert)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgian traffic lights",
+          "feux tricolores Belgique",
+          "verkeerslichten België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-012",
+      "lot": 4,
+      "besoin": "Rond-point belge vu depuis l'anneau, avec une sortie",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "roundabout Belgium",
+          "rond-point Belgique",
+          "rotonde België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-039",
+      "lot": 4,
+      "besoin": "Rond-point avec cycliste circulant dans l'anneau ou sur la piste qui l'entoure",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "roundabout cyclists Belgium",
+          "rond-point cyclistes",
+          "rotonde fietsers"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-013",
+      "lot": 4,
+      "besoin": "Tram traversant un carrefour sans feux, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tram crossing intersection Belgium",
+          "tram carrefour Bruxelles",
+          "tram kruispunt Antwerpen"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-035",
+      "lot": 4,
+      "besoin": "Tram arrêté à un arrêt sans refuge, voyageurs descendant sur la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tram stop on street passengers Brussels",
+          "arrêt de tram sans quai Bruxelles"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-008",
+      "lot": 4,
+      "besoin": "Tram roulant au milieu de la chaussée avec voitures à côté",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tram in middle of street cars Belgium",
+          "tram au milieu de la rue"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-021",
+      "lot": 4,
+      "besoin": "Rails de tram dans la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tram tracks street Belgium",
+          "rails de tram rue"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-021",
+      "lot": 4,
+      "besoin": "Bus quittant son arrêt en agglomération",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bus leaving bus stop Belgium",
+          "bus quittant l'arrêt",
+          "bus vertrekt halte"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-023",
+      "lot": 4,
+      "besoin": "Bus arrêté à un arrêt en ville, vu de derrière",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bus at bus stop Belgium street",
+          "bus à l'arrêt rue Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-002",
+      "lot": 4,
+      "besoin": "Panneau d'arrêt de bus en Belgique (TEC, STIB ou De Lijn)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "TEC bus stop sign",
+          "arrêt de bus TEC",
+          "De Lijn bushalte bord"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-010",
+      "lot": 4,
+      "besoin": "Piste cyclable longeant la chaussée à un carrefour où une voiture tourne à droite",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cycle path intersection right turn Belgium",
+          "piste cyclable carrefour Belgique",
+          "fietspad kruispunt"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-027",
+      "lot": 4,
+      "besoin": "Sortie de parking traversant une piste cyclable",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cycle path crossing driveway",
+          "piste cyclable sortie parking",
+          "fietspad uitrit"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-024",
+      "lot": 4,
+      "besoin": "Piste cyclable marquée à droite de la chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cycle lane Belgium",
+          "piste cyclable marquée Belgique",
+          "fietssuggestiestrook"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-013",
+      "lot": 4,
+      "besoin": "Piste cyclable séparée, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "separated cycle path Belgium",
+          "piste cyclable séparée",
+          "vrijliggend fietspad"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-019",
+      "lot": 4,
+      "besoin": "Passage pour piétons (zébra) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "zebra crossing Belgium",
+          "passage pour piétons Belgique",
+          "zebrapad België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-006",
+      "lot": 4,
+      "besoin": "Voiture arrêtée devant un passage pour piétons sur une route à deux bandes",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car stopped at zebra crossing",
+          "voiture arrêtée passage piétons"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-031",
+      "lot": 4,
+      "besoin": "Passage pour piétons sur une route, vu depuis la voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "pedestrian crossing road view Belgium",
+          "zebrapad weg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-003",
+      "lot": 4,
+      "besoin": "Passage pour piétons avec voitures stationnées à distance",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "pedestrian crossing parked cars street",
+          "passage piétons voitures garées"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-008",
+      "lot": 4,
+      "besoin": "Chemin de terre débouchant sur une route asphaltée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "dirt track joining paved road",
+          "chemin de terre route",
+          "aardeweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-034",
+      "lot": 4,
+      "besoin": "Tracteur sortant d'un chemin agricole sur une route",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tractor entering road from field",
+          "tracteur sortant d'un chemin"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-007",
+      "lot": 4,
+      "besoin": "Sortie de parking de supermarché vers la route",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "supermarket car park exit road",
+          "sortie parking supermarché"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-024",
+      "lot": 4,
+      "besoin": "Carrefour sans signalisation en zone résidentielle belge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "unmarked intersection Belgium residential",
+          "carrefour sans signalisation",
+          "kruispunt zonder borden"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-037",
+      "lot": 4,
+      "besoin": "Carrefour sans signalisation, vu depuis une rue",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "uncontrolled intersection street",
+          "carrefour priorité de droite Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-025",
+      "lot": 4,
+      "besoin": "Carrefour encombré par la circulation, en ville",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "congested intersection traffic jam city Belgium",
+          "carrefour encombré"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-028",
+      "lot": 4,
+      "besoin": "Rue étroite avec voiture stationnée qui bloque une moitié de chaussée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "narrow street parked car oncoming",
+          "rue étroite voiture garée"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-014",
+      "lot": 4,
+      "besoin": "Ambulance belge avec gyrophares bleus",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgian ambulance blue lights",
+          "ambulance Belgique",
+          "ziekenwagen België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-032",
+      "lot": 4,
+      "besoin": "Voiture de police belge avec feux bleus",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgian police car blue lights",
+          "voiture de police belge",
+          "politiewagen België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-017",
+      "lot": 4,
+      "besoin": "Agent de police réglant la circulation, bras levé (visage non reconnaissable)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "police officer directing traffic Belgium",
+          "agent qui règle la circulation",
+          "politieagent regelt verkeer"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "pri-029",
+      "lot": 4,
+      "besoin": "Agent réglant la circulation bras tendus horizontalement (visage non reconnaissable)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "traffic police arms outstretched",
+          "agent circulation bras tendus"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-003",
+      "lot": 5,
+      "besoin": "Voiture dépassant un cycliste sur une route de campagne",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car overtaking cyclist country road",
+          "voiture dépassant un cycliste",
+          "auto haalt fietser in"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-004",
+      "lot": 5,
+      "besoin": "Cycliste en agglomération dépassé par une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car passing cyclist city street",
+          "cycliste en ville voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-016",
+      "lot": 5,
+      "besoin": "Route étroite avec un cycliste devant",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "narrow country road cyclist Belgium",
+          "route étroite cycliste"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-025",
+      "lot": 5,
+      "besoin": "Groupe de cyclistes sur une route",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "group of cyclists road Belgium",
+          "peloton cyclistes route",
+          "groep wielrenners weg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-029",
+      "lot": 5,
+      "besoin": "Cycliste au bord d'une route de campagne",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cyclist side of rural road",
+          "cycliste route de campagne"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-010",
+      "lot": 5,
+      "besoin": "Tracteur sur une route avec ligne blanche continue",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tractor on road continuous line",
+          "tracteur sur la route"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-030",
+      "lot": 5,
+      "besoin": "Tracteur sur une route avec ligne discontinue et route dégagée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tractor rural road Belgium",
+          "tracteur route Belgique",
+          "tractor weg België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-005",
+      "lot": 5,
+      "besoin": "Sommet de côte sans visibilité sur une route",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "blind crest hill road",
+          "sommet de côte route",
+          "heuveltop weg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-028",
+      "lot": 5,
+      "besoin": "Route avec ligne discontinue approchant le sommet d'une côte",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "road approaching hill crest dashed line",
+          "côte route visibilité"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-027",
+      "lot": 5,
+      "besoin": "Camion dépassant sur une autoroute",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "truck overtaking motorway",
+          "camion qui dépasse autoroute"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dep-020",
+      "lot": 5,
+      "besoin": "Autoroute belge en files denses",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway traffic dense lanes",
+          "autoroute embouteillage Belgique",
+          "file autosnelweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-013",
+      "lot": 5,
+      "besoin": "Fin d'un bouchon sur l'autoroute, voitures avec feux de détresse",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "end of traffic jam motorway hazard lights",
+          "bouchon autoroute"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-020",
+      "lot": 5,
+      "besoin": "Bande d'accélération d'une autoroute (bretelle d'insertion)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "acceleration lane motorway",
+          "bande d'accélération",
+          "invoegstrook autosnelweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-003",
+      "lot": 5,
+      "besoin": "Sortie d'autoroute belge avec panneau de sortie",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway exit sign",
+          "sortie autoroute Belgique",
+          "afrit autosnelweg België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-019",
+      "lot": 5,
+      "besoin": "Bande de décélération d'une sortie d'autoroute",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "deceleration lane motorway exit",
+          "bande de décélération"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-010",
+      "lot": 5,
+      "besoin": "Autoroute belge à trois bandes peu chargée",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "three lane motorway Belgium",
+          "autoroute trois bandes Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-011",
+      "lot": 5,
+      "besoin": "Camions roulant sur les bandes de droite d'une autoroute à trois bandes",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "trucks right lanes motorway Belgium",
+          "camions autoroute"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-027",
+      "lot": 5,
+      "besoin": "Voiture se rabattant après avoir dépassé un camion",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car overtaking truck motorway",
+          "dépassement camion autoroute"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-004",
+      "lot": 5,
+      "besoin": "Bande d'arrêt d'urgence d'une autoroute belge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "hard shoulder motorway Belgium",
+          "bande d'arrêt d'urgence",
+          "pechstrook"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-005",
+      "lot": 5,
+      "besoin": "Voiture en panne sur la bande d'arrêt d'urgence",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car broken down hard shoulder",
+          "voiture en panne bande d'arrêt d'urgence"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-017",
+      "lot": 5,
+      "besoin": "Voiture arrêtée sur la bande d'arrêt d'urgence avec feux de détresse",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car hazard lights hard shoulder"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-029",
+      "lot": 5,
+      "besoin": "Bande d'arrêt d'urgence avec véhicule arrêté",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "emergency lane stopped vehicle motorway"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-006",
+      "lot": 5,
+      "besoin": "Triangle de danger posé sur la route derrière une voiture en panne",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "warning triangle road broken down car",
+          "triangle de signalisation panne",
+          "gevarendriehoek"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-007",
+      "lot": 5,
+      "besoin": "Triangle de danger sur une route ordinaire",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "warning triangle on road",
+          "triangle de danger route"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-008",
+      "lot": 5,
+      "besoin": "Gilet de sécurité fluorescent",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "high visibility vest car",
+          "gilet de sécurité fluorescent",
+          "fluohesje"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-028",
+      "lot": 5,
+      "besoin": "Gilet fluorescent porté près d'une voiture sur le bord de la route (visage non reconnaissable)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "person high visibility vest roadside"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-009",
+      "lot": 5,
+      "besoin": "Glissière de sécurité le long d'une autoroute",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway crash barrier guardrail",
+          "glissière de sécurité autoroute",
+          "vangrail"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-018",
+      "lot": 5,
+      "besoin": "Glissière de sécurité et talus au bord de l'autoroute",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "guardrail embankment motorway"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-012",
+      "lot": 5,
+      "besoin": "Aire de repos d'autoroute en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway rest area",
+          "aire de repos autoroute Belgique",
+          "parking autosnelweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-031",
+      "lot": 5,
+      "besoin": "Aire de repos avec parking, en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "rest area parking Belgium motorway"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-007",
+      "lot": 5,
+      "besoin": "Aire de repos d'autoroute pour faire une pause",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway service area break"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-022",
+      "lot": 5,
+      "besoin": "Portique de signalisation d'autoroute avec croix rouge au-dessus d'une bande",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway red X lane closed sign",
+          "croix rouge bande fermée autoroute",
+          "rood kruis rijstrook"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-023",
+      "lot": 5,
+      "besoin": "Portique d'autoroute avec flèche verte au-dessus d'une bande",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway green arrow lane open sign",
+          "groene pijl rijstrooksignalisatie"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-024",
+      "lot": 5,
+      "besoin": "Bande d'arrêt d'urgence ouverte à la circulation (signalisation lumineuse)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "hard shoulder running Belgium",
+          "spitsstrook België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-028",
+      "lot": 5,
+      "besoin": "Viaduc d'autoroute en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway viaduct Belgium",
+          "viaduc autoroute Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "aut-001",
+      "lot": 5,
+      "besoin": "Cyclomoteur (scooter) sur une route",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "moped scooter road Belgium",
+          "cyclomoteur route",
+          "bromfiets"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-016",
+      "lot": 6,
+      "besoin": "Tableau de bord de voiture avec le témoin bleu des feux de route allumé",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "high beam indicator dashboard blue",
+          "témoin feux de route bleu"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-020",
+      "lot": 6,
+      "besoin": "Tableau de bord avec le témoin vert des feux de croisement",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "dipped beam indicator green dashboard",
+          "témoin feux de croisement"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-008",
+      "lot": 6,
+      "besoin": "Témoin rouge de pression d'huile allumé au tableau de bord",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "oil pressure warning light dashboard",
+          "voyant pression d'huile"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-019",
+      "lot": 6,
+      "besoin": "Témoin ABS orange allumé au tableau de bord",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "ABS warning light dashboard",
+          "voyant ABS"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-008",
+      "lot": 6,
+      "besoin": "Voiture avec le feu de brouillard arrière allumé dans le brouillard",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "rear fog light car fog",
+          "feu de brouillard arrière",
+          "mistachterlicht"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-034",
+      "lot": 6,
+      "besoin": "Route dans un brouillard épais",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "thick fog road Belgium",
+          "brouillard épais route",
+          "dichte mist weg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-019",
+      "lot": 6,
+      "besoin": "Feux de brouillard avant allumés",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "front fog lights car",
+          "feux de brouillard avant"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-017",
+      "lot": 6,
+      "besoin": "Route dans le brouillard en plein jour, voitures feux allumés",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "fog daytime road cars headlights"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-028",
+      "lot": 6,
+      "besoin": "Feux stop allumés à l'arrière d'une voiture (plaque non lisible)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car brake lights",
+          "feux stop voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-029",
+      "lot": 6,
+      "besoin": "Feu de recul blanc allumé à l'arrière d'une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "reversing light car",
+          "feu de recul"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-014",
+      "lot": 6,
+      "besoin": "Entrée de tunnel routier en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "road tunnel entrance Belgium",
+          "entrée tunnel Belgique",
+          "tunnel ingang België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-007",
+      "lot": 6,
+      "besoin": "Route de campagne la nuit, voiture arrivant en face phares allumés",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "night country road oncoming headlights",
+          "route la nuit phares"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-012",
+      "lot": 6,
+      "besoin": "Éblouissement par des phares la nuit",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "headlight glare night road",
+          "éblouissement phares"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-021",
+      "lot": 6,
+      "besoin": "Vélo avec éclairage la nuit",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "bicycle lights night",
+          "vélo éclairage nuit",
+          "fietsverlichting"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-022",
+      "lot": 6,
+      "besoin": "Piéton portant un gilet réfléchissant la nuit (visage non reconnaissable)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "pedestrian reflective vest night"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-027",
+      "lot": 6,
+      "besoin": "Pare-brise couvert de givre",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "frosted car windscreen",
+          "pare-brise givré",
+          "bevroren voorruit"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "ecl-032",
+      "lot": 6,
+      "besoin": "Forte pluie en ville vue depuis la voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "heavy rain city driving",
+          "forte pluie route"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-001",
+      "lot": 6,
+      "besoin": "Témoin d'usure (sculptures) d'un pneu de voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "tyre tread depth indicator",
+          "sculptures pneu usure",
+          "bandenprofiel"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-003",
+      "lot": 6,
+      "besoin": "Siège rehausseur pour enfant dans une voiture (sans enfant)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "child booster seat car",
+          "rehausseur enfant voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-004",
+      "lot": 6,
+      "besoin": "Siège bébé dos à la route sur le siège passager",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "rear facing baby seat front passenger",
+          "siège bébé dos à la route"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-028",
+      "lot": 6,
+      "besoin": "Siège auto pour enfant installé à l'arrière",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "child car seat rear seat",
+          "siège auto enfant"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-010",
+      "lot": 6,
+      "besoin": "Route inondée ou très mouillée (risque d'aquaplaning)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "aquaplaning wet road",
+          "aquaplaning route mouillée"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-012",
+      "lot": 6,
+      "besoin": "Appui-tête de siège de voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car headrest",
+          "appui-tête voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-014",
+      "lot": 6,
+      "besoin": "Chaînes à neige montées sur un pneu",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "snow chains tyre",
+          "chaînes à neige",
+          "sneeuwkettingen"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-016",
+      "lot": 6,
+      "besoin": "Rétroviseur extérieur de voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car side mirror",
+          "rétroviseur extérieur"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-017",
+      "lot": 6,
+      "besoin": "Vue de l'angle mort / rétroviseur avec véhicule sur le côté",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "blind spot car mirror",
+          "angle mort"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-022",
+      "lot": 6,
+      "besoin": "Voiture avec coffre de toit ou bagages sur le toit",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car roof box",
+          "coffre de toit voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-031",
+      "lot": 6,
+      "besoin": "Extincteur de voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car fire extinguisher",
+          "extincteur voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-032",
+      "lot": 6,
+      "besoin": "Jauge (baguette) de niveau d'huile moteur",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "engine oil dipstick",
+          "jauge d'huile moteur"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-025",
+      "lot": 6,
+      "besoin": "Gilet de sécurité et triangle dans une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "safety vest warning triangle car kit"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "veh-007",
+      "lot": 6,
+      "besoin": "Station de contrôle technique automobile en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium vehicle inspection station",
+          "contrôle technique Belgique",
+          "autokeuring"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-015",
+      "lot": 6,
+      "besoin": "Voiture garée dans une rue en pente, roues braquées vers le trottoir",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car parked on hill wheels turned kerb",
+          "stationnement en pente"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-016",
+      "lot": 6,
+      "besoin": "Portière de voiture ouverte côté rue",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car door opening street cyclist",
+          "ouverture de portière"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-017",
+      "lot": 6,
+      "besoin": "Voiture stationnée en double file",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "double parking car street",
+          "stationnement en double file",
+          "dubbel parkeren"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-011",
+      "lot": 6,
+      "besoin": "Entrée de garage dans une rue résidentielle",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "garage entrance driveway street Belgium",
+          "entrée de garage"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-012",
+      "lot": 6,
+      "besoin": "Voiture stationnée sur un trottoir",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car parked on sidewalk",
+          "voiture sur le trottoir"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sta-028",
+      "lot": 6,
+      "besoin": "Emplacements de stationnement peints sur le trottoir",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "parking bays marked on pavement Belgium",
+          "stationnement sur trottoir marquage"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-010",
+      "lot": 7,
+      "besoin": "Défibrillateur automatique (DEA) dans un boîtier public",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "AED defibrillator public Belgium",
+          "défibrillateur DEA",
+          "AED toestel"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-006",
+      "lot": 7,
+      "besoin": "Formulaire de constat amiable européen",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "European accident report form",
+          "constat amiable",
+          "aanrijdingsformulier"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-020",
+      "lot": 7,
+      "besoin": "Constat amiable rempli sur le capot d'une voiture (sans données personnelles lisibles)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "accident report form car bonnet"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-001",
+      "lot": 7,
+      "besoin": "Lieu d'accident sécurisé avec triangle et feux de détresse",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car accident scene warning triangle",
+          "accident route triangle"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-021",
+      "lot": 7,
+      "besoin": "Panneau de danger « animaux sauvages » (cerf) en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium wild animals road sign deer",
+          "panneau animaux sauvages Belgique",
+          "bord overstekend wild"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sec-015",
+      "lot": 7,
+      "besoin": "Fumée s'échappant du moteur d'une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "smoke from car engine",
+          "fumée moteur voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-012",
+      "lot": 7,
+      "besoin": "Éthylotest / appareil de test d'haleine de la police",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "breathalyser police Belgium",
+          "éthylotest police",
+          "ademtest"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-002",
+      "lot": 7,
+      "besoin": "Appareil de mesure de l'alcool dans l'haleine",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "breath alcohol tester device",
+          "éthylomètre"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-027",
+      "lot": 7,
+      "besoin": "GSM fixé sur un support au tableau de bord",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "phone holder car dashboard",
+          "support téléphone voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-023",
+      "lot": 7,
+      "besoin": "GPS ou navigation sur l'écran d'une voiture",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "car GPS navigation screen",
+          "GPS voiture"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "alc-009",
+      "lot": 7,
+      "besoin": "Conducteur tenant son téléphone au volant (visage non reconnaissable)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "driver holding phone steering wheel",
+          "téléphone au volant"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "inf-028",
+      "lot": 7,
+      "besoin": "Radar de vitesse fixe en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium speed camera",
+          "radar fixe Belgique",
+          "flitspaal België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dis-017",
+      "lot": 7,
+      "besoin": "Chevrons peints sur une autoroute belge pour la distance de sécurité",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium motorway chevrons safe distance",
+          "chevrons autoroute distance",
+          "afstandsmarkering autosnelweg"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dis-038",
+      "lot": 7,
+      "besoin": "Voitures se suivant sur une route avec un repère fixe (poteau, pont)",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "cars following distance motorway",
+          "distance de sécurité voitures"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dis-021",
+      "lot": 7,
+      "besoin": "Deux camions se suivant hors agglomération",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "two trucks following road",
+          "camions qui se suivent"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dis-033",
+      "lot": 7,
+      "besoin": "Route mouillée avec voitures, projections d'eau",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "wet road traffic spray",
+          "route mouillée circulation"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "dis-037",
+      "lot": 7,
+      "besoin": "Panneau de descente dangereuse en Belgique",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium steep descent road sign",
+          "panneau descente dangereuse",
+          "bord gevaarlijke daling"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "vit-013",
+      "lot": 7,
+      "besoin": "Autoroute sous la pluie",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "motorway rain Belgium",
+          "autoroute pluie"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-034",
+      "lot": 7,
+      "besoin": "Panneau de virage dangereux (A1) en Belgique",
+      "wikimedia": {
+        "categories": [
+          "Category:A1a (road sign, Belgium)"
+        ],
+        "recherches": [
+          "Belgium road sign A1a dangerous bend",
+          "verkeersbord A1a België",
+          "panneau A1a Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-029",
+      "lot": 7,
+      "besoin": "Panneau de danger triangulaire le long d'une route belge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium warning sign road triangle",
+          "panneau de danger Belgique"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
+    },
+    {
+      "question": "sig-016",
+      "lot": 7,
+      "besoin": "Panneaux de chantier temporaires (fond jaune) sur une route belge",
+      "wikimedia": {
+        "categories": [],
+        "recherches": [
+          "Belgium road works temporary signs",
+          "chantier routier Belgique signalisation",
+          "wegenwerken België"
+        ]
+      },
+      "mapillary": {
+        "panneaux": []
+      }
     }
   ]
 }

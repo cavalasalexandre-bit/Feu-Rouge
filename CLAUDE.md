@@ -35,3 +35,19 @@ Objectif : illustrer des questions avec de vraies photos (Wikimedia Commons, Map
 3. Écris le choix dans `photos/selection.json` : `[{ "question": "pri-002", "cle": "File:Nom exact.jpg" }, { "question": "pri-003", "cle": "mapillary:123456" }]` (la clé est le champ `cle` de `candidats.json`).
 4. `npm run photos:installer` : télécharge les photos choisies dans `public/photos/` et écrit les crédits dans `src/data/photos.json`. Le site affiche alors la photo à la place du schéma, avec la mention de l'auteur, et la page « Sources et crédits » la liste.
 5. `npm test` (vérifie que chaque photo a son fichier et ses crédits), puis montre le résultat au propriétaire et fais un commit.
+
+### Travailler par lots
+
+`photos/a-trouver.json` contient près de 200 questions, rangées par `lot` (1 à 7). Traite un lot à la fois :
+
+1. Liste les identifiants du lot et ignore ceux qui ont déjà une photo dans `src/data/photos.json`.
+2. `npm run photos:chercher -- <id1> <id2> …` (seulement ces questions).
+3. Choisis avec les critères ci-dessus. Précisions :
+   - **panneaux, marquages, feux, plaques de rue** : photo belge obligatoire (un panneau étranger induirait en erreur) ;
+   - **objets et situations génériques** (tableau de bord, pneu, siège enfant, défibrillateur, brouillard, tunnel…) : n'importe quel pays convient, tant qu'aucun panneau étranger n'est visible ;
+   - mieux vaut aucune photo qu'une photo floue, petite ou ambiguë.
+4. Ajoute les choix à `photos/selection.json` (sans effacer les précédents), puis `npm run photos:installer`.
+5. `npm test`, `npm run build`, commit « Photos : lot N », et donne un petit bilan (installées / sans photo).
+6. Supprime `photos/candidats/` du lot traité pour libérer de la place (le dossier n'est pas versionné).
+
+Ne reformule pas les questions sans l'accord du propriétaire.
