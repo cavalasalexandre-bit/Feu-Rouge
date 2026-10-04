@@ -8,6 +8,6 @@
  * Si les deux sont vides, le signalement peut seulement être copié.
  */
 export const CONFIG = {
-  depotGithub: '',
+  depotGithub: 'cavalasalexandre-bit/feu-rouge',
   emailSignalement: '',
 }
