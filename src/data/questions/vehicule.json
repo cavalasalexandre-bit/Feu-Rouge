@@ -39,6 +39,12 @@
       "Seulement le conducteur": "Les passagers aussi doivent la porter.",
       "Seulement les passagers avant": "Les passagers arrière aussi doivent la porter.",
       "Seulement hors agglomération": "La ceinture est obligatoire partout, en ville aussi."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "ceinture",
+      "texte": "Qui doit la porter ?"
     }
   },
   {
@@ -58,6 +64,12 @@
       "Avec la ceinture adulte seule": "La ceinture adulte seule ne protège pas un enfant de moins de 1,35 m.",
       "Sur les genoux d'un adulte": "Un enfant sur les genoux serait projeté en cas de choc.",
       "Sans ceinture à l'arrière": "La ceinture et le dispositif adapté sont obligatoires à l'arrière aussi."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "siege-enfant",
+      "texte": "Moins de 1,35 m"
     }
   },
   {
@@ -77,6 +89,12 @@
       "Rien de particulier": "L'airbag peut gravement blesser un bébé dos à la route.",
       "Reculer le siège au maximum": "Reculer le siège ne suffit pas : l'airbag doit être coupé.",
       "C'est interdit dans tous les cas": "C'est permis si l'airbag passager est désactivé."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "siege-enfant",
+      "texte": "Dos à la route, à l’avant"
     }
   },
   {
@@ -96,6 +114,12 @@
       "Le permis de conduire": "Le permis de conduire est obligatoire à bord.",
       "Le certificat d'immatriculation": "Le certificat d'immatriculation est obligatoire à bord.",
       "Le certificat d'assurance": "Le certificat d'assurance est obligatoire à bord."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "documents",
+      "texte": "Documents à bord"
     }
   },
   {
@@ -115,6 +139,12 @@
       "Un triangle de danger": "Le triangle de danger est obligatoire.",
       "Un extincteur": "L'extincteur est obligatoire en Belgique.",
       "Une trousse de secours": "La trousse de secours est obligatoire en Belgique."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "equipement",
+      "texte": "Équipement obligatoire ?"
     }
   },
   {
@@ -134,6 +164,12 @@
       "Dès l'achat": "Une voiture neuve ne passe pas au contrôle dès l'achat.",
       "Après 1 an": "Le premier contrôle n'a pas lieu après 1 an.",
       "Après 10 ans": "10 ans, c'est beaucoup trop tard."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "controle",
+      "texte": "Premier contrôle technique"
     }
   },
   {
@@ -176,6 +212,10 @@
       "À réduire la consommation": "L'ABS ne réduit pas la consommation.",
       "À accélérer plus vite": "L'ABS n'a rien à voir avec l'accélération.",
       "À freiner automatiquement devant un obstacle": "Le freinage automatique d'urgence est un autre système."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "voyant-abs"
     }
   },
   {
@@ -218,6 +258,12 @@
       "Pneus chauds, après un long trajet": "Un pneu chaud donne une pression faussement élevée.",
       "Seulement au contrôle technique": "Il faut contrôler régulièrement, pas seulement au contrôle technique.",
       "Uniquement en hiver": "La pression se contrôle toute l'année."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "pneu",
+      "texte": "Pression des pneus"
     }
   },
   {
@@ -256,6 +302,12 @@
       "Oui, du 1er novembre au 31 mars": "Cette obligation existe dans d'autres pays, pas en Belgique.",
       "Oui, en Wallonie seulement": "Aucune région belge ne les impose.",
       "Oui, dès qu'il neige": "Ils ne sont pas obligatoires, même quand il neige."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "pneu",
+      "texte": "Pneus d’hiver"
     }
   },
   {
@@ -294,6 +346,12 @@
       "Oui, si la taille est la même": "Le type (été, hiver, toutes saisons) doit aussi être le même.",
       "Oui, à l'arrière seulement": "La règle vaut pour chaque essieu.",
       "Oui, sans restriction": "Des pneus différents sur un essieu déséquilibrent le véhicule."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "pneu",
+      "texte": "Même essieu"
     }
   },
   {
@@ -355,6 +413,12 @@
       "Jusqu'à 6 mois seulement": "Le dos à la route protège mieux la tête et la nuque des petits.",
       "Jamais, c'est moins sûr": "C'est la position la plus sûre pour les jeunes enfants.",
       "Seulement à l'avant": "Le sens du siège ne dépend pas de la place."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "siege-enfant",
+      "texte": "Dos à la route : jusqu’à quand ?"
     }
   },
   {
@@ -397,6 +461,12 @@
       "Rouler toujours très lentement": "L'éco-conduite n'est pas rouler lentement, mais en souplesse.",
       "Rouler au point mort en descente": "Au point mort, tu perds le frein moteur et le contrôle.",
       "Couper le moteur dans les virages": "C'est dangereux : tu perds l'assistance de direction et de freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "eco",
+      "texte": "Éco-conduite"
     }
   },
   {
@@ -416,6 +486,12 @@
       "Un meilleur freinage": "Un pneu sous-gonflé freine moins bien.",
       "Aucune différence": "La pression influence beaucoup le comportement de la voiture.",
       "Moins de consommation": "C'est l'inverse : la consommation augmente."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "pneu",
+      "texte": "Pneus sous-gonflés"
     }
   },
   {
@@ -454,6 +530,12 @@
       "Visible seulement de jour": "Elle doit aussi être éclairée la nuit.",
       "Décorée à ton goût": "Une plaque modifiée ou illisible est interdite.",
       "Facultative à l'arrière": "La plaque arrière est obligatoire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "plaque",
+      "texte": "Plaque arrière"
     }
   },
   {
@@ -473,6 +555,12 @@
       "Aucun": "Un contrôle technique est exigé pour la vente d'un véhicule d'occasion.",
       "Seulement un passage au garage": "C'est le contrôle technique officiel qui est exigé.",
       "Une nouvelle immatriculation par le vendeur": "C'est l'acheteur qui immatricule la voiture à son nom."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "controle",
+      "texte": "Vente d’occasion"
     }
   },
   {
@@ -492,6 +580,12 @@
       "Un par passager": "L'obligation légale porte sur au moins un gilet, mais en avoir un par passager est conseillé.",
       "Aucun": "Le gilet fluo est obligatoire en Belgique.",
       "Un dans le coffre suffit, peu importe où": "Il doit être accessible pour être enfilé avant de sortir."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "equipement",
+      "texte": "Gilets fluorescents"
     }
   },
   {
@@ -511,6 +605,12 @@
       "Elle est dispensée de ceinture": "La ceinture protège la mère et l'enfant : elle doit la porter.",
       "La sangle basse sur le ventre": "La sangle basse doit passer sous le ventre.",
       "Seulement la sangle haute": "Les deux sangles doivent être portées."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "ceinture",
+      "texte": "Femme enceinte"
     }
   },
   {
@@ -530,6 +630,12 @@
       "Rien, ils fonctionnent encore": "Des traces gênent la vision, surtout la nuit et sous la pluie.",
       "J'attends le contrôle technique": "Mieux vaut les remplacer rapidement.",
       "Je roule sans les utiliser": "Par temps de pluie, ils sont indispensables."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "essuie-glace",
+      "texte": "Balais usés"
     }
   },
   {
@@ -568,6 +674,12 @@
       "Il doit encore avoir un rehausseur": "Le dispositif de retenue est exigé sous 1,35 m.",
       "Il ne peut pas voyager à l'avant": "Au-dessus de 1,35 m, il peut voyager à l'avant avec la ceinture.",
       "Sans ceinture à l'arrière": "La ceinture est obligatoire pour tous."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "siege-enfant",
+      "texte": "Enfant de 1,40 m"
     }
   },
   {
@@ -587,6 +699,12 @@
       "À l'avant, avec la ceinture": "Sans dispositif de retenue, l'enfant ne peut pas être à l'avant d'un taxi.",
       "Sur les genoux du chauffeur": "C'est évidemment interdit.",
       "Où il veut": "La place avant lui est interdite sans siège adapté."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "siege-enfant",
+      "texte": "Dans un taxi"
     }
   },
   {
@@ -644,6 +762,12 @@
       "Oui, pour faire baisser la température": "Le liquide brûlant sous pression peut jaillir et te brûler.",
       "Oui, avec un chiffon": "Un chiffon ne protège pas d'une projection de liquide brûlant.",
       "Oui, si le moteur tourne": "C'est encore plus dangereux moteur en marche."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "temperature",
+      "texte": "Moteur qui surchauffe"
     }
   },
   {
@@ -663,6 +787,11 @@
       "Rien, le rétroviseur gauche suffit": "Sans vue vers l'arrière par l'intérieur, il faut un rétroviseur de chaque côté.",
       "Rouler avec les feux de détresse": "Les feux de détresse ne remplacent pas la vue vers l'arrière.",
       "Ouvrir le coffre": "Rouler coffre ouvert est dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "retroviseur",
+      "texte": "Vue cachée par le chargement"
     }
   }
 ]

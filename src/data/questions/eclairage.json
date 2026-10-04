@@ -16,6 +16,11 @@
       "100 mètres": "100 m, c'est la portée des feux de route.",
       "150 mètres": "150 m, c'est la distance à laquelle les feux de position doivent être visibles.",
       "10 mètres": "10 m serait beaucoup trop peu pour rouler la nuit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portee-phares",
+      "texte": "Feux de croisement"
     }
   },
   {
@@ -35,6 +40,11 @@
       "30 mètres": "30 m, c'est la portée des feux de croisement.",
       "200 mètres": "200 m, c'est le seuil de visibilité qui oblige à allumer les feux de croisement.",
       "50 mètres": "50 m, c'est la distance derrière un véhicule à partir de laquelle on quitte les feux de route."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portee-phares",
+      "texte": "Feux de route"
     }
   },
   {
@@ -54,6 +64,11 @@
       "30 mètres": "30 m, c'est la portée des feux de croisement.",
       "100 mètres": "100 m, c'est la portée des feux de route.",
       "300 mètres": "300 m n'est pas une distance du code pour les feux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portee-phares",
+      "texte": "Feux de position · visibles à"
     }
   },
   {
@@ -119,6 +134,10 @@
       "Environ 30 mètres": "30 m, c'est la portée des feux de croisement.",
       "Environ 200 mètres": "200 m, c'est le seuil de visibilité pour les feux de croisement de jour.",
       "Environ 50 mètres": "50 m, c'est la distance de suivi pour couper les feux de route."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "avenue-eclairee"
     }
   },
   {
@@ -180,6 +199,10 @@
       "Oui, toujours quand il pleut": "Pluie ne veut pas dire brouillard arrière : il faut moins de 100 m de visibilité.",
       "Oui, mais seulement la nuit": "La nuit ne change rien : avec 300 m de visibilité, c'est interdit.",
       "Oui, sur autoroute": "Sur autoroute aussi, il faut moins de 100 m de visibilité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "pluie-ville"
     }
   },
   {
@@ -199,6 +222,12 @@
       "Pour saluer un autre conducteur": "Saluer n'est pas une raison permise pour un appel de phares.",
       "Pour demander le passage dans un carrefour": "Un appel de phares ne donne jamais la priorité dans un carrefour.",
       "Pour signaler un contrôle de police": "Prévenir d'un contrôle de police n'est pas un usage prévu."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "phares",
+      "texte": "Appel de phares · hors agglo"
     }
   },
   {
@@ -218,6 +247,12 @@
       "Pour avertir que tu dépasses": "En agglomération, on n'avertit pas avec le klaxon qu'on dépasse.",
       "Pour faire avancer le véhicule devant toi au feu vert": "Klaxonner pour faire avancer quelqu'un est interdit.",
       "Jamais": "Le klaxon reste permis pour éviter un accident."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "klaxon",
+      "texte": "En agglomération"
     }
   },
   {
@@ -260,6 +295,12 @@
       "Pour stationner en double file": "Le stationnement en double file reste interdit, avec ou sans feux de détresse.",
       "Quand il pleut fort en roulant": "Sous une forte pluie en roulant, on utilise les feux de croisement.",
       "Pour remercier un autre conducteur": "Les feux de détresse ne servent pas à remercier."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "detresse",
+      "texte": "Feux de détresse"
     }
   },
   {
@@ -394,6 +435,12 @@
       "Dès la tombée de la nuit": "La nuit seule ne justifie pas les feux de brouillard.",
       "En permanence pour être mieux vu": "Ils peuvent éblouir : on ne les utilise qu'en cas de mauvaise visibilité.",
       "Seulement sur autoroute": "Ils sont utilisables partout quand le temps l'exige."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "phares",
+      "texte": "Feux de brouillard avant"
     }
   },
   {
@@ -413,6 +460,12 @@
       "Un témoin bleu": "Le bleu correspond aux feux de route.",
       "Un témoin orange": "L'orange correspond au feu de brouillard arrière.",
       "Un témoin rouge": "Le rouge signale un problème urgent (huile, freins…)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "phares",
+      "texte": "Témoin des feux de croisement"
     }
   },
   {
@@ -432,6 +485,10 @@
       "Un feu rouge à l'avant et un feu blanc à l'arrière": "C'est l'inverse : blanc ou jaune devant, rouge derrière.",
       "Seulement des réflecteurs": "Les réflecteurs ne suffisent pas : il faut des feux la nuit.",
       "Aucun feu en agglomération éclairée": "Les feux sont obligatoires la nuit, même en ville."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "velo-nuit"
     }
   },
   {
@@ -497,6 +554,12 @@
       "Oui, toujours": "En agglomération, l'appel de phares pour dépasser n'est pas prévu.",
       "Oui, la nuit seulement": "La nuit ne change rien à cette règle.",
       "Oui, s'il y a plusieurs bandes": "Le nombre de bandes ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "phares",
+      "texte": "Appel de phares · en agglo"
     }
   },
   {
@@ -516,6 +579,10 @@
       "Non, jamais en agglomération": "La règle dépend de l'éclairage, pas du fait d'être en agglomération.",
       "Oui, même si une voiture arrive en face": "Il faut toujours repasser en croisement pour croiser.",
       "Seulement avec les feux de brouillard": "Les feux de brouillard n'ont rien à voir ici."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "rue-sombre"
     }
   },
   {
@@ -619,6 +686,12 @@
       "Oui, un seul suffit": "Tous les feux obligatoires doivent fonctionner.",
       "Oui, s'il fait jour": "Les feux stop servent aussi de jour.",
       "Oui, jusqu'au prochain contrôle technique": "On ne roule pas avec un feu défectueux en attendant le contrôle."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "feux",
+      "texte": "Un feu stop en panne"
     }
   },
   {
@@ -638,6 +711,12 @@
       "Pour éclairer plus loin": "Le but est d'éviter que les phares, relevés par la charge, éblouissent.",
       "Pour consommer moins": "Le réglage n'a pas d'effet sur la consommation.",
       "Ce n'est jamais nécessaire": "Une forte charge relève l'avant et donc les faisceaux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "phares",
+      "texte": "Voiture chargée à l’arrière"
     }
   },
   {

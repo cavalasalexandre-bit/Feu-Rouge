@@ -16,6 +16,12 @@
       "3": "Il y a un degré de plus : on compte 4 degrés.",
       "5": "Il n'y a pas de 5e degré.",
       "2": "Il y a 4 degrés, pas 2."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Combien de degrés ?",
+      "valeur": "?"
     }
   },
   {
@@ -35,6 +41,12 @@
       "Toute erreur sur un panneau": "Une erreur sur un panneau n'est grave que si elle porte sur une infraction lourde.",
       "Une erreur sur une question de mécanique": "La mécanique ne relève pas des fautes graves.",
       "Deux erreurs consécutives": "Deux erreurs à la suite ne font pas une faute grave."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "documents",
+      "texte": "Examen : faute grave"
     }
   },
   {
@@ -73,6 +85,12 @@
       "2e degré": "Le demi-tour sur autoroute fait partie des plus graves.",
       "3e degré": "C'est encore plus grave que le 3e degré.",
       "1er degré": "Le 1er degré concerne la simple gêne."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Demi-tour sur autoroute",
+      "valeur": "? degré"
     }
   },
   {
@@ -92,6 +110,12 @@
       "2e degré": "Un passage à niveau peut causer des blessures très graves.",
       "3e degré": "C'est encore plus grave que le 3e degré.",
       "1er degré": "Le 1er degré concerne la simple gêne."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Passage à niveau",
+      "valeur": "? degré"
     }
   },
   {
@@ -111,6 +135,12 @@
       "2e degré": "Le 2e degré vise une mise en danger indirecte, comme la ceinture.",
       "3e degré": "Le 3e degré vise un danger direct, comme le feu rouge.",
       "4e degré": "Le 4e degré vise les comportements les plus graves."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Pas de clignotant",
+      "valeur": "? degré"
     }
   },
   {
@@ -130,6 +160,12 @@
       "1er degré": "Le 1er degré concerne une simple gêne.",
       "3e degré": "Le 3e degré vise un danger direct pour les autres.",
       "4e degré": "Le 4e degré vise les comportements les plus graves."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Sans ceinture",
+      "valeur": "? degré"
     }
   },
   {
@@ -149,6 +185,12 @@
       "1er degré": "Le GSM en main n'est pas une simple gêne.",
       "2e degré": "Depuis 2018, le GSM en main est passé au 3e degré.",
       "4e degré": "Le 4e degré vise les comportements les plus graves."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "GSM en main",
+      "valeur": "? degré"
     }
   },
   {
@@ -168,6 +210,12 @@
       "1er degré": "Le 1er degré concerne une simple gêne.",
       "2e degré": "Le 2e degré, c'est par exemple dépasser par la droite quand c'est interdit.",
       "4e degré": "Le 4e degré vise par exemple le dépassement dans un virage sans visibilité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Dépassement interdit",
+      "valeur": "? degré"
     }
   },
   {
@@ -187,6 +235,12 @@
       "2e degré": "Une course de vitesse est bien plus grave que le 2e degré.",
       "3e degré": "C'est encore plus grave que le 3e degré.",
       "1er degré": "Le 1er degré concerne une simple gêne."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Course de vitesse",
+      "valeur": "? degré"
     }
   },
   {
@@ -206,6 +260,12 @@
       "2e degré": "Ce dépassement rend un accident presque inévitable : c'est plus que le 2e degré.",
       "3e degré": "C'est encore plus grave que le 3e degré.",
       "1er degré": "Le 1er degré concerne une simple gêne."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Dépasser dans un virage",
+      "valeur": "? degré"
     }
   },
   {
@@ -225,6 +285,12 @@
       "Il paie une perception immédiate de 64 €": "64 €, c'est la perception immédiate du 1er degré.",
       "Il reçoit un simple avertissement": "Le 4e degré n'est jamais un simple avertissement.",
       "Il paie 191 € sur place": "191 €, c'est la perception immédiate du 3e degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "4e degré · domicilié en Belgique",
+      "valeur": "?"
     }
   },
   {
@@ -244,6 +310,11 @@
       "58 €": "58 € était l'ancien montant, avant le 1er juillet 2026.",
       "128 €": "128 €, c'est le 2e degré.",
       "191 €": "191 €, c'est le 3e degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "1er degré"
     }
   },
   {
@@ -263,6 +334,11 @@
       "174 €": "174 € était l'ancien montant du 3e degré, avant juillet 2026.",
       "128 €": "128 €, c'est le 2e degré.",
       "520 €": "520 €, c'est le 4e degré pour un conducteur sans domicile en Belgique."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "3e degré"
     }
   },
   {
@@ -282,6 +358,12 @@
       "Sur le montant des dégâts": "Le degré dépend du danger, pas des dégâts matériels.",
       "Sur l'âge du conducteur": "L'âge du conducteur ne change pas le degré.",
       "Sur le type de route": "Le type de route ne fixe pas le degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "balance",
+      "texte": "Classement des degrés"
     }
   },
   {
@@ -301,6 +383,12 @@
       "1er degré": "Le 1er degré concerne une simple gêne.",
       "3e degré": "Le 3e degré vise un danger direct, comme le feu rouge.",
       "4e degré": "Le 4e degré vise les comportements les plus graves."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Dépasser par la droite",
+      "valeur": "? degré"
     }
   },
   {
@@ -320,6 +408,11 @@
       "116 €": "116 € était l'ancien montant, avant juillet 2026.",
       "64 €": "64 € est le montant du 1er degré.",
       "191 €": "191 € est le montant du 3e degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "2e degré"
     }
   },
   {
@@ -339,6 +432,12 @@
       "Rien, il est convoqué au tribunal comme un résident": "Pour un conducteur sans domicile en Belgique, une perception est réclamée sur place.",
       "191 €": "191 € est le montant du 3e degré.",
       "64 €": "64 € est le montant du 1er degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "4e degré · sans domicile",
+      "valeur": "? €"
     }
   },
   {
@@ -358,6 +457,12 @@
       "Rien": "Une redevance administrative s'ajoute au montant.",
       "10 % du montant": "C'est un montant fixe, pas un pourcentage.",
       "50 €": "Le montant est de 10,67 €."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Montant ajouté ?",
+      "valeur": "+ ? €"
     }
   },
   {
@@ -377,6 +482,12 @@
       "Tu passes quand même au tribunal": "Payer la perception met fin aux poursuites pour cette infraction.",
       "Tu perds des points sur ton permis": "La Belgique n'applique pas de permis à points.",
       "Tu dois repasser l'examen": "Payer une perception n'entraîne pas d'examen."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Payée dans le délai",
+      "valeur": "✓"
     }
   },
   {
@@ -396,6 +507,12 @@
       "Le policier qui t'arrête": "La police peut retirer le permis immédiatement, mais la déchéance est décidée par un juge.",
       "La commune": "La commune n'a pas ce pouvoir.",
       "La compagnie d'assurance": "Une assurance ne peut pas retirer un permis."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "balance",
+      "texte": "Déchéance du droit de conduire"
     }
   },
   {
@@ -415,6 +532,12 @@
       "Rien, l'infraction est oubliée": "Le dossier est transmis au parquet.",
       "Ton permis est automatiquement annulé": "Il n'y a pas d'annulation automatique.",
       "Le montant diminue avec le temps": "C'est l'inverse : il augmente."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Non payée",
+      "valeur": "?"
     }
   },
   {
@@ -434,6 +557,12 @@
       "De 50 %": "L'augmentation est de 10 %.",
       "Elles n'ont pas changé": "Elles ont bien augmenté au 1er juillet 2026.",
       "Elles ont doublé": "L'augmentation est de 10 %."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Hausse au 1er juillet 2026",
+      "valeur": "+ ? %"
     }
   },
   {
@@ -453,6 +582,11 @@
       "64 €": "64 € est le montant du 1er degré ; le GSM en main est une infraction du 3e degré.",
       "128 €": "128 € est le montant du 2e degré.",
       "520 €": "520 € concerne le 4e degré pour un conducteur sans domicile en Belgique."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "GSM en main"
     }
   },
   {
@@ -472,6 +606,12 @@
       "Selon le degré, comme les autres infractions": "Les excès de vitesse ont leur propre barème.",
       "Toujours 64 €": "Le montant augmente avec l'excès.",
       "Selon la puissance de la voiture": "La puissance ne compte pas."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "radar",
+      "texte": "Excès de vitesse"
     }
   },
   {
@@ -491,6 +631,12 @@
       "N'importe quel témoin": "Seuls des agents habilités peuvent constater et proposer une perception.",
       "La commune par courrier": "La perception immédiate est proposée par la police lors du constat.",
       "Le garagiste": "Il n'a aucun rôle dans les infractions."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "Qui la propose ?",
+      "valeur": "?"
     }
   },
   {
@@ -510,6 +656,12 @@
       "Payer d'abord, puis contester": "Payer clôture l'affaire : tu ne pourras plus contester.",
       "Rien, aucune contestation n'est possible": "Tu peux contester devant la justice.",
       "Envoyer un e-mail au policier": "La contestation passe par le parquet et le tribunal."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "balance",
+      "texte": "Pas d’accord ?"
     }
   },
   {
@@ -529,6 +681,12 @@
       "Le conducteur, reconnu sur la photo": "Le courrier va d'abord au titulaire de la plaque.",
       "Personne si le conducteur n'est pas reconnaissable": "Le titulaire doit désigner le conducteur.",
       "La compagnie d'assurance": "L'assurance n'est pas concernée."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "radar",
+      "texte": "Qui reçoit le courrier ?"
     }
   },
   {
@@ -548,6 +706,12 @@
       "Une infraction du 1er degré": "C'est bien plus grave qu'une infraction du 1er degré.",
       "Permis si on est accompagné": "Seul le permis provisoire permet de conduire accompagné, selon ses conditions.",
       "Sans conséquence pour un court trajet": "La durée du trajet ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "permis",
+      "texte": "Sans permis valable"
     }
   },
   {
@@ -567,6 +731,12 @@
       "Oui, pour un court trajet": "L'assurance est obligatoire pour tout trajet sur la voie publique.",
       "Oui, si tu es prudent": "La prudence ne remplace pas l'assurance obligatoire.",
       "Oui, si la voiture est vieille": "L'âge de la voiture ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "documents",
+      "texte": "Assurance"
     }
   }
 ]

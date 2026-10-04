@@ -42,4 +42,5 @@ export const SCENES = [
   // Dernières scènes
   'quel-cote', 'rue-cyclable', 'feux-eteints', 'enfants-jouent', 'canne-blanche', 'droite-pietons', 'stop-sans-ligne',
   'arret-stationnement', 'largeur-libre', 'cache-panneau',
+  'icone', 'portee-phares', 'velo-nuit', 'rue-sombre',
 ] as const

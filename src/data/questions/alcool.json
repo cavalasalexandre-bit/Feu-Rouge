@@ -16,6 +16,12 @@
       "0,8 gramme par litre": "0,8 g/l était l'ancienne limite, aujourd'hui c'est 0,5 g/l.",
       "0,2 gramme par litre": "0,2 g/l, c'est la limite des conducteurs professionnels.",
       "0 gramme par litre": "La Belgique tolère 0,5 g/l pour un conducteur ordinaire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "? g/l",
+      "texte": "Sang · conducteur"
     }
   },
   {
@@ -35,6 +41,12 @@
       "0,5 milligramme par litre": "0,5, c'est la limite dans le sang (en g/l), pas dans l'air expiré.",
       "0,09 milligramme par litre": "0,09 mg/l, c'est la limite des conducteurs professionnels.",
       "0,35 milligramme par litre": "0,35 mg/l est un seuil de sanction plus lourde, pas la limite légale."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "? mg/l",
+      "texte": "Air expiré"
     }
   },
   {
@@ -54,6 +66,12 @@
       "0,5 gramme par litre": "0,5 g/l, c'est la limite des conducteurs ordinaires.",
       "0,8 gramme par litre": "0,8 g/l était l'ancienne limite générale.",
       "1 gramme par litre": "1 g/l est très au-dessus de toute limite légale."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "? g/l",
+      "texte": "Bus, camion, taxi"
     }
   },
   {
@@ -73,6 +91,12 @@
       "Boire un café serré": "Le café réveille un peu mais ne fait pas baisser le taux.",
       "Prendre une douche froide": "Une douche froide ne change rien au taux d'alcool.",
       "Manger beaucoup": "Manger avant de boire ralentit l'absorption, mais ne fait pas baisser le taux après."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "verre",
+      "texte": "Faire baisser le taux ?"
     }
   },
   {
@@ -92,6 +116,12 @@
       "C'est permis sous un certain taux, comme l'alcool": "Pour les drogues, il n'y a pas de taux toléré comme pour l'alcool.",
       "C'est permis si le conducteur se sent bien": "Se sentir bien ne change rien : la détection suffit.",
       "C'est permis la journée": "La règle est la même de jour comme de nuit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "test-salivaire",
+      "texte": "Test salivaire"
     }
   },
   {
@@ -111,6 +141,12 @@
       "Je conduis normalement": "Certains médicaments endorment ou ralentissent les réflexes.",
       "Je bois un café pour compenser": "Le café ne compense pas l'effet d'un médicament.",
       "Je conduis seulement la nuit": "La nuit, la somnolence est encore plus dangereuse."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "medicament",
+      "texte": "Avertissement conduite"
     }
   },
   {
@@ -149,6 +185,12 @@
       "J'ouvre la fenêtre et je continue": "L'air frais réveille quelques minutes seulement.",
       "J'augmente le volume de la radio": "La musique ne combat pas la fatigue.",
       "J'accélère pour arriver plus vite": "Accélérer quand on est fatigué augmente encore le danger."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "fatigue",
+      "texte": "Paupières lourdes"
     }
   },
   {
@@ -168,6 +210,12 @@
       "Oui, le véhicule est à l'arrêt": "À l'arrêt au feu, tu participes toujours à la circulation.",
       "Oui, si le moteur est coupé automatiquement": "Le moteur coupé automatiquement ne change rien.",
       "Oui, pour moins de 10 secondes": "Même quelques secondes, c'est interdit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "gsm",
+      "texte": "Arrêté au feu rouge"
     }
   },
   {
@@ -187,6 +235,12 @@
       "Oui, si l'appel dure moins d'une minute": "La durée de l'appel ne change rien : seul le mains libres est permis.",
       "Non, jamais": "Téléphoner en mains libres est permis.",
       "Oui, avec le GSM tenu en main en agglomération": "Le GSM tenu en main est interdit partout."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "gsm",
+      "texte": "En conduisant"
     }
   },
   {
@@ -206,6 +260,12 @@
       "Il améliore la concentration": "L'alcool diminue la concentration, il ne l'améliore pas.",
       "Il n'a d'effet qu'au-delà de 1 g/l": "Les effets commencent dès les premiers verres.",
       "Il n'agit que sur la vue": "L'alcool agit aussi sur les réflexes et le jugement."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "verre",
+      "texte": "Alcool et conduite"
     }
   },
   {
@@ -225,6 +285,12 @@
       "Rien, c'est son droit": "Refuser le test n'est pas un droit sans conséquence : c'est une infraction.",
       "Une simple remarque": "Le refus est sanctionné bien plus qu'une remarque.",
       "Seulement un avertissement écrit": "Le refus entraîne de vraies sanctions."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "?",
+      "texte": "Refus de souffler"
     }
   },
   {
@@ -244,6 +310,12 @@
       "Non, la limite est 0,8 g/l": "La limite est 0,5 g/l : 0,6 la dépasse.",
       "Non, s'il se sent bien": "Se sentir bien ne change pas le taux mesuré.",
       "Seulement s'il a un accident": "L'infraction existe même sans accident."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "0,6 g/l",
+      "texte": "Conducteur ordinaire"
     }
   },
   {
@@ -263,6 +335,12 @@
       "Les effets s'annulent": "Les effets ne s'annulent pas, ils s'additionnent.",
       "Rien de particulier": "Le mélange est dangereux.",
       "Le taux d'alcool baisse": "Les médicaments ne font pas baisser le taux d'alcool."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "medicament",
+      "texte": "Alcool + calmants"
     }
   },
   {
@@ -282,6 +360,11 @@
       "179 €": "179 € était l'ancien montant, avant l'augmentation de juillet 2026.",
       "462 €": "462 € concerne un taux plus élevé (0,35 à 0,44 mg/l).",
       "64 €": "64 € est la perception d'une infraction du 1er degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "0,22 – 0,35 mg/l"
     }
   },
   {
@@ -301,6 +384,11 @@
       "197 €": "197 € vaut pour un taux de 0,22 à 0,35 mg/l.",
       "636 €": "636 € vaut pour un taux de 0,44 à 0,50 mg/l.",
       "420 €": "420 € était l'ancien montant, avant juillet 2026."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "0,35 – 0,44 mg/l"
     }
   },
   {
@@ -320,6 +408,11 @@
       "462 €": "462 € vaut pour un taux de 0,35 à 0,44 mg/l.",
       "578 €": "578 € était l'ancien montant, avant juillet 2026.",
       "191 €": "191 € est la perception d'une infraction du 3e degré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "0,44 – 0,50 mg/l"
     }
   },
   {
@@ -339,6 +432,12 @@
       "Oui, 636 €": "636 € s'arrête à 0,50 mg/l.",
       "Oui, 1 000 €": "Il n'y a plus de perception immédiate à partir de ce taux.",
       "Oui, s'il n'y a pas d'accident": "L'absence d'accident ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "amende",
+      "texte": "≥ 0,50 mg/l",
+      "valeur": "?"
     }
   },
   {
@@ -358,6 +457,12 @@
       "Non, seulement aux automobilistes": "Le code de la route vise tous les conducteurs, y compris à vélo.",
       "Non, les cyclistes n'ont pas de limite": "Les cyclistes sont soumis aux mêmes règles et sanctions.",
       "Seulement pour les vélos électriques": "La règle vaut pour tous les vélos."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "0,5 g/l",
+      "texte": "Cycliste ?"
     }
   },
   {
@@ -377,6 +482,12 @@
       "Oui, le sommeil élimine l'alcool": "Le sommeil n'accélère pas l'élimination.",
       "Oui, si je prends un café": "Le café ne fait pas baisser le taux.",
       "Oui, après une douche": "La douche ne change pas le taux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "verre",
+      "texte": "Le lendemain matin"
     }
   },
   {
@@ -396,6 +507,12 @@
       "Non, la limite est 0,5 g/l": "0,5 g/l vaut pour les conducteurs ordinaires, pas pour les professionnels.",
       "Non, s'il n'a pas de passagers": "La limite s'applique pendant son travail de conducteur.",
       "Seulement s'il a un accident": "L'infraction existe sans accident."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ethylotest",
+      "valeur": "0,3 g/l",
+      "texte": "Chauffeur de bus"
     }
   },
   {
@@ -415,6 +532,12 @@
       "Non, jamais dans une voiture": "L'interdiction vise la conduite, pas une voiture garée.",
       "Seulement en mains libres": "À l'arrêt hors circulation, ce n'est pas nécessaire.",
       "Seulement si le contact est mis": "Ce qui compte, c'est d'être garé hors de la circulation."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "gsm",
+      "texte": "Garé, moteur coupé"
     }
   },
   {
@@ -434,6 +557,12 @@
       "En roulant, si la route est droite": "Manipuler le GPS en roulant détourne ton attention.",
       "Au feu rouge": "Au feu rouge, tu participes toujours à la circulation.",
       "Dans un bouchon": "Même lentement, tu conduis."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "gps",
+      "texte": "Régler le GPS"
     }
   },
   {
@@ -453,6 +582,12 @@
       "Une sieste de 20 minutes sur une aire": "Une sieste sur une aire est une bonne chose ; le microsommeil est involontaire.",
       "Un bâillement": "Le bâillement est un signe de fatigue, pas un endormissement.",
       "Un réflexe sans danger": "C'est très dangereux : à 90 km/h, 3 secondes = environ 75 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "fatigue",
+      "texte": "Microsommeil"
     }
   },
   {
@@ -472,6 +607,12 @@
       "En fin de matinée": "Ce n'est pas un moment de forte somnolence.",
       "Juste après le lever": "Le risque principal est la nuit et après le repas de midi.",
       "Le risque est le même toute la journée": "L'horloge du corps crée des moments de forte somnolence."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "fatigue",
+      "texte": "Somnolence : quand ?"
     }
   },
   {
@@ -491,6 +632,12 @@
       "Aucun effet si on en a peu pris": "Même une petite quantité peut perturber la conduite.",
       "Une meilleure concentration": "Le cannabis diminue l'attention.",
       "Un effet seulement sur la vue": "Il agit aussi sur les réflexes et le jugement."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "test-salivaire",
+      "texte": "Cannabis"
     }
   },
   {
@@ -529,6 +676,12 @@
       "Je pars tout de suite pour me changer les idées": "La colère pousse à prendre des risques.",
       "Je roule plus vite pour me défouler": "C'est dangereux pour toi et les autres.",
       "Je mets la musique très fort": "La musique forte n'aide pas à te calmer et gêne ton attention."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "volant",
+      "texte": "Très en colère"
     }
   },
   {
@@ -548,6 +701,12 @@
       "Aucun effet le lendemain": "Certains somnifères agissent encore plusieurs heures après le réveil.",
       "Un café annule ses effets": "Le café ne supprime pas l'effet d'un médicament.",
       "Seule la conduite de nuit est concernée": "La somnolence peut survenir à tout moment."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "medicament",
+      "texte": "Somnifère la veille"
     }
   },
   {
@@ -567,6 +726,12 @@
       "Celui qui a le moins bu conduit": "Même un peu d'alcool diminue les réflexes, et il peut dépasser la limite.",
       "On attend une heure et on part": "Une heure ne suffit souvent pas à éliminer l'alcool.",
       "Le conducteur boit un café": "Le café ne fait pas baisser le taux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "verre",
+      "texte": "Qui reconduit ?"
     }
   },
   {
@@ -586,6 +751,12 @@
       "Oui, les mains restent sur le volant": "L'esprit est occupé par la conversation, pas seulement les mains.",
       "Oui, si l'appel est court": "Même un appel court détourne l'attention.",
       "Oui, sur autoroute": "Le risque existe partout."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "gsm",
+      "texte": "Mains libres"
     }
   },
   {
@@ -605,6 +776,12 @@
       "À rien de particulier": "La digestion favorise la somnolence, surtout en début d'après-midi.",
       "Je peux rouler plus longtemps sans pause": "C'est l'inverse : la fatigue arrive plus vite.",
       "Je prends un énergisant et je ne m'arrête pas": "Un énergisant ne remplace pas le repos."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "icone",
+      "valeur": "fatigue",
+      "texte": "Après un repas copieux"
     }
   }
 ]

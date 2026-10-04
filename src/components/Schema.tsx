@@ -1960,6 +1960,22 @@ const SCENES: Record<string, ReactNode> = {
       <Question x={110} y={60} />
     </>
   ),
+  'velo-nuit': (
+    <>
+      <RouteNuit />
+      <Velo x={140} y={60} />
+      <Question x={168} y={40} />
+      <Faisceau x={130} y={146} />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'rue-sombre': (
+    <>
+      <RouteNuit />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+      <Question x={130} y={100} />
+    </>
+  ),
   'etre-depasse': (
     <>
       <RouteCampagne />
@@ -2060,11 +2076,21 @@ function Amende({ valeur = '? €', texte }: { valeur?: string; texte?: string }
           PERCEPTION IMMÉDIATE
         </text>
         {[60, 72, 84].map((y) => <rect key={y} x={52} y={y} width={96 - (y % 24)} height={4} rx={2} fill="#cfcabc" />)}
-        {texte && (
-          <text x={100} y={112} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={texte.length > 14 ? 10 : 13} fill="#1b1b1b">
-            {texte}
-          </text>
-        )}
+        {texte &&
+          texte.split(' · ').map((ligne, i, lignes) => (
+            <text
+              key={ligne}
+              x={100}
+              y={(lignes.length > 1 ? 104 : 114) + i * 14}
+              textAnchor="middle"
+              fontFamily={POLICE_TITRE}
+              fontWeight={700}
+              fontSize={ligne.length > 20 ? 9 : ligne.length > 14 ? 10.5 : 13}
+              fill="#1b1b1b"
+            >
+              {ligne}
+            </text>
+          ))}
         <rect x={56} y={128} width={88} height={30} rx={4} fill="none" stroke="#1b1b1b" strokeWidth={1.5} />
         <text x={100} y={149} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={18} fill="#c8102e">
           {valeur}
@@ -2213,6 +2239,243 @@ function AgentFeu({ valeur }: { valeur?: string }) {
   return <Agent bras="leve" feu={valeur === 'rouge' ? 'rouge' : 'vert'} />
 }
 
+/** Pictogrammes au trait (style voyants de tableau de bord), centrés vers (100, 88). */
+const PICTOS: Record<string, ReactNode> = {
+  verre: (
+    <>
+      <path d="M72 46 H128 L120 140 H80 Z" />
+      <path d="M76 70 H124" />
+      <path d="M128 66 Q148 70 146 92 Q144 110 124 110" />
+    </>
+  ),
+  'test-salivaire': (
+    <>
+      <rect x={84} y={40} width={32} height={86} rx={8} />
+      <rect x={92} y={56} width={16} height={24} rx={2} />
+      <path d="M100 126 V146" />
+      <circle cx={100} cy={100} r={5} />
+    </>
+  ),
+  medicament: (
+    <>
+      <rect x={58} y={60} width={64} height={80} rx={6} />
+      <path d="M58 82 H122" />
+      <rect x={84} y={44} width={12} height={16} />
+      <path d="M134 60 L156 100 H112 Z" />
+      <path d="M134 74 V88 M134 94 V95" />
+    </>
+  ),
+  fatigue: (
+    <>
+      <path d="M48 92 Q100 48 152 92" />
+      <path d="M48 92 Q100 118 152 92" />
+      <path d="M58 86 Q100 70 142 86" />
+      <path d="M70 100 L62 110 M100 106 V118 M130 100 L138 110" />
+      <text x={150} y={56} fontFamily={POLICE_TITRE} fontWeight={700} fontSize={22} fill={IL_AMBRE} stroke="none">
+        z
+      </text>
+      <text x={164} y={40} fontFamily={POLICE_TITRE} fontWeight={700} fontSize={16} fill={IL_AMBRE} stroke="none">
+        z
+      </text>
+    </>
+  ),
+  gsm: (
+    <>
+      <rect x={74} y={34} width={52} height={96} rx={8} />
+      <path d="M92 44 H108" />
+      <circle cx={100} cy={118} r={4} />
+      <path d="M46 150 Q60 110 76 104 M154 150 Q140 110 124 104" />
+    </>
+  ),
+  gps: (
+    <>
+      <rect x={46} y={46} width={108} height={76} rx={8} />
+      <path d="M60 108 L86 78 L110 96 L140 62" />
+      <path d="M140 52 Q152 52 152 64 Q152 74 140 86 Q128 74 128 64 Q128 52 140 52 Z" />
+      <path d="M90 140 H110 M100 122 V140" />
+    </>
+  ),
+  volant: (
+    <>
+      <circle cx={100} cy={90} r={52} />
+      <circle cx={100} cy={90} r={14} />
+      <path d="M48 90 H86 M114 90 H152 M100 104 V142" />
+    </>
+  ),
+  balance: (
+    <>
+      <path d="M100 36 V140 M70 140 H130 M54 56 H146" />
+      <path d="M54 56 L36 100 H72 Z M146 56 L128 100 H164 Z" />
+    </>
+  ),
+  radar: (
+    <>
+      <rect x={70} y={40} width={60} height={70} rx={6} />
+      <circle cx={100} cy={72} r={16} />
+      <path d="M100 110 V150 M84 150 H116" />
+      <path d="M140 54 L160 46 M142 72 H164 M140 90 L160 98" />
+    </>
+  ),
+  permis: (
+    <>
+      <rect x={40} y={52} width={120} height={76} rx={8} />
+      <circle cx={72} cy={84} r={12} />
+      <path d="M56 112 Q72 96 88 112" />
+      <path d="M104 74 H144 M104 90 H144 M104 106 H130" />
+    </>
+  ),
+  documents: (
+    <>
+      <path d="M60 36 H114 L136 58 V144 H60 Z" />
+      <path d="M114 36 V58 H136" />
+      <path d="M74 78 H122 M74 96 H122 M74 114 H108" />
+    </>
+  ),
+  phares: (
+    <>
+      <path d="M92 50 Q52 50 52 90 Q52 130 92 130 Z" />
+      <path d="M106 58 H150 M106 76 H150 M106 94 H150 M106 112 H150" />
+    </>
+  ),
+  klaxon: (
+    <>
+      <path d="M50 74 H74 L120 44 V136 L74 106 H50 Z" />
+      <path d="M136 66 Q148 90 136 114 M150 54 Q170 90 150 126" />
+    </>
+  ),
+  detresse: (
+    <>
+      <rect x={46} y={36} width={108} height={108} rx={14} />
+      <path d="M100 60 L134 120 H66 Z" stroke="#ff4d5e" />
+      <path d="M100 80 L116 108 H84 Z" stroke="#ff4d5e" />
+    </>
+  ),
+  ceinture: (
+    <>
+      <circle cx={100} cy={46} r={14} />
+      <path d="M64 146 V96 Q64 72 100 72 Q136 72 136 96 V146" />
+      <path d="M78 76 L128 140" strokeWidth={7} />
+    </>
+  ),
+  'siege-enfant': (
+    <>
+      <path d="M70 40 Q60 40 60 54 V128 Q60 140 74 140 H140" />
+      <path d="M140 140 V110 H86 V54 Q86 40 76 40" />
+      <circle cx={104} cy={70} r={12} />
+      <path d="M104 82 V106 M92 92 H118" />
+    </>
+  ),
+  equipement: (
+    <>
+      <path d="M58 124 L84 74 L110 124 Z" stroke="#ff4d5e" />
+      <path d="M118 66 H150 V132 H118 Z M118 66 L134 84 L150 66" stroke="#39d98a" />
+      <rect x={54} y={36} width={16} height={30} rx={4} stroke="#ff4d5e" />
+      <path d="M62 36 V28 H74" stroke="#ff4d5e" />
+    </>
+  ),
+  controle: (
+    <>
+      <rect x={60} y={40} width={80} height={104} rx={8} />
+      <rect x={84} y={32} width={32} height={16} rx={4} />
+      <path d="M76 92 L94 110 L126 72" stroke="#39d98a" />
+    </>
+  ),
+  pneu: (
+    <>
+      <circle cx={92} cy={92} r={52} />
+      <circle cx={92} cy={92} r={24} />
+      <path d="M92 40 V52 M92 132 V144 M40 92 H52 M132 92 H144" />
+      <circle cx={150} cy={50} r={16} />
+      <path d="M150 50 L158 42" />
+    </>
+  ),
+  eco: (
+    <>
+      <path d="M56 140 Q56 60 144 44 Q150 120 72 132" />
+      <path d="M56 140 Q90 100 120 76" />
+    </>
+  ),
+  plaque: (
+    <>
+      <rect x={30} y={64} width={140} height={46} rx={6} />
+      <rect x={36} y={70} width={14} height={34} rx={2} stroke="#3d8bff" />
+      <text x={110} y={96} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={17} fill="#ff4d5e" stroke="none">
+        ?-???-???
+      </text>
+    </>
+  ),
+  'essuie-glace': (
+    <>
+      <path d="M40 130 Q100 30 160 130 Z" />
+      <path d="M100 130 L62 76 M100 130 L138 76" />
+      <circle cx={100} cy={130} r={5} />
+    </>
+  ),
+  temperature: (
+    <>
+      <path d="M92 40 Q92 30 100 30 Q108 30 108 40 V106 Q122 114 118 130 Q112 146 100 146 Q88 146 82 130 Q78 114 92 106 Z" stroke="#ff4d5e" />
+      <path d="M100 62 V120" stroke="#ff4d5e" strokeWidth={7} />
+      <path d="M40 120 Q52 112 64 120 Q76 128 88 120 M112 120 Q124 112 136 120 Q148 128 160 120" stroke="#ff4d5e" />
+    </>
+  ),
+  trousse: (
+    <>
+      <rect x={46} y={56} width={108} height={84} rx={10} />
+      <path d="M84 56 V44 H116 V56" />
+      <path d="M100 76 V120 M78 98 H122" stroke="#ff4d5e" strokeWidth={9} />
+    </>
+  ),
+  coeur: (
+    <>
+      <path d="M100 140 Q40 100 46 66 Q52 38 78 42 Q94 46 100 62 Q106 46 122 42 Q148 38 154 66 Q160 100 100 140 Z" stroke="#ff4d5e" />
+      <path d="M58 90 H82 L92 70 L104 110 L114 90 H142" />
+    </>
+  ),
+  casque: (
+    <>
+      <path d="M50 120 Q44 52 104 46 Q156 46 156 100 V120 Z" />
+      <path d="M96 76 H156 V100 H100 Q92 100 92 88 Q92 76 96 76 Z" stroke="#3d8bff" />
+    </>
+  ),
+  feux: (
+    <>
+      <circle cx={70} cy={90} r={22} stroke="#ff4d5e" />
+      <circle cx={130} cy={90} r={22} stroke="#4a5260" />
+      <path d="M30 90 H44 M156 90 H170" />
+    </>
+  ),
+}
+
+/** Pictogramme au trait sur fond de tableau de bord, avec une étiquette. */
+function Icone({ nom, texte }: { nom?: string; texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <g fill="none" stroke={IL_AMBRE} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round">
+        {PICTOS[nom ?? ''] ?? null}
+      </g>
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Portée d'un éclairage : voiture et faisceau, longueur « ? ». */
+function PorteePhares({ texte }: { texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#0b0e13" />
+      <rect x={0} y={60} width={200} height={70} fill={NUIT_ROUTE} />
+      <polygon points="40,86 40,104 196,126 196,64" fill="#fff3b0" opacity={0.22} />
+      <g transform="translate(26 95) rotate(90)">
+        <rect x={-9} y={-15} width={18} height={30} rx={4} fill="#1f4fa3" />
+        <rect x={-6} y={-9} width={12} height={7} rx={1.5} fill="#cfe0f5" />
+      </g>
+      <Cote x1={44} x2={190} y={146} />
+      <Etiquette texte={texte} y={192} />
+    </>
+  )
+}
+
 const ILLUSTRATIONS: Record<string, (valeur?: string, texte?: string) => ReactNode> = {
   compteur: (v, t) => <Compteur valeur={v} texte={t} />,
   ethylotest: (v, t) => <Ethylotest valeur={v} texte={t} />,
@@ -2225,6 +2488,8 @@ const ILLUSTRATIONS: Record<string, (valeur?: string, texte?: string) => ReactNo
   retroviseur: (_, t) => <Retroviseur texte={t} />,
   clignotants: (_, t) => <Clignotants texte={t} />,
   'agent-feu': (v) => <AgentFeu valeur={v} />,
+  icone: (v, t) => <Icone nom={v} texte={t} />,
+  'portee-phares': (_, t) => <PorteePhares texte={t} />,
 }
 
 export function Schema({ schema, titre }: { schema: SchemaType; titre: string }) {
