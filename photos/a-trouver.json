@@ -980,7 +980,10 @@
         "recherches": [
           "continuous and broken line road marking",
           "ligne mixte continue discontinue route",
-          "dubbele lijn doorgetrokken onderbroken"
+          "dubbele lijn doorgetrokken onderbroken",
+          "ligne mixte marquage Belgique",
+          "doorgetrokken en onderbroken streep",
+          "Belgium road marking double line"
         ]
       },
       "mapillary": {
@@ -996,7 +999,10 @@
         "recherches": [
           "yellow broken line kerb Belgium",
           "ligne jaune discontinue trottoir",
-          "gele onderbroken streep boordsteen"
+          "gele onderbroken streep boordsteen",
+          "ligne jaune discontinue trottoir",
+          "gele onderbroken streep stoeprand",
+          "yellow dashed kerb line Belgium"
         ]
       },
       "mapillary": {
@@ -1012,7 +1018,10 @@
         "recherches": [
           "yellow continuous line kerb Belgium",
           "ligne jaune continue bord chaussée",
-          "gele doorlopende streep"
+          "gele doorlopende streep",
+          "ligne jaune continue Belgique",
+          "gele doorlopende streep België",
+          "yellow line road edge Belgium"
         ]
       },
       "mapillary": {
@@ -1027,7 +1036,10 @@
         "categories": [],
         "recherches": [
           "yellow dashed kerb line parking Belgium",
-          "gele onderbroken lijn stoeprand"
+          "gele onderbroken lijn stoeprand",
+          "ligne jaune bordure Bruxelles",
+          "gele streep stoep België",
+          "yellow kerb marking Brussels"
         ]
       },
       "mapillary": {
@@ -1042,7 +1054,10 @@
         "categories": [],
         "recherches": [
           "yellow solid kerb line Belgium",
-          "ligne jaune continue trottoir Belgique"
+          "ligne jaune continue trottoir Belgique",
+          "marquage jaune bordure trottoir",
+          "gele stoeprand markering",
+          "yellow painted kerb Belgium"
         ]
       },
       "mapillary": {
@@ -1058,7 +1073,10 @@
         "recherches": [
           "yellow zigzag road marking Belgium",
           "zigzag jaune arrêt de bus",
-          "gele zigzaglijn bushalte"
+          "gele zigzaglijn bushalte",
+          "zigzag jaune arrêt de bus",
+          "gele zigzaglijn bushalte",
+          "yellow zigzag bus stop Belgium"
         ]
       },
       "mapillary": {
@@ -1074,7 +1092,10 @@
         "recherches": [
           "shark teeth road marking Belgium",
           "dents de requin marquage",
-          "haaientanden wegmarkering"
+          "haaientanden wegmarkering",
+          "dents de requin marquage",
+          "haaientanden wegmarkering",
+          "shark teeth road marking"
         ]
       },
       "mapillary": {
@@ -1090,7 +1111,10 @@
         "recherches": [
           "lane merge arrows road marking",
           "flèches de rabattement marquage",
-          "inhaalpijlen wegmarkering"
+          "inhaalpijlen wegmarkering",
+          "flèches de rabattement",
+          "inhaalverbod pijlen wegmarkering",
+          "lane merge arrows road marking"
         ]
       },
       "mapillary": {
@@ -1106,7 +1130,10 @@
         "recherches": [
           "cycle crossing white squares Belgium",
           "passage pour cyclistes Belgique",
-          "fietsoversteekplaats"
+          "fietsoversteekplaats",
+          "passage pour cyclistes Belgique",
+          "fietsoversteekplaats België",
+          "bicycle crossing Belgium marking"
         ]
       },
       "mapillary": {
@@ -1121,7 +1148,10 @@
         "categories": [],
         "recherches": [
           "bicycle crossing marking intersection Belgium",
-          "oversteekplaats fietsers"
+          "oversteekplaats fietsers",
+          "fietsoversteek kruispunt België",
+          "traversée cyclable carrefour Belgique",
+          "cycle crossing intersection Flanders"
         ]
       },
       "mapillary": {
@@ -1137,7 +1167,10 @@
         "recherches": [
           "stop line traffic light road",
           "ligne d'arrêt feu rouge",
-          "stopstreep verkeerslicht"
+          "stopstreep verkeerslicht",
+          "ligne d arrêt feu rouge Belgique",
+          "stopstreep verkeerslicht",
+          "traffic light stop line Belgium"
         ]
       },
       "mapillary": {
@@ -1169,7 +1202,10 @@
         "recherches": [
           "Belgium road sign additional panel",
           "panonceau additionnel Belgique",
-          "onderbord verkeersbord"
+          "onderbord verkeersbord",
+          "panonceau additionnel Belgique",
+          "onderbord verkeersbord België",
+          "Belgian traffic sign additional panel"
         ]
       },
       "mapillary": {
@@ -1184,7 +1220,10 @@
         "categories": [],
         "recherches": [
           "uitgezonderd plaatselijk verkeer bord",
-          "excepté circulation locale panneau"
+          "excepté circulation locale panneau",
+          "excepté circulation locale",
+          "uitgezonderd plaatselijk verkeer",
+          "local traffic only sign Belgium"
         ]
       },
       "mapillary": {
@@ -1200,7 +1239,10 @@
         "recherches": [
           "Belgium level crossing barriers",
           "passage à niveau Belgique barrières",
-          "overweg België slagbomen"
+          "overweg België slagbomen",
+          "overweg slagbomen dicht België",
+          "passage à niveau barrières fermées",
+          "level crossing barriers closing Belgium"
         ]
       },
       "mapillary": {
@@ -1216,7 +1258,10 @@
         "recherches": [
           "unguarded level crossing Belgium",
           "passage à niveau sans barrière",
-          "onbewaakte overweg"
+          "onbewaakte overweg",
+          "onbewaakte overweg België",
+          "passage à niveau non gardé Belgique",
+          "unguarded level crossing Belgium"
         ]
       },
       "mapillary": {
@@ -1231,7 +1276,10 @@
         "categories": [],
         "recherches": [
           "Belgium level crossing red lights",
-          "overweg rode lichten"
+          "overweg rode lichten",
+          "overweg rode lichten België",
+          "passage à niveau feux clignotants",
+          "level crossing flashing lights Belgium"
         ]
       },
       "mapillary": {
@@ -1247,7 +1295,10 @@
         "recherches": [
           "amber traffic light Belgium",
           "feu orange signalisation",
-          "oranje verkeerslicht"
+          "oranje verkeerslicht",
+          "feu orange Belgique",
+          "oranje verkeerslicht België",
+          "amber traffic light Belgium"
         ]
       },
       "mapillary": {
@@ -1263,7 +1314,10 @@
         "recherches": [
           "flashing amber traffic light",
           "feu orange clignotant",
-          "knipperend oranje licht"
+          "knipperend oranje licht",
+          "feu orange clignotant Belgique",
+          "knipperend oranje licht kruispunt",
+          "flashing amber light Belgium"
         ]
       },
       "mapillary": {
@@ -1279,7 +1333,10 @@
         "recherches": [
           "bicycle traffic light Belgium",
           "feu cycliste Belgique",
-          "fietslicht verkeerslicht"
+          "fietslicht verkeerslicht",
+          "feu cycliste Belgique",
+          "fietslicht verkeerslicht België",
+          "bicycle traffic light Belgium"
         ]
       },
       "mapillary": {
@@ -1294,7 +1351,10 @@
         "categories": [],
         "recherches": [
           "red traffic light Belgium intersection",
-          "feu rouge carrefour Belgique"
+          "feu rouge carrefour Belgique",
+          "feu rouge carrefour Bruxelles",
+          "rood licht kruispunt België",
+          "red traffic light Brussels"
         ]
       },
       "mapillary": {
@@ -1310,7 +1370,10 @@
         "recherches": [
           "Belgian traffic lights",
           "feux tricolores Belgique",
-          "verkeerslichten België"
+          "verkeerslichten België",
+          "feux de signalisation Belgique",
+          "verkeerslichten Gent",
+          "traffic lights Belgium street"
         ]
       },
       "mapillary": {
