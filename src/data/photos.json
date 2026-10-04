@@ -502,5 +502,29 @@
     "lienLicence": "https://creativecommons.org/licenses/by/2.0",
     "lienSource": "https://commons.wikimedia.org/wiki/File:Parked_vehicles_block_the_sidewalk_(18096397564).jpg",
     "source": "Wikimedia Commons"
+  },
+  "sec-010": {
+    "fichier": "photos/sec-010.jpg",
+    "auteur": "Landolso",
+    "licence": "CC0",
+    "lienLicence": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Indoor_AED_at_library_Leuven.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "sec-006": {
+    "fichier": "photos/sec-006.jpg",
+    "auteur": "Crickxson",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Constat-amiable-d-accident-automobile.png",
+    "source": "Wikimedia Commons"
+  },
+  "alc-027": {
+    "fichier": "photos/alc-027.jpg",
+    "auteur": "Carplay_ios",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Non-official_version_of_CarPlay_iOS_in_car.jpg",
+    "source": "Wikimedia Commons"
   }
 }
