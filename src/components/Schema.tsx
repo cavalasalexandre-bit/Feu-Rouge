@@ -746,6 +746,67 @@ function RueDeuxTrottoirs({ ligne = true }: { ligne?: boolean }) {
   )
 }
 
+/** Route de campagne à deux sens, vue de dessus. */
+function RouteCampagne({ centre = 'tirets', etroite = false }: { centre?: 'tirets' | 'continue' | 'aucune'; etroite?: boolean }) {
+  const [g, d] = etroite ? [66, 134] : [40, 160]
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={g} y={0} width={d - g} height={200} fill={ROUTE} />
+      <rect x={g + 3} y={0} width={2} height={200} fill={MARQUAGE} />
+      <rect x={d - 5} y={0} width={2} height={200} fill={MARQUAGE} />
+      {centre === 'continue' && <rect x={98} y={0} width={4} height={200} fill={MARQUAGE} />}
+      {centre === 'tirets' && [0, 40, 80, 120, 160].map((y) => <rect key={y} x={99} y={y + 10} width={3} height={20} fill={MARQUAGE} />)}
+    </>
+  )
+}
+
+/** Cote avec un point d'interrogation entre deux positions horizontales. */
+function Cote({ x1, x2, y }: { x1: number; x2: number; y: number }) {
+  return (
+    <g stroke="#f2b441" strokeWidth={2} fill="none">
+      <path d={`M${x1} ${y} H${x2} M${x1} ${y - 5} V${y + 5} M${x2} ${y - 5} V${y + 5}`} />
+      <rect x={(x1 + x2) / 2 - 8} y={y + 8} width={16} height={16} rx={3} fill="#0b0e13" stroke="#f2b441" />
+      <text x={(x1 + x2) / 2} y={y + 21} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={12} fill="#f2b441" stroke="none">
+        ?
+      </text>
+    </g>
+  )
+}
+
+/** Cavalier vu de dessus. */
+function Cavalier({ x, y }: { x: number; y: number }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <ellipse cx={0} cy={0} rx={6} ry={16} fill="#7b4a26" />
+      <ellipse cx={0} cy={-17} rx={3.5} ry={6} fill="#7b4a26" />
+      <circle cx={0} cy={-2} r={4} fill="#1f3b73" />
+    </g>
+  )
+}
+
+/** Camion vu de dessus. */
+function Camion({ x, y, rot = 0 }: { x: number; y: number; rot?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+      <rect x={-11} y={-34} width={22} height={14} rx={3} fill="#c8102e" stroke="#0b0e13" strokeWidth={1} />
+      <rect x={-12} y={-18} width={24} height={52} rx={2} fill="#d7dbe0" stroke="#0b0e13" strokeWidth={1} />
+    </g>
+  )
+}
+
+/** Voiture vue de côté, posée sur une pente (angle en degrés), roues au point (x, y). */
+function AutoProfil({ x, y, angle, fill, cachee = false, sens = 1 }: { x: number; y: number; angle: number; fill: string; cachee?: boolean; sens?: 1 | -1 }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${angle}) scale(${1.2 * sens} 1.2) translate(-13 -21)`} opacity={cachee ? 0.45 : 1}>
+      <path d="M0 10 L4 3 Q5 1 8 1 L18 1 Q21 1 22 3 L26 10 Z" fill={fill} strokeDasharray={cachee ? '2 2' : undefined} stroke={cachee ? BLANC : 'none'} strokeWidth={0.8} />
+      <rect x={-1} y={9} width={28} height={8} rx={2} fill={fill} />
+      <circle cx={6} cy={18} r={3} fill={NOIR} />
+      <circle cx={20} cy={18} r={3} fill={NOIR} />
+    </g>
+  )
+}
+
 const SCENES: Record<string, ReactNode> = {
   'carrefour-droite': (
     <>
@@ -1091,6 +1152,123 @@ const SCENES: Record<string, ReactNode> = {
   ),
   'agent-bras-leve': <Agent bras="leve" />,
   'agent-bras-tendus': <Agent bras="tendus" />,
+  // ---------- Étape 5 : dépassement et cyclistes ----------
+  'depasser-cycliste-campagne': (
+    <>
+      <RouteCampagne />
+      <Velo x={142} y={96} />
+      <Auto x={104} y={100} fill="#1f4fa3" label="TOI" />
+      <Cote x1={114} x2={137} y={100} />
+      <Fleche d="M104 80 V56" />
+    </>
+  ),
+  'depasser-cycliste-ville': (
+    <>
+      <RueDeuxTrottoirs />
+      <Velo x={154} y={96} />
+      <Auto x={118} y={100} fill="#1f4fa3" label="TOI" />
+      <Cote x1={128} x2={149} y={100} />
+      <Fleche d="M118 80 V56" />
+    </>
+  ),
+  'route-etroite-cycliste': (
+    <>
+      <RouteCampagne centre="aucune" etroite />
+      <Velo x={118} y={82} />
+      <Auto x={84} y={26} rot={180} fill="#c8102e" />
+      <Auto x={112} y={162} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'groupe-cyclistes': (
+    <>
+      <RouteCampagne />
+      <Velo x={124} y={52} />
+      <Velo x={142} y={52} />
+      <Velo x={124} y={84} />
+      <Velo x={142} y={84} />
+      <Auto x={132} y={162} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'rabattre-cycliste': (
+    <>
+      <RouteCampagne />
+      <Velo x={142} y={150} />
+      <Auto x={112} y={96} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M112 76 V60" />
+    </>
+  ),
+  'tracteur-discontinue': (
+    <>
+      <RouteCampagne />
+      <Tracteur x={130} y={92} />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'sommet-cote': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />
+      <path d="M0 200 L0 150 Q100 40 200 150 L200 200 Z" fill="#55704a" />
+      <path d="M0 150 Q100 40 200 150" stroke={ROUTE} strokeWidth={8} fill="none" />
+      <AutoProfil x={24} y={125} angle={-40} fill="#1f4fa3" />
+      <AutoProfil x={68} y={99} angle={-19} fill="#6b7f2a" />
+      <AutoProfil x={168} y={119} angle={37} fill="#c8102e" cachee sens={-1} />
+      <text x={168} y={92} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={18} fill="#f2b441">
+        ?
+      </text>
+      <text x={30} y={156} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={10} fill={BLANC}>
+        TOI
+      </text>
+    </>
+  ),
+  'carrefour-depassement': (
+    <>
+      <Carrefour />
+      <Auto x={112} y={140} fill="#6b7f2a" />
+      <Auto x={112} y={176} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'depasser-cavalier': (
+    <>
+      <RouteCampagne centre="aucune" etroite />
+      <Cavalier x={120} y={80} />
+      <Auto x={112} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'croisement-etroit': (
+    <>
+      <RouteCampagne centre="aucune" etroite />
+      <Auto x={86} y={44} rot={180} fill="#c8102e" />
+      <Auto x={114} y={156} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'double-depassement': (
+    <>
+      <RouteCampagne />
+      <Auto x={130} y={56} fill="#6b7f2a" />
+      <Auto x={76} y={80} fill="#c8102e" />
+      <ClignoGauche x={76} y={80} />
+      <Auto x={130} y={150} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'deja-depasse': (
+    <>
+      <RouteCampagne />
+      <Camion x={130} y={50} />
+      <Auto x={130} y={118} fill="#1f4fa3" label="TOI" />
+      <Auto x={76} y={170} fill="#c8102e" />
+      <ClignoGauche x={76} y={170} />
+      <Fleche d="M76 150 V128" />
+    </>
+  ),
+  'etre-depasse': (
+    <>
+      <RouteCampagne />
+      <Auto x={130} y={100} fill="#1f4fa3" label="TOI" />
+      <Auto x={74} y={128} fill="#c8102e" />
+      <ClignoGauche x={74} y={128} />
+      <Fleche d="M74 108 V80" />
+    </>
+  ),
 }
 
 export function Schema({ schema, titre }: { schema: SchemaType; titre: string }) {

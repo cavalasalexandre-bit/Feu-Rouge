@@ -22,4 +22,8 @@ export const SCENES = [
   'carrefour-velo-droite', 'carrefour-voiture-gauche', 'tram-carrefour', 'tram-arret', 'bus-quitte-arret', 'bus-arret',
   'droite-cycliste', 'parking-piste', 'gauche-piste', 'passage-pietons-arret', 'chemin-terre', 'tracteur-chemin',
   'sortie-parking', 'carrefour-encombre', 'agent-bras-leve', 'agent-bras-tendus',
+  // Dépassement et cyclistes
+  'depasser-cycliste-campagne', 'depasser-cycliste-ville', 'route-etroite-cycliste', 'groupe-cyclistes', 'rabattre-cycliste',
+  'tracteur-discontinue', 'sommet-cote', 'carrefour-depassement', 'depasser-cavalier', 'croisement-etroit',
+  'double-depassement', 'deja-depasse', 'etre-depasse',
 ] as const
