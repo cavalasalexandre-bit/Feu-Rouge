@@ -1,1 +1,66 @@
-{}
+{
+  "pri-002": {
+    "fichier": "photos/pri-002.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20100713_liege50.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "pri-003": {
+    "fichier": "photos/pri-003.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20110914_embourg03.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "pri-004": {
+    "fichier": "photos/pri-004.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20170716_seraing236.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "pri-011": {
+    "fichier": "photos/pri-011.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20110624_liege34.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "sig-012": {
+    "fichier": "photos/sig-012.jpg",
+    "auteur": "Wester",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Belgische_overweg.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-030": {
+    "fichier": "photos/sig-030.jpg",
+    "auteur": "David Edgar",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:9005gordelrouteSign.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-008": {
+    "fichier": "photos/vit-008.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20110525_remouchamps14.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-009": {
+    "fichier": "photos/vit-009.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20210626_antwerpen335.jpg",
+    "source": "Wikimedia Commons"
+  }
+}
