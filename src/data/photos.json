@@ -110,5 +110,93 @@
     "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
     "lienSource": "https://commons.wikimedia.org/wiki/File:20140916_liege09.jpg",
     "source": "Wikimedia Commons"
+  },
+  "vit-011": {
+    "fichier": "photos/vit-011.jpg",
+    "auteur": "M.Minderhoud",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Haut-Fays_4juni2006.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-031": {
+    "fichier": "photos/vit-031.jpg",
+    "auteur": "Wouter Hagens",
+    "licence": "Public domain",
+    "lienLicence": "",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Tombeek_exit_sign.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-016": {
+    "fichier": "photos/vit-016.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20150426_esneux048.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "vit-018": {
+    "fichier": "photos/vit-018.jpg",
+    "auteur": "Sonuwe",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Hasselt_-_Villa_Sampermans.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-010": {
+    "fichier": "photos/vit-010.jpg",
+    "auteur": "Ifs58",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Reinpadstraat_in_Genk.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-025": {
+    "fichier": "photos/vit-025.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20190714_128_maaseik.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "vit-020": {
+    "fichier": "photos/vit-020.jpg",
+    "auteur": "Jean-Pol GRANDMONT",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:0_La_Hesre_-_La_Dr%C3%A8ve_de_Mariemont_(1).JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sta-009": {
+    "fichier": "photos/sta-009.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20100709_durbuy03.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sta-010": {
+    "fichier": "photos/sta-010.jpg",
+    "auteur": "Jean-Pol GRANDMONT",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:0_Barvaux_050703_(1).JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sta-008": {
+    "fichier": "photos/sta-008.jpg",
+    "auteur": "Roulex 45",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Disque_europ%C3%A9en.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sta-014": {
+    "fichier": "photos/sta-014.jpg",
+    "auteur": "MatteoNL97",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Handicap_parking_with_funny_undersign,_Belgian_traffic_sign.jpg",
+    "source": "Wikimedia Commons"
   }
 }
