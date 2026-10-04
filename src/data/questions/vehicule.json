@@ -16,6 +16,10 @@
       "1 millimètre": "1 mm, c'est sous le minimum légal.",
       "3 millimètres": "3 mm est conseillé en hiver, mais le minimum légal est 1,6 mm.",
       "0,5 millimètre": "0,5 mm, c'est un pneu lisse et interdit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "pneu-sculptures"
     }
   },
   {
@@ -191,6 +195,10 @@
       "Je freine à fond": "Freiner à fond bloque le contrôle sur l'eau.",
       "J'accélère": "Accélérer aggrave la glissade.",
       "Je donne un grand coup de volant": "Un grand coup de volant peut faire partir la voiture en tête-à-queue."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "aquaplaning"
     }
   },
   {
@@ -324,6 +332,10 @@
       "En regardant plus longtemps dans le rétroviseur intérieur": "L'angle mort est justement invisible dans les rétroviseurs.",
       "En mettant le clignotant plus tôt": "Le clignotant ne te montre rien.",
       "Ce n'est pas utile sur autoroute": "Sur autoroute aussi, un véhicule peut se trouver dans l'angle mort."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "angle-mort"
     }
   },
   {

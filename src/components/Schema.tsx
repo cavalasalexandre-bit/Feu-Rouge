@@ -853,6 +853,75 @@ function Question({ x, y }: { x: number; y: number }) {
   )
 }
 
+const NUIT_ROUTE = '#262b33'
+const NUIT_HERBE = '#18241b'
+
+/** Faisceau de phares devant une voiture vue de dessus (vers le haut). */
+function Faisceau({ x, y, long = false, rot = 0 }: { x: number; y: number; long?: boolean; rot?: number }) {
+  const l = long ? 110 : 55
+  const w = long ? 26 : 30
+  return (
+    <polygon
+      points={`${x - 7},${y} ${x + 7},${y} ${x + w},${y - l} ${x - w},${y - l}`}
+      fill="#fff3b0"
+      opacity={long ? 0.28 : 0.35}
+      transform={`rotate(${rot} ${x} ${y})`}
+    />
+  )
+}
+
+/** Route de nuit, vue de dessus. */
+function RouteNuit({ centre = true }: { centre?: boolean }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={NUIT_HERBE} />
+      <rect x={40} y={0} width={120} height={200} fill={NUIT_ROUTE} />
+      <rect x={44} y={0} width={2} height={200} fill="#8f949b" />
+      <rect x={154} y={0} width={2} height={200} fill="#8f949b" />
+      {centre && [0, 40, 80, 120, 160].map((y) => <rect key={y} x={99} y={y + 10} width={3} height={20} fill="#8f949b" />)}
+    </>
+  )
+}
+
+/** Route en perspective vue du siège conducteur. */
+function RouteFace({ ciel = FOND_CIEL, sol = '#55704a' }: { ciel?: string; sol?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={100} fill={ciel} />
+      <rect x={0} y={100} width={200} height={100} fill={sol} />
+      <polygon points="88,100 112,100 190,200 10,200" fill={ROUTE} />
+      {[[100, 106, 2], [100, 126, 3], [100, 156, 4]].map(([x, y, w]) => (
+        <rect key={y} x={x - w / 2} y={y} width={w} height={y / 10} fill={MARQUAGE} />
+      ))}
+    </>
+  )
+}
+
+/** Cote verticale avec un point d'interrogation. */
+function CoteV({ x, y1, y2 }: { x: number; y1: number; y2: number }) {
+  const m = (y1 + y2) / 2
+  return (
+    <g stroke="#f2b441" strokeWidth={2} fill="none">
+      <path d={`M${x} ${y1} V${y2} M${x - 5} ${y1} H${x + 5} M${x - 5} ${y2} H${x + 5}`} />
+      <rect x={x + 6} y={m - 8} width={16} height={16} rx={3} fill="#0b0e13" stroke="#f2b441" />
+      <text x={x + 14} y={m + 5} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={12} fill="#f2b441" stroke="none">
+        ?
+      </text>
+    </g>
+  )
+}
+
+/** Fumée (petits nuages gris). */
+function Fumee({ x, y }: { x: number; y: number }) {
+  return (
+    <g fill="#c9ced6" opacity={0.85}>
+      {[[0, 0, 9], [10, -10, 11], [-6, -18, 10], [8, -28, 12], [-4, -40, 13]].map(([dx, dy, r]) => (
+        <circle key={`${dx}${dy}`} cx={x + dx} cy={y + dy} r={r} />
+      ))}
+    </g>
+  )
+}
+
 const SCENES: Record<string, ReactNode> = {
   'carrefour-droite': (
     <>
@@ -1466,6 +1535,311 @@ const SCENES: Record<string, ReactNode> = {
       <path d="M171 14 V36 M162 27 L171 37 L180 27" stroke="#2ee07a" strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
       <Auto x={171} y={120} fill="#c8102e" />
       <Auto x={135} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  // ---------- Étape 5 : éclairage ----------
+  'nuit-croisement': (
+    <>
+      <RouteNuit />
+      <Faisceau x={70} y={40} long rot={180} />
+      <Auto x={70} y={28} rot={180} fill="#6b7f2a" />
+      <Faisceau x={130} y={146} long />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'nuit-suivre-camion': (
+    <>
+      <RouteNuit />
+      <Camion x={130} y={50} />
+      <circle cx={121} cy={84} r={2.5} fill="#ff3b30" />
+      <circle cx={139} cy={84} r={2.5} fill="#ff3b30" />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+      <CoteV x={156} y1={88} y2={144} />
+    </>
+  ),
+  eblouissement: (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#0b0e13" />
+      <polygon points="0,200 92,96 108,96 200,200" fill="#1c2027" />
+      <defs>
+        <radialGradient id="eblouir">
+          <stop offset="0" stopColor="#ffffff" />
+          <stop offset="0.25" stopColor="#fff6c8" stopOpacity={0.9} />
+          <stop offset="1" stopColor="#fff6c8" stopOpacity={0} />
+        </radialGradient>
+      </defs>
+      <circle cx={84} cy={100} r={60} fill="url(#eblouir)" />
+      <circle cx={112} cy={100} r={60} fill="url(#eblouir)" />
+      <rect x={180} y={100} width={3} height={100} fill="#d6d9dd" opacity={0.6} />
+    </>
+  ),
+  'nuit-route-garee': (
+    <>
+      <RouteNuit />
+      <Auto x={144} y={96} fill="#6b7f2a" />
+      <Question x={170} y={70} />
+    </>
+  ),
+  'tunnel-entree': (
+    <>
+      <RouteFace sol="#3f5536" />
+      <path d="M0 100 Q40 30 100 26 Q160 30 200 100 Z" fill="#4b6a3f" />
+      <path d="M58 100 Q58 54 100 50 Q142 54 142 100 Z" fill="#9aa1ab" />
+      <path d="M66 100 Q66 62 100 58 Q134 62 134 100 Z" fill="#07090c" />
+      <polygon points="88,100 112,100 190,200 10,200" fill={ROUTE} />
+      <rect x={99} y={106} width={2} height={10} fill={MARQUAGE} />
+      <rect x={98.5} y={126} width={3} height={13} fill={MARQUAGE} />
+      <rect x={98} y={156} width={4} height={16} fill={MARQUAGE} />
+    </>
+  ),
+  'brouillard-route': (
+    <>
+      <RouteFace />
+      <circle cx={94} cy={108} r={2.5} fill="#ff3b30" />
+      <circle cx={106} cy={108} r={2.5} fill="#ff3b30" />
+      <defs>
+        <linearGradient id="brume" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#d9dde2" stopOpacity={0.95} />
+          <stop offset="0.6" stopColor="#d9dde2" stopOpacity={0.75} />
+          <stop offset="1" stopColor="#d9dde2" stopOpacity={0.35} />
+        </linearGradient>
+      </defs>
+      <rect x={0} y={0} width={200} height={200} fill="url(#brume)" />
+    </>
+  ),
+  'pluie-ville': (
+    <>
+      <RouteFace ciel="#3a4452" sol="#555c66" />
+      <polygon points="0,30 70,96 70,100 0,200" fill="#6d6257" />
+      <polygon points="200,20 130,96 130,100 200,200" fill="#5f6672" />
+      <g stroke="#b8d3f0" strokeWidth={1.5} opacity={0.75}>
+        {Array.from({ length: 60 }, (_, i) => {
+          const x = (i * 37) % 200
+          const y = (i * 61) % 200
+          return <line key={i} x1={x} y1={y} x2={x - 4} y2={y + 12} />
+        })}
+      </g>
+    </>
+  ),
+  'feu-recul': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#1a2433" />
+      <rect x={0} y={150} width={200} height={50} fill={ROUTE} />
+      {/* Arrière d'une voiture */}
+      <path d="M50 70 Q54 46 80 44 H120 Q146 46 150 70 Z" fill="#2a4f8f" />
+      <path d="M62 68 Q66 52 84 51 H116 Q134 52 138 68 Z" fill="#9fc1e6" />
+      <rect x={36} y={68} width={128} height={62} rx={10} fill="#1f4fa3" />
+      <rect x={42} y={78} width={30} height={14} rx={3} fill="#7a1018" />
+      <rect x={128} y={78} width={30} height={14} rx={3} fill="#7a1018" />
+      <rect x={42} y={94} width={14} height={8} rx={2} fill="#ffffff" style={{ filter: 'drop-shadow(0 0 6px #ffffff)' }} />
+      <rect x={144} y={94} width={14} height={8} rx={2} fill="#4a5260" />
+      <rect x={80} y={102} width={40} height={12} rx={2} fill="#e9ecef" />
+      <rect x={46} y={128} width={20} height={22} rx={4} fill="#0b0e13" />
+      <rect x={134} y={128} width={20} height={22} rx={4} fill="#0b0e13" />
+    </>
+  ),
+  'avenue-eclairee': (
+    <>
+      <RouteNuit />
+      {[20, 80, 140].map((y) => (
+        <g key={y}>
+          <circle cx={36} cy={y} r={36} fill="#ffe7a3" opacity={0.18} />
+          <circle cx={164} cy={y + 30} r={36} fill="#ffe7a3" opacity={0.18} />
+          <circle cx={36} cy={y} r={3} fill="#ffe7a3" />
+          <circle cx={164} cy={y + 30} r={3} fill="#ffe7a3" />
+        </g>
+      ))}
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'pieton-nuit': (
+    <>
+      <RouteNuit />
+      <Faisceau x={130} y={146} />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+      <g opacity={0.8}>
+        <Pieton x={150} y={40} />
+      </g>
+    </>
+  ),
+
+  // ---------- Étape 5 : véhicule ----------
+  'pneu-sculptures': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#1a2433" />
+      <rect x={30} y={20} width={140} height={160} rx={16} fill="#1b1b1b" />
+      {[0, 1, 2, 3, 4].map((r) => [0, 1, 2].map((c) => (
+        <rect key={`${r}-${c}`} x={44 + c * 40} y={30 + r * 30} width={32} height={22} rx={3} fill="#2e2e2e" />
+      )))}
+      <path d="M82 20 V180 M118 20 V180" stroke="#0b0b0b" strokeWidth={6} />
+      <rect x={70} y={86} width={60} height={8} rx={2} fill="#c4c9cf" />
+      <rect x={96} y={94} width={8} height={22} fill="#c4c9cf" />
+      <Question x={150} y={110} />
+    </>
+  ),
+  aquaplaning: (
+    <>
+      <RouteCampagne />
+      {[[70, 60, 30], [130, 110, 34], [90, 160, 26]].map(([x, y, r]) => (
+        <ellipse key={x} cx={x} cy={y} rx={r} ry={r / 2} fill="#7fb2e0" opacity={0.45} />
+      ))}
+      <Auto x={128} y={104} rot={12} fill="#1f4fa3" label="TOI" />
+      <path d="M116 124 Q108 136 104 148 M142 126 Q148 138 150 150" stroke="#cfe3f7" strokeWidth={2} fill="none" />
+    </>
+  ),
+  'angle-mort': (
+    <>
+      <Autoroute />
+      <polygon points="126,104 112,190 90,190" fill="#ffffff" opacity={0.12} />
+      <polygon points="80,96 66,150 112,150" fill="#f2b441" opacity={0.25} />
+      <Auto x={89} y={124} fill="#c8102e" />
+      <Auto x={135} y={92} fill="#1f4fa3" label="TOI" />
+      <Question x={60} y={124} />
+    </>
+  ),
+
+  // ---------- Étape 5 : stationnement ----------
+  'pente-stationnement': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />
+      <polygon points="0,170 200,90 200,200 0,200" fill="#7c848f" />
+      <polygon points="0,170 200,90 200,94 0,174" fill="#d6d9dd" />
+      <AutoProfil x={104} y={130} angle={-22} fill="#1f4fa3" />
+      <Question x={160} y={70} />
+    </>
+  ),
+  portiere: (
+    <>
+      <RueTrottoir />
+      <Auto x={144} y={96} fill="#1f4fa3" label="TOI" />
+      <path d="M135 92 L120 102" stroke="#1f4fa3" strokeWidth={4} strokeLinecap="round" />
+      <Velo x={118} y={172} />
+      <Fleche d="M118 156 V130" />
+    </>
+  ),
+  'double-file': (
+    <>
+      <RueTrottoir />
+      {[24, 64, 144, 184].map((y, i) => (
+        <Auto key={y} x={145} y={y} fill={['#6b7f2a', '#8a5cc2', '#c8102e', '#6b7f2a'][i]} />
+      ))}
+      <Auto x={145} y={104} fill="#8a5cc2" />
+      <Auto x={122} y={104} fill="#1f4fa3" label="TOI" />
+      <Question x={96} y={104} />
+    </>
+  ),
+  'entree-garage': (
+    <>
+      <RueTrottoir />
+      <rect x={158} y={78} width={42} height={44} fill="#c9cdd2" />
+      <rect x={186} y={80} width={14} height={40} fill="#7b4a26" />
+      <Auto x={145} y={100} fill="#1f4fa3" label="TOI" />
+      <Question x={118} y={100} />
+    </>
+  ),
+  'cote-stationnement': (
+    <>
+      <RueDeuxTrottoirs />
+      <Auto x={134} y={170} fill="#1f4fa3" label="TOI" />
+      <rect x={36} y={60} width={20} height={32} rx={4} fill="none" stroke="#f2b441" strokeWidth={2} strokeDasharray="4 3" />
+      <rect x={144} y={60} width={20} height={32} rx={4} fill="none" stroke="#f2b441" strokeWidth={2} strokeDasharray="4 3" />
+      <Question x={46} y={76} />
+      <Question x={154} y={76} />
+    </>
+  ),
+  'virage-stationnement': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <path d="M60 200 V120 Q60 50 140 50 H200 V110 H140 Q120 110 120 130 V200 Z" fill={ROUTE} />
+      <path d="M90 200 V125 Q90 80 140 80 H200" stroke={MARQUAGE} strokeWidth={2} strokeDasharray="8 8" fill="none" />
+      <Auto x={132} y={98} rot={-90} fill="#6b7f2a" />
+      <Question x={132} y={130} />
+      <Auto x={105} y={176} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'stationnement-passage': (
+    <>
+      <RueTrottoir />
+      {Array.from({ length: 9 }, (_, i) => (
+        <rect key={i} x={4 + i * 17} y={40} width={10} height={26} fill={MARQUAGE} />
+      ))}
+      <Auto x={145} y={110} fill="#1f4fa3" label="TOI" />
+      <CoteV x={120} y1={68} y2={94} />
+    </>
+  ),
+  'stationnement-carrefour': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={TROTTOIR} />
+      <rect x={60} y={0} width={80} height={200} fill={ROUTE} />
+      <rect x={0} y={40} width={200} height={60} fill={ROUTE} />
+      <Auto x={128} y={140} fill="#1f4fa3" label="TOI" />
+      <CoteV x={104} y1={102} y2={124} />
+    </>
+  ),
+  'trottoir-marque': (
+    <>
+      <RueTrottoir />
+      {[40, 80, 120, 160].map((y) => <rect key={y} x={160} y={y} width={30} height={2} fill={MARQUAGE} />)}
+      <rect x={188} y={40} width={2} height={122} fill={MARQUAGE} />
+      <Auto x={172} y={100} fill="#6b7f2a" />
+      <Auto x={110} y={168} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+
+  // ---------- Étape 5 : secours ----------
+  'temoin-accident': (
+    <>
+      <RouteCampagne />
+      <Auto x={80} y={50} rot={35} fill="#c8102e" />
+      <Auto x={120} y={62} rot={-60} fill="#8a5cc2" />
+      <Auto x={130} y={170} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'fumee-moteur': (
+    <>
+      <RouteCampagne />
+      <Auto x={130} y={110} rot={20} fill="#c8102e" />
+      <Fumee x={136} y={90} />
+    </>
+  ),
+  accrochage: (
+    <>
+      <Carrefour />
+      <Auto x={112} y={102} rot={-15} fill="#c8102e" />
+      <Auto x={86} y={110} rot={75} fill="#1f4fa3" label="TOI" />
+      <Auto x={112} y={170} fill="#6b7f2a" />
+      <Auto x={168} y={88} rot={-90} fill="#8a5cc2" />
+    </>
+  ),
+
+  // ---------- Étape 5 : distances ----------
+  'distance-suivre': (
+    <>
+      <RouteCampagne />
+      <rect x={168} y={56} width={6} height={6} fill="#e9ecef" />
+      <rect x={170} y={62} width={2} height={20} fill="#8a919c" />
+      <Auto x={130} y={50} fill="#6b7f2a" />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+      <CoteV x={108} y1={66} y2={144} />
+    </>
+  ),
+  'camions-distance': (
+    <>
+      <RouteCampagne />
+      <Camion x={130} y={44} />
+      <Camion x={130} y={160} />
+      <CoteV x={104} y1={80} y2={124} />
+    </>
+  ),
+  'route-mouillee-distance': (
+    <>
+      <RouteCampagne />
+      {[[120, 40], [140, 100], [118, 150], [70, 70], [80, 170]].map(([x, y]) => (
+        <ellipse key={`${x}${y}`} cx={x} cy={y} rx={20} ry={8} fill="#7fb2e0" opacity={0.35} />
+      ))}
+      <Auto x={130} y={50} fill="#6b7f2a" />
+      <Auto x={130} y={160} fill="#1f4fa3" label="TOI" />
+      <CoteV x={108} y1={66} y2={144} />
     </>
   ),
   'etre-depasse': (

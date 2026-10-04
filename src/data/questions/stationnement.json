@@ -54,6 +54,10 @@
       "À moins de 15 mètres": "15 m, c'est pour les arrêts de bus.",
       "À moins de 1 mètre": "1 m serait bien trop près pour la visibilité.",
       "À moins de 20 mètres": "20 m n'est pas la règle."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "stationnement-passage"
     }
   },
   {
@@ -73,6 +77,10 @@
       "À moins de 15 mètres": "15 m, c'est pour les arrêts de bus.",
       "À moins de 1 mètre": "1 m serait bien trop près du carrefour.",
       "Ils sont permis": "C'est interdit à moins de 5 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "stationnement-carrefour"
     }
   },
   {
@@ -111,6 +119,10 @@
       "Du côté que tu veux": "Dans une rue à double sens, ce n'est pas au choix.",
       "À gauche": "À gauche, c'est seulement en rue à sens unique.",
       "Au milieu de la chaussée": "Au milieu de la chaussée, c'est interdit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "cote-stationnement"
     }
   },
   {
@@ -218,6 +230,10 @@
       "Oui, pour moins de 15 minutes": "Même 15 minutes, c'est interdit devant un garage.",
       "Oui, si le garage semble inutilisé": "Tu ne peux pas savoir si le garage est utilisé.",
       "Oui, la nuit": "C'est interdit de jour comme de nuit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "entree-garage"
     }
   },
   {
@@ -298,6 +314,10 @@
       "Je laisse le moteur tourner": "Il faut couper le moteur en quittant le véhicule.",
       "Je laisse les roues droites": "Roues droites, la voiture pourrait dévaler la pente si le frein lâche.",
       "J'allume les feux de détresse": "Les feux de détresse ne servent pas au stationnement normal."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "pente-stationnement"
     }
   },
   {
@@ -317,6 +337,10 @@
       "Allumer tes feux de détresse": "Les feux de détresse ne te protègent pas en ouvrant ta portière.",
       "Klaxonner": "Klaxonner n'est pas la règle : il faut regarder.",
       "Rien de particulier": "Il faut vérifier, sinon tu risques de renverser un cycliste."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portiere"
     }
   },
   {
@@ -336,6 +360,10 @@
       "Oui, pour moins de 5 minutes": "Ce serait du stationnement, interdit en double file.",
       "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas le stationnement permis.",
       "Oui, si la rue est large": "La largeur ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "double-file"
     }
   },
   {
@@ -397,6 +425,10 @@
       "Oui, s'il y a de la place": "Les autres ne te verraient qu'au dernier moment.",
       "Oui, avec les feux de position": "Les feux ne suffisent pas à compenser le manque de visibilité.",
       "Oui, hors agglomération": "C'est interdit partout."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "virage-stationnement"
     }
   },
   {
@@ -565,6 +597,10 @@
       "Non, jamais sur un trottoir": "Le marquage crée justement une exception.",
       "Oui, mais seulement avec deux roues": "On stationne comme indiqué par le marquage.",
       "Oui, la nuit seulement": "Le marquage vaut à toute heure, sauf indication contraire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "trottoir-marque"
     }
   },
   {

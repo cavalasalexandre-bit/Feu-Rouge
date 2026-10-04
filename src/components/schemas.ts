@@ -30,4 +30,10 @@ export const SCENES = [
   'autoroute-3-bandes', 'autoroute-camions', 'bau-arret', 'bau-marche-arriere', 'sortie-autoroute', 'changement-bande',
   'depasser-camion', 'files-denses', 'contresens', 'accident-en-face', 'remorquage', 'contresens-bretelle',
   'autoroute-pluie', 'bau-ouverte',
+  // Éclairage, véhicule, stationnement, secours, distances
+  'nuit-croisement', 'nuit-suivre-camion', 'eblouissement', 'nuit-route-garee', 'tunnel-entree', 'brouillard-route',
+  'pluie-ville', 'feu-recul', 'avenue-eclairee', 'pieton-nuit', 'pneu-sculptures', 'aquaplaning', 'angle-mort',
+  'pente-stationnement', 'portiere', 'double-file', 'entree-garage', 'cote-stationnement', 'virage-stationnement',
+  'stationnement-passage', 'stationnement-carrefour', 'trottoir-marque', 'temoin-accident', 'fumee-moteur', 'accrochage',
+  'distance-suivre', 'camions-distance', 'route-mouillee-distance',
 ] as const

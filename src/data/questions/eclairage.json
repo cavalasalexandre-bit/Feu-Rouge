@@ -73,6 +73,10 @@
       "100 mètres": "100 m, c'est le seuil du feu de brouillard arrière.",
       "50 mètres": "50 m serait trop tard : la règle est 200 m.",
       "300 mètres": "300 m n'est pas un seuil du code."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "brouillard-route"
     }
   },
   {
@@ -92,6 +96,10 @@
       "À moins de 100 mètres": "100 m, c'est l'éclairage public qui rend les feux de route inutiles.",
       "À moins de 30 mètres": "30 m serait trop près : tu éblouirais le conducteur bien avant.",
       "À moins de 150 mètres": "150 m n'est pas la règle : on change à 50 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "nuit-suivre-camion"
     }
   },
   {
@@ -130,6 +138,10 @@
       "Garder tes feux de route": "Garder les feux de route éblouirait le conducteur d'en face.",
       "Allumer tes feux de brouillard": "Les feux de brouillard servent par brouillard, pas pour croiser.",
       "Éteindre tous tes feux": "Rouler sans feux la nuit est interdit et très dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "nuit-croisement"
     }
   },
   {
@@ -225,6 +237,10 @@
       "Tu fais des appels de phares répétés": "Les appels répétés peuvent aveugler l'autre conducteur à son tour.",
       "Tu allumes tes feux de route": "Les feux de route éblouiraient encore plus le conducteur d'en face.",
       "Tu fermes les yeux un instant": "Fermer les yeux en roulant est extrêmement dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "eblouissement"
     }
   },
   {
@@ -263,6 +279,10 @@
       "Les feux de route": "Les feux de route éblouiraient les autres usagers du tunnel.",
       "Les feux de brouillard arrière": "Le feu de brouillard arrière n'est permis que sous 100 m de visibilité.",
       "Aucun, le tunnel est éclairé": "Même dans un tunnel éclairé, les feux de croisement sont obligatoires sous 200 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "tunnel-entree"
     }
   },
   {
@@ -282,6 +302,10 @@
       "Les feux de croisement": "Les feux de croisement servent à rouler, pas à stationner.",
       "Les feux de détresse": "Les feux de détresse signalent un danger, pas un stationnement normal.",
       "Rien": "Sans feux, ta voiture est invisible sur une route non éclairée."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "nuit-route-garee"
     }
   },
   {
@@ -324,6 +348,10 @@
       "Oui, ils remplacent les feux de croisement": "Les feux diurnes n'éclairent pas la route et souvent pas l'arrière.",
       "Oui, si la voiture est récente": "L'âge de la voiture ne change rien à la règle.",
       "Oui, sauf sur autoroute": "Partout, y compris sur autoroute, les feux de croisement sont obligatoires sous 200 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "brouillard-route"
     }
   },
   {
@@ -343,6 +371,10 @@
       "Les feux de position seuls": "Les feux de position servent à être vu à l'arrêt, pas à rouler.",
       "Les feux de route": "Les feux de route sont interdits quand l'éclairage public suffit.",
       "Aucun feu": "Rouler sans feux la nuit est interdit, même en ville."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "avenue-eclairee"
     }
   },
   {
@@ -419,6 +451,10 @@
       "C'est obligatoire pour tous les piétons": "Ce n'est pas une obligation générale, mais c'est fortement conseillé.",
       "Il éclaire la route": "Un gilet réfléchissant renvoie la lumière des phares, il n'éclaire pas.",
       "Il n'a aucun intérêt avec l'éclairage public": "Hors agglomération, il n'y a souvent pas d'éclairage public."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "pieton-nuit"
     }
   },
   {
@@ -438,6 +474,10 @@
       "Les feux de route": "Ils éblouiraient les conducteurs qui arrivent.",
       "Aucun, pour économiser la batterie": "Une voiture sans feux la nuit est presque invisible : c'est très dangereux.",
       "Le feu de brouillard arrière": "Il n'est permis que par visibilité inférieure à 100 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "nuit-route-garee"
     }
   },
   {
@@ -495,6 +535,10 @@
       "Allumer mes feux de route pour lui répondre": "Deux conducteurs éblouis, c'est deux fois plus de danger.",
       "Klaxonner longuement": "Le klaxon ne sert pas à signaler un éblouissement.",
       "Accélérer pour le croiser plus vite": "Ébloui, tu vois mal : il faut ralentir, pas accélérer."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "eblouissement"
     }
   },
   {
@@ -552,6 +596,10 @@
       "Un freinage": "Le freinage est signalé par les feux stop rouges.",
       "Un feu de brouillard": "Le feu de brouillard arrière est rouge.",
       "Un changement de direction": "Les changements de direction se signalent avec les clignotants orange."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feu-recul"
     }
   },
   {
@@ -609,6 +657,10 @@
       "Je garde seulement les feux de jour": "Sous 200 m de visibilité, les feux de croisement sont obligatoires.",
       "J'allume le feu de brouillard arrière": "Il n'est permis que sous 100 m de visibilité.",
       "J'allume les feux de détresse en roulant": "Les feux de détresse ne servent pas à rouler sous la pluie."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "pluie-ville"
     }
   },
   {
@@ -628,6 +680,10 @@
       "Les feux de route": "À moins de 50 m derrière un véhicule, les feux de route sont interdits.",
       "Les feux de position seuls": "En roulant la nuit, les feux de position ne suffisent pas.",
       "Le feu de brouillard arrière": "Il n'est permis que sous 100 m de visibilité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "nuit-suivre-camion"
     }
   },
   {

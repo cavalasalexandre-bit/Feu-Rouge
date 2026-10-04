@@ -16,6 +16,10 @@
       "Déplacer les blessés": "Déplacer un blessé peut aggraver ses blessures.",
       "Prendre des photos": "Les photos ne protègent personne d'un deuxième accident.",
       "Donner à boire aux blessés": "Il ne faut jamais donner à boire à un blessé."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "temoin-accident"
     }
   },
   {
@@ -282,6 +286,10 @@
       "J'ouvre grand le capot": "Ouvrir le capot apporte de l'air au feu.",
       "Je reste dans la voiture": "Il faut s'éloigner du véhicule.",
       "Je redémarre pour voir si ça fonctionne": "Redémarrer peut aggraver le feu."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "fumee-moteur"
     }
   },
   {
@@ -514,6 +522,10 @@
       "Je les laisse en place jusqu'à l'arrivée de l'assurance": "Elles gêneraient la circulation et risqueraient un nouvel accident.",
       "Je les déplace avant de vérifier si quelqu'un est blessé": "On vérifie d'abord qu'il n'y a pas de blessé.",
       "Je pars et je règle ça plus tard": "Partir sans échanger les informations est un délit de fuite."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "accrochage"
     }
   },
   {

@@ -320,6 +320,10 @@
       "La règle d'une longueur de voiture": "Une longueur de voiture est bien trop courte à vitesse normale.",
       "La règle des 10 mètres": "10 m ne suffisent qu'à très basse vitesse : la distance doit dépendre de la vitesse.",
       "La règle des 5 secondes": "5 secondes est plus que nécessaire et gênerait la circulation."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-suivre"
     }
   },
   {
@@ -396,6 +400,10 @@
       "20 mètres": "20 m, c'est trop peu entre deux camions hors agglomération.",
       "100 mètres": "100 m n'est pas la règle : le minimum légal est 50 m.",
       "10 mètres": "10 m est beaucoup trop court entre deux poids lourds."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "camions-distance"
     }
   },
   {
@@ -624,6 +632,10 @@
       "La même que sur route sèche": "Sur route mouillée, tu freines sur une plus longue distance : il faut plus de marge.",
       "Plus petite, car tout le monde roule moins vite": "Rien ne garantit que tout le monde ralentit : garde plus de marge.",
       "Sans importance si ta voiture a l'ABS": "L'ABS aide à garder la direction, il ne supprime pas l'allongement du freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "route-mouillee-distance"
     }
   },
   {
@@ -724,6 +736,10 @@
       "Je compte deux longueurs de voiture": "En longueurs de voiture, la distance ne s'adapte pas à la vitesse.",
       "Je regarde mon compteur": "Le compteur indique ta vitesse, pas ton écart avec le véhicule devant.",
       "Je me fie à mes feux": "Les feux n'indiquent pas la distance avec le véhicule devant."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-suivre"
     }
   }
 ]
