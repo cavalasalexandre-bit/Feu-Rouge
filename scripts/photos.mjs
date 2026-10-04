@@ -5,6 +5,8 @@
  *   npm run photos:chercher   → cherche des photos candidates (Wikimedia Commons, et Mapillary si un jeton est configuré)
  *                               pour chaque question de photos/a-trouver.json, télécharge des miniatures dans
  *                               photos/candidats/ et crée photos/candidats/index.html pour les comparer.
+ *                               Ajoute des identifiants pour ne chercher que ces questions :
+ *                               npm run photos:chercher -- sig-007 aut-002
  *   npm run photos:installer  → télécharge les photos choisies dans photos/selection.json vers public/photos/
  *                               et écrit les crédits (auteur, licence, lien) dans src/data/photos.json.
  *
@@ -206,7 +208,12 @@ async function chercher() {
   const questions = await chargerQuestions()
   const resultats = []
 
-  for (const q of config.questions) {
+  // Questions données en argument (npm run photos:chercher -- sig-007 aut-002) : on ne cherche que celles-là.
+  const filtre = process.argv.slice(3)
+  const aChercher = filtre.length ? config.questions.filter((q) => filtre.includes(q.question)) : config.questions
+  if (filtre.length && !aChercher.length) throw new Error(`aucune question ${filtre.join(', ')} dans photos/a-trouver.json`)
+
+  for (const q of aChercher) {
     const enonce = questions.get(q.question)?.question ?? '(question introuvable)'
     console.log(`▶ ${q.question} : ${q.besoin}`)
     const vus = new Set()

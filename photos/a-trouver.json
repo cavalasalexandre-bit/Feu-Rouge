@@ -34,7 +34,7 @@
     {
       "question": "sig-007",
       "besoin": "Route à deux sens séparés par une ligne blanche continue, vue du siège conducteur",
-      "wikimedia": { "categories": [], "recherches": ["Belgium road continuous white line", "route ligne blanche continue Belgique"] },
+      "wikimedia": { "categories": ["Category:Road markings in Belgium"], "recherches": ["Belgium road continuous white line", "route ligne blanche continue Belgique", "doorgetrokken streep België", "N-weg België"] },
       "mapillary": { "panneaux": [] }
     },
     {
@@ -64,7 +64,7 @@
     {
       "question": "aut-002",
       "besoin": "Bande d'accélération d'une autoroute belge vue du siège conducteur, avec des véhicules sur l'autoroute",
-      "wikimedia": { "categories": [], "recherches": ["Belgium motorway on-ramp acceleration lane", "autoroute Belgique bretelle d'accès"] },
+      "wikimedia": { "categories": ["Category:Motorways in Belgium"], "recherches": ["Belgium motorway on-ramp acceleration lane", "autoroute Belgique bretelle d'accès", "oprit autosnelweg België", "invoegstrook"] },
       "mapillary": { "panneaux": [] }
     }
   ]
