@@ -314,6 +314,10 @@
       "Accélérer pour passer": "Accélérer à l'orange est dangereux : l'orange signifie l'arrêt.",
       "Passer si personne n'arrive": "L'orange fixe impose l'arrêt même si personne n'arrive.",
       "Klaxonner et passer": "Klaxonner ne donne aucun droit de passer."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feu-orange"
     }
   },
   {
@@ -626,6 +630,10 @@
       "Le panneau": "Les feux priment sur les panneaux de priorité.",
       "Celui qui est le plus haut": "La position ne compte pas : les feux priment.",
       "Aucun, j'applique la priorité de droite": "La priorité de droite ne s'applique qu'en dernier recours."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feu-vert-cedez"
     }
   },
   {

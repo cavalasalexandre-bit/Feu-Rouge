@@ -225,6 +225,10 @@
       "Oui, s'il n'y a pas de train en vue": "Un train peut surgir rapidement.",
       "Oui, de jour": "De jour comme de nuit, c'est interdit.",
       "Oui, si le véhicule devant est lent": "La lenteur du véhicule devant ne change rien."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A47"
     }
   },
   {

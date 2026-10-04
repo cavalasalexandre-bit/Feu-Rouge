@@ -161,6 +161,10 @@
       "Tout le monde": "Seuls ceux du côté discontinu peuvent franchir.",
       "Personne": "Ceux du côté discontinu peuvent franchir.",
       "Seulement les conducteurs du côté de la ligne continue": "C'est l'inverse : la ligne continue de ton côté interdit de franchir."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ligne-mixte"
     }
   },
   {
@@ -180,6 +184,10 @@
       "Arrêt et stationnement interdits": "Arrêt et stationnement interdits, c'est la ligne jaune continue.",
       "Stationnement réservé aux livraisons": "Ce marquage ne réserve pas de place aux livraisons.",
       "Zone bleue": "La zone bleue est signalée par des panneaux, pas par une ligne jaune."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "jaune-discontinue"
     }
   },
   {
@@ -199,6 +207,10 @@
       "Stationnement interdit, arrêt permis": "Ça, c'est la ligne jaune discontinue.",
       "Piste cyclable": "Une piste cyclable est marquée en blanc ou par une couleur de revêtement.",
       "Bande bus": "Une bande bus est signalée par un marquage et des panneaux propres."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "jaune-continue"
     }
   },
   {
@@ -218,6 +230,10 @@
       "Ralentisseur": "Un ralentisseur est une bosse signalée par des triangles ou des damiers.",
       "Piste cyclable": "Une piste cyclable ne se marque pas en zigzag jaune.",
       "Zone de livraison libre": "Le zigzag interdit le stationnement, il ne le libère pas."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "zigzag-jaune"
     }
   },
   {
@@ -256,6 +272,10 @@
       "Accélérer pour passer avant la fermeture": "Accélérer pour passer est extrêmement dangereux.",
       "Passer si tu es déjà très près": "Même tout près, on ne s'engage pas quand les barrières bougent.",
       "Passer en klaxonnant": "Klaxonner ne change rien : c'est interdit de s'engager."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A45"
     }
   },
   {
@@ -275,6 +295,10 @@
       "Ralentisseur": "Un ralentisseur se signale autrement (panneau, damier, bosse).",
       "Passage pour piétons": "Un passage pour piétons est fait de bandes blanches parallèles.",
       "Tu es prioritaire": "Ces triangles signifient l'inverse : tu dois céder."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "dents-de-requin"
     }
   },
   {
@@ -317,6 +341,10 @@
       "Le panneau permanent": "Le temporaire prime : il reflète la situation réelle du chantier.",
       "Celui qui est le plus à droite": "La position du panneau ne décide pas laquelle s'applique.",
       "Aucun des deux": "Il faut suivre la signalisation temporaire."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A31"
     }
   },
   {
@@ -428,6 +456,10 @@
       "Une zone résidentielle": "La zone résidentielle a un panneau rectangulaire bleu.",
       "Un passage pour piétons": "Le passage pour piétons a son propre symbole (un piéton sur des bandes).",
       "Une interdiction aux piétons": "Un triangle annonce un danger, pas une interdiction."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A23"
     }
   },
   {
@@ -466,6 +498,10 @@
       "Un passage pour piétons": "Le passage pour piétons est fait de larges bandes blanches parallèles.",
       "Une ligne d'arrêt": "Une ligne d'arrêt est une ligne blanche continue large.",
       "Un ralentisseur": "Un ralentisseur est signalé autrement (panneau, triangles, damier)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "passage-cyclistes"
     }
   },
   {
@@ -485,6 +521,10 @@
       "Sur la ligne": "On s'arrête avant la ligne, pas dessus.",
       "Juste avant le feu, après la ligne": "La ligne d'arrêt indique où s'arrêter, même si le feu est plus loin.",
       "Où je veux, si je ne gêne pas": "La ligne d'arrêt est obligatoire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "ligne-arret"
     }
   },
   {
@@ -523,6 +563,10 @@
       "Orange": "En Belgique, l'orange vient après le vert, pas après le rouge.",
       "Rouge et orange en même temps": "Cette phase existe dans d'autres pays, pas en Belgique.",
       "Orange clignotant": "L'orange clignotant est un fonctionnement à part."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feu-rouge"
     }
   },
   {
@@ -542,6 +586,11 @@
       "À annuler le panneau principal": "Il précise le panneau, il ne l'annule pas.",
       "À donner un conseil facultatif": "Ses indications sont aussi obligatoires que le panneau.",
       "À indiquer le nom de la rue": "Le nom de rue n'est pas un panneau additionnel."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C43-panonceau",
+      "valeur": "50"
     }
   },
   {
@@ -561,6 +610,10 @@
       "Personne": "La mention fait justement une exception.",
       "Tout le monde": "Seuls ceux qui ont une destination dans la zone peuvent entrer.",
       "Seulement les vélos": "La mention vise la desserte locale, pas un type de véhicule."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C3-local"
     }
   },
   {
@@ -580,6 +633,10 @@
       "Je m'arrête obligatoirement": "Un panneau de danger n'impose pas l'arrêt.",
       "Rien de particulier": "Il annonce un danger : il faut l'anticiper.",
       "Je klaxonne": "Le klaxon n'est pas la réponse à un panneau de danger."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A51"
     }
   },
   {
@@ -637,6 +694,10 @@
       "Tout droit obligatoire": "L'obligation de direction est un panneau rond bleu.",
       "Autoroute": "L'autoroute a son propre panneau bleu avec un pont.",
       "Priorité": "La priorité se signale par un losange jaune."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "F19"
     }
   },
   {
@@ -656,6 +717,10 @@
       "Un parking": "Le parking est un P blanc sur fond bleu.",
       "Un sens interdit": "Le sens interdit est un rond rouge à barre blanche.",
       "Un passage à niveau": "Le passage à niveau a d'autres panneaux."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "F45"
     }
   },
   {
@@ -675,6 +740,10 @@
       "Dans le virage, en freinant fort": "Freiner fort dans un virage peut faire perdre le contrôle.",
       "Après le virage": "C'est avant qu'il faut adapter sa vitesse.",
       "Je ne ralentis pas si la route est sèche": "Le virage reste dangereux, sec ou mouillé."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A1b"
     }
   },
   {
@@ -694,6 +763,10 @@
       "Une zone piétonne": "La zone piétonne a un panneau rectangulaire.",
       "Un trottoir": "Il n'y a pas de panneau pour un simple trottoir.",
       "Une interdiction aux piétons": "Un triangle annonce un danger, pas une interdiction."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A21"
     }
   },
   {
@@ -713,6 +786,10 @@
       "Tous les usagers": "Un feu avec un symbole de vélo ne concerne que les cyclistes.",
       "Les piétons": "Les piétons ont leurs propres feux.",
       "Les cyclomoteurs et les voitures": "Les voitures suivent leur propre feu."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feu-velo"
     }
   },
   {

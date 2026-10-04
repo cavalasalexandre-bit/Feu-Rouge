@@ -700,6 +700,11 @@
       "Diminue": "La pente pousse le véhicule vers l'avant : il faut plus de distance pour s'arrêter.",
       "Ne change pas": "La pente influence bien le freinage.",
       "Dépend seulement des pneus": "Les pneus comptent, mais la pente aussi."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A3",
+      "valeur": "10%"
     }
   },
   {

@@ -267,6 +267,10 @@
       "Seulement sur les bandes principales": "Les règles s'appliquent déjà sur la bretelle d'accès.",
       "Après la bande d'accélération": "Elles s'appliquent avant, dès le panneau.",
       "À partir du premier péage": "Le péage n'a rien à voir : les règles s'appliquent dès le panneau de début d'autoroute."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "F5"
     }
   },
   {
@@ -419,6 +423,10 @@
       "Je continue, c'est un conseil": "La croix rouge interdit de rouler sur cette bande.",
       "Je m'arrête sous le panneau": "S'arrêter sur l'autoroute est dangereux : change de bande.",
       "Je ralentis seulement": "Ralentir ne suffit pas : la bande est fermée."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portique-croix"
     }
   },
   {
@@ -438,6 +446,10 @@
       "Je dois accélérer": "La flèche verte n'impose pas de vitesse.",
       "Je dois sortir": "Elle indique seulement que la bande est ouverte.",
       "La bande est réservée aux bus": "Ce n'est pas le sens de la flèche verte."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portique-fleche"
     }
   },
   {

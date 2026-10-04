@@ -301,6 +301,10 @@
       "Les feux de croisement sont allumés": "Les feux de croisement ont un témoin vert.",
       "Le moteur est trop froid": "Il n'existe pas de voyant bleu pour un moteur froid.",
       "Le feu de brouillard arrière est allumé": "Le feu de brouillard arrière a un témoin orange."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "voyant-route"
     }
   },
   {

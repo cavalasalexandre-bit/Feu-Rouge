@@ -41,6 +41,66 @@ function Voiture({ x, y, fill }: { x: number; y: number; fill: string }) {
   )
 }
 
+/** Panneau E9a (parking), réduit pour laisser la place à un panonceau en dessous. */
+function PanneauP() {
+  return (
+    <>
+      <rect x={14} y={4} width={72} height={88} rx={6} fill={BLEU} stroke={BLANC} strokeWidth={3} />
+      <text x={50} y={70} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={58} fill={BLANC}>
+        P
+      </text>
+    </>
+  )
+}
+
+/** Petit panneau additionnel blanc placé sous le panneau principal. */
+function Panonceau({ y = 100, children }: { y?: number; children?: ReactNode }) {
+  return (
+    <>
+      <rect x={6} y={y} width={88} height={44} rx={4} fill={BLANC} stroke={NOIR} strokeWidth={2.5} />
+      {children}
+    </>
+  )
+}
+
+/** Zone 30 aux abords d'une école : limite 30 et symbole « enfants » sur une plaque blanche. */
+function ZoneEcole() {
+  return (
+    <>
+      <rect x={8} y={2} width={84} height={144} rx={6} fill={BLANC} stroke={NOIR} strokeWidth={2.5} />
+      <g transform="translate(17 8) scale(0.66)">
+        <Rond>
+          <text x={50} y={63} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={40} fill={NOIR}>
+            30
+          </text>
+        </Rond>
+      </g>
+      <g transform="translate(22.5 72) scale(0.55)">
+        <Triangle>
+          <circle cx={40} cy={42} r={5} fill={NOIR} />
+          <path d="M40 48 V64 M40 64 L34 78 M40 64 L46 78 M33 54 L47 54" stroke={NOIR} strokeWidth={4.5} fill="none" strokeLinecap="round" />
+          <circle cx={60} cy={50} r={4} fill={NOIR} />
+          <path d="M60 55 V67 M60 67 L55 78 M60 67 L65 78 M54 59 L66 59" stroke={NOIR} strokeWidth={4} fill="none" strokeLinecap="round" />
+        </Triangle>
+      </g>
+      <text x={50} y={138} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={16} fill={NOIR}>
+        ZONE
+      </text>
+    </>
+  )
+}
+
+/** Hauteur du dessin (viewBox) pour les panneaux plus hauts que larges. */
+const HAUTEUR_PANNEAU: Record<string, number> = {
+  'E9a-handicap': 146,
+  'E9a-disque': 146,
+  'E9a-livraisons': 146,
+  'C43-panonceau': 146,
+  'C3-local': 146,
+  'zone30-ecole': 148,
+  'zone30-ecole-heures': 196,
+}
+
 const PANNEAUX: Record<string, (valeur?: string) => ReactNode> = {
   A51: () => (
     <Triangle>
@@ -179,6 +239,200 @@ const PANNEAUX: Record<string, (valeur?: string) => ReactNode> = {
       <rect x={74} y={56} width={12} height={7} rx={2} fill={BLANC} />
     </>
   ),
+  // ---------- Ajouts : signaux de danger ----------
+  A1b: () => (
+    <Triangle>
+      <path d="M60 80 V64 Q60 48 40 42" stroke={NOIR} strokeWidth={8} fill="none" strokeLinecap="round" />
+    </Triangle>
+  ),
+  A3: (valeur = '10%') => (
+    <Triangle>
+      <polygon points="22,56 54,78 22,78" fill={NOIR} />
+      <text x={66} y={74} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={12} fill={NOIR}>
+        {valeur}
+      </text>
+    </Triangle>
+  ),
+  A21: () => (
+    <Triangle>
+      {[30, 40, 50, 60].map((x) => (
+        <rect key={x} x={x} y={72} width={6} height={8} fill={NOIR} />
+      ))}
+      <circle cx={52} cy={36} r={5} fill={NOIR} />
+      <path d="M51 42 L47 56 L41 68 M47 56 L55 68 M42 50 L50 45 L57 52" stroke={NOIR} strokeWidth={4.5} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </Triangle>
+  ),
+  A23: () => (
+    <Triangle>
+      <circle cx={40} cy={42} r={5} fill={NOIR} />
+      <path d="M40 48 V64 M40 64 L34 78 M40 64 L46 78 M33 54 L47 54" stroke={NOIR} strokeWidth={4.5} fill="none" strokeLinecap="round" />
+      <circle cx={60} cy={50} r={4} fill={NOIR} />
+      <path d="M60 55 V67 M60 67 L55 78 M60 67 L65 78 M54 59 L66 59" stroke={NOIR} strokeWidth={4} fill="none" strokeLinecap="round" />
+    </Triangle>
+  ),
+  A27: () => (
+    <Triangle>
+      {/* Cerf qui bondit */}
+      <g transform="translate(50 64) scale(0.8) translate(-56 -56)">
+      <ellipse cx={48} cy={60} rx={15} ry={7} fill={NOIR} transform="rotate(-12 48 60)" />
+      <path d="M60 56 L67 44" stroke={NOIR} strokeWidth={6} strokeLinecap="round" />
+      <ellipse cx={70} cy={42} rx={6} ry={4} fill={NOIR} />
+      <path d="M67 40 L63 30 M65 35 L60 33 M70 39 L72 29 M71 33 L76 31" stroke={NOIR} strokeWidth={2.5} fill="none" strokeLinecap="round" />
+      <path d="M56 63 L64 72 L60 80 M54 64 L58 76 M38 63 L28 70 M40 65 L34 78" stroke={NOIR} strokeWidth={3.5} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </Triangle>
+  ),
+  A31: () => (
+    <Triangle>
+      {/* Ouvrier qui pellette */}
+      <circle cx={46} cy={40} r={5} fill={NOIR} />
+      <path d="M46 46 L50 60 L44 76 M50 60 L58 74 M47 50 L60 56" stroke={NOIR} strokeWidth={4.5} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M56 50 L68 68" stroke={NOIR} strokeWidth={3} />
+      <polygon points="62,78 74,66 82,78" fill={NOIR} />
+    </Triangle>
+  ),
+  A45: () => (
+    <Triangle>
+      {/* Barrière */}
+      <rect x={28} y={52} width={44} height={6} fill={NOIR} />
+      <rect x={28} y={64} width={44} height={6} fill={NOIR} />
+      <rect x={32} y={46} width={6} height={32} fill={NOIR} />
+      <rect x={62} y={46} width={6} height={32} fill={NOIR} />
+    </Triangle>
+  ),
+  A47: () => (
+    <Triangle>
+      {/* Locomotive */}
+      <rect x={30} y={56} width={30} height={14} fill={NOIR} />
+      <rect x={58} y={46} width={14} height={24} fill={NOIR} />
+      <rect x={34} y={46} width={6} height={10} fill={NOIR} />
+      <circle cx={38} cy={74} r={5} fill={NOIR} />
+      <circle cx={52} cy={74} r={5} fill={NOIR} />
+      <circle cx={66} cy={74} r={5} fill={NOIR} />
+    </Triangle>
+  ),
+
+  // ---------- Ajouts : fin de limitation, indication ----------
+  C45: (valeur = '70') => (
+    <>
+      <circle cx={50} cy={50} r={45} fill={BLANC} stroke={NOIR} strokeWidth={2.5} />
+      <text x={50} y={62} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={36} fill="#8f8f8f">
+        {valeur}
+      </text>
+      {[-8, 0, 8].map((d) => (
+        <line key={d} x1={22 + d} y1={78 + d} x2={78 + d} y2={22 + d} stroke={NOIR} strokeWidth={2.5} />
+      ))}
+    </>
+  ),
+  F19: () => (
+    <>
+      <rect x={14} y={6} width={72} height={88} rx={6} fill={BLEU} stroke={BLANC} strokeWidth={3} />
+      <path d="M50 80 V30 M34 44 L50 24 L66 44" stroke={BLANC} strokeWidth={10} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
+  F45: () => (
+    <>
+      <rect x={14} y={6} width={72} height={88} rx={6} fill={BLEU} stroke={BLANC} strokeWidth={3} />
+      <rect x={43} y={34} width={14} height={50} fill={BLANC} />
+      <rect x={28} y={22} width={44} height={14} fill={ROUGE} />
+    </>
+  ),
+
+  // ---------- Ajouts : stationnement (avec panonceau) ----------
+  'E9a-handicap': () => (
+    <>
+      <PanneauP />
+      <Panonceau>
+        <g transform="translate(50 122)" fill="none" stroke={BLEU} strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round">
+          <circle cx={-4} cy={-16} r={3} fill={BLEU} stroke="none" />
+          <path d="M-4 -11 V0 H8 L12 9" />
+          <path d="M-12 -4 A11 11 0 1 0 6 8" />
+        </g>
+      </Panonceau>
+    </>
+  ),
+  'E9a-disque': () => (
+    <>
+      <PanneauP />
+      <Panonceau>
+        <rect x={34} y={108} width={32} height={30} rx={3} fill={BLEU} />
+        <circle cx={50} cy={124} r={10} fill={BLANC} />
+        <path d="M50 124 V117 M50 124 L55 127" stroke={NOIR} strokeWidth={2} strokeLinecap="round" />
+      </Panonceau>
+    </>
+  ),
+  'E9a-livraisons': () => (
+    <>
+      <PanneauP />
+      <Panonceau>
+        <text x={50} y={119} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={12} fill={NOIR}>
+          LIVRAISONS
+        </text>
+        <text x={50} y={136} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={12} fill={NOIR}>
+          7 h – 11 h
+        </text>
+      </Panonceau>
+    </>
+  ),
+  disque: () => (
+    <>
+      <rect x={10} y={4} width={80} height={92} rx={6} fill={BLEU} stroke={BLANC} strokeWidth={2} />
+      <rect x={16} y={10} width={20} height={20} rx={2} fill={BLANC} />
+      <text x={26} y={27} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={17} fill={BLEU}>
+        P
+      </text>
+      <circle cx={50} cy={60} r={28} fill={BLANC} />
+      {Array.from({ length: 12 }, (_, i) => (
+        <line key={i} x1={50} y1={35} x2={50} y2={40} stroke={NOIR} strokeWidth={2} transform={`rotate(${i * 30} 50 60)`} />
+      ))}
+      <path d="M50 60 V42 M50 60 L41 66" stroke={NOIR} strokeWidth={3} strokeLinecap="round" />
+    </>
+  ),
+
+  // ---------- Ajouts : zone 30 aux abords d'une école ----------
+  'zone30-ecole': () => <ZoneEcole />,
+  'zone30-ecole-heures': () => (
+    <>
+      <ZoneEcole />
+      <Panonceau y={150}>
+        <text x={50} y={177} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={15} fill={NOIR}>
+          7 h – 17 h
+        </text>
+      </Panonceau>
+    </>
+  ),
+
+  // ---------- Ajouts : panneaux avec panonceau ----------
+  'C43-panonceau': (valeur = '50') => (
+    <>
+      <g transform="translate(5 2) scale(0.9)">
+        <Rond>
+          <text x={50} y={62} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={38} fill={NOIR}>
+            {valeur}
+          </text>
+        </Rond>
+      </g>
+      <Panonceau>
+        <text x={50} y={130} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={18} fill={NOIR}>
+          200 m
+        </text>
+      </Panonceau>
+    </>
+  ),
+  'C3-local': () => (
+    <>
+      <g transform="translate(5 2) scale(0.9)">
+        <Rond />
+      </g>
+      <Panonceau>
+        {['EXCEPTÉ', 'CIRCULATION', 'LOCALE'].map((t, i) => (
+          <text key={t} x={50} y={114 + i * 12.5} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={10} fill={NOIR}>
+            {t}
+          </text>
+        ))}
+      </Panonceau>
+    </>
+  ),
 }
 
 // ---------- Scènes de circulation ----------
@@ -225,6 +479,142 @@ function Carrefour() {
           <rect x={v} y={99} width={10} height={2} fill={MARQUAGE} />
         </g>
       ))}
+    </>
+  )
+}
+
+const FOND_CIEL = '#1a2433'
+const JAUNE_MARQUAGE = '#f5c400'
+const TROTTOIR = '#a9adb3'
+
+/** Feux tricolores vus de face. `velo` dessine le symbole vélo dans le feu allumé. */
+function Feux({ allume, velo = false, sansFond = false }: { allume: 'rouge' | 'orange' | 'vert'; velo?: boolean; sansFond?: boolean }) {
+  const lampes = [
+    { nom: 'rouge', on: '#ff3b30', off: '#3a1716' },
+    { nom: 'orange', on: '#ffb020', off: '#3a2c12' },
+    { nom: 'vert', on: '#2ee07a', off: '#123222' },
+  ] as const
+  return (
+    <>
+      {!sansFond && <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />}
+      <rect x={68} y={14} width={64} height={172} rx={12} fill="#15171b" stroke="#2c3038" strokeWidth={3} />
+      {lampes.map((l, i) => {
+        const cy = 50 + i * 50
+        const actif = l.nom === allume
+        if (velo) {
+          return (
+            <g key={l.nom}>
+              <circle cx={100} cy={cy} r={20} fill="#0b0c0e" />
+              <g stroke={actif ? l.on : l.off} strokeWidth={3} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx={89} cy={cy + 6} r={6} />
+                <circle cx={111} cy={cy + 6} r={6} />
+                <path d={`M89 ${cy + 6} L96 ${cy - 6} H106 L111 ${cy + 6} M96 ${cy - 6} L100 ${cy + 6} L106 ${cy - 6} M94 ${cy - 10} H99`} />
+              </g>
+            </g>
+          )
+        }
+        return <circle key={l.nom} cx={100} cy={cy} r={20} fill={actif ? l.on : l.off} />
+      })}
+    </>
+  )
+}
+
+/** Portique au-dessus d'une autoroute à trois bandes ; la bande du milieu est la tienne. */
+function Portique({ centre, cotes = 'fleche' }: { centre: 'croix' | 'fleche' | '90'; cotes?: 'fleche' | '90' }) {
+  const panneau = (x: number, type: 'croix' | 'fleche' | '90') => (
+    <g key={x} transform={`translate(${x} 26)`}>
+      <rect x={-20} y={0} width={40} height={40} rx={3} fill="#0b0c0e" stroke="#3a3f48" strokeWidth={2} />
+      {type === 'croix' && <path d="M-11 9 L11 31 M11 9 L-11 31" stroke="#ff3b30" strokeWidth={5} strokeLinecap="round" />}
+      {type === 'fleche' && <path d="M0 8 V30 M-9 21 L0 31 L9 21" stroke="#2ee07a" strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" />}
+      {type === '90' && (
+        <>
+          <circle cx={0} cy={20} r={16} fill="none" stroke="#ff3b30" strokeWidth={3.5} />
+          <text x={0} y={26} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={15} fill={BLANC}>
+            90
+          </text>
+        </>
+      )}
+    </g>
+  )
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />
+      {/* Chaussée en perspective */}
+      <polygon points="70,92 130,92 200,200 0,200" fill={ROUTE} />
+      <polygon points="0,200 70,92 60,92 0,170" fill="#55704a" />
+      <polygon points="200,200 130,92 140,92 200,170" fill="#55704a" />
+      {[0.33, 0.67].map((t) => (
+        <g key={t}>
+          {[0, 1, 2, 3].map((k) => {
+            const y1 = 96 + k * 27
+            const y2 = y1 + 14
+            const xa = (y: number) => 70 + 60 * t + (y - 92) / 108 * (200 * t - 70 - 60 * t)
+            return <line key={k} x1={xa(y1)} y1={y1} x2={xa(y2)} y2={y2} stroke={MARQUAGE} strokeWidth={2 + k * 0.6} />
+          })}
+        </g>
+      ))}
+      {/* Portique */}
+      <rect x={14} y={18} width={6} height={110} fill="#8a919c" />
+      <rect x={180} y={18} width={6} height={110} fill="#8a919c" />
+      <rect x={14} y={18} width={172} height={8} fill="#8a919c" />
+      {panneau(52, cotes === '90' ? '90' : 'fleche')}
+      {panneau(100, centre)}
+      {panneau(148, cotes === '90' ? '90' : 'fleche')}
+      <Auto x={100} y={176} fill="#1f4fa3" label="TOI" />
+    </>
+  )
+}
+
+/** Fond sombre façon tableau de bord avec un voyant allumé au centre. */
+function Voyant({ couleur, children }: { couleur: string; children: ReactNode }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#0b0e13" />
+      <circle cx={100} cy={100} r={84} fill="#11161e" stroke="#262d38" strokeWidth={3} />
+      <g color={couleur} style={{ filter: `drop-shadow(0 0 6px ${couleur})` }}>
+        {children}
+      </g>
+    </>
+  )
+}
+
+/** Route droite à deux sens, vue de dessus. */
+function RouteDroite() {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={40} y={0} width={120} height={200} fill={ROUTE} />
+      <rect x={44} y={0} width={2} height={200} fill={MARQUAGE} />
+      <rect x={154} y={0} width={2} height={200} fill={MARQUAGE} />
+    </>
+  )
+}
+
+/** Rue en ville avec un trottoir à droite, vue de dessus. */
+function RueTrottoir() {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={ROUTE} />
+      <rect x={158} y={0} width={42} height={200} fill={TROTTOIR} />
+      <rect x={156} y={0} width={4} height={200} fill="#d6d9dd" />
+      {[0, 40, 80, 120, 160].map((y) => (
+        <rect key={y} x={60} y={y + 10} width={3} height={20} fill={MARQUAGE} />
+      ))}
+    </>
+  )
+}
+
+/** Route qui arrive (en bas) sur une route transversale, vue de dessus. */
+function Croisement() {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={0} y={60} width={200} height={60} fill={ROUTE} />
+      <rect x={50} y={120} width={100} height={80} fill={ROUTE} />
+      {[10, 40, 70, 100, 130, 160, 190].map((x) => (
+        <rect key={x} x={x - 5} y={89} width={12} height={2} fill={MARQUAGE} />
+      ))}
+      <rect x={99} y={140} width={2} height={60} fill={MARQUAGE} />
     </>
   )
 }
@@ -281,14 +671,132 @@ const SCENES: Record<string, ReactNode> = {
       <Fleche d="M164 146 L156 120" />
     </>
   ),
+  // ---------- Feux de signalisation ----------
+  'feu-orange': <Feux allume="orange" />,
+  'feu-rouge': <Feux allume="rouge" />,
+  'feu-velo': <Feux allume="rouge" velo />,
+  'feu-vert-cedez': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />
+      <rect x={96} y={20} width={8} height={180} fill="#8a919c" />
+      <g transform="translate(50 12) scale(0.5)">
+        <Feux allume="vert" sansFond />
+      </g>
+      <g transform="translate(70 118) scale(0.6)">
+        <polygon points="5,13 95,13 50,93" fill={BLANC} stroke={ROUGE} strokeWidth={9} strokeLinejoin="round" />
+      </g>
+    </>
+  ),
+
+  // ---------- Portiques d'autoroute ----------
+  'portique-croix': <Portique centre="croix" />,
+  'portique-fleche': <Portique centre="fleche" />,
+  'portique-90': <Portique centre="90" cotes="90" />,
+
+  // ---------- Voyants du tableau de bord ----------
+  'voyant-route': (
+    <Voyant couleur="#3d8bff">
+      <path d="M92 70 Q60 70 60 100 Q60 130 92 130 Z" fill="currentColor" />
+      {[78, 92, 106, 120].map((y) => (
+        <line key={y} x1={102} y1={y} x2={140} y2={y} stroke="currentColor" strokeWidth={7} strokeLinecap="round" />
+      ))}
+    </Voyant>
+  ),
+  'voyant-croisement': (
+    <Voyant couleur="#39d98a">
+      <path d="M92 70 Q60 70 60 100 Q60 130 92 130 Z" fill="currentColor" />
+      {[76, 92, 108, 124].map((y) => (
+        <line key={y} x1={102} y1={y} x2={138} y2={y + 12} stroke="currentColor" strokeWidth={7} strokeLinecap="round" />
+      ))}
+    </Voyant>
+  ),
+  'voyant-huile': (
+    <Voyant couleur="#ff4d5e">
+      {/* Burette d'huile avec une goutte */}
+      <path d="M58 92 H74 L80 84 H112 L150 70 L152 76 L124 100 V122 H74 V102 L58 98 Z" fill="currentColor" />
+      <rect x={88} y={76} width={14} height={8} fill="currentColor" />
+      <path d="M154 86 Q160 98 154 104 Q148 98 154 86 Z" fill="currentColor" />
+    </Voyant>
+  ),
+  'voyant-abs': (
+    <Voyant couleur="#ffb020">
+      <circle cx={100} cy={100} r={34} fill="none" stroke="currentColor" strokeWidth={7} />
+      <path d="M58 70 Q44 100 58 130 M142 70 Q156 100 142 130" fill="none" stroke="currentColor" strokeWidth={7} strokeLinecap="round" />
+      <text x={100} y={108} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={20} fill="currentColor">
+        ABS
+      </text>
+    </Voyant>
+  ),
+
+  // ---------- Marquages au sol (vue de dessus) ----------
+  'ligne-mixte': (
+    <>
+      <RouteDroite />
+      <rect x={95} y={0} width={4} height={200} fill={MARQUAGE} />
+      {[0, 25, 50, 75, 100, 125, 150, 175].map((y) => (
+        <rect key={y} x={103} y={y + 4} width={4} height={14} fill={MARQUAGE} />
+      ))}
+    </>
+  ),
+  'jaune-discontinue': (
+    <>
+      <RueTrottoir />
+      {[0, 25, 50, 75, 100, 125, 150, 175].map((y) => (
+        <rect key={y} x={150} y={y + 3} width={5} height={14} fill={JAUNE_MARQUAGE} />
+      ))}
+    </>
+  ),
+  'jaune-continue': (
+    <>
+      <RueTrottoir />
+      <rect x={150} y={0} width={5} height={200} fill={JAUNE_MARQUAGE} />
+    </>
+  ),
+  'zigzag-jaune': (
+    <>
+      <RueTrottoir />
+      <path d="M140 10 L124 35 L140 60 L124 85 L140 110 L124 135 L140 160 L124 185" fill="none" stroke={JAUNE_MARQUAGE} strokeWidth={4} strokeLinejoin="miter" />
+    </>
+  ),
+  'dents-de-requin': (
+    <>
+      <Croisement />
+      {[108, 124, 140].map((x) => (
+        <polygon key={x} points={`${x - 7},126 ${x + 7},126 ${x},142`} fill={MARQUAGE} />
+      ))}
+      <Auto x={124} y={172} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'passage-cyclistes': (
+    <>
+      <Croisement />
+      {Array.from({ length: 10 }, (_, i) => (
+        <g key={i}>
+          <rect x={52 + i * 10} y={130} width={6} height={6} fill={MARQUAGE} />
+          <rect x={52 + i * 10} y={146} width={6} height={6} fill={MARQUAGE} />
+        </g>
+      ))}
+    </>
+  ),
+  'ligne-arret': (
+    <>
+      <Croisement />
+      <rect x={102} y={130} width={44} height={6} fill={MARQUAGE} />
+      <g transform="translate(150 132) scale(0.22)">
+        <Feux allume="rouge" sansFond />
+      </g>
+      <Auto x={124} y={168} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
 }
 
 export function Schema({ schema, titre }: { schema: SchemaType; titre: string }) {
   if (schema.type === 'panneau') {
     const dessin = PANNEAUX[schema.code]
     if (!dessin) return null
+    const h = HAUTEUR_PANNEAU[schema.code] ?? 100
     return (
-      <svg viewBox="0 0 100 100" width={160} height={160} role="img" aria-label={titre}>
+      <svg viewBox={`0 0 100 ${h}`} width={160} height={(160 * h) / 100} role="img" aria-label={titre}>
         {dessin(schema.valeur)}
       </svg>
     )

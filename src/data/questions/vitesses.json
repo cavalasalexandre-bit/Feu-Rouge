@@ -96,6 +96,11 @@
       "130 km/h": "130 km/h est la limite française, pas belge.",
       "110 km/h": "110 km/h n'existe pas comme limite générale en Belgique.",
       "100 km/h": "100 km/h n'est pas la limite des voitures sur autoroute."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C43",
+      "valeur": "120"
     }
   },
   {
@@ -300,6 +305,10 @@
       "50 km/h": "50 km/h est trop rapide aux abords d'une école en zone 30.",
       "20 km/h": "20 km/h est la limite des zones résidentielles, pas des abords d'écoles.",
       "40 km/h": "40 km/h n'est pas une limite de zone en Belgique."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "zone30-ecole"
     }
   },
   {
@@ -464,6 +473,11 @@
       "Plus aucune limite": "Il y a toujours une limite : la limite générale reprend.",
       "La même que sur le panneau précédent": "Le panneau barré met justement fin à cette limite.",
       "30 km/h": "30 km/h ne s'applique que s'il s'agit de la limite générale (à Bruxelles en agglomération par exemple)."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "C45",
+      "valeur": "70"
     }
   },
   {
@@ -541,6 +555,10 @@
       "Je roule à 120 km/h, c'est seulement un conseil": "Une limite affichée sur un panneau lumineux est obligatoire, comme un panneau fixe.",
       "Je ne respecte la limite que s'il pleut": "La limite s'applique dès qu'elle est affichée, quel que soit le temps.",
       "Je ralentis seulement sur la bande de droite": "La limite vaut pour toutes les bandes concernées."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "portique-90"
     }
   },
   {
@@ -560,6 +578,10 @@
       "Toute la journée, y compris la nuit": "Le panneau additionnel limite la règle aux heures indiquées.",
       "Seulement les jours d'école, sans tenir compte des heures": "Ce sont les heures du panneau qui comptent.",
       "Jamais, c'est un conseil": "La limite est obligatoire pendant les heures affichées."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "zone30-ecole-heures"
     }
   },
   {

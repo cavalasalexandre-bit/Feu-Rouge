@@ -396,6 +396,10 @@
       "Je mets l'animal dans mon coffre": "Ce n'est pas permis et l'animal peut être dangereux.",
       "Je repars sans rien dire": "Il faut prévenir la police, qui contacte les services compétents.",
       "Je m'approche pour le soigner": "Un animal blessé peut réagir violemment."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A27"
     }
   },
   {

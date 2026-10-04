@@ -130,6 +130,10 @@
       "1 heure": "1 heure n'est pas la durée de la zone bleue.",
       "30 minutes": "30 minutes n'est pas la règle.",
       "4 heures": "4 heures dépasse la durée permise."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "E9a-disque"
     }
   },
   {
@@ -271,6 +275,10 @@
       "Oui, pour moins de 5 minutes": "Même quelques minutes, c'est interdit.",
       "Oui, si les feux de détresse sont allumés": "Les feux de détresse ne rendent pas l'arrêt permis.",
       "Oui, la nuit": "La place reste réservée la nuit aussi."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "E9a-handicap"
     }
   },
   {
@@ -347,6 +355,10 @@
       "Oui, quelques secondes": "L'arrêt y est interdit.",
       "Oui, la nuit": "C'est interdit à toute heure.",
       "Oui, s'il n'y a pas de cycliste": "Un cycliste peut arriver à tout moment."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "passage-cyclistes"
     }
   },
   {
@@ -423,6 +435,10 @@
       "Dans la boîte à gants": "Il doit être visible pour être contrôlé.",
       "Sur le siège passager": "Il doit être lisible depuis l'extérieur, contre le pare-brise.",
       "Sur la plage arrière": "Il se place à l'avant, contre le pare-brise."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "disque"
     }
   },
   {
@@ -461,6 +477,10 @@
       "Oui, pour moins d'une heure": "La place est réservée aux livraisons pendant les heures indiquées.",
       "Oui, si tu restes dans la voiture": "Ce serait toujours du stationnement.",
       "Oui, avec le disque": "Le disque ne donne pas accès à une place de livraison."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "E9a-livraisons"
     }
   },
   {
@@ -480,6 +500,10 @@
       "Non, l'arrêt est interdit": "C'est la ligne jaune continue qui interdit l'arrêt.",
       "Oui, mais seulement la nuit": "L'arrêt est permis à toute heure.",
       "Non, sauf pour les taxis": "Tout conducteur peut s'arrêter le temps de faire descendre quelqu'un."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "jaune-discontinue"
     }
   },
   {
@@ -499,6 +523,10 @@
       "Oui, 2 minutes c'est un arrêt": "La ligne jaune continue interdit aussi l'arrêt.",
       "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas l'arrêt permis.",
       "Oui, si tu restes près de la voiture": "C'est interdit quand même."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "jaune-continue"
     }
   },
   {

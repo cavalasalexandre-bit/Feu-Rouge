@@ -149,6 +149,10 @@
       "Je continue jusqu'à destination": "Continuer peut détruire le moteur.",
       "J'accélère pour faire circuler l'huile": "Accélérer aggrave le problème.",
       "Je l'ignore s'il s'éteint parfois": "Un voyant rouge qui s'allume, même par moments, signale un problème."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "voyant-huile"
     }
   },
   {
@@ -358,6 +362,10 @@
       "Les freins ne fonctionnent plus du tout": "Les freins classiques restent actifs.",
       "Il faut faire le plein": "Le voyant ABS ne concerne pas le carburant.",
       "Rien, c'est normal en hiver": "Un voyant qui reste allumé signale une panne."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "voyant-abs"
     }
   },
   {
