@@ -154,6 +154,10 @@
       "Seulement à ceux qui viennent de droite": "En sortant d'un parking, tu cèdes à tout le monde, pas seulement à droite.",
       "À personne si tu es à droite": "La priorité de droite ne s'applique pas quand tu sors d'un parking.",
       "Seulement aux piétons": "Tu cèdes aussi aux véhicules, pas seulement aux piétons."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "sortie-parking"
     }
   },
   {
@@ -173,6 +177,10 @@
       "Je passe : elle vient de ma gauche": "Depuis un chemin de terre, tu cèdes aussi à ceux qui viennent de gauche.",
       "Je passe en klaxonnant": "Klaxonner ne donne aucune priorité.",
       "Je passe si je roule vite": "Rouler vite ne donne aucun droit, au contraire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "chemin-terre"
     }
   },
   {
@@ -215,6 +223,10 @@
       "Je tourne, j'ai mis mon clignotant": "Le clignotant ne te donne pas la priorité sur le cycliste.",
       "Je tourne, les voitures sont prioritaires": "Les voitures ne sont pas prioritaires sur un cycliste qui va tout droit.",
       "Je klaxonne pour qu'il s'arrête": "Klaxonner ne remplace pas l'obligation de céder."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "droite-cycliste"
     }
   },
   {
@@ -276,6 +288,10 @@
       "Le tram doit te céder s'il vient de gauche": "Le tram est prioritaire d'où qu'il vienne.",
       "Le premier arrivé passe": "La règle du premier arrivé n'existe pas.",
       "Le tram doit s'arrêter": "C'est à toi de céder, pas au tram de s'arrêter."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "tram-carrefour"
     }
   },
   {
@@ -356,6 +372,10 @@
       "Tu peux passer": "Le bras levé signifie l'arrêt, pas le passage.",
       "Ralentir seulement": "Ce n'est pas une invitation à ralentir : c'est un arrêt.",
       "Arrêt seulement pour ceux qui viennent de face": "Ce geste arrête tous les usagers, pas seulement ceux de face."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "agent-bras-leve"
     }
   },
   {
@@ -432,6 +452,10 @@
       "Accélérer pour passer avant lui": "Accélérer pour couper la route au bus est dangereux et interdit.",
       "Le dépasser par la gauche en klaxonnant": "Le dépasser en klaxonnant au moment où il démarre est dangereux.",
       "Ne rien faire de particulier": "En agglomération, tu dois faciliter son départ."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bus-quitte-arret"
     }
   },
   {
@@ -493,6 +517,10 @@
       "Moi, une voiture est prioritaire sur un vélo": "La priorité de droite s'applique à tous les véhicules, vélos compris.",
       "Celui qui roule le plus vite": "La vitesse ne donne jamais la priorité.",
       "Moi, s'il roule sur la chaussée": "Il est sur la chaussée, il a donc la priorité de droite."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "carrefour-velo-droite"
     }
   },
   {
@@ -512,6 +540,10 @@
       "Je m'engage, j'ai le vert": "Le vert ne permet pas de bloquer le carrefour.",
       "Je m'engage et j'allume mes feux de détresse": "Les feux de détresse ne rendent pas la manœuvre permise.",
       "Je klaxonne pour faire avancer la file": "Klaxonner ne libère pas le carrefour."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "carrefour-encombre"
     }
   },
   {
@@ -550,6 +582,10 @@
       "Je passe : je suis une voiture": "En sortant d'un parking, tu cèdes à tous les usagers, cyclistes compris.",
       "Je passe s'il vient de gauche": "Le côté d'où il vient ne change rien.",
       "Je klaxonne et je passe": "Klaxonner ne donne aucune priorité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "parking-piste"
     }
   },
   {
@@ -588,6 +624,10 @@
       "Pour tous les usagers": "C'est le bras levé verticalement qui arrête tout le monde.",
       "Pour ceux qui arrivent sur ses côtés": "Ceux qui arrivent sur ses côtés, dans l'axe de ses bras, peuvent passer.",
       "Pour personne : il invite à passer": "Le geste arrête bien certains usagers."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "agent-bras-tendus"
     }
   },
   {
@@ -691,6 +731,10 @@
       "Moi, il vient de ma droite": "Celui qui sort d'un chemin de terre doit céder à tous.",
       "Le plus lent": "La vitesse ne décide pas de la priorité.",
       "Le plus grand véhicule": "La taille ne donne aucune priorité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "tracteur-chemin"
     }
   },
   {
@@ -710,6 +754,10 @@
       "Je le dépasse par la droite prudemment": "Les voyageurs traversent ta voie : tu dois t'arrêter.",
       "Je klaxonne pour prévenir les voyageurs": "Tu dois les laisser passer, pas les presser.",
       "Je passe lentement entre les voyageurs": "C'est dangereux : arrête-toi."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "tram-arret"
     }
   },
   {
@@ -748,6 +796,10 @@
       "Je lui cède le passage": "Elle vient de ta gauche : c'est elle qui doit te céder.",
       "Je m'arrête et j'attends qu'elle me fasse signe": "Tu es prioritaire, mais garde un œil sur elle.",
       "Je klaxonne avant de passer": "Le klaxon n'est pas nécessaire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "carrefour-voiture-gauche"
     }
   },
   {

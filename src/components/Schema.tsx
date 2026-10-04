@@ -619,6 +619,133 @@ function Croisement() {
   )
 }
 
+const PISTE = '#a8553f'
+const TERRE = '#9c7b4f'
+const PARKING = '#6c737e'
+
+/** Cycliste vu de dessus (rot = direction, 0 = vers le haut). */
+function Velo({ x, y, rot = 0 }: { x: number; y: number; rot?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+      <rect x={-1.5} y={-13} width={3} height={26} rx={1.5} fill="#1b1b1b" />
+      <ellipse cx={0} cy={1} rx={7} ry={5} fill="#e0791f" />
+      <circle cx={0} cy={-3} r={3.5} fill="#f4f4f4" stroke="#1b1b1b" strokeWidth={1} />
+    </g>
+  )
+}
+
+/** Piéton vu de dessus. */
+function Pieton({ x, y }: { x: number; y: number }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <ellipse cx={0} cy={0} rx={6} ry={4} fill="#d94f8a" />
+      <circle cx={0} cy={0} r={2.8} fill="#3b2a20" />
+    </g>
+  )
+}
+
+/** Tram vu de dessus (90 de long). */
+function Tram({ x, y, rot = 0 }: { x: number; y: number; rot?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+      <rect x={-11} y={-45} width={22} height={90} rx={5} fill="#cfd3d8" stroke="#0b0e13" strokeWidth={1} />
+      <rect x={-11} y={-16} width={22} height={2} fill="#8a919c" />
+      <rect x={-11} y={14} width={22} height={2} fill="#8a919c" />
+      <rect x={-8} y={-43} width={16} height={6} rx={2} fill="#9fc1e6" />
+    </g>
+  )
+}
+
+/** Bus vu de dessus ; `clignotant` allume les clignotants gauches. */
+function Bus({ x, y, rot = 0, clignotant = false }: { x: number; y: number; rot?: number; clignotant?: boolean }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+      <rect x={-11} y={-30} width={22} height={60} rx={3} fill="#e2b33c" stroke="#0b0e13" strokeWidth={1} />
+      <rect x={-8} y={-28} width={16} height={6} rx={1.5} fill="#cfe0f5" />
+      <rect x={-6} y={-10} width={12} height={20} rx={1} fill="#c99a2a" />
+      {clignotant && (
+        <>
+          <circle cx={-11} cy={-28} r={3} fill="#ffb020" />
+          <circle cx={-11} cy={28} r={3} fill="#ffb020" />
+        </>
+      )}
+    </g>
+  )
+}
+
+/** Tracteur vu de dessus. */
+function Tracteur({ x, y, rot = 0 }: { x: number; y: number; rot?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+      <rect x={-10} y={-14} width={20} height={26} rx={2} fill="#2f8a3b" stroke="#0b0e13" strokeWidth={1} />
+      <rect x={-15} y={2} width={6} height={14} rx={2} fill="#1b1b1b" />
+      <rect x={9} y={2} width={6} height={14} rx={2} fill="#1b1b1b" />
+      <rect x={-12} y={-14} width={4} height={8} rx={1} fill="#1b1b1b" />
+      <rect x={8} y={-14} width={4} height={8} rx={1} fill="#1b1b1b" />
+    </g>
+  )
+}
+
+/** Clignotants d'une voiture (côté gauche) à la position donnée. */
+function ClignoGauche({ x, y }: { x: number; y: number }) {
+  return (
+    <>
+      <circle cx={x - 9} cy={y - 13} r={2.8} fill="#ffb020" />
+      <circle cx={x - 9} cy={y + 13} r={2.8} fill="#ffb020" />
+    </>
+  )
+}
+
+/** Agent qualifié vu de face. */
+function Agent({ bras }: { bras: 'leve' | 'tendus' }) {
+  const bleu = '#1f3b73'
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={FOND_CIEL} />
+      <rect x={0} y={150} width={200} height={50} fill={ROUTE} />
+      {[20, 70, 120, 170].map((x) => (
+        <rect key={x} x={x} y={174} width={20} height={3} fill={MARQUAGE} />
+      ))}
+      <g stroke={bleu} strokeWidth={12} strokeLinecap="round" fill="none">
+        {/* Jambes */}
+        <path d="M92 120 L88 168 M108 120 L112 168" />
+        {/* Bras */}
+        {bras === 'leve' ? <path d="M84 72 L66 108 M116 72 L118 22" /> : <path d="M84 72 L40 72 M116 72 L160 72" />}
+      </g>
+      <rect x={82} y={62} width={36} height={64} rx={8} fill={bleu} />
+      <rect x={82} y={84} width={36} height={6} fill="#c9d3e3" />
+      {bras === 'leve' ? (
+        <>
+          <circle cx={66} cy={110} r={6} fill={BLANC} />
+          <circle cx={118} cy={18} r={6} fill={BLANC} />
+        </>
+      ) : (
+        <>
+          <circle cx={36} cy={72} r={6} fill={BLANC} />
+          <circle cx={164} cy={72} r={6} fill={BLANC} />
+        </>
+      )}
+      <circle cx={100} cy={48} r={12} fill="#d9a77c" />
+      <rect x={86} y={30} width={28} height={10} rx={3} fill={bleu} />
+      <rect x={84} y={38} width={32} height={4} rx={2} fill="#0f1d3a" />
+    </>
+  )
+}
+
+/** Route verticale avec trottoirs des deux côtés. */
+function RueDeuxTrottoirs({ ligne = true }: { ligne?: boolean }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={ROUTE} />
+      <rect x={0} y={0} width={30} height={200} fill={TROTTOIR} />
+      <rect x={170} y={0} width={30} height={200} fill={TROTTOIR} />
+      <rect x={30} y={0} width={3} height={200} fill="#d6d9dd" />
+      <rect x={167} y={0} width={3} height={200} fill="#d6d9dd" />
+      {ligne && [0, 40, 80, 120, 160].map((y) => <rect key={y} x={99} y={y + 10} width={3} height={20} fill={MARQUAGE} />)}
+    </>
+  )
+}
+
 const SCENES: Record<string, ReactNode> = {
   'carrefour-droite': (
     <>
@@ -788,6 +915,182 @@ const SCENES: Record<string, ReactNode> = {
       <Auto x={124} y={168} fill="#1f4fa3" label="TOI" />
     </>
   ),
+  // ---------- Étape 5 : carrefours, priorités, trams et bus ----------
+  'carrefour-velo-droite': (
+    <>
+      <Carrefour />
+      <Auto x={112} y={160} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M112 140 V110" />
+      <Velo x={165} y={88} rot={-90} />
+      <Fleche d="M148 88 H130" />
+    </>
+  ),
+  'carrefour-voiture-gauche': (
+    <>
+      <Carrefour />
+      <Auto x={112} y={160} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M112 140 V110" />
+      <Auto x={35} y={112} rot={90} fill="#c8102e" />
+      <Fleche d="M54 112 H72" />
+    </>
+  ),
+  'tram-carrefour': (
+    <>
+      <Carrefour />
+      <rect x={0} y={95} width={200} height={2} fill="#2b2f36" />
+      <rect x={0} y={103} width={200} height={2} fill="#2b2f36" />
+      <Tram x={178} y={100} rot={-90} />
+      <Fleche d="M130 100 H112" />
+      <Auto x={112} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M112 148 V130" />
+    </>
+  ),
+  'tram-arret': (
+    <>
+      <RueDeuxTrottoirs ligne={false} />
+      <rect x={85} y={0} width={2} height={200} fill="#2b2f36" />
+      <rect x={97} y={0} width={2} height={200} fill="#2b2f36" />
+      <Tram x={92} y={62} />
+      <Pieton x={114} y={52} />
+      <Pieton x={132} y={66} />
+      <Pieton x={150} y={50} />
+      <Auto x={136} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M136 148 V122" />
+    </>
+  ),
+  'bus-quitte-arret': (
+    <>
+      <RueTrottoir />
+      <rect x={176} y={40} width={4} height={30} fill="#8a919c" />
+      <rect x={170} y={32} width={16} height={12} rx={2} fill="#1f4fa3" />
+      <Bus x={140} y={66} clignotant />
+      <Fleche d="M128 34 L114 12" />
+      <Auto x={110} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M110 148 V124" />
+    </>
+  ),
+  'bus-arret': (
+    <>
+      <RueTrottoir />
+      <rect x={176} y={40} width={4} height={30} fill="#8a919c" />
+      <rect x={170} y={32} width={16} height={12} rx={2} fill="#1f4fa3" />
+      <Bus x={140} y={66} />
+      <Auto x={100} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M100 148 V110" />
+    </>
+  ),
+  'droite-cycliste': (
+    <>
+      <Carrefour />
+      <rect x={126} y={125} width={10} height={75} fill={PISTE} />
+      <rect x={126} y={0} width={10} height={75} fill={PISTE} />
+      <Velo x={131} y={178} />
+      <Fleche d="M131 162 V134" />
+      <Auto x={110} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M110 148 V124 Q110 112 122 112 H156" />
+    </>
+  ),
+  'parking-piste': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={PARKING} />
+      <rect x={0} y={20} width={200} height={56} fill={ROUTE} />
+      {[10, 50, 90, 130, 170].map((x) => <rect key={x} x={x} y={47} width={20} height={2} fill={MARQUAGE} />)}
+      <rect x={0} y={76} width={200} height={8} fill={TROTTOIR} />
+      <rect x={0} y={84} width={200} height={14} fill={PISTE} />
+      <rect x={0} y={98} width={200} height={8} fill={TROTTOIR} />
+      {[16, 40, 140, 164, 188].map((x) => <rect key={x} x={x} y={120} width={2} height={34} fill={MARQUAGE} />)}
+      <Velo x={34} y={91} rot={90} />
+      <Fleche d="M50 91 H72" />
+      <Auto x={100} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M100 148 V114" />
+    </>
+  ),
+  'gauche-piste': (
+    <>
+      <RouteDroite />
+      <rect x={98} y={0} width={4} height={200} fill={MARQUAGE} />
+      <rect x={138} y={0} width={16} height={200} fill={PISTE} />
+      {[0, 25, 50, 75, 100, 125, 150, 175].map((y) => <rect key={y} x={136} y={y + 4} width={2} height={12} fill={MARQUAGE} />)}
+      <Auto x={120} y={72} fill="#c8102e" />
+      <ClignoGauche x={120} y={72} />
+      <Fleche d="M118 52 Q116 34 94 30" />
+      <Auto x={120} y={168} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'passage-pietons-arret': (
+    <>
+      <RueDeuxTrottoirs />
+      {Array.from({ length: 9 }, (_, i) => (
+        <rect key={i} x={36 + i * 15} y={56} width={9} height={26} fill={MARQUAGE} />
+      ))}
+      {/* Flèches au sol : sens unique, deux bandes */}
+      {[66, 134].map((x) => (
+        <path key={x} d={`M${x} 40 V24 M${x - 5} 29 L${x} 22 L${x + 5} 29`} stroke={MARQUAGE} strokeWidth={2.5} fill="none" />
+      ))}
+      <Pieton x={160} y={69} />
+      <Auto x={134} y={104} fill="#c8102e" />
+      <Auto x={66} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M66 148 V122" />
+    </>
+  ),
+  'chemin-terre': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={0} y={60} width={200} height={60} fill={ROUTE} />
+      {[10, 50, 90, 130, 170].map((x) => <rect key={x} x={x} y={89} width={20} height={2} fill={MARQUAGE} />)}
+      <rect x={84} y={120} width={32} height={80} fill={TERRE} />
+      {[[90, 135], [108, 150], [94, 170], [110, 188], [88, 192]].map(([x, y]) => (
+        <circle key={`${x}-${y}`} cx={x} cy={y} r={1.6} fill="#7a5e39" />
+      ))}
+      <Auto x={100} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M100 148 V128" />
+      <Auto x={32} y={105} rot={90} fill="#c8102e" />
+      <Fleche d="M50 105 H72" />
+    </>
+  ),
+  'tracteur-chemin': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={60} y={0} width={80} height={200} fill={ROUTE} />
+      {[0, 40, 80, 120, 160].map((y) => <rect key={y} x={99} y={y + 10} width={2} height={20} fill={MARQUAGE} />)}
+      <rect x={140} y={64} width={60} height={34} fill={TERRE} />
+      <Tracteur x={172} y={81} rot={-90} />
+      <Fleche d="M154 81 H136" />
+      <Auto x={120} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M120 148 V112" />
+    </>
+  ),
+  'sortie-parking': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={PARKING} />
+      <rect x={0} y={16} width={200} height={62} fill={ROUTE} />
+      {[10, 50, 90, 130, 170].map((x) => <rect key={x} x={x} y={46} width={20} height={2} fill={MARQUAGE} />)}
+      <rect x={0} y={78} width={200} height={14} fill={TROTTOIR} />
+      {[16, 40, 140, 164, 188].map((x) => <rect key={x} x={x} y={110} width={2} height={40} fill={MARQUAGE} />)}
+      <rect x={6} y={150} width={44} height={2} fill={MARQUAGE} />
+      <rect x={140} y={150} width={54} height={2} fill={MARQUAGE} />
+      <Auto x={36} y={63} rot={90} fill="#c8102e" />
+      <Auto x={168} y={31} rot={-90} fill="#6b7f2a" />
+      <Pieton x={146} y={85} />
+      <Auto x={100} y={150} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M100 130 V96" />
+    </>
+  ),
+  'carrefour-encombre': (
+    <>
+      <Carrefour />
+      <rect x={102} y={128} width={22} height={4} fill={MARQUAGE} />
+      <Auto x={112} y={92} fill="#c8102e" />
+      <Auto x={112} y={54} fill="#6b7f2a" />
+      <Auto x={112} y={18} fill="#8a5cc2" />
+      <g transform="translate(130 132) scale(0.22)">
+        <Feux allume="vert" sansFond />
+      </g>
+      <Auto x={112} y={162} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'agent-bras-leve': <Agent bras="leve" />,
+  'agent-bras-tendus': <Agent bras="tendus" />,
 }
 
 export function Schema({ schema, titre }: { schema: SchemaType; titre: string }) {

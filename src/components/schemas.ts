@@ -18,4 +18,8 @@ export const SCENES = [
   'voyant-route', 'voyant-croisement', 'voyant-huile', 'voyant-abs',
   // Marquages au sol
   'ligne-mixte', 'jaune-discontinue', 'jaune-continue', 'zigzag-jaune', 'dents-de-requin', 'passage-cyclistes', 'ligne-arret',
+  // Carrefours, priorités, trams et bus
+  'carrefour-velo-droite', 'carrefour-voiture-gauche', 'tram-carrefour', 'tram-arret', 'bus-quitte-arret', 'bus-arret',
+  'droite-cycliste', 'parking-piste', 'gauche-piste', 'passage-pietons-arret', 'chemin-terre', 'tracteur-chemin',
+  'sortie-parking', 'carrefour-encombre', 'agent-bras-leve', 'agent-bras-tendus',
 ] as const

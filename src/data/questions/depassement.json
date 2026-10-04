@@ -111,6 +111,10 @@
       "Oui, par la gauche": "Un piéton peut être caché devant le véhicule arrêté.",
       "Oui, si tu ne vois pas de piéton": "Ne pas voir de piéton ne veut pas dire qu'il n'y en a pas.",
       "Oui, s'il est lent": "Peu importe sa vitesse : il s'arrête pour un piéton."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "passage-pietons-arret"
     }
   },
   {
@@ -442,6 +446,10 @@
       "À rien de particulier": "Des passagers peuvent traverser juste devant le bus.",
       "Aux feux de détresse du bus seulement": "Le danger vient surtout des piétons cachés par le bus.",
       "À klaxonner pour prévenir": "Le klaxon ne remplace pas la prudence."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bus-arret"
     }
   },
   {
@@ -461,6 +469,10 @@
       "Oui, si la piste est vide": "Rouler sur la piste cyclable est interdit aux voitures.",
       "Oui, en roulant lentement": "La piste cyclable reste interdite.",
       "Oui, avec le clignotant droit": "Le clignotant ne rend pas la manœuvre permise."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "gauche-piste"
     }
   },
   {
