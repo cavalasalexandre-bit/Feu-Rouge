@@ -243,6 +243,8 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
         corrige={corrige}
         montrerGravite={mode === 'entrainement'}
         ecouter={mode !== 'examen' || !secondesParQuestion}
+        numero={index + 1}
+        total={questions.length}
       />
 
       <div className="session-foot">

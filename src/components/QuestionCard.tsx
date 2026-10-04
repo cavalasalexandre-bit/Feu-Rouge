@@ -18,14 +18,23 @@ interface Props {
   montrerGravite: boolean
   /** Affiche un bouton pour écouter la question (entraînement). */
   ecouter?: boolean
+  /** Numéro de la question dans la série (1 = la première) et nombre total. */
+  numero?: number
+  total?: number
 }
 
-export function QuestionCard({ question, selection, onSelect, corrige, montrerGravite, ecouter = false }: Props) {
+export function QuestionCard({ question, selection, onSelect, corrige, montrerGravite, ecouter = false, numero, total }: Props) {
   const juste = selection === question.bonne
   const photo = PHOTOS[question.id]
   return (
     <article className="qcard" aria-live="polite">
       <div className="qmeta">
+        {numero !== undefined && (
+          <span className="qnumero num" aria-label={`Question ${numero}${total ? ` sur ${total}` : ''}`}>
+            Question {numero}
+            {total ? <small>/{total}</small> : null}
+          </span>
+        )}
         <span className="chip">{THEME_PAR_ID[question.theme].court}</span>
         {montrerGravite && question.grave && <span className="chip chip-grave">Faute grave · −5</span>}
         {question.region && <span className="chip chip-region">{NOMS_REGIONS[question.region]}</span>}

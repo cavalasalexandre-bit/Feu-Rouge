@@ -842,6 +842,19 @@ main {
   align-items: center;
   margin-bottom: 14px;
 }
+.qnumero {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent-text);
+  padding: 4px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+}
+.qnumero small {
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 1px;
+}
 .ecouter {
   margin-left: auto;
   display: inline-flex;
