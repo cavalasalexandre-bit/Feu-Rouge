@@ -425,6 +425,10 @@
       "Oui, c'est toujours interdit": "En circulation dense en files, ce n'est pas considéré comme un dépassement.",
       "Oui, tu dois freiner pour rester derrière": "Freiner sans raison en circulation dense crée un danger.",
       "Non, car le dépassement par la droite est toujours permis sur autoroute": "Le dépassement par la droite reste interdit hors de cette situation."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "files-denses"
     }
   },
   {

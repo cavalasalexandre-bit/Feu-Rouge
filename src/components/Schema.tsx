@@ -464,6 +464,9 @@ const DEFS = (
     <marker id="pointe" viewBox="0 0 10 10" refX={6} refY={5} markerWidth={4} markerHeight={4} orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 Z" fill="#f2b441" />
     </marker>
+    <marker id="pointe-rouge" viewBox="0 0 10 10" refX={6} refY={5} markerWidth={4} markerHeight={4} orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#ff3b30" />
+    </marker>
   </defs>
 )
 
@@ -803,6 +806,49 @@ function AutoProfil({ x, y, angle, fill, cachee = false, sens = 1 }: { x: number
       <rect x={-1} y={9} width={28} height={8} rx={2} fill={fill} />
       <circle cx={6} cy={18} r={3} fill={NOIR} />
       <circle cx={20} cy={18} r={3} fill={NOIR} />
+    </g>
+  )
+}
+
+/** Autoroute à trois bandes vue de dessus (sens de circulation vers le haut). Centres des bandes : 43, 89, 135 ; bande d'arrêt d'urgence : 171. */
+function Autoroute({ bauOuverte = false }: { bauOuverte?: boolean }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <rect x={0} y={0} width={14} height={200} fill="#7f9663" />
+      <rect x={10} y={0} width={3} height={200} fill="#c4c9cf" />
+      <rect x={16} y={0} width={168} height={200} fill={ROUTE} />
+      <rect x={19} y={0} width={3} height={200} fill={MARQUAGE} />
+      {[66, 112].map((x) => [0, 40, 80, 120, 160].map((y) => <rect key={`${x}-${y}`} x={x - 1} y={y + 6} width={3} height={24} fill={MARQUAGE} />))}
+      {bauOuverte
+        ? [0, 40, 80, 120, 160].map((y) => <rect key={y} x={157} y={y + 6} width={3} height={24} fill={MARQUAGE} />)
+        : <rect x={157} y={0} width={3} height={200} fill={MARQUAGE} />}
+      <rect x={181} y={0} width={3} height={200} fill={MARQUAGE} />
+      <rect x={190} y={0} width={3} height={200} fill="#c4c9cf" />
+      {[10, 50, 90, 130, 170].map((y) => <rect key={y} x={189} y={y} width={5} height={4} fill="#8a919c" />)}
+    </>
+  )
+}
+
+/** Feux de détresse : quatre clignotants allumés. */
+function Detresse({ x, y }: { x: number; y: number }) {
+  return (
+    <>
+      {[[-9, -13], [9, -13], [-9, 13], [9, 13]].map(([dx, dy]) => (
+        <circle key={`${dx}${dy}`} cx={x + dx} cy={y + dy} r={2.8} fill="#ffb020" />
+      ))}
+    </>
+  )
+}
+
+/** Petite étiquette « ? ». */
+function Question({ x, y }: { x: number; y: number }) {
+  return (
+    <g>
+      <rect x={x - 8} y={y - 8} width={16} height={16} rx={3} fill="#0b0e13" stroke="#f2b441" strokeWidth={2} />
+      <text x={x} y={y + 5} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={12} fill="#f2b441">
+        ?
+      </text>
     </g>
   )
 }
@@ -1258,6 +1304,168 @@ const SCENES: Record<string, ReactNode> = {
       <Auto x={76} y={170} fill="#c8102e" />
       <ClignoGauche x={76} y={170} />
       <Fleche d="M76 150 V128" />
+    </>
+  ),
+  // ---------- Étape 5 : autoroute ----------
+  'autoroute-3-bandes': (
+    <>
+      <Autoroute />
+      <Auto x={89} y={176} fill="#1f4fa3" label="TOI" />
+      {[43, 89, 135].map((x) => (
+        <g key={x}>
+          <path d={`M89 156 Q89 120 ${x} 90`} stroke="#f2b441" strokeWidth={2} strokeDasharray="4 4" fill="none" />
+          <Question x={x} y={76} />
+        </g>
+      ))}
+      <Auto x={135} y={20} fill="#6b7f2a" />
+    </>
+  ),
+  'autoroute-camions': (
+    <>
+      <Autoroute />
+      <Camion x={135} y={60} />
+      <Camion x={89} y={150} />
+      <Auto x={43} y={40} fill="#c8102e" />
+      <Auto x={135} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'bau-arret': (
+    <>
+      <Autoroute />
+      <Auto x={171} y={96} fill="#1f4fa3" label="TOI" />
+      <Auto x={135} y={40} fill="#6b7f2a" />
+      <Camion x={89} y={150} />
+    </>
+  ),
+  'bau-marche-arriere': (
+    <>
+      <Autoroute />
+      <g transform="translate(120 172)">
+        <rect x={0} y={0} width={44} height={20} rx={3} fill="#1f4fa3" stroke={BLANC} strokeWidth={1.5} />
+        <text x={22} y={14} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={10} fill={BLANC}>
+          SORTIE
+        </text>
+      </g>
+      <Auto x={171} y={70} fill="#1f4fa3" label="TOI" />
+      <path d="M171 92 V140" stroke="#f2b441" strokeWidth={3} strokeDasharray="5 4" fill="none" markerEnd="url(#pointe)" />
+      <Question x={150} y={120} />
+    </>
+  ),
+  'sortie-autoroute': (
+    <>
+      <Autoroute />
+      <path d="M184 130 L200 70 L200 0 L184 0 Z" fill={ROUTE} />
+      <g transform="translate(150 10)">
+        <rect x={0} y={0} width={44} height={22} rx={3} fill="#1f4fa3" stroke={BLANC} strokeWidth={1.5} />
+        <text x={22} y={15} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={800} fontSize={10} fill={BLANC}>
+          SORTIE
+        </text>
+      </g>
+      <Auto x={43} y={160} fill="#1f4fa3" label="TOI" />
+      <Question x={43} y={128} />
+    </>
+  ),
+  'changement-bande': (
+    <>
+      <Autoroute />
+      <Auto x={135} y={100} fill="#1f4fa3" label="TOI" />
+      <Auto x={89} y={138} fill="#c8102e" />
+      <Auto x={89} y={30} fill="#6b7f2a" />
+      <path d="M126 92 L100 70" stroke="#f2b441" strokeWidth={2} strokeDasharray="4 4" fill="none" markerEnd="url(#pointe)" />
+    </>
+  ),
+  'depasser-camion': (
+    <>
+      <Autoroute />
+      <Camion x={135} y={140} />
+      <Auto x={89} y={84} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M89 64 V40" />
+    </>
+  ),
+  'files-denses': (
+    <>
+      <Autoroute />
+      {[43, 89, 135].map((x, i) => [12, 52, 92, 132].map((y) => (
+        <Auto key={`${x}-${y}`} x={x} y={y + (i % 2) * 14} fill={['#c8102e', '#6b7f2a', '#8a5cc2'][(y / 40 + i) % 3 | 0]} />
+      )))}
+      <Auto x={135} y={180} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  contresens: (
+    <>
+      <Autoroute />
+      <Auto x={43} y={30} rot={180} fill="#c8102e" />
+      <path d="M43 52 V80" stroke="#ff3b30" strokeWidth={3} markerEnd="url(#pointe-rouge)" />
+      <Auto x={89} y={160} fill="#1f4fa3" label="TOI" />
+      <Auto x={135} y={110} fill="#6b7f2a" />
+    </>
+  ),
+  'accident-en-face': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      {/* Chaussée d'en face (sens vers le bas) */}
+      <rect x={4} y={0} width={80} height={200} fill={ROUTE} />
+      {[0, 40, 80, 120, 160].map((y) => <rect key={y} x={43} y={y + 6} width={3} height={24} fill={MARQUAGE} />)}
+      {/* Berme centrale et glissière */}
+      <rect x={84} y={0} width={20} height={200} fill="#7f9663" />
+      <rect x={93} y={0} width={3} height={200} fill="#c4c9cf" />
+      {/* Ta chaussée */}
+      <rect x={104} y={0} width={92} height={200} fill={ROUTE} />
+      {[0, 40, 80, 120, 160].map((y) => <rect key={y} x={149} y={y + 6} width={3} height={24} fill={MARQUAGE} />)}
+      <Auto x={30} y={70} rot={160} fill="#c8102e" />
+      <Auto x={56} y={92} rot={-120} fill="#8a5cc2" />
+      <Auto x={30} y={150} rot={180} fill="#6b7f2a" />
+      <Detresse x={30} y={150} />
+      <Auto x={172} y={160} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M172 140 V112" />
+    </>
+  ),
+  remorquage: (
+    <>
+      <Autoroute />
+      <Auto x={135} y={66} fill="#6b7f2a" />
+      <rect x={134} y={81} width={2} height={14} fill="#1b1b1b" />
+      <Auto x={135} y={110} fill="#1f4fa3" label="TOI" />
+      <Auto x={89} y={170} fill="#c8102e" />
+    </>
+  ),
+  'contresens-bretelle': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#9bb07a" />
+      <path d="M70 200 Q80 100 160 0 L200 0 Q120 100 120 200 Z" fill={ROUTE} />
+      {/* Flèches au sol : la bretelle se parcourt vers le bas */}
+      {[[150, 40], [112, 100]].map(([x, y]) => (
+        <path key={x} d={`M${x} ${y - 14} L${x - 6} ${y + 6} M${x - 12} ${y} L${x - 6} ${y + 8} L${x + 2} ${y + 2}`} stroke={MARQUAGE} strokeWidth={3} fill="none" />
+      ))}
+      <g transform="translate(28 120)">
+        <circle cx={14} cy={14} r={13} fill="#c8102e" />
+        <rect x={5} y={11} width={18} height={6} fill={BLANC} />
+        <rect x={13} y={27} width={3} height={30} fill="#8a919c" />
+      </g>
+      <Auto x={96} y={160} rot={10} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'autoroute-pluie': (
+    <>
+      <Autoroute />
+      <Auto x={135} y={150} fill="#1f4fa3" label="TOI" />
+      <Auto x={89} y={60} fill="#6b7f2a" />
+      <g stroke="#9fc1e6" strokeWidth={1.5} opacity={0.7}>
+        {Array.from({ length: 40 }, (_, i) => {
+          const x = (i * 37) % 200
+          const y = (i * 53) % 200
+          return <line key={i} x1={x} y1={y} x2={x - 5} y2={y + 12} />
+        })}
+      </g>
+    </>
+  ),
+  'bau-ouverte': (
+    <>
+      <Autoroute bauOuverte />
+      <rect x={150} y={8} width={42} height={36} rx={3} fill="#0b0e13" stroke="#3a3f48" strokeWidth={2} />
+      <path d="M171 14 V36 M162 27 L171 37 L180 27" stroke="#2ee07a" strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <Auto x={171} y={120} fill="#c8102e" />
+      <Auto x={135} y={160} fill="#1f4fa3" label="TOI" />
     </>
   ),
   'etre-depasse': (

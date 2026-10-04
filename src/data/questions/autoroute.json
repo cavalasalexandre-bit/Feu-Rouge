@@ -77,6 +77,10 @@
       "Oui, sur moins de 50 mètres": "Même sur quelques mètres, c'est interdit.",
       "Oui, avec les feux de détresse": "Les feux de détresse ne rendent pas la manœuvre permise.",
       "Oui, la nuit": "C'est interdit à toute heure."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-marche-arriere"
     }
   },
   {
@@ -96,6 +100,10 @@
       "Pour dépasser un bouchon": "Doubler un bouchon par la bande d'arrêt d'urgence est interdit.",
       "Pour téléphoner": "Pour téléphoner, utilise une aire ou un kit mains libres.",
       "Pour te reposer": "Pour te reposer, utilise une aire de repos."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-arret"
     }
   },
   {
@@ -172,6 +180,10 @@
       "Dans la voiture, ceinture attachée": "Rester dans la voiture est très dangereux en cas de collision.",
       "Sur la bande d'arrêt d'urgence, devant la voiture": "La bande d'arrêt d'urgence est exposée au trafic.",
       "Sur la berme centrale": "La berme centrale est la zone la plus dangereuse."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-arret"
     }
   },
   {
@@ -191,6 +203,10 @@
       "Sur la bande du milieu": "Sans dépasser, on ne reste pas sur la bande du milieu.",
       "Sur la bande de gauche": "La bande de gauche sert à dépasser.",
       "Sur la bande de ton choix": "Ce n'est pas au choix : on roule à droite."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "autoroute-3-bandes"
     }
   },
   {
@@ -210,6 +226,10 @@
       "Les motos": "Les motos peuvent utiliser toutes les bandes.",
       "Les voitures avec remorque légère": "La règle vise les véhicules de plus de 3,5 t ou de plus de 7 m.",
       "Les camionnettes": "Une camionnette de moins de 3,5 t peut utiliser la bande de gauche."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "autoroute-camions"
     }
   },
   {
@@ -290,6 +310,10 @@
       "Je roule sur la bande de gauche": "Le conducteur à contresens risque justement d'arriver sur ta bande de gauche.",
       "Je m'arrête sur la bande de gauche": "S'arrêter sur la bande de gauche est très dangereux.",
       "Je fais demi-tour": "Le demi-tour est interdit sur l'autoroute."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "contresens"
     }
   },
   {
@@ -328,6 +352,10 @@
       "Je sors immédiatement poser le triangle sans gilet": "Le gilet fluo se met avant de sortir.",
       "J'ouvre le capot pour chercher la panne": "Ta sécurité passe avant la réparation.",
       "Je reste dans la voiture et j'attends": "Rester dans la voiture est dangereux en cas de choc."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-arret"
     }
   },
   {
@@ -347,6 +375,10 @@
       "Oui, sur la bande d'arrêt d'urgence": "Les piétons sont interdits sur l'autoroute : c'est très dangereux.",
       "Oui, sur la bande de droite": "Marcher sur une bande de circulation est extrêmement dangereux.",
       "Oui, en traversant vers l'autre côté": "Traverser une autoroute à pied peut être mortel."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-arret"
     }
   },
   {
@@ -366,6 +398,10 @@
       "Je freine sur la bande de droite avant la sortie": "Freiner sur l'autoroute surprend ceux qui suivent.",
       "Je coupe toutes les bandes au dernier moment": "C'est très dangereux.",
       "Je ralentis sur la bande de gauche": "Il faut se placer à droite bien avant."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "sortie-autoroute"
     }
   },
   {
@@ -385,6 +421,10 @@
       "M'arrêter au bout pour regarder": "S'arrêter au bout de la bande rend l'insertion très difficile.",
       "Rouler lentement pour laisser passer tout le monde": "Une vitesse trop basse rend l'insertion dangereuse.",
       "Forcer le passage, je suis prioritaire": "Tu dois céder le passage aux usagers de l'autoroute."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "autoroute-insertion"
     }
   },
   {
@@ -404,6 +444,10 @@
       "Je mets le clignotant et je change tout de suite": "Le clignotant ne garantit pas que la voie est libre.",
       "Je regarde seulement le rétroviseur intérieur": "Un véhicule peut se trouver dans l'angle mort.",
       "Je change sans clignotant si personne n'est là": "Le clignotant reste obligatoire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "changement-bande"
     }
   },
   {
@@ -469,6 +513,10 @@
       "Dès qu'il y a un bouchon": "Sans signalisation, elle reste réservée aux urgences.",
       "Toujours en semaine": "C'est la signalisation qui décide, pas le jour.",
       "Jamais": "Elle peut être ouverte, mais seulement si c'est signalé."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-ouverte"
     }
   },
   {
@@ -488,6 +536,10 @@
       "Rouler jusqu'à destination": "Un remorquage sur l'autoroute doit être le plus court possible.",
       "Rouler sur la bande d'arrêt d'urgence": "On ne circule pas sur la bande d'arrêt d'urgence.",
       "Rouler à 120 km/h pour ne pas gêner": "Un remorquage se fait lentement et prudemment."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "remorquage"
     }
   },
   {
@@ -507,6 +559,10 @@
       "Je ralentis pour voir ce qui se passe": "Ralentir pour regarder provoque des bouchons et des accidents.",
       "Je m'arrête sur la bande d'arrêt d'urgence": "Les secours sont sur place : ne t'arrête pas sans raison.",
       "Je prends une photo": "Utiliser ton GSM en roulant est interdit et dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "accident-en-face"
     }
   },
   {
@@ -526,6 +582,10 @@
       "Je reste sur la bande de gauche": "La bande de gauche sert seulement à dépasser.",
       "Je me rabats juste devant le camion": "Un camion a besoin de beaucoup de distance pour freiner.",
       "Je ralentis devant le camion": "Ralentir juste devant lui est dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "depasser-camion"
     }
   },
   {
@@ -564,6 +624,10 @@
       "Non, jamais": "La bande d'arrêt d'urgence est justement faite pour les urgences.",
       "Non, il faut attendre la prochaine aire": "En cas d'urgence grave, tu peux t'arrêter.",
       "Oui, mais sans feux de détresse": "Les feux de détresse sont nécessaires."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "bau-arret"
     }
   },
   {
@@ -583,6 +647,10 @@
       "Je fais demi-tour aussitôt": "Le demi-tour sur l'autoroute est interdit et dangereux.",
       "Je continue jusqu'à la prochaine sortie": "Rouler à contresens met tout le monde en danger.",
       "Je fais marche arrière jusqu'au début de la bretelle": "La marche arrière est interdite et dangereuse."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "contresens-bretelle"
     }
   },
   {

@@ -267,6 +267,10 @@
       "110 km/h": "110 km/h sous la pluie, c'est la règle française, pas belge.",
       "90 km/h": "La Belgique n'impose pas 90 km/h automatique quand il pleut.",
       "100 km/h": "100 km/h n'est pas une limite automatique par temps de pluie."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "autoroute-pluie"
     }
   },
   {

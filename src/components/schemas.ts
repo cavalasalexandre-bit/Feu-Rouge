@@ -26,4 +26,8 @@ export const SCENES = [
   'depasser-cycliste-campagne', 'depasser-cycliste-ville', 'route-etroite-cycliste', 'groupe-cyclistes', 'rabattre-cycliste',
   'tracteur-discontinue', 'sommet-cote', 'carrefour-depassement', 'depasser-cavalier', 'croisement-etroit',
   'double-depassement', 'deja-depasse', 'etre-depasse',
+  // Autoroute
+  'autoroute-3-bandes', 'autoroute-camions', 'bau-arret', 'bau-marche-arriere', 'sortie-autoroute', 'changement-bande',
+  'depasser-camion', 'files-denses', 'contresens', 'accident-en-face', 'remorquage', 'contresens-bretelle',
+  'autoroute-pluie', 'bau-ouverte',
 ] as const
