@@ -287,14 +287,6 @@
     "lienSource": "https://commons.wikimedia.org/wiki/File:Liege_20080223_Voiture_de_police.jpg",
     "source": "Wikimedia Commons"
   },
-  "dep-023": {
-    "fichier": "photos/dep-023.jpg",
-    "auteur": "Stefn",
-    "licence": "CC BY-SA 4.0 (floutée)",
-    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
-    "lienSource": "https://commons.wikimedia.org/wiki/File:De_Lijn_Flexbus_Mercedes_Vito.jpg",
-    "source": "Wikimedia Commons"
-  },
   "sta-013": {
     "fichier": "photos/sta-013.jpg",
     "auteur": "Fantaglobe11",
@@ -325,6 +317,78 @@
     "licence": "CC BY-SA 3.0 (floutée)",
     "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
     "lienSource": "https://commons.wikimedia.org/wiki/File:Rotonde_in_Gemeenteweg-Staphorst.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "aut-013": {
+    "fichier": "photos/aut-013.jpg",
+    "auteur": "Marc Mongenet",
+    "licence": "CC BY-SA 4.0 (floutée)",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Bouchon_autoroute_suisse_A1_a%C3%A9roport_de_Gen%C3%A8ve.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-003": {
+    "fichier": "photos/aut-003.jpg",
+    "auteur": "The original uploader was Vascer at French Wikipedia.",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Autoroute_A7-19.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "dep-027": {
+    "fichier": "photos/dep-027.jpg",
+    "auteur": "heb@Wikimedia Commons (mail)",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Elephant_race_in_Denmark.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-006": {
+    "fichier": "photos/aut-006.jpg",
+    "auteur": "HurwiczRocks",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Road_block.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-007": {
+    "fichier": "photos/aut-007.jpg",
+    "auteur": "Roulex 45",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Triangle_de_pr%C3%A9signalisation.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "aut-008": {
+    "fichier": "photos/aut-008.jpg",
+    "auteur": "Magnus Mertens",
+    "licence": "CC BY-SA 2.0 de",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Warnweste_gelb.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-012": {
+    "fichier": "photos/aut-012.jpg",
+    "auteur": "DimiTalen",
+    "licence": "CC0",
+    "lienLicence": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Rest_area_Drongen-Noord_from_across_the_motorway.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-028": {
+    "fichier": "photos/aut-028.jpg",
+    "auteur": "Marc Ryckaert",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:A11_Viaduct_Brugge_R01.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "aut-001": {
+    "fichier": "photos/aut-001.jpg",
+    "auteur": "Hukaglue",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Simson_S51E.jpg",
     "source": "Wikimedia Commons"
   }
 }

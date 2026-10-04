@@ -35,9 +35,17 @@
   { "question": "sta-021", "cle": "File:Hládkov, tramvaj.jpg" },
   { "question": "pri-014", "cle": "File:IMG Circuit de Wallonie 2019 in Nalinnes - Belgique 47.jpg" },
   { "question": "pri-032", "cle": "File:Liege 20080223 Voiture de police.jpg" },
-  { "question": "dep-023", "cle": "File:De Lijn Flexbus Mercedes Vito.jpg" },
   { "question": "sta-013", "cle": "File:2018-10-27 Fietssnelweg De Liemers Westervoort Zuidelijke Parallelweg (1).jpg" },
   { "question": "dep-031", "cle": "File:Luxembourg, road marking (110j passage pour piétons - vue automobiliste).jpg" },
   { "question": "pri-028", "cle": "File:Avenue Armand Bouvier 2.jpg" },
-  { "question": "pri-039", "cle": "File:Rotonde in Gemeenteweg-Staphorst.JPG" }
+  { "question": "pri-039", "cle": "File:Rotonde in Gemeenteweg-Staphorst.JPG" },
+  { "question": "aut-013", "cle": "File:Bouchon autoroute suisse A1 aéroport de Genève.jpg" },
+  { "question": "aut-003", "cle": "File:Autoroute A7-19.jpg" },
+  { "question": "dep-027", "cle": "File:Elephant race in Denmark.jpg" },
+  { "question": "aut-006", "cle": "File:Road block.jpg" },
+  { "question": "aut-007", "cle": "File:Triangle de présignalisation.JPG" },
+  { "question": "aut-008", "cle": "File:Warnweste gelb.jpg" },
+  { "question": "aut-012", "cle": "File:Rest area Drongen-Noord from across the motorway.jpg" },
+  { "question": "aut-028", "cle": "File:A11 Viaduct Brugge R01.jpg" },
+  { "question": "aut-001", "cle": "File:Simson S51E.jpg" }
 ]
