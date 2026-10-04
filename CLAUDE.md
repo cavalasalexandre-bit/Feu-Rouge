@@ -44,6 +44,8 @@ Objectif : illustrer des questions avec de vraies photos (Wikimedia Commons, Map
 2. `npm run photos:chercher -- <id1> <id2> …` (seulement ces questions).
 3. Choisis avec les critères ci-dessus. Précisions :
    - **panneaux, marquages, feux, plaques de rue** : photo belge obligatoire (un panneau étranger induirait en erreur) ;
+   - **exception — feux de signalisation, dents de requin, lignes d'arrêt, passages pour cyclistes, flèches de rabattement** : une photo des Pays-Bas, de France, du Luxembourg ou d'Allemagne est acceptée si aucun panneau ni texte étranger n'est lisible. Le Royaume-Uni reste exclu ;
+   - **lignes jaunes, zigzag, panonceaux** : photo belge obligatoire, sans exception ;
    - **objets et situations génériques** (tableau de bord, pneu, siège enfant, défibrillateur, brouillard, tunnel…) : n'importe quel pays convient, tant qu'aucun panneau étranger n'est visible ;
    - mieux vaut aucune photo qu'une photo floue, petite ou ambiguë.
 4. Ajoute les choix à `photos/selection.json` (sans effacer les précédents), puis `npm run photos:installer`.

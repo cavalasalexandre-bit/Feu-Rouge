@@ -1095,7 +1095,10 @@
           "haaientanden wegmarkering",
           "dents de requin marquage",
           "haaientanden wegmarkering",
-          "shark teeth road marking"
+          "shark teeth road marking",
+          "Haifischzähne Fahrbahnmarkierung",
+          "haaientanden voorrang kruispunt",
+          "dents de requin cédez le passage marquage"
         ]
       },
       "mapillary": {
@@ -1114,7 +1117,10 @@
           "inhaalpijlen wegmarkering",
           "flèches de rabattement",
           "inhaalverbod pijlen wegmarkering",
-          "lane merge arrows road marking"
+          "lane merge arrows road marking",
+          "Fahrstreifenbegrenzung Pfeil Markierung",
+          "verdrijvingspijl wegmarkering",
+          "flèche de rabattement route"
         ]
       },
       "mapillary": {
@@ -1133,7 +1139,10 @@
           "fietsoversteekplaats",
           "passage pour cyclistes Belgique",
           "fietsoversteekplaats België",
-          "bicycle crossing Belgium marking"
+          "bicycle crossing Belgium marking",
+          "fietsoversteekplaats blokjes",
+          "Radfahrerfurt Markierung",
+          "passage cyclistes marquage carrés"
         ]
       },
       "mapillary": {
@@ -1151,7 +1160,10 @@
           "oversteekplaats fietsers",
           "fietsoversteek kruispunt België",
           "traversée cyclable carrefour Belgique",
-          "cycle crossing intersection Flanders"
+          "cycle crossing intersection Flanders",
+          "fietsoversteek kruispunt Nederland",
+          "Radfahrerfurt Kreuzung",
+          "bande cyclable traversée carrefour"
         ]
       },
       "mapillary": {
@@ -1170,7 +1182,10 @@
           "stopstreep verkeerslicht",
           "ligne d arrêt feu rouge Belgique",
           "stopstreep verkeerslicht",
-          "traffic light stop line Belgium"
+          "traffic light stop line Belgium",
+          "Haltlinie Ampel",
+          "stopstreep verkeerslicht Nederland",
+          "ligne d'effet des feux"
         ]
       },
       "mapillary": {
@@ -1242,7 +1257,10 @@
           "overweg België slagbomen",
           "overweg slagbomen dicht België",
           "passage à niveau barrières fermées",
-          "level crossing barriers closing Belgium"
+          "level crossing barriers closing Belgium",
+          "Bahnübergang Schranke schließt",
+          "overweg slagbomen gaan dicht",
+          "passage à niveau barrières qui descendent"
         ]
       },
       "mapillary": {
@@ -1261,7 +1279,10 @@
           "onbewaakte overweg",
           "onbewaakte overweg België",
           "passage à niveau non gardé Belgique",
-          "unguarded level crossing Belgium"
+          "unguarded level crossing Belgium",
+          "unbeschrankter Bahnübergang",
+          "onbewaakte overweg platteland",
+          "passage à niveau sans barrière campagne"
         ]
       },
       "mapillary": {
@@ -1279,7 +1300,10 @@
           "overweg rode lichten",
           "overweg rode lichten België",
           "passage à niveau feux clignotants",
-          "level crossing flashing lights Belgium"
+          "level crossing flashing lights Belgium",
+          "Bahnübergang Blinklicht",
+          "overweg knipperlichten",
+          "passage à niveau feux rouges clignotants"
         ]
       },
       "mapillary": {
@@ -1298,7 +1322,10 @@
           "oranje verkeerslicht",
           "feu orange Belgique",
           "oranje verkeerslicht België",
-          "amber traffic light Belgium"
+          "amber traffic light Belgium",
+          "Verkehrsampel gelb",
+          "verkeerslicht oranje",
+          "feu tricolore orange"
         ]
       },
       "mapillary": {
@@ -1317,7 +1344,10 @@
           "knipperend oranje licht",
           "feu orange clignotant Belgique",
           "knipperend oranje licht kruispunt",
-          "flashing amber light Belgium"
+          "flashing amber light Belgium",
+          "gelbes Blinklicht Ampel",
+          "knipperlicht oranje verkeerslicht",
+          "feu orange clignotant carrefour"
         ]
       },
       "mapillary": {
@@ -1354,7 +1384,10 @@
           "feu rouge carrefour Belgique",
           "feu rouge carrefour Bruxelles",
           "rood licht kruispunt België",
-          "red traffic light Brussels"
+          "red traffic light Brussels",
+          "rote Ampel Kreuzung",
+          "rood verkeerslicht kruising",
+          "feu rouge carrefour ville"
         ]
       },
       "mapillary": {
@@ -1373,7 +1406,10 @@
           "verkeerslichten België",
           "feux de signalisation Belgique",
           "verkeerslichten Gent",
-          "traffic lights Belgium street"
+          "traffic lights Belgium street",
+          "Verkehrsampel Kreuzung",
+          "verkeerslicht kruispunt Nederland",
+          "feux tricolores carrefour France"
         ]
       },
       "mapillary": {

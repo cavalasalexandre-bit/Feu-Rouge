@@ -198,5 +198,61 @@
     "lienLicence": "https://creativecommons.org/licenses/by/3.0",
     "lienSource": "https://commons.wikimedia.org/wiki/File:20100729_liege20.JPG",
     "source": "Wikimedia Commons"
+  },
+  "inf-003": {
+    "fichier": "photos/inf-003.jpg",
+    "auteur": "PantheraLeo1359531",
+    "licence": "CC BY 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Rote_Ampel_an_Kreuzung_Sigmundsgraben,_Lessingstra%C3%9Fe_20240811_HOF4944_RAW-Export.png",
+    "source": "Wikimedia Commons"
+  },
+  "pri-016": {
+    "fichier": "photos/pri-016.jpg",
+    "auteur": "Tabl-trai",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Feu_orange_et_STOP_avant_travers%C3%A9e_des_cyclistes_sur_l%27avenue_de_Thiers_(Saint-Yorre)_2023-11-11.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-022": {
+    "fichier": "photos/sig-022.jpg",
+    "auteur": "Roulex 45",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Fl%C3%A8che_2.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "pri-011": {
+    "fichier": "photos/pri-011.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20130425_liege13.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "pri-012": {
+    "fichier": "photos/pri-012.jpg",
+    "auteur": "Adrian Farwell",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Jet_Fighter_sur_rondpoint,_Phillipeville,_Belgium_-_panoramio.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "sta-002": {
+    "fichier": "photos/sta-002.jpg",
+    "auteur": "Duhon",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Route_de_Cheneux,_Zone_14,_Ovifat.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "pri-019": {
+    "fichier": "photos/pri-019.jpg",
+    "auteur": "Sjenghai",
+    "licence": "CC BY 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Nieuwpoort_-_Dudenhofenlaan_-_uniek_zebrapad_-_2023-07-07.jpg",
+    "source": "Wikimedia Commons"
   }
 }
