@@ -54,5 +54,61 @@
     "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
     "lienSource": "https://commons.wikimedia.org/wiki/File:20210626_antwerpen335.jpg",
     "source": "Wikimedia Commons"
+  },
+  "pri-006": {
+    "fichier": "photos/pri-006.jpg",
+    "auteur": "François GOGLINS",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:Le_R%C5%93ulx-BE-panneau_d%27agglom%C3%A9ration-02.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "pri-038": {
+    "fichier": "photos/pri-038.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20131001_wandre20.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-005": {
+    "fichier": "photos/sig-005.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20100701_bomal08.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-020": {
+    "fichier": "photos/sig-020.jpg",
+    "auteur": "Hombre del rio",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:A28_-_Poste-fronti%C3%A8re_Belgique_France_%C3%A0_Aubange_et_Mont-Saint-Martin_18.jpg",
+    "source": "Wikimedia Commons"
+  },
+  "sig-015": {
+    "fichier": "photos/sig-015.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20130410_aywaille02.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-031": {
+    "fichier": "photos/sig-031.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 3.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/3.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20130516_barvaux58.JPG",
+    "source": "Wikimedia Commons"
+  },
+  "sig-017": {
+    "fichier": "photos/sig-017.jpg",
+    "auteur": "Jean Housen",
+    "licence": "CC BY-SA 4.0",
+    "lienLicence": "https://creativecommons.org/licenses/by-sa/4.0",
+    "lienSource": "https://commons.wikimedia.org/wiki/File:20140916_liege09.jpg",
+    "source": "Wikimedia Commons"
   }
 }
