@@ -46,6 +46,8 @@ Objectif : illustrer des questions avec de vraies photos (Wikimedia Commons, Map
    - **panneaux, marquages, feux, plaques de rue** : photo belge obligatoire (un panneau étranger induirait en erreur) ;
    - **exception — feux de signalisation, dents de requin, lignes d'arrêt, passages pour cyclistes, flèches de rabattement** : une photo des Pays-Bas, de France, du Luxembourg ou d'Allemagne est acceptée si aucun panneau ni texte étranger n'est lisible. Le Royaume-Uni reste exclu ;
    - **lignes jaunes, zigzag, panonceaux** : photo belge obligatoire, sans exception ;
+   - **situations** (tram, bus, cyclistes, piétons, carrefours, tracteurs, parkings, véhicules de secours) : n'importe quel pays où l'on roule à droite, sans panneau ni texte étranger lisible. Royaume-Uni, Irlande et Australie exclus ;
+   - **floutage** : une bonne photo avec une plaque ou un visage lisible n'est pas rejetée. Après `npm run photos:installer`, floute fortement la plaque ou le visage dans `public/photos/<question>.jpg` (Python + Pillow dans un environnement temporaire, hors du projet), ajoute « (floutée) » après la licence dans `src/data/photos.json`, et montre la photo floutée au propriétaire avant le commit. L'installateur ne re-télécharge pas les photos déjà installées, donc le floutage est conservé (`-- --forcer` re-télécharge tout et efface les floutages) ;
    - **objets et situations génériques** (tableau de bord, pneu, siège enfant, défibrillateur, brouillard, tunnel…) : n'importe quel pays convient, tant qu'aucun panneau étranger n'est visible ;
    - mieux vaut aucune photo qu'une photo floue, petite ou ambiguë.
 4. Ajoute les choix à `photos/selection.json` (sans effacer les précédents), puis `npm run photos:installer`.

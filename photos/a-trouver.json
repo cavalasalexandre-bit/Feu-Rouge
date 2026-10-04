@@ -1441,7 +1441,10 @@
         "recherches": [
           "roundabout cyclists Belgium",
           "rond-point cyclistes",
-          "rotonde fietsers"
+          "rotonde fietsers",
+          "cycliste rond-point",
+          "fietser rotonde",
+          "cyclist roundabout"
         ]
       },
       "mapillary": {
@@ -1457,7 +1460,10 @@
         "recherches": [
           "tram crossing intersection Belgium",
           "tram carrefour Bruxelles",
-          "tram kruispunt Antwerpen"
+          "tram kruispunt Antwerpen",
+          "tram carrefour Bruxelles",
+          "tram kruispunt Antwerpen",
+          "Straßenbahn Kreuzung"
         ]
       },
       "mapillary": {
@@ -1472,7 +1478,10 @@
         "categories": [],
         "recherches": [
           "tram stop on street passengers Brussels",
-          "arrêt de tram sans quai Bruxelles"
+          "arrêt de tram sans quai Bruxelles",
+          "tram arrêt voyageurs chaussée",
+          "tramhalte instappen straat",
+          "Straßenbahn Haltestelle Fahrgäste Straße"
         ]
       },
       "mapillary": {
@@ -1487,7 +1496,10 @@
         "categories": [],
         "recherches": [
           "tram in middle of street cars Belgium",
-          "tram au milieu de la rue"
+          "tram au milieu de la rue",
+          "tram milieu de la chaussée",
+          "tram middenberm straat auto's",
+          "Straßenbahn Straßenmitte Autos"
         ]
       },
       "mapillary": {
@@ -1502,7 +1514,10 @@
         "categories": [],
         "recherches": [
           "tram tracks street Belgium",
-          "rails de tram rue"
+          "rails de tram rue",
+          "rails de tram rue",
+          "tramsporen straat",
+          "Straßenbahngleise Straße"
         ]
       },
       "mapillary": {
@@ -1518,7 +1533,10 @@
         "recherches": [
           "bus leaving bus stop Belgium",
           "bus quittant l'arrêt",
-          "bus vertrekt halte"
+          "bus vertrekt halte",
+          "bus quitte arrêt",
+          "bus vertrekt halte",
+          "Bus fährt von Haltestelle ab"
         ]
       },
       "mapillary": {
@@ -1533,7 +1551,10 @@
         "categories": [],
         "recherches": [
           "bus at bus stop Belgium street",
-          "bus à l'arrêt rue Belgique"
+          "bus à l'arrêt rue Belgique",
+          "bus arrêté arrêt ville",
+          "bus halte stad achteraanzicht",
+          "Bus Haltestelle von hinten"
         ]
       },
       "mapillary": {
@@ -1565,7 +1586,10 @@
         "recherches": [
           "cycle path intersection right turn Belgium",
           "piste cyclable carrefour Belgique",
-          "fietspad kruispunt"
+          "fietspad kruispunt",
+          "voiture tourne à droite piste cyclable",
+          "rechtsaf slaan fietspad auto",
+          "Rechtsabbieger Radweg"
         ]
       },
       "mapillary": {
@@ -1581,7 +1605,10 @@
         "recherches": [
           "cycle path crossing driveway",
           "piste cyclable sortie parking",
-          "fietspad uitrit"
+          "fietspad uitrit",
+          "sortie parking piste cyclable",
+          "uitrit fietspad",
+          "Ausfahrt Radweg"
         ]
       },
       "mapillary": {
@@ -1597,7 +1624,10 @@
         "recherches": [
           "cycle lane Belgium",
           "piste cyclable marquée Belgique",
-          "fietssuggestiestrook"
+          "fietssuggestiestrook",
+          "bande cyclable marquée Belgique",
+          "fietssuggestiestrook",
+          "Radfahrstreifen Markierung"
         ]
       },
       "mapillary": {
@@ -1613,7 +1643,10 @@
         "recherches": [
           "separated cycle path Belgium",
           "piste cyclable séparée",
-          "vrijliggend fietspad"
+          "vrijliggend fietspad",
+          "piste cyclable séparée",
+          "vrijliggend fietspad België",
+          "Radweg getrennt Fahrbahn"
         ]
       },
       "mapillary": {
@@ -1644,7 +1677,10 @@
         "categories": [],
         "recherches": [
           "car stopped at zebra crossing",
-          "voiture arrêtée passage piétons"
+          "voiture arrêtée passage piétons",
+          "voiture arrêtée passage piétons",
+          "auto stopt zebrapad",
+          "Auto hält Zebrastreifen"
         ]
       },
       "mapillary": {
@@ -1659,7 +1695,10 @@
         "categories": [],
         "recherches": [
           "pedestrian crossing road view Belgium",
-          "zebrapad weg"
+          "zebrapad weg",
+          "passage pour piétons route",
+          "zebrapad weg",
+          "Zebrastreifen Landstraße"
         ]
       },
       "mapillary": {
@@ -1674,7 +1713,10 @@
         "categories": [],
         "recherches": [
           "pedestrian crossing parked cars street",
-          "passage piétons voitures garées"
+          "passage piétons voitures garées",
+          "passage piétons voitures stationnées",
+          "zebrapad geparkeerde auto's",
+          "Zebrastreifen parkende Autos"
         ]
       },
       "mapillary": {
@@ -1690,7 +1732,10 @@
         "recherches": [
           "dirt track joining paved road",
           "chemin de terre route",
-          "aardeweg"
+          "aardeweg",
+          "chemin de terre route",
+          "veldweg asfaltweg",
+          "Feldweg Einmündung Straße"
         ]
       },
       "mapillary": {
@@ -1705,7 +1750,10 @@
         "categories": [],
         "recherches": [
           "tractor entering road from field",
-          "tracteur sortant d'un chemin"
+          "tracteur sortant d'un chemin",
+          "tracteur route campagne",
+          "tractor op de weg",
+          "Traktor Straße"
         ]
       },
       "mapillary": {
@@ -1720,7 +1768,10 @@
         "categories": [],
         "recherches": [
           "supermarket car park exit road",
-          "sortie parking supermarché"
+          "sortie parking supermarché",
+          "sortie parking supermarché",
+          "uitrit parking supermarkt",
+          "Supermarkt Parkplatz Ausfahrt"
         ]
       },
       "mapillary": {
@@ -1736,7 +1787,10 @@
         "recherches": [
           "unmarked intersection Belgium residential",
           "carrefour sans signalisation",
-          "kruispunt zonder borden"
+          "kruispunt zonder borden",
+          "carrefour rue résidentielle",
+          "kruispunt woonwijk",
+          "Kreuzung Wohngebiet"
         ]
       },
       "mapillary": {
@@ -1751,7 +1805,10 @@
         "categories": [],
         "recherches": [
           "uncontrolled intersection street",
-          "carrefour priorité de droite Belgique"
+          "carrefour priorité de droite Belgique",
+          "carrefour sans signalisation",
+          "kruispunt zonder verkeersborden",
+          "ungeregelte Kreuzung"
         ]
       },
       "mapillary": {
@@ -1766,7 +1823,10 @@
         "categories": [],
         "recherches": [
           "congested intersection traffic jam city Belgium",
-          "carrefour encombré"
+          "carrefour encombré",
+          "carrefour embouteillé",
+          "file kruispunt stad",
+          "Stau Kreuzung Stadt"
         ]
       },
       "mapillary": {
@@ -1781,7 +1841,10 @@
         "categories": [],
         "recherches": [
           "narrow street parked car oncoming",
-          "rue étroite voiture garée"
+          "rue étroite voiture garée",
+          "rue étroite voiture stationnée",
+          "smalle straat geparkeerde auto",
+          "enge Straße parkendes Auto"
         ]
       },
       "mapillary": {
@@ -1797,7 +1860,10 @@
         "recherches": [
           "Belgian ambulance blue lights",
           "ambulance Belgique",
-          "ziekenwagen België"
+          "ziekenwagen België",
+          "ambulance gyrophares",
+          "ziekenwagen zwaailichten",
+          "Rettungswagen Blaulicht"
         ]
       },
       "mapillary": {
@@ -1813,7 +1879,10 @@
         "recherches": [
           "Belgian police car blue lights",
           "voiture de police belge",
-          "politiewagen België"
+          "politiewagen België",
+          "police Belgique voiture",
+          "politiewagen België",
+          "Polizeiauto Blaulicht"
         ]
       },
       "mapillary": {
@@ -1829,7 +1898,10 @@
         "recherches": [
           "police officer directing traffic Belgium",
           "agent qui règle la circulation",
-          "politieagent regelt verkeer"
+          "politieagent regelt verkeer",
+          "agent de circulation",
+          "verkeersagent",
+          "Verkehrspolizist"
         ]
       },
       "mapillary": {
@@ -1844,7 +1916,10 @@
         "categories": [],
         "recherches": [
           "traffic police arms outstretched",
-          "agent circulation bras tendus"
+          "agent circulation bras tendus",
+          "agent régle circulation bras",
+          "politieagent verkeer regelen",
+          "Verkehrspolizist regelt Verkehr"
         ]
       },
       "mapillary": {

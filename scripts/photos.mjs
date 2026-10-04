@@ -309,11 +309,19 @@ async function installer() {
   const questions = await chargerQuestions()
   const credits = await lireJson(FICHIER_CREDITS, {})
   const jeton = process.env.MAPILLARY_TOKEN
+  // Les photos déjà installées ne sont pas re-téléchargées : un floutage fait à la main serait perdu.
+  // « npm run photos:installer -- --forcer » re-télécharge tout.
+  const forcer = process.argv.includes('--forcer')
   let ok = 0
+  let deja = 0
 
   for (const { question, cle } of selection) {
     if (!questions.has(question)) {
       console.warn(`! ${question} : question inconnue, ignorée`)
+      continue
+    }
+    if (!forcer && credits[question] && existsSync(join(RACINE, 'public', credits[question].fichier))) {
+      deja++
       continue
     }
     try {
@@ -348,7 +356,7 @@ async function installer() {
 
   await mkdir(DOSSIER_PUBLIC, { recursive: true })
   await writeFile(FICHIER_CREDITS, JSON.stringify(credits, null, 2) + '\n')
-  console.log(`\n${ok} photo(s) installée(s). Crédits enregistrés dans src/data/photos.json.`)
+  console.log(`\n${ok} photo(s) installée(s), ${deja} déjà présente(s). Crédits enregistrés dans src/data/photos.json.`)
   console.log('Vérifie chaque photo : aucun visage ni plaque lisible. Puis « npm run dev » pour les voir sur le site.')
 }
 
