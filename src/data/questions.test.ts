@@ -77,4 +77,9 @@ describe('photos', () => {
       expect(p.auteur && p.licence && p.lienSource, `crédits incomplets pour ${id}`).toBeTruthy()
     }
   })
+
+  it('chaque question a une image (photo ou dessin)', () => {
+    const sansImage = toutes.filter((q) => !credits[q.id] && !q.schema).map((q) => q.id)
+    expect(sansImage, `questions sans image : ${sansImage.join(', ')}`).toEqual([])
+  })
 })
