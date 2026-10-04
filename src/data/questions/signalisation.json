@@ -16,6 +16,11 @@
       "D'interdiction": "Les panneaux d'interdiction sont ronds à bord rouge.",
       "D'obligation": "Les panneaux d'obligation sont ronds et bleus.",
       "D'indication": "Les panneaux d'indication sont carrés ou rectangulaires."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "forme-panneau",
+      "valeur": "triangle"
     }
   },
   {
@@ -35,6 +40,11 @@
       "D'obligation": "L'obligation, c'est un rond bleu, sans bord rouge.",
       "De danger": "Le danger, c'est un triangle pointe en haut.",
       "D'indication": "L'indication, c'est un carré ou un rectangle."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "forme-panneau",
+      "valeur": "rond-rouge"
     }
   },
   {
@@ -54,6 +64,11 @@
       "D'interdiction": "L'interdiction, c'est un rond à bord rouge.",
       "D'indication": "L'indication, c'est un carré ou un rectangle.",
       "De danger": "Le danger, c'est un triangle pointe en haut."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "forme-panneau",
+      "valeur": "rond-bleu"
     }
   },
   {
@@ -73,6 +88,11 @@
       "D'obligation": "L'obligation, c'est un rond bleu.",
       "D'interdiction": "L'interdiction, c'est un rond à bord rouge.",
       "De danger": "Le danger, c'est un triangle pointe en haut."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "forme-panneau",
+      "valeur": "carre-bleu"
     }
   },
   {
@@ -809,6 +829,10 @@
       "Je ne m'arrête pas, il n'y a pas de ligne": "Le STOP impose l'arrêt même sans marquage.",
       "À hauteur du panneau, même sans visibilité": "Sans ligne, tu t'arrêtes là où tu vois la route transversale.",
       "Au milieu du carrefour": "S'arrêter au milieu du carrefour est dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "stop-sans-ligne"
     }
   }
 ]

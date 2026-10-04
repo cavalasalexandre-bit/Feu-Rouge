@@ -491,7 +491,7 @@ const JAUNE_MARQUAGE = '#f5c400'
 const TROTTOIR = '#a9adb3'
 
 /** Feux tricolores vus de face. `velo` dessine le symbole vélo dans le feu allumé. */
-function Feux({ allume, velo = false, sansFond = false }: { allume: 'rouge' | 'orange' | 'vert'; velo?: boolean; sansFond?: boolean }) {
+function Feux({ allume, velo = false, sansFond = false }: { allume: 'rouge' | 'orange' | 'vert' | 'aucun'; velo?: boolean; sansFond?: boolean }) {
   const lampes = [
     { nom: 'rouge', on: '#ff3b30', off: '#3a1716' },
     { nom: 'orange', on: '#ffb020', off: '#3a2c12' },
@@ -700,7 +700,7 @@ function ClignoGauche({ x, y }: { x: number; y: number }) {
 }
 
 /** Agent qualifié vu de face. */
-function Agent({ bras }: { bras: 'leve' | 'tendus' }) {
+function Agent({ bras, feu }: { bras: 'leve' | 'tendus'; feu?: 'rouge' | 'vert' }) {
   const bleu = '#1f3b73'
   return (
     <>
@@ -731,6 +731,11 @@ function Agent({ bras }: { bras: 'leve' | 'tendus' }) {
       <circle cx={100} cy={48} r={12} fill="#d9a77c" />
       <rect x={86} y={30} width={28} height={10} rx={3} fill={bleu} />
       <rect x={84} y={38} width={32} height={4} rx={2} fill="#0f1d3a" />
+      {feu && (
+        <g transform="translate(150 8) scale(0.3)">
+          <Feux allume={feu} sansFond />
+        </g>
+      )}
     </>
   )
 }
@@ -1842,6 +1847,119 @@ const SCENES: Record<string, ReactNode> = {
       <CoteV x={108} y1={66} y2={144} />
     </>
   ),
+  // ---------- Étape 6 : dernières scènes ----------
+  'quel-cote': (
+    <>
+      <RouteCampagne />
+      <Auto x={130} y={70} fill="#6b7f2a" />
+      <Auto x={130} y={150} fill="#1f4fa3" label="TOI" />
+      <Question x={84} y={70} />
+      <Question x={168} y={70} />
+    </>
+  ),
+  'rue-cyclable': (
+    <>
+      <RueDeuxTrottoirs ligne={false} />
+      {[40, 130].map((y) => (
+        <g key={y} transform={`translate(100 ${y})`} stroke={MARQUAGE} strokeWidth={2.5} fill="none">
+          <circle cx={-9} cy={6} r={6} />
+          <circle cx={9} cy={6} r={6} />
+          <path d="M-9 6 L-3 -6 H5 L9 6 M-3 -6 L1 6 L5 -6" />
+        </g>
+      ))}
+      <Velo x={130} y={76} />
+      <Auto x={130} y={168} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'feux-eteints': (
+    <>
+      <Carrefour />
+      <g transform="translate(128 128) scale(0.24)">
+        <Feux allume="aucun" sansFond />
+      </g>
+      <Auto x={112} y={168} fill="#1f4fa3" label="TOI" />
+      <Auto x={165} y={88} rot={-90} fill="#c8102e" />
+      <Question x={60} y={60} />
+    </>
+  ),
+  'enfants-jouent': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill="#8d939b" />
+      <rect x={30} y={0} width={140} height={200} fill="#a39a8c" />
+      {[0, 20, 40, 60, 80, 100, 120, 140, 160, 180].map((y) => <rect key={y} x={30} y={y} width={140} height={1} fill="#958c7e" />)}
+      <Pieton x={80} y={60} />
+      <Pieton x={112} y={74} />
+      <circle cx={96} cy={52} r={5} fill="#ff4d5e" stroke="#0b0e13" strokeWidth={1} />
+      <Auto x={130} y={168} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'canne-blanche': (
+    <>
+      <RueDeuxTrottoirs />
+      <Pieton x={90} y={70} />
+      <line x1={94} y1={72} x2={108} y2={86} stroke={BLANC} strokeWidth={2} />
+      <Auto x={134} y={160} fill="#1f4fa3" label="TOI" />
+    </>
+  ),
+  'droite-pietons': (
+    <>
+      <Carrefour />
+      {Array.from({ length: 5 }, (_, i) => (
+        <rect key={i} x={132 + i * 13} y={76} width={7} height={48} fill={MARQUAGE} />
+      ))}
+      <Pieton x={150} y={92} />
+      <Pieton x={170} y={108} />
+      <Auto x={112} y={168} fill="#1f4fa3" label="TOI" />
+      <Fleche d="M112 148 V124 Q112 112 124 112 H128" />
+      <g transform="translate(130 136) scale(0.2)">
+        <Feux allume="vert" sansFond />
+      </g>
+    </>
+  ),
+  'stop-sans-ligne': (
+    <>
+      <Croisement />
+      <g transform="translate(150 122) scale(0.22)">
+        <polygon points="30,4 70,4 96,30 96,70 70,96 30,96 4,70 4,30" fill={ROUGE} stroke={BLANC} strokeWidth={3} />
+        <text x={50} y={60} textAnchor="middle" fontFamily="Overpass, Arial, sans-serif" fontWeight={900} fontSize={28} fill={BLANC}>
+          STOP
+        </text>
+      </g>
+      <rect x={161} y={144} width={2} height={20} fill="#8a919c" />
+      <Auto x={124} y={176} fill="#1f4fa3" label="TOI" />
+      <Question x={80} y={140} />
+    </>
+  ),
+  'arret-stationnement': (
+    <>
+      <RueTrottoir />
+      <Auto x={145} y={96} fill="#1f4fa3" label="TOI" />
+      <path d="M154 90 L166 98" stroke="#1f4fa3" strokeWidth={4} strokeLinecap="round" />
+      <Pieton x={172} y={110} />
+      <Question x={110} y={96} />
+    </>
+  ),
+  'largeur-libre': (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={TROTTOIR} />
+      <rect x={40} y={0} width={120} height={200} fill={ROUTE} />
+      <Auto x={146} y={100} fill="#6b7f2a" />
+      <Auto x={54} y={60} fill="#8a5cc2" />
+      <Cote x1={64} x2={136} y={140} />
+    </>
+  ),
+  'cache-panneau': (
+    <>
+      <RueTrottoir />
+      <g transform="translate(166 40) scale(0.22)">
+        <polygon points={TRI_BAS} fill={BLANC} stroke={ROUGE} strokeWidth={9} strokeLinejoin="round" />
+      </g>
+      <rect x={176} y={60} width={2} height={20} fill="#8a919c" />
+      <Camion x={145} y={84} />
+      <Auto x={110} y={168} fill="#1f4fa3" label="TOI" />
+      <Question x={110} y={60} />
+    </>
+  ),
   'etre-depasse': (
     <>
       <RouteCampagne />
@@ -1851,6 +1969,262 @@ const SCENES: Record<string, ReactNode> = {
       <Fleche d="M74 108 V80" />
     </>
   ),
+}
+
+// ---------- Illustrations thématiques (questions de chiffres et de règles) ----------
+const IL_FOND = '#0c1118'
+const IL_CARTE = '#151c27'
+const IL_LIGNE = '#2a3442'
+const IL_AMBRE = '#ffb020'
+const IL_TEXTE = '#e6ebf2'
+const IL_DISCRET = '#8b97a8'
+const POLICE_TITRE = 'Chakra Petch, Overpass, Arial, sans-serif'
+const POLICE_MONO = 'IBM Plex Mono, ui-monospace, monospace'
+
+function Etiquette({ texte, y = 186 }: { texte?: string; y?: number }) {
+  if (!texte) return null
+  return (
+    <text x={100} y={y} textAnchor="middle" fontFamily={POLICE_MONO} fontSize={texte.length > 24 ? 8.5 : 10} letterSpacing={texte.length > 24 ? 0.2 : 1} fill={IL_DISCRET}>
+      {texte.toUpperCase()}
+    </text>
+  )
+}
+
+/** Compteur de vitesse façon tableau de bord : aiguille sur `valeur` km/h (ou « ? »). */
+function Compteur({ valeur = '?', texte }: { valeur?: string; texte?: string }) {
+  const max = 140
+  const v = Number(valeur)
+  const angle = (x: number) => ((135 + (270 * x) / max) * Math.PI) / 180
+  const pt = (x: number, r: number) => [100 + r * Math.cos(angle(x)), 92 + r * Math.sin(angle(x))]
+  const aiguille = Number.isFinite(v) ? pt(v, 58) : null
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <circle cx={100} cy={92} r={78} fill={IL_CARTE} stroke={IL_LIGNE} strokeWidth={2} />
+      {Array.from({ length: 15 }, (_, i) => {
+        const x = i * 10
+        const [x1, y1] = pt(x, 70)
+        const [x2, y2] = pt(x, i % 2 === 0 ? 60 : 65)
+        const [tx, ty] = pt(x, 49)
+        return (
+          <g key={i}>
+            <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={IL_DISCRET} strokeWidth={i % 2 === 0 ? 2.5 : 1.5} />
+            {i % 2 === 0 && (
+              <text x={tx} y={ty + 3} textAnchor="middle" fontFamily={POLICE_MONO} fontSize={8} fill={IL_DISCRET}>
+                {x}
+              </text>
+            )}
+          </g>
+        )
+      })}
+      {aiguille && <line x1={100} y1={92} x2={aiguille[0]} y2={aiguille[1]} stroke={IL_AMBRE} strokeWidth={4} strokeLinecap="round" />}
+      <circle cx={100} cy={92} r={7} fill={IL_AMBRE} />
+      <text x={100} y={142} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={22} fill={Number.isFinite(v) ? IL_TEXTE : IL_AMBRE}>
+        {valeur}
+      </text>
+      <text x={100} y={155} textAnchor="middle" fontFamily={POLICE_MONO} fontSize={8} fill={IL_DISCRET}>
+        km/h
+      </text>
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Éthylotest qui affiche `valeur` (ou « ? »). */
+function Ethylotest({ valeur = '?', texte }: { valeur?: string; texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={60} y={30} width={80} height={130} rx={16} fill={IL_CARTE} stroke={IL_LIGNE} strokeWidth={2} />
+      <rect x={92} y={8} width={16} height={26} rx={4} fill="#d6d9dd" />
+      <rect x={70} y={50} width={60} height={34} rx={4} fill="#0a1a12" stroke="#1f3b2c" strokeWidth={1.5} />
+      <text x={100} y={74} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={valeur.length > 6 ? 12 : 16} fill="#39d98a">
+        {valeur}
+      </text>
+      <circle cx={100} cy={118} r={14} fill="none" stroke={IL_DISCRET} strokeWidth={2} />
+      <circle cx={100} cy={118} r={6} fill={IL_AMBRE} />
+      <Etiquette texte={texte} y={184} />
+    </>
+  )
+}
+
+/** Avis de perception immédiate : degré ou motif, montant « ? ». */
+function Amende({ valeur = '? €', texte }: { valeur?: string; texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <g transform="rotate(-4 100 100)">
+        <rect x={40} y={22} width={120} height={156} rx={4} fill="#f4f1e8" />
+        <rect x={40} y={22} width={120} height={26} rx={4} fill="#c8102e" />
+        <text x={100} y={39} textAnchor="middle" fontFamily={POLICE_MONO} fontWeight={700} fontSize={8} fill={BLANC}>
+          PERCEPTION IMMÉDIATE
+        </text>
+        {[60, 72, 84].map((y) => <rect key={y} x={52} y={y} width={96 - (y % 24)} height={4} rx={2} fill="#cfcabc" />)}
+        {texte && (
+          <text x={100} y={112} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={texte.length > 14 ? 10 : 13} fill="#1b1b1b">
+            {texte}
+          </text>
+        )}
+        <rect x={56} y={128} width={88} height={30} rx={4} fill="none" stroke="#1b1b1b" strokeWidth={1.5} />
+        <text x={100} y={149} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={18} fill="#c8102e">
+          {valeur}
+        </text>
+      </g>
+    </>
+  )
+}
+
+/** Téléphone qui compose un numéro d'urgence. */
+function Telephone({ valeur = '?', texte }: { valeur?: string; texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={66} y={18} width={68} height={140} rx={12} fill="#1b1f26" stroke={IL_LIGNE} strokeWidth={2} />
+      <rect x={72} y={30} width={56} height={110} rx={4} fill={IL_CARTE} />
+      <text x={100} y={66} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={22} fill={IL_AMBRE}>
+        {valeur}
+      </text>
+      {[0, 1, 2].map((r) => [0, 1, 2].map((c) => <circle key={`${r}${c}`} cx={84 + c * 16} cy={86 + r * 14} r={5} fill={IL_LIGNE} />))}
+      <circle cx={100} cy={130} r={6} fill="#39d98a" />
+      <Etiquette texte={texte} y={184} />
+    </>
+  )
+}
+
+/** Distance d'arrêt : réaction (ambre) + freinage (rouge), longueurs « ? ». */
+function DistanceArret({ valeur, texte }: { valeur?: string; texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={0} y={70} width={200} height={50} fill={ROUTE} />
+      <g transform="translate(22 95) rotate(90)">
+        <rect x={-9} y={-15} width={18} height={30} rx={4} fill="#1f4fa3" />
+        <rect x={-6} y={-9} width={12} height={7} rx={1.5} fill="#cfe0f5" />
+      </g>
+      <rect x={40} y={128} width={56} height={10} rx={2} fill={IL_AMBRE} />
+      <rect x={96} y={128} width={86} height={10} rx={2} fill="#ff4d5e" />
+      <text x={68} y={154} textAnchor="middle" fontFamily={POLICE_MONO} fontSize={8} fill={IL_AMBRE}>RÉACTION</text>
+      <text x={139} y={154} textAnchor="middle" fontFamily={POLICE_MONO} fontSize={8} fill="#ff4d5e">FREINAGE</text>
+      <text x={68} y={58} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={14} fill={IL_TEXTE}>?</text>
+      <text x={139} y={58} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={14} fill={IL_TEXTE}>?</text>
+      {valeur && (
+        <text x={100} y={30} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={16} fill={IL_AMBRE}>
+          {valeur} km/h
+        </text>
+      )}
+      <rect x={182} y={76} width={6} height={38} fill="#ff4d5e" />
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Forme d'un panneau, sans pictogramme. */
+function FormePanneau({ valeur }: { valeur?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <g transform="translate(50 50)">
+        {valeur === 'triangle' && <polygon points={TRI_HAUT} fill={BLANC} stroke={ROUGE} strokeWidth={9} strokeLinejoin="round" />}
+        {valeur === 'rond-rouge' && <circle cx={50} cy={50} r={44} fill={BLANC} stroke={ROUGE} strokeWidth={9} />}
+        {valeur === 'rond-bleu' && <circle cx={50} cy={50} r={46} fill={BLEU} />}
+        {valeur === 'carre-bleu' && <rect x={6} y={6} width={88} height={88} rx={8} fill={BLEU} stroke={BLANC} strokeWidth={3} />}
+      </g>
+    </>
+  )
+}
+
+/** Chronomètre avec « ? ». */
+function Chrono({ texte }: { texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={90} y={22} width={20} height={12} rx={2} fill={IL_DISCRET} />
+      <circle cx={100} cy={96} r={58} fill={IL_CARTE} stroke={IL_LIGNE} strokeWidth={4} />
+      {Array.from({ length: 12 }, (_, i) => (
+        <line key={i} x1={100} y1={44} x2={100} y2={52} stroke={IL_DISCRET} strokeWidth={2} transform={`rotate(${i * 30} 100 96)`} />
+      ))}
+      <line x1={100} y1={96} x2={100} y2={56} stroke={IL_AMBRE} strokeWidth={4} strokeLinecap="round" transform="rotate(30 100 96)" />
+      <circle cx={100} cy={96} r={5} fill={IL_AMBRE} />
+      <text x={100} y={130} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={20} fill={IL_AMBRE}>
+        ?
+      </text>
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Les trois régions belges, chacune avec « ? ». */
+function Regions({ texte }: { texte?: string }) {
+  const regions = ['Flandre', 'Bruxelles', 'Wallonie']
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      {regions.map((r, i) => (
+        <g key={r} transform={`translate(30 ${30 + i * 46})`}>
+          <rect x={0} y={0} width={140} height={36} rx={6} fill={IL_CARTE} stroke={IL_LIGNE} strokeWidth={2} />
+          <text x={14} y={23} fontFamily={POLICE_TITRE} fontWeight={600} fontSize={14} fill={IL_TEXTE}>
+            {r}
+          </text>
+          <text x={124} y={24} textAnchor="middle" fontFamily={POLICE_TITRE} fontWeight={700} fontSize={16} fill={IL_AMBRE}>
+            ?
+          </text>
+        </g>
+      ))}
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Rétroviseur intérieur avec une voiture visible. */
+function Retroviseur({ texte }: { texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={96} y={10} width={8} height={40} fill={IL_LIGNE} />
+      <rect x={24} y={50} width={152} height={70} rx={30} fill="#1b1f26" stroke={IL_LIGNE} strokeWidth={3} />
+      <rect x={32} y={58} width={136} height={54} rx={24} fill="#3a4a5e" />
+      <polygon points="80,112 120,112 108,80 92,80" fill={ROUTE} />
+      <rect x={90} y={84} width={20} height={14} rx={3} fill="#c8102e" />
+      <circle cx={94} cy={96} r={2} fill="#fff3b0" />
+      <circle cx={106} cy={96} r={2} fill="#fff3b0" />
+      <Question x={160} y={148} />
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Témoins des clignotants gauche et droit, avec « ? ». */
+function Clignotants({ texte }: { texte?: string }) {
+  return (
+    <>
+      <rect x={0} y={0} width={200} height={200} fill={IL_FOND} />
+      <rect x={20} y={56} width={160} height={70} rx={14} fill={IL_CARTE} stroke={IL_LIGNE} strokeWidth={2} />
+      <path d="M70 72 L44 91 L70 110 V100 H86 V82 H70 Z" fill="#39d98a" opacity={0.85} />
+      <path d="M130 72 L156 91 L130 110 V100 H114 V82 H130 Z" fill="#39d98a" opacity={0.85} />
+      <Question x={64} y={146} />
+      <Question x={136} y={146} />
+      <Etiquette texte={texte} />
+    </>
+  )
+}
+
+/** Agent qui fait signe, avec un feu (rouge ou vert) à côté. */
+function AgentFeu({ valeur }: { valeur?: string }) {
+  return <Agent bras="leve" feu={valeur === 'rouge' ? 'rouge' : 'vert'} />
+}
+
+const ILLUSTRATIONS: Record<string, (valeur?: string, texte?: string) => ReactNode> = {
+  compteur: (v, t) => <Compteur valeur={v} texte={t} />,
+  ethylotest: (v, t) => <Ethylotest valeur={v} texte={t} />,
+  amende: (v, t) => <Amende valeur={v} texte={t} />,
+  telephone: (v, t) => <Telephone valeur={v} texte={t} />,
+  'distance-arret': (v, t) => <DistanceArret valeur={v} texte={t} />,
+  'forme-panneau': (v) => <FormePanneau valeur={v} />,
+  chrono: (_, t) => <Chrono texte={t} />,
+  regions: (_, t) => <Regions texte={t} />,
+  retroviseur: (_, t) => <Retroviseur texte={t} />,
+  clignotants: (_, t) => <Clignotants texte={t} />,
+  'agent-feu': (v) => <AgentFeu valeur={v} />,
 }
 
 export function Schema({ schema, titre }: { schema: SchemaType; titre: string }) {
@@ -1864,7 +2238,7 @@ export function Schema({ schema, titre }: { schema: SchemaType; titre: string })
       </svg>
     )
   }
-  const scene = SCENES[schema.id]
+  const scene = SCENES[schema.id] ?? ILLUSTRATIONS[schema.id]?.(schema.valeur, schema.texte)
   if (!scene) return null
   return (
     <svg viewBox="0 0 200 200" width={220} height={220} role="img" aria-label={titre} style={{ borderRadius: 10 }}>

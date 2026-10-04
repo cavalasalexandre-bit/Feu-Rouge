@@ -16,6 +16,10 @@
       "L'arrêt dure maximum 15 minutes": "L'arrêt n'a pas de durée fixe : il dure le temps de charger ou décharger.",
       "L'arrêt se fait moteur allumé, le stationnement moteur coupé": "Le moteur allumé ou coupé ne fait pas la différence.",
       "Il n'y a aucune différence": "Il y a une différence : l'arrêt est limité au chargement et au déchargement."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "arret-stationnement"
     }
   },
   {
@@ -100,6 +104,10 @@
       "2 mètres": "2 m serait trop étroit pour passer.",
       "5 mètres": "5 m n'est pas le minimum légal.",
       "1,5 mètre": "1,5 m serait bien trop étroit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "largeur-libre"
     }
   },
   {
@@ -406,6 +414,10 @@
       "Oui, sur le côté droit": "Un véhicule arrêté dans un tunnel crée un grand danger.",
       "Oui, avec les feux de détresse": "Les feux de détresse ne suffisent pas à rendre l'arrêt sûr.",
       "Oui, s'il est éclairé": "L'éclairage ne change rien."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "tunnel-entree"
     }
   },
   {
@@ -490,6 +502,10 @@
       "Tous les jours, 24 h sur 24": "Sans panneau qui le précise, la zone bleue ne vaut pas la nuit.",
       "Seulement le week-end": "C'est l'inverse : les jours ouvrables.",
       "Seulement le matin": "La règle vaut toute la journée de travail."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "E9a-disque"
     }
   },
   {
@@ -578,6 +594,10 @@
       "Sur le trottoir": "Le trottoir est réservé aux piétons, sauf marquage qui l'autorise.",
       "Au milieu de la chaussée": "Ce serait très gênant et dangereux.",
       "Sur la piste cyclable": "La piste cyclable est interdite aux voitures."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "cote-stationnement"
     }
   },
   {
@@ -620,6 +640,10 @@
       "Oui, toujours": "Si l'éclairage rend la voiture bien visible, ce n'est pas nécessaire.",
       "Oui, les feux de croisement": "Les feux de croisement servent à rouler.",
       "Oui, les feux de détresse": "Les feux de détresse ne servent pas au stationnement normal."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "avenue-eclairee"
     }
   },
   {
@@ -639,6 +663,10 @@
       "Oui, si les barrières sont levées": "Un train peut arriver : on ne s'arrête jamais sur les rails.",
       "Oui, pour quelques secondes": "C'est interdit et extrêmement dangereux.",
       "Oui, s'il n'y a pas de train en vue": "Un train arrive vite et ne peut pas s'arrêter."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "A45"
     }
   },
   {
@@ -658,6 +686,10 @@
       "Oui, si tu restes peu de temps": "Cacher la signalisation est dangereux et interdit.",
       "Oui, la nuit": "C'est interdit à toute heure.",
       "Oui, si c'est un petit panneau": "Tous les panneaux doivent rester visibles."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "cache-panneau"
     }
   }
 ]

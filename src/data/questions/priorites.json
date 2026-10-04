@@ -395,6 +395,11 @@
       "Le feu": "L'agent passe avant les feux.",
       "Les panneaux": "L'agent passe avant les panneaux.",
       "La règle de la priorité de droite": "L'agent passe avant toutes les règles générales."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "agent-feu",
+      "valeur": "vert"
     }
   },
   {
@@ -433,6 +438,10 @@
       "Le premier arrivé passe": "La règle du premier arrivé n'existe pas.",
       "La route la plus large est prioritaire": "La largeur de la route ne donne pas la priorité.",
       "Tout le monde s'arrête comme à un STOP": "Il n'y a pas d'arrêt obligatoire pour tous : on applique panneaux puis priorité de droite."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "feux-eteints"
     }
   },
   {
@@ -498,6 +507,10 @@
       "Je klaxonne pour qu'ils dégagent": "En zone résidentielle, les jeux sont permis sur toute la voie publique.",
       "Je passe à 30 km/h": "La limite y est de 20 km/h et tu ne dois mettre personne en danger.",
       "Je les contourne sans ralentir": "Tu dois ralentir et t'arrêter au besoin."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "enfants-jouent"
     }
   },
   {
@@ -563,6 +576,10 @@
       "Je klaxonne pour le prévenir": "Le klaxon risque de l'effrayer et de le désorienter.",
       "Je le contourne prudemment": "Contourner un piéton aveugle est dangereux : arrête-toi.",
       "Je passe, il n'est pas sur un passage": "La sécurité des piétons aveugles ou malvoyants passe avant tout."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "canne-blanche"
     }
   },
   {
@@ -712,6 +729,10 @@
       "Je passe, j'ai aussi le vert": "En tournant, tu cèdes le passage aux piétons qui traversent.",
       "Je klaxonne pour qu'ils se pressent": "Klaxonner pour faire presser des piétons est interdit.",
       "Je passe juste derrière le premier piéton": "Tu attends qu'ils aient traversé en sécurité."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "droite-pietons"
     }
   },
   {
@@ -777,6 +798,11 @@
       "J'attends le vert": "Les signes de l'agent priment sur les feux.",
       "Je passe seulement si personne n'arrive": "C'est l'agent qui règle la circulation à ce moment-là.",
       "Je klaxonne pour confirmer": "Klaxonner n'est pas nécessaire."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "agent-feu",
+      "valeur": "rouge"
     }
   },
   {

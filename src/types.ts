@@ -17,7 +17,7 @@ export type Region = 'wallonie' | 'bruxelles' | 'flandre'
 /** Schéma SVG optionnel affiché avec la question. */
 export type Schema =
   | { type: 'panneau'; code: string; valeur?: string }
-  | { type: 'scene'; id: string }
+  | { type: 'scene'; id: string; valeur?: string; texte?: string }
 
 export interface Question {
   id: string

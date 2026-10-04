@@ -16,6 +16,10 @@
       "Par la droite": "Par la droite, c'est l'exception, pas la règle.",
       "Par le côté le plus large": "La largeur ne décide pas : on dépasse par la gauche.",
       "Indifféremment": "Le côté n'est pas libre : c'est la gauche."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "quel-cote"
     }
   },
   {
@@ -35,6 +39,10 @@
       "Quand il roule trop lentement à gauche": "Un véhicule lent à gauche ne t'autorise pas à dépasser par la droite.",
       "Jamais": "C'est parfois permis, par exemple quand le véhicule tourne à gauche.",
       "Toujours sur autoroute": "Sur autoroute aussi, on dépasse par la gauche."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "quel-cote"
     }
   },
   {
@@ -188,6 +196,11 @@
       "Seulement le rétroviseur intérieur": "Il faut aussi vérifier l'angle mort et les rétroviseurs extérieurs.",
       "Seulement que la route en face est libre": "Il faut aussi vérifier derrière toi.",
       "Rien, si tu mets ton clignotant": "Le clignotant ne remplace pas les vérifications."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "retroviseur",
+      "texte": "Avant de dépasser"
     }
   },
   {
@@ -299,6 +312,10 @@
       "Dès que ton avant dépasse son avant": "Tu lui couperais la route.",
       "Immédiatement": "Te rabattre aussitôt couperait la route au véhicule dépassé.",
       "Après 100 mètres": "Il n'y a pas de distance fixe : c'est le rétroviseur intérieur qui compte."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "depasser-camion"
     }
   },
   {
@@ -318,6 +335,10 @@
       "Oui, à 1 mètre de distance": "Dans une rue cyclable, on ne dépasse pas les cyclistes, même à 1 m.",
       "Oui, s'il roule lentement": "Même lent, le cycliste ne peut pas être dépassé dans une rue cyclable.",
       "Oui, par la droite": "Par la droite non plus."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "rue-cyclable"
     }
   },
   {
@@ -406,6 +427,11 @@
       "Seulement le gauche": "Il faut aussi annoncer le retour à droite.",
       "Aucun, si personne n'arrive": "Le dépassement s'annonce toujours.",
       "Les feux de détresse": "Les feux de détresse ne servent pas à dépasser."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "clignotants",
+      "texte": "Pendant un dépassement"
     }
   },
   {
@@ -563,6 +589,12 @@
       "Oui, si c'est rapide": "Même pour quelques secondes, l'excès de vitesse est interdit.",
       "Oui, hors agglomération": "La limite vaut partout.",
       "Oui, si elle te le permet": "Personne ne peut t'autoriser à dépasser la limite."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Voiture devant à la limite"
     }
   },
   {

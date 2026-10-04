@@ -17,7 +17,13 @@
       "60 km/h": "60 km/h n'est une limite générale nulle part en Belgique.",
       "70 km/h": "70 km/h est la limite hors agglomération en Flandre."
     },
-    "region": "wallonie"
+    "region": "wallonie",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Wallonie · agglomération"
+    }
   },
   {
     "id": "vit-002",
@@ -37,7 +43,13 @@
       "20 km/h": "20 km/h est la limite des zones résidentielles et de rencontre.",
       "40 km/h": "40 km/h n'est pas une limite générale en Belgique."
     },
-    "region": "bruxelles"
+    "region": "bruxelles",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Bruxelles · agglomération"
+    }
   },
   {
     "id": "vit-003",
@@ -57,7 +69,13 @@
       "80 km/h": "80 km/h n'est pas une limite générale en Belgique.",
       "120 km/h": "120 km/h vaut pour l'autoroute et les routes à 2 × 2 bandes séparées."
     },
-    "region": "wallonie"
+    "region": "wallonie",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Wallonie · hors agglomération"
+    }
   },
   {
     "id": "vit-004",
@@ -77,7 +95,13 @@
       "80 km/h": "80 km/h n'est pas une limite générale en Belgique.",
       "50 km/h": "50 km/h est la limite en agglomération."
     },
-    "region": "flandre"
+    "region": "flandre",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Flandre · hors agglomération"
+    }
   },
   {
     "id": "vit-005",
@@ -120,6 +144,12 @@
       "50 km/h": "50 km/h est trop lent : sur autoroute, il faut pouvoir rouler à 70 km/h.",
       "90 km/h": "90 km/h n'est pas un minimum, c'est la limite des camions.",
       "Il n'y a pas de vitesse minimale": "Il y a bien un minimum : rouler trop lentement sur autoroute est dangereux."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Autoroute · vitesse minimale"
     }
   },
   {
@@ -139,6 +169,12 @@
       "90 km/h": "90 km/h est la limite des routes ordinaires, pas des 2 × 2 bandes séparées.",
       "100 km/h": "100 km/h n'est pas une limite générale en Belgique.",
       "70 km/h": "70 km/h est la limite hors agglomération en Flandre."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Wallonie · 2 × 2 bandes"
     }
   },
   {
@@ -248,6 +284,11 @@
       "Dans les 100 mètres": "La loi ne fixe pas 100 m : tout dépend de ce que tu vois libre devant toi.",
       "Seulement si la route est sèche": "La règle vaut par tous les temps, et encore plus sur route mouillée.",
       "Uniquement en agglomération": "La règle s'applique partout, pas seulement en agglomération."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret",
+      "texte": "S'arrêter à temps"
     }
   },
   {
@@ -290,6 +331,12 @@
       "120 km/h": "120 km/h vaut pour les voitures, pas pour les camions de plus de 3,5 t.",
       "70 km/h": "70 km/h serait trop lent : c'est le minimum sur autoroute.",
       "100 km/h": "100 km/h n'est pas la limite des camions en Belgique."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Autoroute · camion + 3,5 t"
     }
   },
   {
@@ -357,7 +404,13 @@
       "50 km/h": "50 km/h est la limite en agglomération : tu en es sorti.",
       "120 km/h": "120 km/h est réservé à l'autoroute et aux 2 × 2 bandes séparées."
     },
-    "region": "flandre"
+    "region": "flandre",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Flandre · hors agglomération"
+    }
   },
   {
     "id": "vit-018",
@@ -395,6 +448,11 @@
       "La commune": "La commune peut fixer des limites locales par panneau, pas les limites générales.",
       "L'Union européenne": "L'Union européenne ne fixe pas les limites de vitesse belges.",
       "La province": "La province n'a pas cette compétence."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "regions",
+      "texte": "Vitesses hors agglomération"
     }
   },
   {
@@ -458,6 +516,10 @@
       "Non, tant que tu respectes la limite": "La limite est un maximum : rouler trop vite pour les conditions est aussi une infraction.",
       "Seulement en agglomération": "La règle de la vitesse adaptée s'applique partout.",
       "Seulement si tu as un accident": "L'infraction existe même sans accident."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "aquaplaning"
     }
   },
   {
@@ -502,7 +564,13 @@
       "70 km/h": "70 km/h est la limite flamande hors agglomération.",
       "40 km/h": "40 km/h n'est pas une limite générale en Belgique."
     },
-    "region": "flandre"
+    "region": "flandre",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Flandre · agglomération"
+    }
   },
   {
     "id": "vit-025",
@@ -540,6 +608,12 @@
       "Oui, 90 km/h maximum sur autoroute": "Il n'existe pas de limite spéciale pour le permis provisoire en Belgique.",
       "Oui, 70 km/h maximum partout": "Aucune limite spéciale n'existe pour les conducteurs en apprentissage.",
       "Oui, la nuit seulement": "Les limites sont les mêmes de jour comme de nuit."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Permis provisoire"
     }
   },
   {
@@ -631,7 +705,13 @@
       "90 km/h": "90 km/h est la limite des camions sur ces routes, pas des voitures.",
       "100 km/h": "100 km/h n'est pas une limite générale en Belgique."
     },
-    "region": "flandre"
+    "region": "flandre",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Flandre · 2 × 2 bandes"
+    }
   },
   {
     "id": "vit-031",
@@ -669,6 +749,12 @@
       "Oui, il faut toujours rouler à 70 km/h minimum": "En bouchon, il est impossible et dangereux de rouler à 70 km/h.",
       "Oui, tu dois quitter l'autoroute": "Rien ne t'oblige à sortir en cas de ralentissement.",
       "Non, car il n'y a pas de vitesse minimale": "Il y a une vitesse minimale, mais elle dépend des conditions de circulation."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Autoroute · trafic très dense"
     }
   },
   {
@@ -688,6 +774,10 @@
       "Pour réduire le bruit uniquement": "Le bruit diminue aussi, mais la raison principale est la sécurité des enfants.",
       "Pour fluidifier la circulation": "Ce n'est pas l'objectif de cette limite.",
       "Parce que les voitures consomment moins": "La consommation n'est pas la raison de cette limite."
+    },
+    "schema": {
+      "type": "panneau",
+      "code": "zone30-ecole"
     }
   },
   {
@@ -707,6 +797,12 @@
       "Oui, de 10 km/h maximum": "Aucune tolérance n'est prévue pendant un dépassement.",
       "Oui, hors agglomération": "La limite s'applique partout, dépassement ou non.",
       "Oui, si le véhicule dépassé roule lentement": "Si tu ne peux pas dépasser sans excès de vitesse, tu ne dépasses pas."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Pendant un dépassement"
     }
   },
   {
@@ -727,6 +823,12 @@
       "Non, les camions peuvent rouler à 70 km/h": "Aucun véhicule ne peut dépasser 50 km/h en agglomération sans panneau.",
       "Seulement pour les camions de moins de 3,5 t": "La limite s'applique quel que soit le poids."
     },
-    "region": "wallonie"
+    "region": "wallonie",
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Wallonie · agglo · camions"
+    }
   }
 ]

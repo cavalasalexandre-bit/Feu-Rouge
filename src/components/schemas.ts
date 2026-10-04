@@ -36,4 +36,10 @@ export const SCENES = [
   'pente-stationnement', 'portiere', 'double-file', 'entree-garage', 'cote-stationnement', 'virage-stationnement',
   'stationnement-passage', 'stationnement-carrefour', 'trottoir-marque', 'temoin-accident', 'fumee-moteur', 'accrochage',
   'distance-suivre', 'camions-distance', 'route-mouillee-distance',
+  // Illustrations thématiques (avec valeur et texte facultatifs)
+  'compteur', 'ethylotest', 'amende', 'telephone', 'distance-arret', 'forme-panneau',
+  'chrono', 'regions', 'retroviseur', 'clignotants', 'agent-feu',
+  // Dernières scènes
+  'quel-cote', 'rue-cyclable', 'feux-eteints', 'enfants-jouent', 'canne-blanche', 'droite-pietons', 'stop-sans-ligne',
+  'arret-stationnement', 'largeur-libre', 'cache-panneau',
 ] as const

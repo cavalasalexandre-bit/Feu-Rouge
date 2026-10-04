@@ -16,6 +16,11 @@
       "2 secondes": "2 secondes, c'est la distance de sécurité, pas le temps de réaction.",
       "0,5 seconde": "0,5 seconde est trop court pour un conducteur moyen.",
       "3 secondes": "3 secondes, c'est un temps de réaction très dégradé (fatigue, alcool)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "chrono",
+      "texte": "Temps de réaction moyen"
     }
   },
   {
@@ -35,6 +40,12 @@
       "12,5 mètres": "12,5 m, c'est la distance de freinage sur sol sec à 50 km/h.",
       "25 mètres": "25 m, c'est la distance de sécurité ou l'arrêt simplifié à 50 km/h.",
       "5 mètres": "5 m : tu as pris le chiffre des dizaines sans le multiplier par 3."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Distance de réaction ?"
     }
   },
   {
@@ -54,6 +65,12 @@
       "40,5 mètres": "40,5 m, c'est la distance de freinage à 90 km/h.",
       "45 mètres": "45 m, c'est la distance de sécurité à 90 km/h (vitesse ÷ 2).",
       "18 mètres": "18 m : tu as multiplié par 2 au lieu de 3."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Distance de réaction ?"
     }
   },
   {
@@ -73,6 +90,12 @@
       "72 mètres": "72 m, c'est la distance de freinage à 120 km/h.",
       "60 mètres": "60 m, c'est la distance de sécurité à 120 km/h.",
       "24 mètres": "24 m : tu as multiplié par 2 au lieu de 3."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "120",
+      "texte": "Distance de réaction ?"
     }
   },
   {
@@ -92,6 +115,12 @@
       "15 mètres": "15 m, c'est la distance de réaction à 50 km/h.",
       "25 mètres": "25 m : tu as oublié de diviser 5 × 5 par 2.",
       "27,5 mètres": "27,5 m, c'est la distance d'arrêt complète (réaction + freinage)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -111,6 +140,12 @@
       "27 mètres": "27 m, c'est la distance de réaction à 90 km/h.",
       "81 mètres": "81 m : tu as oublié de diviser 9 × 9 par 2.",
       "67,5 mètres": "67,5 m, c'est la distance d'arrêt (27 + 40,5)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -130,6 +165,12 @@
       "36 mètres": "36 m, c'est la distance de réaction à 120 km/h.",
       "144 mètres": "144 m : tu as oublié de diviser 12 × 12 par 2.",
       "108 mètres": "108 m, c'est la distance d'arrêt (36 + 72)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "120",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -149,6 +190,11 @@
       "2": "Multiplier par 2, c'est trop : on retient une fois et demie.",
       "3": "Multiplier par 3, c'est trop pour un sol simplement mouillé.",
       "Elle ne change pas": "Un sol mouillé allonge toujours le freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret",
+      "texte": "Sol mouillé : freinage × ?"
     }
   },
   {
@@ -168,6 +214,12 @@
       "12,5 mètres": "12,5 m, c'est le freinage sur sol sec : il faut encore multiplier par 1,5.",
       "25 mètres": "25 m : tu as multiplié par 2 au lieu de 1,5.",
       "30 mètres": "30 m ne correspond à aucune des formules."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Freinage · sol mouillé ?"
     }
   },
   {
@@ -187,6 +239,12 @@
       "40,5 mètres": "40,5 m, c'est le freinage sur sol sec : il faut encore multiplier par 1,5.",
       "81 mètres": "81 m : tu as multiplié par 2 au lieu de 1,5.",
       "54 mètres": "54 m ne correspond à aucune des formules."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Freinage · sol mouillé ?"
     }
   },
   {
@@ -206,6 +264,11 @@
       "2": "Si la vitesse double, le freinage ne double pas : il suit le carré de la vitesse.",
       "3": "3 ne correspond pas : 2 × 2 = 4.",
       "8": "8 serait le cube (2 × 2 × 2), pas le carré."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret",
+      "texte": "Vitesse × 2 : freinage × ?"
     }
   },
   {
@@ -225,6 +288,10 @@
       "La distance de freinage seule": "Il manque la distance de réaction, parcourue avant même de freiner.",
       "La distance de sécurité + la distance de freinage": "La distance de sécurité est l'écart avec le véhicule devant, pas une partie de l'arrêt.",
       "La distance de réaction × 2": "La réaction compte une seule fois, et il faut y ajouter le freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret"
     }
   },
   {
@@ -244,6 +311,12 @@
       "12,5 mètres": "12,5 m, c'est le freinage seul : il manque les 15 m de réaction.",
       "15 mètres": "15 m, c'est la réaction seule : il manque les 12,5 m de freinage.",
       "50 mètres": "50 m est beaucoup trop : 15 + 12,5 = 27,5 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Arrêt · sol sec ?"
     }
   },
   {
@@ -263,6 +336,12 @@
       "40,5 mètres": "40,5 m, c'est le freinage seul : il manque les 27 m de réaction.",
       "27 mètres": "27 m, c'est la réaction seule : il manque le freinage.",
       "81 mètres": "81 m : tu as utilisé 9 × 9 sans diviser par 2 pour le freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Arrêt · sol sec ?"
     }
   },
   {
@@ -282,6 +361,12 @@
       "72 mètres": "72 m, c'est le freinage seul : il manque les 36 m de réaction.",
       "144 mètres": "144 m, c'est l'arrêt sur sol mouillé à 120 km/h.",
       "36 mètres": "36 m, c'est la réaction seule."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "120",
+      "texte": "Arrêt · sol sec ?"
     }
   },
   {
@@ -301,6 +386,12 @@
       "27,5 mètres": "27,5 m, c'est l'arrêt sur sol sec.",
       "18,75 mètres": "18,75 m, c'est le freinage mouillé seul : il manque la réaction.",
       "25 mètres": "25 m, c'est la formule simplifiée sur sol sec."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Arrêt · sol mouillé ?"
     }
   },
   {
@@ -343,6 +434,12 @@
       "27 mètres": "27 m, c'est la distance de réaction à 90 km/h, trop courte pour suivre.",
       "90 mètres": "90 m : tu as pris la vitesse sans la diviser par 2.",
       "20 mètres": "20 m est beaucoup trop court à 90 km/h."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Distance de sécurité ?"
     }
   },
   {
@@ -362,6 +459,12 @@
       "36 mètres": "36 m, c'est la distance de réaction à 120 km/h.",
       "120 mètres": "120 m : tu as pris la vitesse sans la diviser par 2.",
       "30 mètres": "30 m est la moitié de ce qu'il faut."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "120",
+      "texte": "Distance de sécurité ?"
     }
   },
   {
@@ -381,6 +484,11 @@
       "La distance de freinage": "La distance de freinage dépend de la voiture et de la route, pas de ton état.",
       "La distance de sécurité légale": "La distance de sécurité ne change pas de valeur légale : c'est ta réaction qui ralentit.",
       "Aucune distance": "La fatigue et l'alcool allongent bien une distance : celle de réaction."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret",
+      "texte": "Fatigue ou alcool ?"
     }
   },
   {
@@ -423,6 +531,10 @@
       "L'état des pneus": "Des pneus usés freinent moins bien : ils allongent le freinage.",
       "L'état de la route": "Une route mouillée ou glissante allonge le freinage.",
       "La vitesse": "La vitesse est le facteur principal du freinage."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret"
     }
   },
   {
@@ -442,6 +554,12 @@
       "4,5 mètres": "4,5 m, c'est la distance de freinage sur sol sec à 30 km/h.",
       "13,5 mètres": "13,5 m, c'est la distance d'arrêt à 30 km/h.",
       "6 mètres": "6 m : tu as multiplié par 2 au lieu de 3."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "30",
+      "texte": "Distance de réaction ?"
     }
   },
   {
@@ -461,6 +579,12 @@
       "24,5 mètres": "24,5 m, c'est la distance de freinage sur sol sec à 70 km/h.",
       "35 mètres": "35 m, c'est la distance de sécurité à 70 km/h (vitesse ÷ 2).",
       "14 mètres": "14 m : tu as multiplié par 2 au lieu de 3."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "70",
+      "texte": "Distance de réaction ?"
     }
   },
   {
@@ -480,6 +604,12 @@
       "9 mètres": "9 m, c'est la distance de réaction à 30 km/h, ou 3 × 3 sans diviser par 2.",
       "13,5 mètres": "13,5 m, c'est la distance d'arrêt (9 + 4,5).",
       "3 mètres": "3 m ne correspond à aucune formule."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "30",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -499,6 +629,12 @@
       "21 mètres": "21 m, c'est la distance de réaction à 70 km/h.",
       "49 mètres": "49 m : tu as oublié de diviser 7 × 7 par 2.",
       "45,5 mètres": "45,5 m, c'est la distance d'arrêt (21 + 24,5)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "70",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -518,6 +654,12 @@
       "30 mètres": "30 m, c'est la distance de réaction à 100 km/h.",
       "100 mètres": "100 m : tu as oublié de diviser 10 × 10 par 2.",
       "80 mètres": "80 m, c'est la distance d'arrêt (30 + 50)."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "100",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -537,6 +679,12 @@
       "24,5 mètres": "24,5 m, c'est le freinage seul : il manque la réaction.",
       "21 mètres": "21 m, c'est la réaction seule : il manque le freinage.",
       "70 mètres": "70 m est beaucoup trop : 21 + 24,5 = 45,5 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "70",
+      "texte": "Arrêt · sol sec ?"
     }
   },
   {
@@ -556,6 +704,12 @@
       "9 mètres": "9 m, c'est la réaction seule.",
       "4,5 mètres": "4,5 m, c'est le freinage seul.",
       "30 mètres": "30 m est beaucoup trop : 9 + 4,5 = 13,5 m."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "30",
+      "texte": "Arrêt · sol sec ?"
     }
   },
   {
@@ -575,6 +729,12 @@
       "67,5 mètres": "67,5 m, c'est l'arrêt sur sol sec.",
       "60,75 mètres": "60,75 m, c'est le freinage mouillé seul : il manque la réaction.",
       "101,25 mètres": "101,25 m : tu as multiplié toute la distance d'arrêt par 1,5. Seul le freinage est multiplié."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "Arrêt · sol mouillé ?"
     }
   },
   {
@@ -594,6 +754,12 @@
       "Environ 24,5 mètres": "24,5 m, c'est le freinage seul avec la formule détaillée.",
       "Environ 70 mètres": "70 m : tu as pris la vitesse au lieu de 7 × 7.",
       "Environ 21 mètres": "21 m, c'est la distance de réaction."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "70",
+      "texte": "Arrêt · formule simplifiée ?"
     }
   },
   {
@@ -613,6 +779,12 @@
       "15 mètres": "15 m, c'est la distance de réaction à 50 km/h, trop courte pour suivre.",
       "50 mètres": "50 m : tu as pris la vitesse sans la diviser par 2.",
       "5 mètres": "5 m est beaucoup trop court."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "50",
+      "texte": "Distance de sécurité ?"
     }
   },
   {
@@ -655,6 +827,12 @@
       "17,5 mètres": "17,5 m : la distance de freinage n'augmente pas comme la vitesse, mais comme son carré.",
       "14 mètres": "14 m sous-estime fortement l'effet de la vitesse.",
       "49 mètres": "49 m : tu as oublié de diviser 7 × 7 par 2."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "70",
+      "texte": "Freinage · sol sec ?"
     }
   },
   {
@@ -674,6 +852,12 @@
       "Environ 27 mètres": "27 m, c'est la distance parcourue en 1 seconde à 90 km/h.",
       "Environ 18 mètres": "18 m sous-estime fortement la distance.",
       "Environ 90 mètres": "90 m correspondrait à plus de 3 secondes."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "90",
+      "texte": "2 s sans regarder la route ?"
     }
   },
   {
@@ -693,6 +877,11 @@
       "Oui, il est plus lourd donc plus stable": "Plus le véhicule est lourd, plus il lui faut de distance pour s'arrêter.",
       "C'est exactement la même distance": "Le poids et les freins d'un camion allongent le freinage.",
       "Oui, grâce à ses nombreuses roues": "Le nombre de roues ne compense pas le poids."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "distance-arret",
+      "texte": "Camion chargé ?"
     }
   },
   {

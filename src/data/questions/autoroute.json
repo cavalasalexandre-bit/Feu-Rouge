@@ -333,6 +333,12 @@
       "50 km/h": "50 km/h est trop lent : c'est dangereux sur autoroute.",
       "90 km/h": "90 km/h n'est pas le minimum.",
       "100 km/h": "100 km/h n'est pas le minimum."
+    },
+    "schema": {
+      "type": "scene",
+      "id": "compteur",
+      "valeur": "?",
+      "texte": "Autoroute · vitesse minimale"
     }
   },
   {
