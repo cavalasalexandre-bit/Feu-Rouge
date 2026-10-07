@@ -217,17 +217,34 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
             {formatTemps(restant)}
           </span>
         )}
-        {secondesParQuestion > 0 &&
-          (phase === 'lecture' ? (
-            <span className="timer lecture" aria-live="polite">
-              {lectureAuto && voixDisponible() ? 'Lecture…' : 'Lis la question'}
-            </span>
-          ) : (
-            <span className={restantQ <= 5 ? 'timer low' : 'timer'} aria-label={`${restantQ} secondes pour répondre`}>
-              0:{String(restantQ).padStart(2, '0')}
-            </span>
-          ))}
       </div>
+
+      {secondesParQuestion > 0 && (
+        <div
+          className="decompte"
+          data-phase={phase}
+          data-bas={phase === 'reponse' && restantQ <= 5 ? 'oui' : undefined}
+          role="timer"
+          aria-live="off"
+          aria-label={phase === 'lecture' ? 'Lecture de la question' : `${restantQ} secondes pour répondre`}
+        >
+          <div className="decompte-chiffre">
+            {phase === 'lecture' ? (
+              <span className="decompte-lecture">{lectureAuto && voixDisponible() ? 'Lecture…' : 'Lis la question'}</span>
+            ) : (
+              <>
+                <strong>{restantQ}</strong>
+                <span>s</span>
+              </>
+            )}
+          </div>
+          <div className="decompte-segments" aria-hidden="true">
+            {Array.from({ length: secondesParQuestion }, (_, i) => (
+              <i key={i} data-on={phase === 'lecture' || i < restantQ ? 'oui' : undefined} />
+            ))}
+          </div>
+        </div>
+      )}
 
       <QuestionCard
         question={question}

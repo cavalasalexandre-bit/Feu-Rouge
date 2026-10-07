@@ -824,6 +824,96 @@ main {
   box-shadow: 0 0 12px color-mix(in srgb, var(--signal) 35%, transparent);
 }
 
+/* Décompte des 15 secondes (examen blanc, format officiel) */
+.decompte {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.decompte-chiffre {
+  min-width: 4.6rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  font-family: var(--font-display);
+  color: var(--accent-text);
+}
+.decompte-chiffre strong {
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.decompte-chiffre span {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.decompte-chiffre .decompte-lecture {
+  font-size: 0.85rem;
+  color: var(--cyan);
+  white-space: nowrap;
+}
+.decompte-segments {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  gap: 4px;
+}
+.decompte-segments i {
+  flex: 1;
+  height: 16px;
+  border-radius: 3px;
+  background: var(--line);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.decompte-segments i[data-on] {
+  background: var(--accent);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.decompte[data-phase='lecture'] .decompte-segments i[data-on] {
+  background: color-mix(in srgb, var(--cyan) 55%, var(--line));
+  box-shadow: none;
+}
+.decompte[data-bas] {
+  border-color: var(--signal);
+}
+.decompte[data-bas] .decompte-chiffre {
+  color: var(--signal);
+}
+.decompte[data-bas] .decompte-segments i[data-on] {
+  background: var(--signal);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--signal) 50%, transparent);
+}
+@media (max-width: 520px) {
+  .decompte {
+    padding: 10px 14px;
+    gap: 12px;
+  }
+  .decompte-chiffre strong {
+    font-size: 2.1rem;
+  }
+  .decompte-segments {
+    gap: 3px;
+  }
+  .decompte-segments i {
+    height: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .decompte-segments i {
+    transition: none;
+  }
+}
+
 .qcard {
   background: var(--surface);
   border: 1px solid var(--line);
