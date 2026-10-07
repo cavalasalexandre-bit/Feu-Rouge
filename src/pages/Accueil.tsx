@@ -119,7 +119,7 @@ export function Accueil() {
           <div className="feature">
             <p className="eyebrow">Étape 3</p>
             <h3>Contrôle technique</h3>
-            <p className="muted">Examen blanc : 50 questions, 41/50, fautes graves à −5 et arrêt anticipé, comme au centre.</p>
+            <p className="muted">Examen blanc : 50 questions, 41/50 pour réussir et fautes graves à −5, comme au centre.</p>
           </div>
         </div>
       </section>

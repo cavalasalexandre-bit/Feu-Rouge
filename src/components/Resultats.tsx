@@ -10,7 +10,6 @@ import { Annonces } from './Annonces'
 interface Props {
   reponses: Reponse[]
   mode: ModeSession
-  arrete?: boolean
   tempsEcoule?: boolean
   dureeSec?: number
   onRecommencer?: () => void
@@ -31,7 +30,7 @@ function classe(r: Reponse): string {
   return r.question.grave ? 'f5' : 'f1'
 }
 
-export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRecommencer, children }: Props) {
+export function Resultats({ reponses, mode, tempsEcoule, dureeSec, onRecommencer, children }: Props) {
   const score = scoreExamen(reponses)
   const erreurs = reponses.filter((r) => !estJuste(r))
   const estExamen = mode === 'examen'
@@ -48,12 +47,7 @@ export function Resultats({ reponses, mode, arrete, tempsEcoule, dureeSec, onRec
                 {score.reussi ? 'Examen réussi' : 'Examen raté'}
               </span>
               <h1>{titreVerdict(score.points, score.reussi)}</h1>
-              {(arrete || tempsEcoule) && (
-                <p className="muted">
-                  {arrete && 'L’épreuve s’est arrêtée : 41/50 n’était plus atteignable. '}
-                  {tempsEcoule && 'Temps écoulé : les questions restantes comptent comme fautes.'}
-                </p>
-              )}
+              {tempsEcoule && <p className="muted">Temps écoulé : les questions restantes comptent comme fautes.</p>}
               <div className="readouts">
                 <div className="readout">
                   <span className="eyebrow">Simples</span>

@@ -11,7 +11,7 @@ Site gratuit de préparation à l'examen théorique du permis B en Belgique : co
 | Tableau de bord | Plan du jour, compte à rebours, maîtrise par thème, courbe des examens |
 | Cours | Une fiche Markdown par thème |
 | Quiz | Révision intelligente, spécial fautes graves, quiz à la carte |
-| Examen blanc | 50 questions, 41/50, faute grave −5, chrono, arrêt anticipé, mode officiel ou ciblé |
+| Examen blanc | 50 questions, 41/50, faute grave −5, chrono, toujours 50 questions, mode officiel ou ciblé |
 | Mes erreurs | Questions ratées, jusqu'à 3 réussites d'affilée |
 | Réglages | Région, date d'examen, thèmes prioritaires, chrono, objectif, sauvegarde |
 

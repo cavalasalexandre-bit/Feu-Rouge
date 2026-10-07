@@ -35,8 +35,7 @@ export function penalite(q: Question): number {
 
 /**
  * Calcule le score : on part de 50, −1 par faute simple, −5 par faute grave.
- * Réussite à partir de 41/50. Les questions non posées (examen arrêté)
- * ne comptent pas comme fautes : le score est déjà sous le seuil.
+ * Réussite à partir de 41/50. L'examen blanc pose toujours les 50 questions.
  */
 export function scoreExamen(reponses: readonly Reponse[], total: number = EXAMEN.questions): Score {
   let fautesSimples = 0
@@ -57,11 +56,6 @@ export function scoreExamen(reponses: readonly Reponse[], total: number = EXAMEN
     justes,
     reussi: points >= EXAMEN.seuil,
   }
-}
-
-/** Comme à l'examen officiel : on s'arrête dès que 41/50 n'est plus atteignable. */
-export function examenPerdu(reponses: readonly Reponse[], total: number = EXAMEN.questions): boolean {
-  return scoreExamen(reponses, total).points < EXAMEN.seuil
 }
 
 export function resultatExamen(reponses: readonly Reponse[], dureeSec: number, date = Date.now()): ExamResult {

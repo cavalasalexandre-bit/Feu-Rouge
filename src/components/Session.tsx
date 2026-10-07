@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Question } from '../types'
-import { examenPerdu, type Reponse } from '../lib/scoring'
+import type { Reponse } from '../lib/scoring'
 import { enregistrerReponse } from '../lib/storage'
 import { useStore } from '../lib/store'
 import { QuestionCard } from './QuestionCard'
@@ -11,8 +11,6 @@ export type ModeSession = 'entrainement' | 'examen' | 'test'
 export interface FinSession {
   reponses: Reponse[]
   dureeSec: number
-  /** Examen arrêté parce que 41/50 n'était plus atteignable. */
-  arrete: boolean
   tempsEcoule: boolean
 }
 
@@ -38,7 +36,7 @@ function formatTemps(sec: number): string {
 /**
  * Déroulé d'une série de questions.
  * - entraînement : correction et explication après chaque réponse ;
- * - examen : pas de correction, pas de retour en arrière, arrêt anticipé comme au centre d'examen ;
+ * - examen : pas de correction, pas de retour en arrière, toujours jusqu'à la dernière question ;
  *   en format officiel, chaque question est lue puis on a 15 secondes (sans réponse = faute) ;
  * - test : comme l'examen mais sans chrono ni arrêt (positionnement).
  */
@@ -57,7 +55,7 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
   const derniere = index === questions.length - 1
 
   const finir = useCallback(
-    (toutes: Reponse[], opts: { arrete?: boolean; tempsEcoule?: boolean } = {}) => {
+    (toutes: Reponse[], opts: { tempsEcoule?: boolean } = {}) => {
       if (termine.current) return
       termine.current = true
       if (mode !== 'entrainement') {
@@ -66,7 +64,6 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
       onTermine({
         reponses: toutes,
         dureeSec: Math.round((Date.now() - debut.current) / 1000),
-        arrete: Boolean(opts.arrete),
         tempsEcoule: Boolean(opts.tempsEcoule),
       })
     },
@@ -98,10 +95,6 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
       if (!question || termine.current) return
       const toutes = [...reponses, { question, choix }]
       setReponses(toutes)
-      if (mode === 'examen' && examenPerdu(toutes)) {
-        finir(toutes, { arrete: true })
-        return
-      }
       if (derniere) {
         finir(toutes)
         return
@@ -263,8 +256,8 @@ export function Session({ questions, mode, chronoMinutes = 0, secondesParQuestio
       {mode === 'examen' && (
         <p className="muted" style={{ marginTop: 12, fontSize: '0.9rem' }}>
           {secondesParQuestion > 0
-            ? `Comme à l'examen : la question est lue, puis tu as ${secondesParQuestion} secondes. Tu peux changer d'avis jusqu'à la fin du décompte. Pas de retour en arrière, et l'épreuve s'arrête dès que 41/50 n'est plus possible.`
-            : "Comme à l'examen : pas de retour en arrière, et l'épreuve s'arrête dès que 41/50 n'est plus possible."}
+            ? `Comme à l'examen : la question est lue, puis tu as ${secondesParQuestion} secondes. Tu peux changer d'avis jusqu'à la fin du décompte. Pas de retour en arrière.`
+            : "Comme à l'examen : pas de retour en arrière."}
         </p>
       )}
     </div>

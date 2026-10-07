@@ -31,7 +31,6 @@ export function Examen() {
       <Resultats
         reponses={fin.reponses}
         mode="examen"
-        arrete={fin.arrete}
         tempsEcoule={fin.tempsEcoule}
         dureeSec={fin.dureeSec}
         onRecommencer={demarrer}
@@ -108,7 +107,7 @@ export function Examen() {
           </table>
         </div>
         <p className="muted">
-          Pas de retour en arrière, gravité des questions cachée, et l'épreuve s'arrête dès que 41/50 n'est plus atteignable.
+          Pas de retour en arrière, gravité des questions cachée, et les 50 questions sont toujours posées jusqu'au bout.
           {officiel && state.settings.lectureAudio && ' Monte le son ou mets des écouteurs.'}
         </p>
       </section>

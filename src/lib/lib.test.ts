@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Question, ThemeId } from '../types'
-import { EXAMEN, examenPerdu, scoreExamen, type Reponse } from './scoring'
+import { EXAMEN, scoreExamen, type Reponse } from './scoring'
 import {
   estDue,
   maitriseParTheme,
@@ -50,7 +50,6 @@ describe('notation officielle', () => {
   it('2 fautes graves = échec même sans autre faute', () => {
     const r = [faux(q('g1', 'vitesses', true)), faux(q('g2', 'vitesses', true))]
     expect(scoreExamen(r)).toMatchObject({ points: 40, reussi: false })
-    expect(examenPerdu(r)).toBe(true)
   })
 
   it('pas de réponse = faute', () => {
