@@ -367,11 +367,11 @@
     ],
     "bonne": 3,
     "grave": true,
-    "explication": "Le bras levé verticalement est un signal d'arrêt général. Ceux qui sont déjà engagés dégagent le carrefour.",
+    "explication": "Le bras levé verticalement est un signal d'arrêt général : tous les usagers s'arrêtent, quelle que soit leur direction. Seuls ceux qui sont déjà engagés dans le carrefour le dégagent. Ne pas confondre avec les bras tendus horizontalement, qui n'arrêtent que ceux qui arrivent de face ou de dos.",
     "pourquoiFaux": {
       "Tu peux passer": "Le bras levé signifie l'arrêt, pas le passage.",
       "Ralentir seulement": "Ce n'est pas une invitation à ralentir : c'est un arrêt.",
-      "Arrêt seulement pour ceux qui viennent de face": "Ce geste arrête tous les usagers, pas seulement ceux de face."
+      "Arrêt seulement pour ceux qui viennent de face": "Tu confonds avec les bras tendus horizontalement (arrêt pour ceux qui arrivent de face ou de dos, passage pour ceux qui arrivent sur ses côtés). Le bras levé verticalement arrête tout le monde."
     },
     "schema": {
       "type": "scene",
